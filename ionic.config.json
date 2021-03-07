@@ -1,7 +1,8 @@
 {
-	"name": "haphazard-inspirations",
+	"name": "Haphazard Inspirations",
 	"integrations": {
 		"capacitor": {}
 	},
-	"type": "react"
+	"type": "react",
+	"id": "net.jasontank.haphazard-inspirations"
 }
