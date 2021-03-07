@@ -1,7 +1,7 @@
 {
-  "name": "haphazard-inspirations",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
+	"name": "haphazard-inspirations",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "react"
 }
