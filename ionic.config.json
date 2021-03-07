@@ -1,0 +1,7 @@
+{
+  "name": "haphazard-inspirations",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
