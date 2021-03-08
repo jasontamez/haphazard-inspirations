@@ -23,8 +23,8 @@ const Home: React.FC = () => {
 					<IonButtons slot="end">
 						<IonButton onClick={() => dispatch(updateTheme("Default"))}>D</IonButton>
 						<IonButton onClick={() => dispatch(updateTheme("Light"))}>L</IonButton>
-						<IonButton onClick={() => dispatch(updateTheme("SolarizedLight"))}>SL</IonButton>
 						<IonButton onClick={() => dispatch(updateTheme("SolarizedDark"))}>SD</IonButton>
+						<IonButton onClick={() => dispatch(updateTheme("SolarizedLight"))}>SL</IonButton>
 						<IonButton onClick={() => dispatch(updateTheme("DeepPurple"))}>P</IonButton>
 						<IonButton onClick={() => dispatch(updateTheme("RoseGlasses"))}>R</IonButton>
 					</IonButtons>
