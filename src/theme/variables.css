@@ -183,7 +183,7 @@ body.LightTheme {
 
 	--ion-item-background: var(--ion-color-light-shade);
 
-	--ion-toolbar-background: var(--ion-color-light-shade);
+	--ion-toolbar-background: var(--ion-color-light-tint);
 	--ion-toolbar-border-color: var(--ion-color-step-250);
 
 	--ion-tab-bar-background: var(--ion-color-light);
@@ -291,7 +291,7 @@ body.SolarizedLightTheme {
 
 	--ion-item-background: var(--ion-color-light-shade);
 
-	--ion-toolbar-background: var(--ion-color-light-shade);
+	--ion-toolbar-background: var(--ion-color-light-tint);
 	--ion-toolbar-border-color: var(--ion-color-step-250);
 
 	--ion-tab-bar-background: var(--ion-color-light-shade);
@@ -619,7 +619,7 @@ body.RoseGlassesTheme {
 
 	--ion-item-background: var(--ion-color-light-shade);
 
-	--ion-toolbar-background: var(--ion-color-light);
+	--ion-toolbar-background: var(--ion-color-light-tint);
 	--ion-toolbar-border-color: var(--ion-color-step-250);
 
 	--ion-tab-bar-background: var(--ion-color-light);
