@@ -1,0 +1,717 @@
+{
+	"default": {
+		"specific": true,
+		"type": "political",
+		"size": "tiny"
+	},
+	"content": [
+		{
+			"name": "in Jamaica",
+			"properName": true,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "in Amsterdam",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "by a beaver dam",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in heaven",
+			"religionAndMyths": true,
+			"christianity": true,
+			"type": "construct",
+			"size": "variable"
+		},
+		{
+			"name": "in an igloo",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in India",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in Scotland",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "inside a dome",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in Cambodia",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Australia",
+			"properName": true,
+			"type": "geographical",
+			"size": "large"
+		},
+		{
+			"name": "in Ecuador",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "at the Boston Globe",
+			"properName": true,
+			"type": "construct"
+		},
+		{
+			"name": "on an island of horrors",
+			"fantasy": true,
+			"horror": true,
+			"specific": false,
+			"type": "construct",
+			"size": "small"
+		},
+		{
+			"name": "in Madagascar",
+			"properName": true,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "in Israel",
+			"properName": true,
+			"religionAndMyths": true,
+			"christianity": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Siberia",
+			"properName": true,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "in a temple",
+			"religionAndMyths": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a boat on land",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in Singapore",
+			"properName": true,
+			"type": "geographical",
+			"size": "small"
+		},
+		{
+			"name": "in your hometown",
+			"size": "small"
+		},
+		{
+			"name": "in Japan",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Saudi Arabia",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Denmark",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Kenya",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Germany",
+			"properName": true,
+			"type": "political geographical construct",
+			"size": "medium"
+		},
+		{
+			"name": "in Canada",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in the USA",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in a hammock",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in Oklahoma",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "along the Nile",
+			"properName": true,
+			"type": "geographical",
+			"size": "large"
+		},
+		{
+			"name": "in the Amazon basin",
+			"properName": true,
+			"type": "geographical",
+			"size": "large"
+		},
+		{
+			"name": "in Notre Dame",
+			"properName": true,
+			"type": "place"
+		},
+		{
+			"name": "on a brick road",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a city on fire",
+			"humanDistress": true,
+			"specific": false,
+			"type": "construct",
+			"size": "small"
+		},
+		{
+			"name": "in a famous birthplace",
+			"specific": false,
+			"type": "place",
+			"size": "small"
+		},
+		{
+			"name": "in a rainy forest",
+			"specific": false,
+			"type": "geographical",
+			"size": "small"
+		},
+		{
+			"name": "near a black hole",
+			"scifi": true,
+			"spacefaring": true,
+			"specific": false,
+			"type": "geographical"
+		},
+		{
+			"name": "under a circus tent",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in New York City",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "in Paris",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "in London",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "in Yellowstone National Park",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Antarctica",
+			"properName": true,
+			"type": "geographical",
+			"size": "large"
+		},
+		{
+			"name": "inside the TARDIS",
+			"properName": true,
+			"modern": true,
+			"scifi": true,
+			"spacefaring": true,
+			"type": "construct"
+		},
+		{
+			"name": "on a train platform",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in Mother Russia",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in South Africa",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Brazil",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in Athens",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "at Chernobyl",
+			"properName": true,
+			"humanDistress": true,
+			"humanDeath": true,
+			"type": "place",
+			"size": "small"
+		},
+		{
+			"name": "at a country club",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a crib",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a cathedral",
+			"religionAndMyths": true,
+			"christianity": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in China",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in a country no one has heard of",
+			"specific": false,
+			"size": "small"
+		},
+		{
+			"name": "in a courtroom",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a farm",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a cave",
+			"specific": false,
+			"type": "geographical",
+			"size": "small"
+		},
+		{
+			"name": "in a condo",
+			"modern": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in an apartment",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a duplex",
+			"modern": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a mobile home",
+			"modern": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a Winnebago",
+			"properName": true,
+			"modern": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a houseboat",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a yacht",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a doghouse",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a shack in the woods",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "within an underpass",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "at a 7-11",
+			"properName": true,
+			"modern": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a ferris wheel",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a submarine",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "at grandmother's mansion",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "at a fork in the road",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a crippled plane",
+			"humanDistress": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in an empire",
+			"specific": false,
+			"size": "medium"
+		},
+		{
+			"name": "in Cuba",
+			"properName": true,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "at the post office",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "somewhere far away",
+			"specific": false,
+			"type": "geographical",
+			"size": "variable"
+		},
+		{
+			"name": "in an empty tower",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "at a laundromat",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a mountain peak",
+			"specific": false,
+			"type": "geographical",
+			"size": "small"
+		},
+		{
+			"name": "at an ancient cemetery",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in Transylvania",
+			"properName": true,
+			"fantasy": true,
+			"medievalFantasy": true,
+			"horror": true,
+			"size": "medium"
+		},
+		{
+			"name": "on the Orient Express",
+			"properName": true,
+			"historicalFiction": true,
+			"type": "place"
+		},
+		{
+			"name": "at the Taj Mahal",
+			"properName": true,
+			"type": "place"
+		},
+		{
+			"name": "on the Red Sea",
+			"properName": true,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "in Pennsylvania",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Nigeria",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "at Mt. Everest",
+			"properName": true,
+			"type": "geographical",
+			"size": "small"
+		},
+		{
+			"name": "in Thailand",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Hong Kong",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "at the Sydney Opera House",
+			"properName": true,
+			"type": "place"
+		},
+		{
+			"name": "at the World Cup",
+			"properName": true,
+			"specific": false,
+			"type": "place",
+			"size": "small"
+		},
+		{
+			"name": "in South Korea",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in a carnival",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "at a haunted house",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in Nebraska",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Poland",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Ethiopia",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Indonesia",
+			"properName": true,
+			"size": "large"
+		},
+		{
+			"name": "in the middle of nowhere",
+			"specific": false,
+			"type": "geographical",
+			"size": "variable"
+		},
+		{
+			"name": "in North Korea",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Europe",
+			"properName": true,
+			"type": "geographical",
+			"size": "large"
+		},
+		{
+			"name": "at The Vatican",
+			"properName": true,
+			"religionAndMyths": true,
+			"christianity": true,
+			"size": "small"
+		},
+		{
+			"name": "in Rome",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "in Wakanda",
+			"properName": true,
+			"modern": true,
+			"fantasy": true,
+			"superhero": true,
+			"size": "medium"
+		},
+		{
+			"name": "on a plateau",
+			"specific": false,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "by a funeral pyre",
+			"humanDeath": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a river",
+			"specific": false,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "in Florida",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in a maze of corridors, all alike",
+			"modern": true,
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "on a painted pathway",
+			"specific": false,
+			"type": "construct"
+		},
+		{
+			"name": "in a better place",
+			"religionAndMyths": true,
+			"christianity": true,
+			"specific": false,
+			"type": "construct",
+			"size": "variable"
+		},
+		{
+			"name": "in Death Valley",
+			"properName": true,
+			"humanDeath": true,
+			"humanDistress": true,
+			"type": "geographical",
+			"size": "small"
+		},
+		{
+			"name": "in Switzerland",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Morocco",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Argentina",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Chile",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Iraq",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Iran",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Dubai",
+			"properName": true,
+			"size": "small"
+		},
+		{
+			"name": "in Libya",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in New Zealand",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Alaska",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Hawaii",
+			"properName": true,
+			"type": "geographical",
+			"size": "medium"
+		},
+		{
+			"name": "in Mexico",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Spain",
+			"properName": true,
+			"size": "medium"
+		},
+		{
+			"name": "in Istanbul",
+			"properName": true,
+			"size": "small"
+		}	
+	]
+}

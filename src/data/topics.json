@@ -1,0 +1,985 @@
+{
+	"default": {},
+	"contents": [
+		{
+			"name": "film noir"
+		},
+		{
+			"name": "unrequited love"
+		},
+		{
+			"name": "ghosts",
+			"fantasy": true,
+			"horror": true
+		},
+		{
+			"name": "sex",
+			"sexual": true
+		},
+		{
+			"name": "OCD",
+			"humanDistress": true
+		},
+		{
+			"name": "quantum physics",
+			"scifi": true
+		},
+		{
+			"name": "translucent colors"
+		},
+		{
+			"name": "the color red"
+		},
+		{
+			"name": "the color orange"
+		},
+		{
+			"name": "the color yellow"
+		},
+		{
+			"name": "the color green"
+		},
+		{
+			"name": "the color blue"
+		},
+		{
+			"name": "the color purple"
+		},
+		{
+			"name": "the color violet"
+		},
+		{
+			"name": "the color black"
+		},
+		{
+			"name": "the color white"
+		},
+		{
+			"name": "the color gray"
+		},
+		{
+			"name": "the color brown"
+		},
+		{
+			"name": "the color pink"
+		},
+		{
+			"name": "silence"
+		},
+		{
+			"name": "alien life",
+			"scifi": true,
+			"spacefaring": true
+		},
+		{
+			"name": "prime numbers"
+		},
+		{
+			"name": "westerns"
+		},
+		{
+			"name": "Wikipedia",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "the other"
+		},
+		{
+			"name": "happiness"
+		},
+		{
+			"name": "animal magnetism"
+		},
+		{
+			"name": "Pokemon",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "stupidity"
+		},
+		{
+			"name": "reality TV",
+			"modern": true
+		},
+		{
+			"name": "too much free time"
+		},
+		{
+			"name": "introspection"
+		},
+		{
+			"name": "WiFi",
+			"modern": true
+		},
+		{
+			"name": "electricity"
+		},
+		{
+			"name": "the need for a night light",
+			"humanDistress": true
+		},
+		{
+			"name": "xenophobia"
+		},
+		{
+			"name": "car racing"
+		},
+		{
+			"name": "umami"
+		},
+		{
+			"name": "youth"
+		},
+		{
+			"name": "locomotion"
+		},
+		{
+			"name": "cancer",
+			"humanDistress": true
+		},
+		{
+			"name": "bronze"
+		},
+		{
+			"name": "indoor plumbing"
+		},
+		{
+			"name": "joy"
+		},
+		{
+			"name": "tie dye"
+		},
+		{
+			"name": "pornography",
+			"sexual": true
+		},
+		{
+			"name": "the best value"
+		},
+		{
+			"name": "math"
+		},
+		{
+			"name": "the number zero"
+		},
+		{
+			"name": "amputation",
+			"humanDistress": true
+		},
+		{
+			"name": "adult circumcision",
+			"sexual": true
+		},
+		{
+			"name": "lactose intolerance",
+			"humanDistress": true,
+			"modern": true
+		},
+		{
+			"name": "quality"
+		},
+		{
+			"name": "boredom"
+		},
+		{
+			"name": "victory"
+		},
+		{
+			"name": "high-pitched voices"
+		},
+		{
+			"name": "the smell of bacon"
+		},
+		{
+			"name": "telekinesis",
+			"fantasy": true,
+			"scifi": true
+		},
+		{
+			"name": "voodoo",
+			"fantasy": true,
+			"religionAndMyths": true
+		},
+		{
+			"name": "gentrification",
+			"modern": true
+		},
+		{
+			"name": "racial profiling",
+			"humanDistress": true,
+			"humanDeath": true,
+			"modern": true
+		},
+		{
+			"name": "plaid"
+		},
+		{
+			"name": "mad science",
+			"scifi": true
+		},
+		{
+			"name": "professional football",
+			"modern": true
+		},
+		{
+			"name": "ballet"
+		},
+		{
+			"name": "gossip"
+		},
+		{
+			"name": "jazz"
+		},
+		{
+			"name": "nepotism"
+		},
+		{
+			"name": "the Anasazi",
+			"properName": true
+		},
+		{
+			"name": "a trademark"
+		},
+		{
+			"name": "terminal velocity",
+			"humanDistress": true
+		},
+		{
+			"name": "a twanging sound"
+		},
+		{
+			"name": "vanilla"
+		},
+		{
+			"name": "Star Trek",
+			"properName": true,
+			"scifi": true,
+			"spacefaring": true,
+			"modern": true
+		},
+		{
+			"name": "sarcasm"
+		},
+		{
+			"name": "identity theft",
+			"humanDistress": true,
+			"modern": true
+		},
+		{
+			"name": "bacterial meningitis",
+			"humanDistress": true,
+			"humanDeath": true,
+			"modern": true
+		},
+		{
+			"name": "surprising news"
+		},
+		{
+			"name": "quickness"
+		},
+		{
+			"name": "karaoke",
+			"modern": true
+		},
+		{
+			"name": "Simon Says"
+		},
+		{
+			"name": "that \"new car\" smell",
+			"modern": true
+		},
+		{
+			"name": "molestation",
+			"humanDistress": true
+		},
+		{
+			"name": "domestic violence",
+			"humanDistress": true
+		},
+		{
+			"name": "the happiest day"
+		},
+		{
+			"name": "pure luck"
+		},
+		{
+			"name": "Victorian values",
+			"properName": true,
+			"humanDistress": true,
+			"historicalFiction": true
+		},
+		{
+			"name": "body deformities",
+			"humanDistress": true
+		},
+		{
+			"name": "public nudity",
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "Snapchat"
+		},
+		{
+			"name": "complete surrender",
+			"humanDistress": true
+		},
+		{
+			"name": "hope"
+		},
+		{
+			"name": "morality"
+		},
+		{
+			"name": "the lesser of two evils"
+		},
+		{
+			"name": "gothic horror"
+		},
+		{
+			"name": "night blindness"
+		},
+		{
+			"name": "when a dog needs grooming"
+		},
+		{
+			"name": "wedding vows"
+		},
+		{
+			"name": "a chill down one's spine"
+		},
+		{
+			"name": "bisexuality",
+			"sexual": true
+		},
+		{
+			"name": "truth"
+		},
+		{
+			"name": "justice"
+		},
+		{
+			"name": "metaphors"
+		},
+		{
+			"name": "a Disney song",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "multiplication tables"
+		},
+		{
+			"name": "calculus"
+		},
+		{
+			"name": "geometry"
+		},
+		{
+			"name": "biology"
+		},
+		{
+			"name": "physics"
+		},
+		{
+			"name": "the speed of light"
+		},
+		{
+			"name": "a rerun on TV"
+		},
+		{
+			"name": "a podcast",
+			"modern": true
+		},
+		{
+			"name": "YouTube",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "a fad diet",
+			"modern": true
+		},
+		{
+			"name": "the downtown skyline"
+		},
+		{
+			"name": "liquid gold"
+		},
+		{
+			"name": "pirouettes"
+		},
+		{
+			"name": "the flu",
+			"humanDistress": true
+		},
+		{
+			"name": "unwanted attention",
+			"humanDistress": true
+		},
+		{
+			"name": "nightmares",
+			"humanDistress": true
+		},
+		{
+			"name": "a suntan"
+		},
+		{
+			"name": "NPR",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "morse code"
+		},
+		{
+			"name": "braille"
+		},
+		{
+			"name": "sign language"
+		},
+		{
+			"name": "repetition"
+		},
+		{
+			"name": "echoes"
+		},
+		{
+			"name": "Amazon.com",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "trench warfare",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "a deep, dark secret",
+			"humanDistress": true
+		},
+		{
+			"name": "sex without condoms",
+			"sexual": true
+		},
+		{
+			"name": "unlawful penetration",
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "LSD",
+			"illicitSubstances": true
+		},
+		{
+			"name": "the number 666",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "amnesia",
+			"humanDistress": true
+		},
+		{
+			"name": "a sonic boom"
+		},
+		{
+			"name": "a superhero movie"
+		},
+		{
+			"name": "quiet reflection"
+		},
+		{
+			"name": "gingivitis",
+			"humanDistress": true
+		},
+		{
+			"name": "conjunctivitis",
+			"humanDistress": true
+		},
+		{
+			"name": "unnecessary surgery",
+			"humanDistress": true
+		},
+		{
+			"name": "corruption",
+			"humanDistress": true
+		},
+		{
+			"name": "deception",
+			"humanDistress": true
+		},
+		{
+			"name": "anxiety",
+			"humanDistress": true
+		},
+		{
+			"name": "cruelty",
+			"humanDistress": true
+		},
+		{
+			"name": "loyalty"
+		},
+		{
+			"name": "survival"
+		},
+		{
+			"name": "the one that got away"
+		},
+		{
+			"name": "a lifetime"
+		},
+		{
+			"name": "the unknown"
+		},
+		{
+			"name": "black and white"
+		},
+		{
+			"name": "power over life and death",
+			"fantasy": true,
+			"scifi": true
+		},
+		{
+			"name": "an empty bank account"
+		},
+		{
+			"name": "darkness"
+		},
+		{
+			"name": "unspeakable horror",
+			"fantasy": true,
+			"horror": true
+		},
+		{
+			"name": "lucky number seven",
+			"religionAndMyths": true
+		},
+		{
+			"name": "carpel tunnel syndrome",
+			"modern": true
+		},
+		{
+			"name": "Freudian imagery",
+			"properName": true,
+			"sexual": true
+		},
+		{
+			"name": "hypergraphia",
+			"modern": true
+		},
+		{
+			"name": "hyperactivity",
+			"modern": true
+		},
+		{
+			"name": "a familiar fragrance"
+		},
+		{
+			"name": "laughter in the rain"
+		},
+		{
+			"name": "hysterics",
+			"humanDistress": true
+		},
+		{
+			"name": "tic-tac-toe"
+		},
+		{
+			"name": "dueling banjos",
+			"humanDistress": true
+		},
+		{
+			"name": "planetary exploration",
+			"scifi": true,
+			"spacefaring": true
+		},
+		{
+			"name": "coursing through veins",
+			"illicitSubstances": true
+		},
+		{
+			"name": "courage"
+		},
+		{
+			"name": "a bad haircut",
+			"humanDistress": true
+		},
+		{
+			"name": "hair of the dog",
+			"alcohol": true
+		},
+		{
+			"name": "a chirping noise"
+		},
+		{
+			"name": "liposuction",
+			"modern": true
+		},
+		{
+			"name": "criticism",
+			"humanDistress": true
+		},
+		{
+			"name": "oxygen",
+			"scifi": true
+		},
+		{
+			"name": "carbon monoxide",
+			"modern": true
+		},
+		{
+			"name": "a true story"
+		},
+		{
+			"name": "jack squat"
+		},
+		{
+			"name": "equal rights",
+			"humanDistress": true
+		},
+		{
+			"name": "a foreign accent"
+		},
+		{
+			"name": "epilepsy",
+			"humanDistress": true
+		},
+		{
+			"name": "the number eight"
+		},
+		{
+			"name": "willpower"
+		},
+		{
+			"name": "triumph"
+		},
+		{
+			"name": "shots nearby",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "over the hill"
+		},
+		{
+			"name": "body odor"
+		},
+		{
+			"name": "bad breath"
+		},
+		{
+			"name": "dry cleaning",
+			"modern": true
+		},
+		{
+			"name": "underage drinking",
+			"alcohol": true
+		},
+		{
+			"name": "a speed limit"
+		},
+		{
+			"name": "sorcery"
+		},
+		{
+			"name": "cliques",
+			"modern": true
+		},
+		{
+			"name": "a great movie"
+		},
+		{
+			"name": "computer animation",
+			"modern": true
+		},
+		{
+			"name": "a sour note"
+		},
+		{
+			"name": "a GED",
+			"modern": true
+		},
+		{
+			"name": "a dog's tools"
+		},
+		{
+			"name": "memory error",
+			"modern": true,
+			"scifi": true
+		},
+		{
+			"name": "historical fiction"
+		},
+		{
+			"name": "global warming",
+			"humanDistress": true,
+			"animalDistress": true
+		},
+		{
+			"name": "a made-up language"
+		},
+		{
+			"name": "a foreign language"
+		},
+		{
+			"name": "the holy sacraments",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "child endangerment",
+			"humanDistress": true
+		},
+		{
+			"name": "Minecraft",
+			"modern": true
+		},
+		{
+			"name": "crazed ramblings",
+			"humanDistress": true
+		},
+		{
+			"name": "mortality",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "strip poker",
+			"modern": true,
+			"sexual": true
+		},
+		{
+			"name": "Cards Against Humanity",
+			"modern": true
+		},
+		{
+			"name": "serious allegations",
+			"humanDistress": true
+		},
+		{
+			"name": "hashtags",
+			"modern": true
+		},
+		{
+			"name": "abortion",
+			"modern": true,
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "a joke that went too far",
+			"humanDistress": true
+		},
+		{
+			"name": "sunbeams"
+		},
+		{
+			"name": "sexual dreams",
+			"sexual": true
+		},
+		{
+			"name": "cold feet"
+		},
+		{
+			"name": "mindreading",
+			"fantasy": true,
+			"scifi": true
+		},
+		{
+			"name": "a secret in a castle",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "well-earned praise"
+		},
+		{
+			"name": "tennis"
+		},
+		{
+			"name": "paranormal investigations",
+			"modern": true
+		},
+		{
+			"name": "subterfuge"
+		},
+		{
+			"name": "shock and terror",
+			"humanDistress": true
+		},
+		{
+			"name": "taxidermy",
+			"animalDistress": true
+		},
+		{
+			"name": "stock options",
+			"modern": true
+		},
+		{
+			"name": "taxes"
+		},
+		{
+			"name": "an overwhelming odor"
+		},
+		{
+			"name": "pumpkin spice",
+			"modern": true
+		},
+		{
+			"name": "cramps"
+		},
+		{
+			"name": "chance"
+		},
+		{
+			"name": "that \"not-so-fresh\" feeling",
+			"sexual": true
+		},
+		{
+			"name": "a knife in the back",
+			"humanDistress": true
+		},
+		{
+			"name": "endless refills"
+		},
+		{
+			"name": "strong cologne"
+		},
+		{
+			"name": "PTSD",
+			"humanDistress": true
+		},
+		{
+			"name": "absolute freedom"
+		},
+		{
+			"name": "national anthems"
+		},
+		{
+			"name": "focus"
+		},
+		{
+			"name": "brain damage",
+			"humanDistress": true
+		},
+		{
+			"name": "self-service"
+		},
+		{
+			"name": "local cuisine"
+		},
+		{
+			"name": "endurance"
+		},
+		{
+			"name": "untold riches"
+		},
+		{
+			"name": "hunger",
+			"humanDistress": true
+		},
+		{
+			"name": "the shape of a teardrop"
+		},
+		{
+			"name": "applause"
+		},
+		{
+			"name": "depth perception"
+		},
+		{
+			"name": "voiced implosives"
+		},
+		{
+			"name": "large hadrons",
+			"scifi": true,
+			"modern": true
+		},
+		{
+			"name": "a blanket statement"
+		},
+		{
+			"name": "unspecified problems"
+		},
+		{
+			"name": "migration"
+		},
+		{
+			"name": "cheap thrills",
+			"sexual": true
+		},
+		{
+			"name": "a damp, musty smell"
+		},
+		{
+			"name": "archaeology"
+		},
+		{
+			"name": "intimacy",
+			"sexual": true
+		},
+		{
+			"name": "correct authorization",
+			"modern": true
+		},
+		{
+			"name": "wish fulfillment"
+		},
+		{
+			"name": "a low health bar",
+			"modern": true
+		},
+		{
+			"name": "misunderstandings"
+		},
+		{
+			"name": "torque"
+		},
+		{
+			"name": "denim"
+		},
+		{
+			"name": "calming, relaxing music"
+		},
+		{
+			"name": "energizing music"
+		},
+		{
+			"name": "what some might call music"
+		},
+		{
+			"name": "a 404 \"page not found\" error",
+			"modern": true
+		},
+		{
+			"name": "a lack of privacy",
+			"modern": true,
+			"humanDistress": true
+		},
+		{
+			"name": "mistaken identity"
+		},
+		{
+			"name": "the ole one-two punch",
+			"humanDistress": true
+		},
+		{
+			"name": "ancient technology",
+			"scifi": true,
+			"fantasy": true
+		},
+		{
+			"name": "a faked accent"
+		},
+		{
+			"name": "free hugs",
+			"modern": true
+		},
+		{
+			"name": "a closure due to bad weather"
+		}
+	]
+}

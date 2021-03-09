@@ -1,0 +1,1781 @@
+{
+	"default": {
+		"min": 1,
+		"max": 5,
+		"rateBy": 1,
+		"rateInverse": true,
+		"plural": false,
+		"article": "a",
+		"numeric": false
+	},
+	"contents": [
+		{
+			"name": "licorice"
+		},
+		{
+			"name": "cotton candy"
+		},
+		{
+			"name": "strangely-colored liquid"
+		},
+		{
+			"name": "whole wheat bread",
+			"modern": true
+		},
+		{
+			"name": "carbonated water",
+			"modern": true
+		},
+		{
+			"name": "nectarines",
+			"plural": true
+		},
+		{
+			"name": "a tandem bicycle"
+		},
+		{
+			"name": "tanks",
+			"humanDistress": true,
+			"humanDeath": true,
+			"plural": true
+		},
+		{
+			"name": "very full shopping bags",
+			"plural": true
+		},
+		{
+			"name": "fireworks",
+			"plural": true
+		},
+		{
+			"name": "rumpled sheets",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "tarts",
+			"plural": true
+		},
+		{
+			"name": "the vacuum cleaner"
+		},
+		{
+			"name": "a chrysalis"
+		},
+		{
+			"name": "posies",
+			"plural": true
+		},
+		{
+			"name": "posters on a bedroom wall",
+			"plural": true
+		},
+		{
+			"name": "a jump rope"
+		},
+		{
+			"name": "psychoactive drugs",
+			"modern": true,
+			"illicitSubstances": true,
+			"plural": true
+		},
+		{
+			"name": "whiskey",
+			"alcohol": true
+		},
+		{
+			"name": "cyanide",
+			"humanDeath": true,
+			"humanDistress": true
+		},
+		{
+			"name": "trees",
+			"plural": true
+		},
+		{
+			"name": "a sword that is also a key",
+			"modern": true,
+			"fantasy": true
+		},
+		{
+			"name": "cocaine",
+			"illicitSubstances": true
+		},
+		{
+			"name": "vodka",
+			"alcohol": true
+		},
+		{
+			"name": "tornadoes",
+			"humanDistress": true,
+			"humanDeath": true,
+			"plural": true
+		},
+		{
+			"name": "mosquitoes",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "jello shots",
+			"alcohol": true,
+			"plural": true
+		},
+		{
+			"name": "parasites",
+			"humanDistress": true,
+			"animalDistress": true,
+			"plural": true
+		},
+		{
+			"name": "underground fires",
+			"plural": true
+		},
+		{
+			"name": "a welcome mat"
+		},
+		{
+			"name": "iodine"
+		},
+		{
+			"name": "a particular tattoo"
+		},
+		{
+			"name": "a Star of David",
+			"religionAndMyths": true
+		},
+		{
+			"name": "calcium"
+		},
+		{
+			"name": "vicodin"
+		},
+		{
+			"name": "zoo animals",
+			"animalDistress": true,
+			"plural": true
+		},
+		{
+			"name": "bunnies",
+			"plural": true
+		},
+		{
+			"name": "an aging star",
+			"scifi": true,
+			"spacefaring": true
+		},
+		{
+			"name": "chalk"
+		},
+		{
+			"name": "different melodies",
+			"plural": "",
+			"min": 2,
+			"rateBy": 2
+		},
+		{
+			"name": "gravy"
+		},
+		{
+			"name": "fresh fruit"
+		},
+		{
+			"name": "ravioli"
+		},
+		{
+			"name": "love letters",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "Webster's Dictionary",
+			"properName": true
+		},
+		{
+			"name": "a stomach"
+		},
+		{
+			"name": "baby shoes",
+			"plural": true
+		},
+		{
+			"name": "kites",
+			"plural": true
+		},
+		{
+			"name": "lanterns",
+			"plural": true
+		},
+		{
+			"name": "menthol cigarettes",
+			"tobacco": true,
+			"plural": true
+		},
+		{
+			"name": "helicopters",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "tulips",
+			"plural": true
+		},
+		{
+			"name": "brightly-colored shoelaces",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "hand sanitizer",
+			"modern": true
+		},
+		{
+			"name": "tuna fish sandwiches",
+			"plural": true
+		},
+		{
+			"name": "a clear box"
+		},
+		{
+			"name": "thunder without lightning"
+		},
+		{
+			"name": "earmuffs",
+			"plural": true
+		},
+		{
+			"name": "zippers",
+			"plural": true
+		},
+		{
+			"name": "razor blades",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "silent windchimes",
+			"plural": true
+		},
+		{
+			"name": "a whip",
+			"humanDistress": true
+		},
+		{
+			"name": "matches",
+			"plural": true
+		},
+		{
+			"name": "zoning permits",
+			"plural": true
+		},
+		{
+			"name": "thirty-three teeth",
+			"plural": true
+		},
+		{
+			"name": "grasshoppers",
+			"plural": true
+		},
+		{
+			"name": "spiders",
+			"plural": true
+		},
+		{
+			"name": "skull",
+			"humanDeath": true
+		},
+		{
+			"name": "bumblebees",
+			"plural": true
+		},
+		{
+			"name": "zebra-patterned fabric"
+		},
+		{
+			"name": "white rabbits",
+			"plural": true
+		},
+		{
+			"name": "grilled cheese sandwiches",
+			"plural": true
+		},
+		{
+			"name": "gum"
+		},
+		{
+			"name": "an arrow pointing to the left"
+		},
+		{
+			"name": "a long rubber hose",
+			"humanDeath": true
+		},
+		{
+			"name": "Pandora's Box",
+			"religionAndMyths": true,
+			"greekRomanMyth": true
+		},
+		{
+			"name": "an out-of-tune organ"
+		},
+		{
+			"name": "glowing plutonium",
+			"modern": true,
+			"humanDistress": true
+		},
+		{
+			"name": "snap-button shirts",
+			"plural": true
+		},
+		{
+			"name": "a purple belt"
+		},
+		{
+			"name": "stained glass",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "ponytails",
+			"plural": true
+		},
+		{
+			"name": "melting clocks",
+			"plural": true
+		},
+		{
+			"name": "a dead Jesus on the wall",
+			"religionAndMyths": true,
+			"christianity": true,
+			"humanDeath": true
+		},
+		{
+			"name": "a bra",
+			"sexual": true
+		},
+		{
+			"name": "shoes that are too tight",
+			"plural": true
+		},
+		{
+			"name": "cheap beer",
+			"alcohol": true
+		},
+		{
+			"name": "loud birds",
+			"plural": true
+		},
+		{
+			"name": "seashells",
+			"plural": true
+		},
+		{
+			"name": "vomit",
+			"humanDistress": true
+		},
+		{
+			"name": "clean pajamas",
+			"plural": true
+		},
+		{
+			"name": "a sunburn",
+			"humanDistress": true
+		},
+		{
+			"name": "old cologne"
+		},
+		{
+			"name": "sulfur"
+		},
+		{
+			"name": "a new scar",
+			"humanDistress": true
+		},
+		{
+			"name": "cream pies",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "a new hairdo"
+		},
+		{
+			"name": "a lost key"
+		},
+		{
+			"name": "a favorite shirt"
+		},
+		{
+			"name": "jelly beans",
+			"plural": true
+		},
+		{
+			"name": "a giant bug"
+		},
+		{
+			"name": "a rusty nail"
+		},
+		{
+			"name": "oily rags"
+		},
+		{
+			"name": "soup that is too cold"
+		},
+		{
+			"name": "a new street drug",
+			"illicitSubstances": true
+		},
+		{
+			"name": "the perfect outfit"
+		},
+		{
+			"name": "a bloody piece of clothing",
+			"humanDistress": true
+		},
+		{
+			"name": "dark lenses",
+			"plural": true
+		},
+		{
+			"name": "oncoming traffic",
+			"modern": true,
+			"humanDistress": true
+		},
+		{
+			"name": "newts",
+			"plural": true
+		},
+		{
+			"name": "a silver trident",
+			"religionAndMyths": true,
+			"greekRomanMyth": true
+		},
+		{
+			"name": "Gorgonzola cheese",
+			"properName": true
+		},
+		{
+			"name": "asteroids",
+			"scifi": true,
+			"spacefaring": true,
+			"plural": true
+		},
+		{
+			"name": "jumbo shrimp"
+		},
+		{
+			"name": "a muddy flag"
+		},
+		{
+			"name": "juniper bushes",
+			"plural": true
+		},
+		{
+			"name": "cloudy water"
+		},
+		{
+			"name": "dog poop"
+		},
+		{
+			"name": "fangs",
+			"animalDistress": true,
+			"humanDistress": true
+		},
+		{
+			"name": "elevators",
+			"plural": true
+		},
+		{
+			"name": "an electrical socket"
+		},
+		{
+			"name": "a jukebox"
+		},
+		{
+			"name": "planks of wood"
+		},
+		{
+			"name": "a small piece of metal"
+		},
+		{
+			"name": "lost credit cards",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "a cornucopia"
+		},
+		{
+			"name": "two front teeth",
+			"plural": true
+		},
+		{
+			"name": "a treasure chest",
+			"fantasy": true,
+			"historicalFiction": true
+		},
+		{
+			"name": "rings around a planet",
+			"scifi": true,
+			"spacefaring": true,
+			"plural": true
+		},
+		{
+			"name": "a tourniquet",
+			"humanDistress": true
+		},
+		{
+			"name": "a Molotov cocktail",
+			"humanDistress": true
+		},
+		{
+			"name": "peanuts",
+			"plural": true
+		},
+		{
+			"name": "too much popcorn"
+		},
+		{
+			"name": "a bad hairpiece"
+		},
+		{
+			"name": "a broken hard drive",
+			"modern": true
+		},
+		{
+			"name": "a special camera"
+		},
+		{
+			"name": "a surprising amount of hair",
+			"sexual": true
+		},
+		{
+			"name": "a corpse",
+			"humanDeath": true
+		},
+		{
+			"name": "lottery tickets",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "tears of joy",
+			"plural": true
+		},
+		{
+			"name": "a blank expression"
+		},
+		{
+			"name": "eyeglasses",
+			"plural": true
+		},
+		{
+			"name": "a defective condom",
+			"sexual": true,
+			"modern": true
+		},
+		{
+			"name": "a mesh shirt",
+			"sexual": true
+		},
+		{
+			"name": "hairpins",
+			"plural": true
+		},
+		{
+			"name": "handcuffs",
+			"humanDistress": true,
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "a jalopy"
+		},
+		{
+			"name": "trampolines"
+		},
+		{
+			"name": "a fishnet",
+			"sexual": true
+		},
+		{
+			"name": "canned peas",
+			"plural": true
+		},
+		{
+			"name": "an unopened letter"
+		},
+		{
+			"name": "a firecracker"
+		},
+		{
+			"name": "a Newton's cradle",
+			"properName": true
+		},
+		{
+			"name": "a new fossil"
+		},
+		{
+			"name": "a cross",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"horror": true,
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "turnips"
+		},
+		{
+			"name": "giant diapers",
+			"plural": true
+		},
+		{
+			"name": "electric eels"
+		},
+		{
+			"name": "piranhas",
+			"plural": true
+		},
+		{
+			"name": "a fly"
+		},
+		{
+			"name": "markers",
+			"plural": true
+		},
+		{
+			"name": "a broken guitar"
+		},
+		{
+			"name": "a loaf of bread"
+		},
+		{
+			"name": "a phallus",
+			"sexual": true
+		},
+		{
+			"name": "a crowbar"
+		},
+		{
+			"name": "a flat tire"
+		},
+		{
+			"name": "a trenchcoat"
+		},
+		{
+			"name": "Twinkies",
+			"properName": true,
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "a strange scar"
+		},
+		{
+			"name": "a golf club"
+		},
+		{
+			"name": "a stop sign"
+		},
+		{
+			"name": "a picnic basket"
+		},
+		{
+			"name": "horseradish"
+		},
+		{
+			"name": "a bill"
+		},
+		{
+			"name": "tacos",
+			"plural": true
+		},
+		{
+			"name": "dirty clothes",
+			"plural": true
+		},
+		{
+			"name": "sweet and sour sauce"
+		},
+		{
+			"name": "a new piano"
+		},
+		{
+			"name": "a broken piano"
+		},
+		{
+			"name": "soy sauce"
+		},
+		{
+			"name": "a new recipe"
+		},
+		{
+			"name": "hard hats"
+		},
+		{
+			"name": "a statue of an angel",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "a Happy Meal",
+			"properName": true,
+			"modern": true
+		},
+		{
+			"name": "an atomic bomb",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "a bikini",
+			"sexual": true
+		},
+		{
+			"name": "olive oil"
+		},
+		{
+			"name": "lead-based paint"
+		},
+		{
+			"name": "an erection",
+			"sexual": true
+		},
+		{
+			"name": "pants that are too tight",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "ketchup"
+		},
+		{
+			"name": "diamond dust"
+		},
+		{
+			"name": "peanut butter"
+		},
+		{
+			"name": "a garishly wrapped present"
+		},
+		{
+			"name": "a wistful smile"
+		},
+		{
+			"name": "a magic potion",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "a pot of boiling water"
+		},
+		{
+			"name": "molten gold"
+		},
+		{
+			"name": "a stick of dynamite"
+		},
+		{
+			"name": "a rifle",
+			"humanDistress": true,
+			"humanDeath": true,
+			"animalDeath": true
+		},
+		{
+			"name": "a car that flies",
+			"fantasy": true,
+			"modern": true
+		},
+		{
+			"name": "a dusty bookshelf"
+		},
+		{
+			"name": "a shrinkwrapped box",
+			"modern": true
+		},
+		{
+			"name": "a used condom"
+		},
+		{
+			"name": "a dreamcatcher"
+		},
+		{
+			"name": "a secret smile"
+		},
+		{
+			"name": "a fake smile"
+		},
+		{
+			"name": "an ugly frown"
+		},
+		{
+			"name": "bared teeth"
+		},
+		{
+			"name": "a wink"
+		},
+		{
+			"name": "a perforated eardrum",
+			"humanDistress": true
+		},
+		{
+			"name": "two raw eggs",
+			"plural": true
+		},
+		{
+			"name": "stale bread"
+		},
+		{
+			"name": "defective brakes",
+			"humanDistress": true,
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "broken shoelaces",
+			"plural": true
+		},
+		{
+			"name": "a trough"
+		},
+		{
+			"name": "a sandwich"
+		},
+		{
+			"name": "hair dye"
+		},
+		{
+			"name": "a paperback novel",
+			"modern": true
+		},
+		{
+			"name": "a heavy tome"
+		},
+		{
+			"name": "a bag of schoolbooks"
+		},
+		{
+			"name": "a suppository",
+			"modern": true
+		},
+		{
+			"name": "bagpipes",
+			"plural": true
+		},
+		{
+			"name": "carrots",
+			"plural": true
+		},
+		{
+			"name": "celery"
+		},
+		{
+			"name": "erotic art",
+			"sexual": true
+		},
+		{
+			"name": "a magnetic board",
+			"modern": true
+		},
+		{
+			"name": "a dry-erase board",
+			"modern": true
+		},
+		{
+			"name": "cardboard boxes",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "an email",
+			"modern": true
+		},
+		{
+			"name": "confetti"
+		},
+		{
+			"name": "safety scissors",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "tapioca pudding"
+		},
+		{
+			"name": "leg hair"
+		},
+		{
+			"name": "deodorant"
+		},
+		{
+			"name": "a ring"
+		},
+		{
+			"name": "an open drain"
+		},
+		{
+			"name": "an owlbear",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "scarab beetles",
+			"historicalFiction": true,
+			"fantasy": true,
+			"horror": true,
+			"plural": true
+		},
+		{
+			"name": "a balloon animal"
+		},
+		{
+			"name": "an orchestra"
+		},
+		{
+			"name": "rotten food"
+		},
+		{
+			"name": "a tentacle",
+			"fantasy": true,
+			"horror": true
+		},
+		{
+			"name": "a chemistry set"
+		},
+		{
+			"name": "a flickering light"
+		},
+		{
+			"name": "dollar",
+			"plural": "s",
+			"max": 25000,
+			"numeric": true
+		},
+		{
+			"name": "a six-pack",
+			"alcohol": true
+		},
+		{
+			"name": "land mines",
+			"humanDistress": true,
+			"humanDeath": true,
+			"plural": true
+		},
+		{
+			"name": "a violin"
+		},
+		{
+			"name": "a tell-all book"
+		},
+		{
+			"name": "a thesis",
+			"modern": true
+		},
+		{
+			"name": "a calculator"
+		},
+		{
+			"name": "a polka-dot dress"
+		},
+		{
+			"name": "a striped necktie"
+		},
+		{
+			"name": "a bowtie"
+		},
+		{
+			"name": "an ascot"
+		},
+		{
+			"name": "a spilled drink"
+		},
+		{
+			"name": "a drink of water"
+		},
+		{
+			"name": "a blue star",
+			"scifi": true,
+			"spacefaring": true
+		},
+		{
+			"name": "a crucifix",
+			"religionAndMyths": true,
+			"christianity": true,
+			"fantasy": true,
+			"horror": true
+		},
+		{
+			"name": "a tuba"
+		},
+		{
+			"name": "a tube of toothpaste"
+		},
+		{
+			"name": "smelly socks",
+			"plural": true
+		},
+		{
+			"name": "an electrical hazard",
+			"humanDistress": true
+		},
+		{
+			"name": "a butter knife"
+		},
+		{
+			"name": "a letter opener"
+		},
+		{
+			"name": "a stopped watch"
+		},
+		{
+			"name": "a window decal",
+			"modern": true
+		},
+		{
+			"name": "a scale"
+		},
+		{
+			"name": "a ticket stub"
+		},
+		{
+			"name": "a jar of mustard"
+		},
+		{
+			"name": "a black veil"
+		},
+		{
+			"name": "a belt"
+		},
+		{
+			"name": "chalk dust"
+		},
+		{
+			"name": "chest hair"
+		},
+		{
+			"name": "pubic hair",
+			"sexual": true
+		},
+		{
+			"name": "nose hair"
+		},
+		{
+			"name": "crickets at night"
+		},
+		{
+			"name": "a missing fingernail",
+			"humanDistress": true
+		},
+		{
+			"name": "shower curtains",
+			"plural": true
+		},
+		{
+			"name": "rubies",
+			"plural": true
+		},
+		{
+			"name": "eyebrows",
+			"plural": true
+		},
+		{
+			"name": "corduroy pants",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "a handful of beans",
+			"plural": true
+		},
+		{
+			"name": "macaroni and cheese"
+		},
+		{
+			"name": "spaghetti and meatballs"
+		},
+		{
+			"name": "a milk crate"
+		},
+		{
+			"name": "cranberry juice"
+		},
+		{
+			"name": "pieces of eight",
+			"plural": true
+		},
+		{
+			"name": "a half-empty glass"
+		},
+		{
+			"name": "a half-full glass"
+		},
+		{
+			"name": "a dead battery"
+		},
+		{
+			"name": "a leaky faucet"
+		},
+		{
+			"name": "lost teeth",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "a dirty toothbrush"
+		},
+		{
+			"name": "milk of magnesia"
+		},
+		{
+			"name": "plaster of paris"
+		},
+		{
+			"name": "a tower of empty cans",
+			"alcohol": true
+		},
+		{
+			"name": "a glass eye"
+		},
+		{
+			"name": "dryer lint"
+		},
+		{
+			"name": "collarbones"
+		},
+		{
+			"name": "a trap",
+			"humanDistress": true,
+			"animalDistress": true
+		},
+		{
+			"name": "tall grass"
+		},
+		{
+			"name": "circles",
+			"plural": true
+		},
+		{
+			"name": "squares",
+			"plural": true
+		},
+		{
+			"name": "triangles",
+			"plural": true
+		},
+		{
+			"name": "a trapezoid"
+		},
+		{
+			"name": "old wine",
+			"alcohol": true
+		},
+		{
+			"name": "pirate loot",
+			"historicalFiction": true
+		},
+		{
+			"name": "a canary in a coal mine",
+			"animalDistress": true,
+			"humanDistress": true
+		},
+		{
+			"name": "bloody bandages",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "relaxed-fit jeans",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "cut-offs",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "skinny jeans",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "watermelon"
+		},
+		{
+			"name": "a jock strap",
+			"sexual": true,
+			"modern": true
+		},
+		{
+			"name": "a tombstone"
+		},
+		{
+			"name": "a sundial"
+		},
+		{
+			"name": "navels",
+			"plural": true
+		},
+		{
+			"name": "greasy hair"
+		},
+		{
+			"name": "fingernail clippings",
+			"plural": true
+		},
+		{
+			"name": "high heels",
+			"plural": true
+		},
+		{
+			"name": "boots",
+			"plural": true
+		},
+		{
+			"name": "a crack in the wall"
+		},
+		{
+			"name": "plastic forks",
+			"plural": true
+		},
+		{
+			"name": "sporks",
+			"plural": true
+		},
+		{
+			"name": "a silver spoon"
+		},
+		{
+			"name": "yellow lights",
+			"plural": true
+		},
+		{
+			"name": "a torpedo"
+		},
+		{
+			"name": "chimneys",
+			"plural": true
+		},
+		{
+			"name": "a diary"
+		},
+		{
+			"name": "homemade cookies",
+			"plural": true
+		},
+		{
+			"name": "kittens",
+			"plural": true
+		},
+		{
+			"name": "testicles",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "a record player"
+		},
+		{
+			"name": "a pot pie"
+		},
+		{
+			"name": "motes of dust",
+			"plural": true
+		},
+		{
+			"name": "bad wigs",
+			"plural": true
+		},
+		{
+			"name": "a splinter",
+			"humanDistress": true
+		},
+		{
+			"name": "a fancy hat"
+		},
+		{
+			"name": "a love potion",
+			"fantasy": true
+		},
+		{
+			"name": "a teacup"
+		},
+		{
+			"name": "a centrifuge"
+		},
+		{
+			"name": "wings",
+			"plural": true
+		},
+		{
+			"name": "an eyebrow piercing"
+		},
+		{
+			"name": "a ray gun",
+			"scifi": true
+		},
+		{
+			"name": "a cardboard cutout",
+			"modern": true
+		},
+		{
+			"name": "hot tea"
+		},
+		{
+			"name": "iced tea"
+		},
+		{
+			"name": "parachutes",
+			"plural": true
+		},
+		{
+			"name": "pipes",
+			"plural": true
+		},
+		{
+			"name": "coffee"
+		},
+		{
+			"name": "visible underwear",
+			"sexual": true
+		},
+		{
+			"name": "a pinch",
+			"humanDistress": true
+		},
+		{
+			"name": "a beauty mark"
+		},
+		{
+			"name": "pizza"
+		},
+		{
+			"name": "orchids",
+			"plural": true
+		},
+		{
+			"name": "jambalaya"
+		},
+		{
+			"name": "a magic wand",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "dirty dishes",
+			"plural": true
+		},
+		{
+			"name": "a staff",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "an unreadable expression"
+		},
+		{
+			"name": "a helmet"
+		},
+		{
+			"name": "diseased fleas",
+			"animalDistress": true,
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "an exit sign"
+		},
+		{
+			"name": "corrugated metal",
+			"modern": true
+		},
+		{
+			"name": "corrugated cardboard",
+			"modern": true
+		},
+		{
+			"name": "an empty socket",
+			"humanDistress": true
+		},
+		{
+			"name": "a skylight"
+		},
+		{
+			"name": "a jammed keyboard"
+		},
+		{
+			"name": "charcoal"
+		},
+		{
+			"name": "a bouquet of something that isn't flowers"
+		},
+		{
+			"name": "explosives",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "a crumpled roadmap"
+		},
+		{
+			"name": "opium",
+			"illicitSubstances": true
+		},
+		{
+			"name": "a pot belly (beer belly)",
+			"alcohol": true
+		},
+		{
+			"name": "ridiculous clothes",
+			"plural": true
+		},
+		{
+			"name": "a large oven"
+		},
+		{
+			"name": "a crown"
+		},
+		{
+			"name": "lava lamps",
+			"plural": true
+		},
+		{
+			"name": "kitty litter"
+		},
+		{
+			"name": "melting ice"
+		},
+		{
+			"name": "skimpy outfits",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "a jam jar"
+		},
+		{
+			"name": "dancing lights in the distance",
+			"fantasy": true,
+			"plural": true
+		},
+		{
+			"name": "a cheese danish"
+		},
+		{
+			"name": "melted chocolate"
+		},
+		{
+			"name": "a shiny new knife",
+			"humanDistress": true
+		},
+		{
+			"name": "an old, rusted blade",
+			"humanDistress": true,
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "an old calendar"
+		},
+		{
+			"name": "a cellar door"
+		},
+		{
+			"name": "a bloody fingerprint",
+			"humanDistress": true
+		},
+		{
+			"name": "an arcane symbol",
+			"fantasy": true
+		},
+		{
+			"name": "cave paintings",
+			"plural": true
+		},
+		{
+			"name": "petroglyphs",
+			"plural": true
+		},
+		{
+			"name": "a phone charger",
+			"modern": true
+		},
+		{
+			"name": "a suspiciously placed rock"
+		},
+		{
+			"name": "stalactites and stalagmites",
+			"plural": true
+		},
+		{
+			"name": "torn-out pages",
+			"plural": true
+		},
+		{
+			"name": "an ugly carpet"
+		},
+		{
+			"name": "a gourd"
+		},
+		{
+			"name": "funny-tasting water"
+		},
+		{
+			"name": "ears",
+			"plural": true
+		},
+		{
+			"name": "dirty feet",
+			"plural": true
+		},
+		{
+			"name": "clean hair"
+		},
+		{
+			"name": "hairspray"
+		},
+		{
+			"name": "yeast"
+		},
+		{
+			"name": "buffalo",
+			"plural": true
+		},
+		{
+			"name": "turpentine"
+		},
+		{
+			"name": "mistletoe"
+		},
+		{
+			"name": "fertilizer"
+		},
+		{
+			"name": "garlic"
+		},
+		{
+			"name": "sushi"
+		},
+		{
+			"name": "seaweed"
+		},
+		{
+			"name": "food that is the wrong color"
+		},
+		{
+			"name": "the last of the rations",
+			"humanDistress": true
+		},
+		{
+			"name": "a bloody nose",
+			"humanDistress": true
+		},
+		{
+			"name": "a black eye",
+			"humanDistress": true
+		},
+		{
+			"name": "a missing tooth",
+			"humanDistress": true
+		},
+		{
+			"name": "a dislocated joint",
+			"humanDistress": true
+		},
+		{
+			"name": "ground beef"
+		},
+		{
+			"name": "flat hair"
+		},
+		{
+			"name": "curly hair"
+		},
+		{
+			"name": "a dose of antibiotics",
+			"humanDistress": true
+		},
+		{
+			"name": "dark clouds",
+			"plural": true
+		},
+		{
+			"name": "slit wrists",
+			"humanDistress": true,
+			"humanDeath": true,
+			"plural": true
+		},
+		{
+			"name": "curling toes",
+			"sexual": true,
+			"plural": true
+		},
+		{
+			"name": "a fireball",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"humanDistress": true
+		},
+		{
+			"name": "calamari"
+		},
+		{
+			"name": "marijuana",
+			"illicitSubstances": true,
+			"modern": true
+		},
+		{
+			"name": "an ad for a lawyer"
+		},
+		{
+			"name": "water"
+		},
+		{
+			"name": "video games",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "sheet music"
+		},
+		{
+			"name": "polka dots",
+			"plural": true
+		},
+		{
+			"name": "metallic echoes",
+			"plural": true
+		},
+		{
+			"name": "glitter"
+		},
+		{
+			"name": "fog"
+		},
+		{
+			"name": "zinc"
+		},
+		{
+			"name": "frost"
+		},
+		{
+			"name": "origami"
+		},
+		{
+			"name": "aspirin",
+			"humanDistress": true
+		},
+		{
+			"name": "sand"
+		},
+		{
+			"name": "lava"
+		},
+		{
+			"name": "gravel"
+		},
+		{
+			"name": "monkeys everywhere",
+			"plural": true
+		},
+		{
+			"name": "smog"
+		},
+		{
+			"name": "pointed ears",
+			"fantasy": true,
+			"scifi": true,
+			"medievalFantasy": true,
+			"plural": true
+		},
+		{
+			"name": "smoke",
+			"tobacco": true,
+			"humanDistress": true
+		},
+		{
+			"name": "too much salt"
+		},
+		{
+			"name": "carbon nanotubes",
+			"scifi": true,
+			"plural": true
+		},
+		{
+			"name": "gun oil",
+			"humanDeath": true,
+			"humanDistress": true
+		},
+		{
+			"name": "the minutes of the meeting",
+			"plural": true
+		},
+		{
+			"name": "silver"
+		},
+		{
+			"name": "ions",
+			"scifi": true
+		},
+		{
+			"name": "a blip on the radar"
+		},
+		{
+			"name": "checkers",
+			"plural": true
+		},
+		{
+			"name": "mother of pearl"
+		},
+		{
+			"name": "root beer"
+		},
+		{
+			"name": "a navy"
+		},
+		{
+			"name": "head lice",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "toenail fungus",
+			"humanDistress": true
+		},
+		{
+			"name": "living furniture"
+		},
+		{
+			"name": "goosebumps",
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "lather"
+		},
+		{
+			"name": "acid",
+			"illicitSubstances": true,
+			"humanDistress": true
+		},
+		{
+			"name": "dog slobber"
+		},
+		{
+			"name": "ripples",
+			"plural": true
+		},
+		{
+			"name": "the wind"
+		},
+		{
+			"name": "crumbling infrastructure",
+			"modern": true,
+			"humanDistress": true
+		},
+		{
+			"name": "those mountains in the distance",
+			"plural": true
+		}
+	]
+}

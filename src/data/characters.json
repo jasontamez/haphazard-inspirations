@@ -1,0 +1,610 @@
+{
+	"default": {
+		"min": 1,
+		"max": 5,
+		"rateBy": 2,
+		"rateInverse": true,
+		"plural": "s",
+		"article": "a",
+		"numeric": false
+	},
+	"content": [
+		{
+			"name": "dragons",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "tortoises"
+		},
+		{
+			"name": "chinchillas"
+		},
+		{
+			"name": "ostrich",
+			"plural": "es",
+			"article": "an"
+		},
+		{
+			"name": "whale"
+		},
+		{
+			"name": "dentist",
+			"max": 2,
+			"rateBy": 20,
+			"article": "the"
+		},
+		{
+			"name": "Garfield",
+			"properName": true,
+			"modern": true,
+			"plural": false
+		},
+		{
+			"name": "long-haired cat",
+			"max": 10,
+			"rateBy": 1
+		},
+		{
+			"name": "lesbian"
+		},
+		{
+			"name": "librarian"
+		},
+		{
+			"name": "dance partners",
+			"plural": true
+		},
+		{
+			"name": "elephant",
+			"article": "an"
+		},
+		{
+			"name": "fish in a bucket",
+			"plural": ""
+		},
+		{
+			"name": "koala"
+		},
+		{
+			"name": "octopus",
+			"plural": "es",
+			"article": "an"
+		},
+		{
+			"name": "dinosaur"
+		},
+		{
+			"name": "leprechaun",
+			"fantasy": true
+		},
+		{
+			"name": "dead ruler",
+			"humanDeath": true
+		},
+		{
+			"name": "unicorn",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "normal people",
+			"plural": true
+		},
+		{
+			"name": "vampire",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"horror": true
+		},
+		{
+			"name": "monsters under the bed",
+			"plural": true
+		},
+		{
+			"name": "Leonardo da Vinci",
+			"properName": true,
+			"plural": false
+		},
+		{
+			"name": "crow"
+		},
+		{
+			"name": "wicked witch",
+			"fantasy": true,
+			"plural": "es"
+		},
+		{
+			"name": "geese",
+			"plural": true
+		},
+		{
+			"name": "private investigator"
+		},
+		{
+			"name": "scientist"
+		},
+		{
+			"name": "seeing-eye dog",
+			"modern": true,
+			"rateBy": 100,
+			"max": 3
+		},
+		{
+			"name": "the undead",
+			"fantasy": true,
+			"horror": true,
+			"plural": true
+		},
+		{
+			"name": "Superman",
+			"properName": true,
+			"fantasy": true,
+			"superhero": true,
+			"plural": false
+		},
+		{
+			"name": "camel"
+		},
+		{
+			"name": "vulture"
+		},
+		{
+			"name": "drugged animals",
+			"animalDistress": true,
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "supermodel",
+			"modern": true
+		},
+		{
+			"name": "owl",
+			"article": "an"
+		},
+		{
+			"name": "electrician",
+			"modern": true,
+			"article": "an"
+		},
+		{
+			"name": "ferret"
+		},
+		{
+			"name": "porcupine"
+		},
+		{
+			"name": "Harry Potter",
+			"properName": true,
+			"modern": true,
+			"plural": false
+		},
+		{
+			"name": "the Pope",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "Napoleon",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "George Washington",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "Dr. Seuss",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "albatross",
+			"plural": "es",
+			"article": "an"
+		},
+		{
+			"name": "gangster",
+			"modern": true
+		},
+		{
+			"name": "leopards that change their spots",
+			"plural": true
+		},
+		{
+			"name": "a turtle laying on its back",
+			"animalDistress": true,
+			"plural": false
+		},
+		{
+			"name": "a captured royal",
+			"humanDistress": true,
+			"plural": false
+		},
+		{
+			"name": "lifeguard"
+		},
+		{
+			"name": "the last of its species",
+			"plural": false
+		},
+		{
+			"name": "foreign investor",
+			"modern": true
+		},
+		{
+			"name": "wrestler"
+		},
+		{
+			"name": "identical twins",
+			"plural": true
+		},
+		{
+			"name": "penguin"
+		},
+		{
+			"name": "Cthulhu",
+			"fantasy": true,
+			"horror": true,
+			"plural": false
+		},
+		{
+			"name": "bumbling robber",
+			"humanDistress": true
+		},
+		{
+			"name": "cheerleader",
+			"max": 12,
+			"rateBy": 1.1,
+			"rateInverse": false
+		},
+		{
+			"name": "an old wizard",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"plural": false
+		},
+		{
+			"name": "a werewolf",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"plural": false
+		},
+		{
+			"name": "a fortune teller",
+			"plural": false
+		},
+		{
+			"name": "a lost child",
+			"plural": false
+		},
+		{
+			"name": "caribou",
+			"plural": ""
+		},
+		{
+			"name": "a babysitter",
+			"plural": false
+		},
+		{
+			"name": "a talking fish",
+			"fantasy": true,
+			"plural": false
+		},
+		{
+			"name": "the Tooth Fairy",
+			"religionAndMyths": true,
+			"fairyTales": true,
+			"plural": false
+		},
+		{
+			"name": "a basket case",
+			"humanDistress": true,
+			"plural": false
+		},
+		{
+			"name": "triplets",
+			"plural": true
+		},
+		{
+			"name": "a motherIn-law",
+			"plural": true
+		},
+		{
+			"name": "Godzilla",
+			"fantasy": true,
+			"properName": true,
+			"plural": true
+		},
+		{
+			"name": "turkey"
+		},
+		{
+			"name": "a flock of seagulls",
+			"plural": false
+		},
+		{
+			"name": "a hissing snake",
+			"plural": false
+		},
+		{
+			"name": "the quiet man next door",
+			"plural": false
+		},
+		{
+			"name": "zombie",
+			"fantasy": true,
+			"horror": true
+		},
+		{
+			"name": "a man holding a brain",
+			"humanDistress": true,
+			"plural": false
+		},
+		{
+			"name": "a monkey with a banana",
+			"plural": false
+		},
+		{
+			"name": "carnies",
+			"plural": true
+		},
+		{
+			"name": "the President of the United States",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "the Prime Minister of Canada",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "a nun",
+			"religionAndMyths": true,
+			"christianity": true,
+			"plural": false
+		},
+		{
+			"name": "weasel"
+		},
+		{
+			"name": "Shakespeare",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "a bald man",
+			"plural": false
+		},
+		{
+			"name": "Chuck Norris",
+			"properName": true,
+			"realPerson": true,
+			"modern": true,
+			"plural": false
+		},
+		{
+			"name": "a John or Jane Doe",
+			"humanDistress": true,
+			"plural": false
+		},
+		{
+			"name": "shark",
+			"rateBy": 20
+		},
+		{
+			"name": "a babydaddy",
+			"sexual": true,
+			"modern": true,
+			"plural": false
+		},
+		{
+			"name": "a babymomma",
+			"sexual": true,
+			"modern": true,
+			"plural": false
+		},
+		{
+			"name": "a missing child",
+			"humanDistress": true,
+			"plural": false
+		},
+		{
+			"name": "rabbit",
+			"min": 2,
+			"max": 10
+		},
+		{
+			"name": "ogre",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "oxen",
+			"plural": true
+		},
+		{
+			"name": "a dalmatian",
+			"plural": false
+		},
+		{
+			"name": "umpire"
+		},
+		{
+			"name": "the devil",
+			"fantasy": true,
+			"horror": true,
+			"religionAndMyths": true,
+			"christianity": true,
+			"plural": false
+		},
+		{
+			"name": "a monster",
+			"fantasy": true,
+			"horror": true,
+			"plural": false
+		},
+		{
+			"name": "a new priest",
+			"religionAndMyths": true,
+			"christianity": true,
+			"plural": false
+		},
+		{
+			"name": "the leader of the tribe",
+			"plural": false
+		},
+		{
+			"name": "pheasant"
+		},
+		{
+			"name": "peasant"
+		},
+		{
+			"name": "tramp"
+		},
+		{
+			"name": "pig"
+		},
+		{
+			"name": "rodeo clown"
+		},
+		{
+			"name": "average, silly, unremarkable, yet utterly terrifying clown",
+			"max": 3
+		},
+		{
+			"name": "your first pet",
+			"plural": false
+		},
+		{
+			"name": "Nazis",
+			"properName": true,
+			"realPerson": true,
+			"humanDistress": true,
+			"humanDeath": true,
+			"plural": true
+		},
+		{
+			"name": "a deer in the headlights",
+			"plural": false
+		},
+		{
+			"name": "rich parents",
+			"plural": true
+		},
+		{
+			"name": "a treehugger in a tree",
+			"plural": false
+		},
+		{
+			"name": "a flying horse",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"religionAndMyths": true,
+			"greekRomanMyth": true,
+			"plural": false
+		},
+		{
+			"name": "too many people crammed into a van",
+			"plural": true
+		},
+		{
+			"name": "a samurai",
+			"historicalFiction": true,
+			"samurai": true,
+			"plural": false
+		},
+		{
+			"name": "a gunslinger",
+			"historicalFiction": true,
+			"western": true,
+			"plural": false
+		},
+		{
+			"name": "chipmunk"
+		},
+		{
+			"name": "goblin",
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "frog"
+		},
+		{
+			"name": "hummingbird"
+		},
+		{
+			"name": "a pregnant teenager",
+			"sexual": true,
+			"plural": false
+		},
+		{
+			"name": "a foreign prince",
+			"plural": false
+		},
+		{
+			"name": "an outlaw",
+			"historicalFiction": true,
+			"western": true,
+			"plural": false
+		},
+		{
+			"name": "a swashbuckler",
+			"historicalFiction": true,
+			"plural": false
+		},
+		{
+			"name": "robots",
+			"modern": true,
+			"plural": true
+		},
+		{
+			"name": "a lapdog",
+			"plural": false
+		},
+		{
+			"name": "swarm of bees",
+			"plural": ""
+		},
+		{
+			"name": "the UN Security Council",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "a rooster crowing",
+			"plural": false
+		},
+		{
+			"name": "Parliament",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "Congress",
+			"properName": true,
+			"realPerson": true,
+			"plural": false
+		},
+		{
+			"name": "dead parents",
+			"humanDeath": true,
+			"humanDistress": true,
+			"plural": true
+		}	
+	]
+}

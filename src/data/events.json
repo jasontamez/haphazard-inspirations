@@ -1,0 +1,311 @@
+{
+	"default": {
+		"plural": false,
+		"punctual": true
+	},
+	"content": [
+		{
+			"name": "a death in the family",
+			"humanDeath": true,
+			"punctual": false
+		},
+		{
+			"name": "a new baby",
+			"punctual": false
+		},
+		{
+			"name": "a divorce",
+			"humanDistress": true,
+			"punctual": false
+		},
+		{
+			"name": "a flood",
+			"punctual": false
+		},
+		{
+			"name": "a deadly chase",
+			"humanDistress": true,
+			"humanDeath": true,
+			"punctual": false
+		},
+		{
+			"name": "car crashes",
+			"humanDeath": true,
+			"humanDistress": true,
+			"plural": true
+		},
+		{
+			"name": "a tetanus booster shot"
+		},
+		{
+			"name": "an uninteresting speech"
+		},
+		{
+			"name": "menopause",
+			"sexual": true,
+			"punctual": false
+		},
+		{
+			"name": "an x-ray"
+		},
+		{
+			"name": "beach volleyball"
+		},
+		{
+			"name": "guitar lessons",
+			"plural": true
+		},
+		{
+			"name": "an eclipse"
+		},
+		{
+			"name": "a false pregnancy",
+			"sexual": true,
+			"humanDistress": true,
+			"punctual": false
+		},
+		{
+			"name": "a miscarriage",
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "a miscarriage of justice",
+			"humanDistress": true,
+			"punctual": false
+		},
+		{
+			"name": "an alligator attack"
+		},
+		{
+			"name": "an earthquake",
+			"humanDistress": true,
+			"animalDeath": true,
+			"animalDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "a standoff, guns drawn",
+			"western": true,
+			"historicalFiction": true
+		},
+		{
+			"name": "a writing challenge",
+			"punctual": false
+		},
+		{
+			"name": "a boxing match",
+			"humanDistress": true
+		},
+		{
+			"name": "a surprise party"
+		},
+		{
+			"name": "a stabbing",
+			"humanDistress": true
+		},
+		{
+			"name": "a gun going off",
+			"humanDistress": true
+		},
+		{
+			"name": "a band breaking up"
+		},
+		{
+			"name": "someone waking up in Hell",
+			"religionAndMyths": true,
+			"christianity": true,
+			"humanDistress": true
+		},
+		{
+			"name": "Netflix keeps buffering",
+			"modern": true,
+			"punctual": false
+		},
+		{
+			"name": "baptism",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "a cloudburst"
+		},
+		{
+			"name": "an election",
+			"punctual": false
+		},
+		{
+			"name": "a broken bone"
+		},
+		{
+			"name": "a sprained ankle"
+		},
+		{
+			"name": "a punch in the gut",
+			"humanDistress": true
+		},
+		{
+			"name": "a loss of virginity",
+			"sexual": true
+		},
+		{
+			"name": "a hurricane",
+			"humanDistress": true,
+			"humanDeath": true,
+			"punctual": false
+		},
+		{
+			"name": "summer in the city",
+			"punctual": false
+		},
+		{
+			"name": "a midnight snack"
+		},
+		{
+			"name": "a tournament of champions",
+			"punctual": false
+		},
+		{
+			"name": "a ménage à trois",
+			"sexual": true
+		},
+		{
+			"name": "a supernova"
+		},
+		{
+			"name": "a misplaced apostrophe"
+		},
+		{
+			"name": "a panicked phone call"
+		},
+		{
+			"name": "a sacrifice",
+			"religionAndMyths": true,
+			"humanDeath": true,
+			"animalDeath": true
+		},
+		{
+			"name": "a drum solo"
+		},
+		{
+			"name": "a choke hold",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "a high school play",
+			"punctual": false
+		},
+		{
+			"name": "a power outage",
+			"punctual": false
+		},
+		{
+			"name": "some good-natured brawling",
+			"humanDistress": true
+		},
+		{
+			"name": "a thunderstorm"
+		},
+		{
+			"name": "a grand finale"
+		},
+		{
+			"name": "a pilgrimage",
+			"religionAndMyths": true,
+			"punctual": false
+		},
+		{
+			"name": "puberty",
+			"sexual": true,
+			"punctual": false
+		},
+		{
+			"name": "a mid-life crisis",
+			"humanDistress": true,
+			"punctual": false
+		},
+		{
+			"name": "a clean break"
+		},
+		{
+			"name": "a homecoming",
+			"punctual": false
+		},
+		{
+			"name": "a tsunami",
+			"humanDistress": true,
+			"animalDistress": true,
+			"animalDeath": true,
+			"humanDeath": true
+		},
+		{
+			"name": "an arrest",
+			"humanDistress": true
+		},
+		{
+			"name": "a betrayal",
+			"humanDistress": true,
+			"punctual": false
+		},
+		{
+			"name": "a heart attack",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "starting a family",
+			"sexual": true,
+			"punctual": false
+		},
+		{
+			"name": "a time out"
+		},
+		{
+			"name": "a first kiss",
+			"sexual": true
+		},
+		{
+			"name": "a wipeout"
+		},
+		{
+			"name": "a spit-take"
+		},
+		{
+			"name": "the first snowfall",
+			"punctual": false
+		},
+		{
+			"name": "a bee sting",
+			"humanDistress": true
+		},
+		{
+			"name": "a headache",
+			"humanDistress": true,
+			"punctual": false
+		},
+		{
+			"name": "when it all comes together",
+			"punctual": false
+		},
+		{
+			"name": "a plane crash",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "something growling in the night",
+			"animalDistress": true,
+			"humanDistress": true
+		},
+		{
+			"name": "a kick to the rear"
+		},
+		{
+			"name": "a riptide"
+		},
+		{
+			"name": "a dawning realization"
+		}
+	]
+}

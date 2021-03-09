@@ -1,0 +1,765 @@
+{
+	"default": {},
+	"contents": [
+		{
+			"name": "digging"
+		},
+		{
+			"name": "sword fighting",
+			"historicalFiction": true,
+			"fantasy": true,
+			"medievalFantasy": true
+		},
+		{
+			"name": "taking a pulse"
+		},
+		{
+			"name": "wiping away sweat"
+		},
+		{
+			"name": "eating too much"
+		},
+		{
+			"name": "thumb sucking"
+		},
+		{
+			"name": "trying to dance"
+		},
+		{
+			"name": "ordering food"
+		},
+		{
+			"name": "sleeping"
+		},
+		{
+			"name": "scratching an itch"
+		},
+		{
+			"name": "going to town"
+		},
+		{
+			"name": "driving"
+		},
+		{
+			"name": "sleepwalking"
+		},
+		{
+			"name": "prancing"
+		},
+		{
+			"name": "killing",
+			"humanDeath": true,
+			"animalDeath": true
+		},
+		{
+			"name": "giving away clothes"
+		},
+		{
+			"name": "returning a purchase"
+		},
+		{
+			"name": "looking out"
+		},
+		{
+			"name": "going to church",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "quilting"
+		},
+		{
+			"name": "jumping off a bridge",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "muttering"
+		},
+		{
+			"name": "yodeling"
+		},
+		{
+			"name": "a big gulp"
+		},
+		{
+			"name": "drinking shampoo by mistake"
+		},
+		{
+			"name": "growls",
+			"animalDistress": true
+		},
+		{
+			"name": "dusting the room"
+		},
+		{
+			"name": "forgetting"
+		},
+		{
+			"name": "choosing the undesirable"
+		},
+		{
+			"name": "whittling"
+		},
+		{
+			"name": "not wearing underwear",
+			"sexual": true
+		},
+		{
+			"name": "sleeping with eyes open"
+		},
+		{
+			"name": "ignoring someone",
+			"humanDistress": true
+		},
+		{
+			"name": "understanding something for the first time"
+		},
+		{
+			"name": "rolling down a hill"
+		},
+		{
+			"name": "climbing a mountain"
+		},
+		{
+			"name": "freezing to death",
+			"humanDeath": true
+		},
+		{
+			"name": "wondering if cobwebs and spiderwebs are the same thing"
+		},
+		{
+			"name": "using a telescope"
+		},
+		{
+			"name": "repeating things"
+		},
+		{
+			"name": "misspelling important words"
+		},
+		{
+			"name": "popping up out of nowhere"
+		},
+		{
+			"name": "putting a collar on a giraffe"
+		},
+		{
+			"name": "making out",
+			"sexual": true
+		},
+		{
+			"name": "flushing something down the toilet"
+		},
+		{
+			"name": "clutching a rosary",
+			"religionAndMyths": true,
+			"christianity": true
+		},
+		{
+			"name": "parallel parking"
+		},
+		{
+			"name": "wearing a turban"
+		},
+		{
+			"name": "smoking"
+		},
+		{
+			"name": "using kneepads",
+			"sexual": true
+		},
+		{
+			"name": "spinning a globe"
+		},
+		{
+			"name": "pulling up carpet"
+		},
+		{
+			"name": "being aroused in public",
+			"sexual": true
+		},
+		{
+			"name": "stripping",
+			"sexual": true
+		},
+		{
+			"name": "getting drunk at the wedding",
+			"alcohol": true
+		},
+		{
+			"name": "meeting the lawyer"
+		},
+		{
+			"name": "eating tofu"
+		},
+		{
+			"name": "pretending to read"
+		},
+		{
+			"name": "trying to see at night"
+		},
+		{
+			"name": "catching what is thrown"
+		},
+		{
+			"name": "turning something off and on again until it works",
+			"modern": true
+		},
+		{
+			"name": "being tired"
+		},
+		{
+			"name": "believing in magic"
+		},
+		{
+			"name": "taking a shower with clothes still on"
+		},
+		{
+			"name": "reaching a new height"
+		},
+		{
+			"name": "tricking someone",
+			"humanDistress": true
+		},
+		{
+			"name": "accidentally turning someone on",
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "walking slowly"
+		},
+		{
+			"name": "spilling juice on a keyboard"
+		},
+		{
+			"name": "rolling a pair of dice"
+		},
+		{
+			"name": "trying not to breathe"
+		},
+		{
+			"name": "holding one's breath"
+		},
+		{
+			"name": "uniting people"
+		},
+		{
+			"name": "raising the dead",
+			"fantasy": true,
+			"horror": true
+		},
+		{
+			"name": "clapping"
+		},
+		{
+			"name": "quitting"
+		},
+		{
+			"name": "having one's papers in order",
+			"humanDistress": true
+		},
+		{
+			"name": "riding off into the sunset",
+			"historicalFiction": true,
+			"western": true
+		},
+		{
+			"name": "hanging stockings"
+		},
+		{
+			"name": "being out of medication",
+			"modern": true
+		},
+		{
+			"name": "being naked and afraid",
+			"humanDistress": true
+		},
+		{
+			"name": "playing chess"
+		},
+		{
+			"name": "playing Russian roulette",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "riding a dog",
+			"animalDistress": true
+		},
+		{
+			"name": "getting one's hair did",
+			"modern": true
+		},
+		{
+			"name": "hanging a mirror"
+		},
+		{
+			"name": "surfing",
+			"modern": true
+		},
+		{
+			"name": "skateboarding",
+			"modern": true
+		},
+		{
+			"name": "snow skiing"
+		},
+		{
+			"name": "water skiing",
+			"modern": true
+		},
+		{
+			"name": "being stabbed in the foot",
+			"humanDistress": true
+		},
+		{
+			"name": "screaming",
+			"humanDistress": true
+		},
+		{
+			"name": "wailing",
+			"humanDistress": true,
+			"animalDistress": true
+		},
+		{
+			"name": "losing an eye",
+			"humanDistress": true
+		},
+		{
+			"name": "melting in the sun"
+		},
+		{
+			"name": "the curtain falling"
+		},
+		{
+			"name": "kicking the bucket",
+			"humanDeath": true
+		},
+		{
+			"name": "eating dirt"
+		},
+		{
+			"name": "opening a can of food"
+		},
+		{
+			"name": "being at a loss for words"
+		},
+		{
+			"name": "throwing a hand axe",
+			"historicalFiction": true,
+			"western": true
+		},
+		{
+			"name": "catching air",
+			"modern": true
+		},
+		{
+			"name": "watching a bad movie"
+		},
+		{
+			"name": "framing a diploma"
+		},
+		{
+			"name": "dreaming"
+		},
+		{
+			"name": "lucking out"
+		},
+		{
+			"name": "hopping around"
+		},
+		{
+			"name": "doing jumping jacks"
+		},
+		{
+			"name": "biding one's time"
+		},
+		{
+			"name": "burning a flag"
+		},
+		{
+			"name": "burping loudly"
+		},
+		{
+			"name": "getting past an obstacle"
+		},
+		{
+			"name": "forgetting a birthday"
+		},
+		{
+			"name": "getting lost",
+			"humanDistress": true
+		},
+		{
+			"name": "faking a death",
+			"humanDeath": true
+		},
+		{
+			"name": "wetting the bed",
+			"humanDistress": true
+		},
+		{
+			"name": "getting a membership"
+		},
+		{
+			"name": "feeling like a princess"
+		},
+		{
+			"name": "making the team"
+		},
+		{
+			"name": "hitting any key to continue",
+			"modern": true
+		},
+		{
+			"name": "giggling uncontrollably"
+		},
+		{
+			"name": "writing a check"
+		},
+		{
+			"name": "bouncing a check"
+		},
+		{
+			"name": "dancing at the club",
+			"modern": true
+		},
+		{
+			"name": "choking on a meal"
+		},
+		{
+			"name": "walking for the first time"
+		},
+		{
+			"name": "jumping the gap"
+		},
+		{
+			"name": "burning a bridge"
+		},
+		{
+			"name": "yelling in public"
+		},
+		{
+			"name": "solving an equation"
+		},
+		{
+			"name": "quoting a public figure"
+		},
+		{
+			"name": "obfuscating the truth"
+		},
+		{
+			"name": "watching one's language"
+		},
+		{
+			"name": "holding hands"
+		},
+		{
+			"name": "breathing fire"
+		},
+		{
+			"name": "playing hopscotch"
+		},
+		{
+			"name": "voting someone off the island",
+			"humanDistress": true
+		},
+		{
+			"name": "killing chickens for food",
+			"animalDeath": true
+		},
+		{
+			"name": "telling lies",
+			"humanDistress": true
+		},
+		{
+			"name": "eating out",
+			"sexual": true
+		},
+		{
+			"name": "square dancing"
+		},
+		{
+			"name": "bouncing"
+		},
+		{
+			"name": "living the dream"
+		},
+		{
+			"name": "looting",
+			"humanDistress": true
+		},
+		{
+			"name": "destroying one's childhood",
+			"humanDistress": true
+		},
+		{
+			"name": "not watching TV",
+			"modern": true
+		},
+		{
+			"name": "coming in second"
+		},
+		{
+			"name": "carving initials into a tree"
+		},
+		{
+			"name": "rolling one's eyes"
+		},
+		{
+			"name": "skinny dipping",
+			"sexual": true
+		},
+		{
+			"name": "burning the remains",
+			"humanDeath": true,
+			"animalDeath": true
+		},
+		{
+			"name": "going blind",
+			"humanDistress": true
+		},
+		{
+			"name": "diving in"
+		},
+		{
+			"name": "dividing fractions"
+		},
+		{
+			"name": "coloring outside the lines"
+		},
+		{
+			"name": "joining the band"
+		},
+		{
+			"name": "being mistaken for someone famous"
+		},
+		{
+			"name": "writing the great American novel",
+			"properName": true
+		},
+		{
+			"name": "tap dancing"
+		},
+		{
+			"name": "sleeping naked",
+			"sexual": true
+		},
+		{
+			"name": "being too close for comfort"
+		},
+		{
+			"name": "pointing a finger"
+		},
+		{
+			"name": "livestreaming a crime",
+			"modern": true,
+			"humanDistress": true
+		},
+		{
+			"name": "using DVDs as shurikens",
+			"modern": true,
+			"humanDistress": true
+		},
+		{
+			"name": "giving thanks"
+		},
+		{
+			"name": "getting laid",
+			"sexual": true,
+			"modern": true
+		},
+		{
+			"name": "job hunting"
+		},
+		{
+			"name": "looking for a parent",
+			"humanDistress": true
+		},
+		{
+			"name": "getting fired from work",
+			"humanDistress": true
+		},
+		{
+			"name": "checking in"
+		},
+		{
+			"name": "not knowing what day it is"
+		},
+		{
+			"name": "screeching"
+		},
+		{
+			"name": "burning one's tongue",
+			"humanDistress": true
+		},
+		{
+			"name": "collecting the entire set",
+			"modern": true
+		},
+		{
+			"name": "lip reading"
+		},
+		{
+			"name": "getting her period",
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "cooking with gas"
+		},
+		{
+			"name": "ignoring an injury"
+		},
+		{
+			"name": "hacking",
+			"modern": true
+		},
+		{
+			"name": "carving a tunnel"
+		},
+		{
+			"name": "accepting your fate",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "choosing your fate"
+		},
+		{
+			"name": "making a strong offer",
+			"modern": true
+		},
+		{
+			"name": "running from one's past",
+			"humanDistress": true
+		},
+		{
+			"name": "growing up too fast"
+		},
+		{
+			"name": "adding the letter X to something's name",
+			"modern": true
+		},
+		{
+			"name": "falling in love"
+		},
+		{
+			"name": "having to change"
+		},
+		{
+			"name": "smelting"
+		},
+		{
+			"name": "eating on the run"
+		},
+		{
+			"name": "running from a killer",
+			"humanDistress": true,
+			"humanDeath": true
+		},
+		{
+			"name": "running from the police",
+			"humanDistress": true
+		},
+		{
+			"name": "painting a window"
+		},
+		{
+			"name": "scraping your knee",
+			"humanDistress": true
+		},
+		{
+			"name": "turning a page"
+		},
+		{
+			"name": "knowing all the lyrics"
+		},
+		{
+			"name": "singing off-key"
+		},
+		{
+			"name": "finding footprints where there shouldn't be any"
+		},
+		{
+			"name": "spinning a bottle",
+			"sexual": true
+		},
+		{
+			"name": "stepping on a nail",
+			"humanDistress": true
+		},
+		{
+			"name": "managing tasks"
+		},
+		{
+			"name": "feeling cool",
+			"modern": true
+		},
+		{
+			"name": "being pretty"
+		},
+		{
+			"name": "having enough"
+		},
+		{
+			"name": "getting 15% off of everything",
+			"modern": true
+		},
+		{
+			"name": "passing for another gender"
+		},
+		{
+			"name": "being cold-blooded"
+		},
+		{
+			"name": "feeling free"
+		},
+		{
+			"name": "having twelve different hair colors at once",
+			"modern": true
+		},
+		{
+			"name": "being thirsty",
+			"humanDistress": true
+		},
+		{
+			"name": "raising the bar"
+		},
+		{
+			"name": "being alone"
+		},
+		{
+			"name": "losing the remote control",
+			"modern": true
+		},
+		{
+			"name": "gaining weight"
+		},
+		{
+			"name": "losing weight"
+		},
+		{
+			"name": "finding oil"
+		},
+		{
+			"name": "feeling funny"
+		},
+		{
+			"name": "dealing with sexual assault",
+			"sexual": true,
+			"humanDistress": true
+		},
+		{
+			"name": "repressing a hidden trauma",
+			"humanDistress": true
+		},
+		{
+			"name": "counting sheep"
+		},
+		{
+			"name": "biting one's toenails"
+		}
+	]
+}
