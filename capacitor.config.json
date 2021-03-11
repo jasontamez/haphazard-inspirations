@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "haphazard-inspirations",
+	"appId": "net.jasontank.haphazardinspirations",
+	"appName": "Haphazard Inspirations",
 	"bundledWebRuntime": false,
 	"npmClient": "npm",
 	"webDir": "build",
