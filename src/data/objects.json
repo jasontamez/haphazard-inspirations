@@ -1,12 +1,12 @@
 {
 	"default": {
-		"min": 1,
+		"min": 0,
 		"max": 5,
 		"rateBy": 1,
-		"rateInverse": true,
+		"rateFavorsLower": true,
 		"plural": false,
 		"article": "a",
-		"numeric": false
+		"numerals": false
 	},
 	"contents": [
 		{
@@ -44,8 +44,10 @@
 			"plural": true
 		},
 		{
-			"name": "very full shopping bags",
-			"plural": true
+			"name": "very full shopping bag",
+			"plural": "s",
+			"max": 12,
+			"rateBy": 2
 		},
 		{
 			"name": "fireworks",
@@ -317,7 +319,7 @@
 			"plural": true
 		},
 		{
-			"name": "a dead Jesus on the wall",
+			"name": "a dead Jesus on a wall",
 			"religionAndMyths": true,
 			"christianity": true,
 			"humanDeath": true
@@ -921,8 +923,9 @@
 		{
 			"name": "dollar",
 			"plural": "s",
+			"min": 1,
 			"max": 25000,
-			"numeric": true
+			"numerals": true
 		},
 		{
 			"name": "a six-pack",
@@ -1680,6 +1683,7 @@
 		},
 		{
 			"name": "the minutes of the meeting",
+			"modern": true,
 			"plural": true
 		},
 		{
