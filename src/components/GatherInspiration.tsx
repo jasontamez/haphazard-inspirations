@@ -75,18 +75,11 @@ class PossiblePlural extends BasicIdea {
 	plural?: string | boolean
 	article?: string
 	numerals?: boolean
-	constructor(initializer: any) {
-		super(initializer);
-	}
 	getNumber(n: number) {
 		return EnglishNumbers[n];
 	}
 }
-class AnObject extends PossiblePlural {
-	constructor(initializer: any) {
-		super(initializer);
-	}
-}
+class AnObject extends PossiblePlural {}
 let proto: any = AnObject.prototype;
 let def: any = object.default;
 proto.min = def.min;
@@ -97,11 +90,7 @@ proto.plural = def.plural;
 proto.article = def.article;
 proto.numerals = def.numerals;
 
-class Character extends PossiblePlural {
-	constructor(initializer: any) {
-		super(initializer);
-	}
-}
+class Character extends PossiblePlural {}
 proto = Character.prototype;
 def = characters.default;
 proto.min = def.min;
@@ -120,9 +109,6 @@ class Locale extends BasicIdea {
 	preposition?: string
 	size?: "large" | "medium" | "small" | "variable" | "tiny"
 	specific?: boolean
-	constructor(initializer: any) {
-		super(initializer);
-	}
 }
 proto = Locale.prototype;
 def = locale.default;
@@ -133,32 +119,17 @@ proto.preposition = def.preposition;
 class AnEvent extends BasicIdea {
 	plural?: boolean
 	punctual?: boolean
-	constructor(initializer: any) {
-		super(initializer);
-	}
 }
 proto = AnEvent.prototype;
 def = event.default;
 proto.plural = def.plural;
 proto.punctual = def.punctual;
 
-class Topic extends BasicIdea {
-	constructor(initializer: any) {
-		super(initializer);
-	}
-}
+class Topic extends BasicIdea {}
 
-class Time extends BasicIdea {
-	constructor(initializer: any) {
-		super(initializer);
-	}
-}
+class Time extends BasicIdea {}
 
-class Action extends BasicIdea {
-	constructor(initializer: any) {
-		super(initializer);
-	}
-}
+class Action extends BasicIdea {}
 
 const inspirations = {
 	actions: action.content.map(a => new Action(a)),
