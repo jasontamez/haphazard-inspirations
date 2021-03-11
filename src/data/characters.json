@@ -605,6 +605,77 @@
 			"humanDeath": true,
 			"humanDistress": true,
 			"plural": true
-		}	
+		},
+		{
+			"name": "head lice",
+			"humanDistress": true,
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "kittens",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "an owlbear",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"animate": true
+		},
+		{
+			"name": "scarab beetles",
+			"historicalFiction": true,
+			"fantasy": true,
+			"horror": true,
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "a giant bug",
+			"animate": true
+		},
+		{
+			"name": "loud birds",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "white rabbits",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "bumblebees",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "grasshoppers",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "spiders",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "zoo animals",
+			"animalDistress": true,
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "bunnies",
+			"plural": true,
+			"animate": true
+		},
+		{
+			"name": "mosquitoes",
+			"humanDistress": true,
+			"plural": true,
+			"animate": true
+		}
 	]
 }

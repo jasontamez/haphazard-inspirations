@@ -112,11 +112,6 @@
 			"plural": true
 		},
 		{
-			"name": "mosquitoes",
-			"humanDistress": true,
-			"plural": true
-		},
-		{
 			"name": "jello shots",
 			"alcohol": true,
 			"plural": true
@@ -149,15 +144,6 @@
 		},
 		{
 			"name": "vicodin"
-		},
-		{
-			"name": "zoo animals",
-			"animalDistress": true,
-			"plural": true
-		},
-		{
-			"name": "bunnies",
-			"plural": true
 		},
 		{
 			"name": "an aging star",
@@ -273,27 +259,11 @@
 			"plural": true
 		},
 		{
-			"name": "grasshoppers",
-			"plural": true
-		},
-		{
-			"name": "spiders",
-			"plural": true
-		},
-		{
 			"name": "skull",
 			"humanDeath": true
 		},
 		{
-			"name": "bumblebees",
-			"plural": true
-		},
-		{
 			"name": "zebra-patterned fabric"
-		},
-		{
-			"name": "white rabbits",
-			"plural": true
 		},
 		{
 			"name": "grilled cheese sandwiches",
@@ -361,10 +331,6 @@
 			"alcohol": true
 		},
 		{
-			"name": "loud birds",
-			"plural": true
-		},
-		{
 			"name": "seashells",
 			"plural": true
 		},
@@ -407,9 +373,6 @@
 		{
 			"name": "jelly beans",
 			"plural": true
-		},
-		{
-			"name": "a giant bug"
 		},
 		{
 			"name": "a rusty nail"
@@ -914,18 +877,6 @@
 			"name": "an open drain"
 		},
 		{
-			"name": "an owlbear",
-			"fantasy": true,
-			"medievalFantasy": true
-		},
-		{
-			"name": "scarab beetles",
-			"historicalFiction": true,
-			"fantasy": true,
-			"horror": true,
-			"plural": true
-		},
-		{
 			"name": "a balloon animal"
 		},
 		{
@@ -1261,10 +1212,6 @@
 		},
 		{
 			"name": "homemade cookies",
-			"plural": true
-		},
-		{
-			"name": "kittens",
 			"plural": true
 		},
 		{
@@ -1732,11 +1679,6 @@
 		},
 		{
 			"name": "a navy"
-		},
-		{
-			"name": "head lice",
-			"humanDistress": true,
-			"plural": true
 		},
 		{
 			"name": "toenail fungus",
