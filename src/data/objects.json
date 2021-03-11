@@ -31,6 +31,10 @@
 			"plural": true
 		},
 		{
+			"name": "pumpkin",
+			"plural": "s"
+		},
+		{
 			"name": "a tandem bicycle"
 		},
 		{
@@ -418,6 +422,24 @@
 		},
 		{
 			"name": "asteroids",
+			"scifi": true,
+			"spacefaring": true,
+			"plural": true
+		},
+		{
+			"name": "planets",
+			"scifi": true,
+			"spacefaring": true,
+			"plural": true
+		},
+		{
+			"name": "galaxies",
+			"scifi": true,
+			"spacefaring": true,
+			"plural": true
+		},
+		{
+			"name": "star systems",
 			"scifi": true,
 			"spacefaring": true,
 			"plural": true
@@ -1009,6 +1031,9 @@
 		},
 		{
 			"name": "nose hair"
+		},
+		{
+			"name": "underarm hair"
 		},
 		{
 			"name": "crickets at night"

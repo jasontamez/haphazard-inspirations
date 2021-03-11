@@ -711,6 +711,13 @@
 		{
 			"name": "in Istanbul",
 			"properName": true,
+		},
+		{
+			"name": "the Oscars",
+			"preposition": "at",
+			"properName": true,
+			"specific": false,
+			"place": true,
 			"size": "small"
 		}	
 	]
