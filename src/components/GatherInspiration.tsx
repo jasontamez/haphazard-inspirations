@@ -78,6 +78,54 @@ class PossiblePlural extends BasicIdea {
 	getNumber(n: number) {
 		return EnglishNumbers[n];
 	}
+	getIdea() {
+		const plural = this.plural || "s";
+		const n = this.name || "thing";
+		if((typeof plural) === "boolean") {
+			return n;
+		}
+		const article = this.article || "a";
+		let amounts: number[] = [];
+		const rate = this.rateBy;
+		let min = this.min || 0;
+		let max = this.max || 5;
+		if(this.rateFavorsLower) {
+			let many = 1;
+			while(max >= min) {
+				for(let x = 0; x < many; x++) {
+					amounts.push(max);
+				}
+				max--;
+				if(rate === "incremental") {
+					many++;
+				} else {
+					many = many * rate!;
+				}
+			}
+		} else {
+			let many = 1;
+			while(min <= max) {
+				for(let x = 0; x < many; x++) {
+					amounts.push(min);
+				}
+				min++;
+				if(rate === "incremental") {
+					many++;
+				} else {
+					many = many * rate!;
+				}
+			}
+		}
+		let choice = amounts[Math.floor(Math.random() * amounts.length)];
+		if(choice === 0) {
+			return n + plural;
+		} else if (choice === 1) {
+			return article + " " + n;
+		} else if (this.numerals) {
+			return choice.toString() + " " + n + plural;
+		}
+		return EnglishNumbers[choice] + " " + n + plural;
+	}
 }
 class AnObject extends PossiblePlural {}
 let proto: any = AnObject.prototype;
@@ -109,6 +157,9 @@ class Locale extends BasicIdea {
 	preposition?: string
 	size?: "large" | "medium" | "small" | "variable" | "tiny"
 	specific?: boolean
+	getIdea() {
+		return (this.preposition || "in") + " " + (this.name || "thing");
+	}
 }
 proto = Locale.prototype;
 def = locale.default;
@@ -119,17 +170,32 @@ proto.preposition = def.preposition;
 class AnEvent extends BasicIdea {
 	plural?: boolean
 	punctual?: boolean
+	getIdea() {
+		return this.name || "thing";
+	}
 }
 proto = AnEvent.prototype;
 def = event.default;
 proto.plural = def.plural;
 proto.punctual = def.punctual;
 
-class Topic extends BasicIdea {}
+class Topic extends BasicIdea {
+	getIdea() {
+		return this.name || "thing";
+	}
+}
 
-class Time extends BasicIdea {}
+class Time extends BasicIdea {
+	getIdea() {
+		return this.name || "thing";
+	}
+}
 
-class Action extends BasicIdea {}
+class Action extends BasicIdea {
+	getIdea() {
+		return this.name || "thing";
+	}
+}
 
 const inspirations = {
 	actions: action.content.map(a => new Action(a)),
