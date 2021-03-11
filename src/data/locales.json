@@ -1,716 +1,815 @@
 {
 	"default": {
 		"specific": true,
-		"type": "political",
-		"size": "tiny"
+		"size": "tiny",
+		"preposition": "in"
 	},
 	"content": [
 		{
-			"name": "in Jamaica",
+			"name": "Jamaica",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Amsterdam",
+			"name": "Amsterdam",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "by a beaver dam",
+			"name": "a beaver dam",
+			"proposition": "by",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in heaven",
+			"name": "heaven",
 			"religionAndMyths": true,
 			"christianity": true,
-			"type": "construct",
+			"construct": true,
 			"size": "variable"
 		},
 		{
-			"name": "in an igloo",
+			"name": "an igloo",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in India",
+			"name": "India",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in Scotland",
+			"name": "Scotland",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "inside a dome",
+			"name": "a dome",
+			"proposition": "inside",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in Cambodia",
+			"name": "Cambodia",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Australia",
+			"name": "Australia",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in Ecuador",
+			"name": "Ecuador",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "at the Boston Globe",
+			"name": "a large newspaper",
+			"proposition": "at",
 			"properName": true,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on an island of horrors",
+			"name": "an island of horrors",
+			"proposition": "on",
 			"fantasy": true,
 			"horror": true,
 			"specific": false,
-			"type": "construct",
+			"construct": true,
 			"size": "small"
 		},
 		{
-			"name": "in Madagascar",
+			"name": "Madagascar",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Israel",
+			"name": "Israel",
 			"properName": true,
 			"religionAndMyths": true,
 			"christianity": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Siberia",
+			"name": "Siberia",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in a temple",
+			"name": "a temple",
 			"religionAndMyths": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a boat on land",
+			"name": "a boat on land",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in Singapore",
+			"name": "Singapore",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in your hometown",
+			"name": "your hometown",
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in Japan",
+			"name": "Japan",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Saudi Arabia",
+			"name": "Saudi Arabia",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Denmark",
+			"name": "Denmark",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Kenya",
+			"name": "Kenya",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Germany",
+			"name": "Germany",
 			"properName": true,
-			"type": "political geographical construct",
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Canada",
+			"name": "Canada",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in the USA",
+			"name": "the USA",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in a hammock",
+			"name": "a hammock",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in Oklahoma",
+			"name": "Oklahoma",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
 			"name": "along the Nile",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "large"
 		},
 		{
-			"name": "in the Amazon basin",
+			"name": "the Amazon basin",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "large"
 		},
 		{
-			"name": "in Notre Dame",
+			"name": "Notre Dame",
+			"preposition": "at",
 			"properName": true,
-			"type": "place"
+			"place": true
 		},
 		{
-			"name": "on a brick road",
+			"name": "a brick road",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a city on fire",
+			"name": "a city on fire",
 			"humanDistress": true,
 			"specific": false,
-			"type": "construct",
+			"construct": true,
 			"size": "small"
 		},
 		{
-			"name": "in a famous birthplace",
+			"name": "a famous birthplace",
 			"specific": false,
-			"type": "place",
+			"place": true,
 			"size": "small"
 		},
 		{
-			"name": "in a rainy forest",
+			"name": "a rainy forest",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "small"
 		},
 		{
-			"name": "near a black hole",
+			"name": "a black hole",
+			"preposition": "near",
 			"scifi": true,
 			"spacefaring": true,
 			"specific": false,
-			"type": "geographical"
+			"geographical": true
 		},
 		{
-			"name": "under a circus tent",
+			"name": "a circus tent",
+			"preposition": "under",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in New York City",
+			"name": "New York City",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in Paris",
+			"name": "Paris",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in London",
+			"name": "London",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in Yellowstone National Park",
+			"name": "Yellowstone National Park",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Antarctica",
+			"name": "Antarctica",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "large"
 		},
 		{
-			"name": "inside the TARDIS",
+			"name": "the TARDIS",
+			"preposition": "inside",
 			"properName": true,
 			"modern": true,
 			"scifi": true,
 			"spacefaring": true,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a train platform",
+			"name": "a train platform",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in Mother Russia",
+			"name": "Mother Russia",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in South Africa",
+			"name": "South Africa",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Brazil",
+			"name": "Brazil",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in Athens",
+			"name": "Athens",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "at Chernobyl",
+			"name": "Chernobyl",
+			"preposition": "at",
 			"properName": true,
 			"humanDistress": true,
 			"humanDeath": true,
-			"type": "place",
+			"place": true,
 			"size": "small"
 		},
 		{
-			"name": "at a country club",
+			"name": "a country club",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a crib",
+			"name": "a crib",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a cathedral",
+			"name": "a cathedral",
 			"religionAndMyths": true,
 			"christianity": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in China",
+			"name": "China",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in a country no one has heard of",
+			"name": "a country no one has heard of",
 			"specific": false,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in a courtroom",
+			"name": "a courtroom",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a farm",
+			"name": "a farm",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a cave",
+			"name": "a cave",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "small"
 		},
 		{
-			"name": "in a condo",
+			"name": "a condo",
 			"modern": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in an apartment",
+			"name": "an apartment",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a duplex",
+			"name": "a duplex",
 			"modern": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a mobile home",
+			"name": "a mobile home",
 			"modern": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a Winnebago",
+			"name": "a Winnebago",
 			"properName": true,
 			"modern": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a houseboat",
+			"name": "a houseboat",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a yacht",
+			"name": "a yacht",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a doghouse",
+			"name": "a doghouse",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a shack in the woods",
+			"name": "a shack in the woods",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
 			"name": "within an underpass",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "at a 7-11",
+			"name": "a 7-11",
+			"preposition": "at",
 			"properName": true,
 			"modern": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a ferris wheel",
+			"name": "a ferris wheel",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a submarine",
+			"name": "a submarine",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "at grandmother's mansion",
+			"name": "grandmother's mansion",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "at a fork in the road",
+			"name": "a fork in the road",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a crippled plane",
+			"name": "a crippled plane",
+			"preposition": "on",
 			"humanDistress": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in an empire",
+			"name": "an empire",
 			"specific": false,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Cuba",
+			"name": "Cuba",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "at the post office",
+			"name": "the post office",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
 			"name": "somewhere far away",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "variable"
 		},
 		{
-			"name": "in an empty tower",
+			"name": "an empty tower",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "at a laundromat",
+			"name": "a laundromat",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a mountain peak",
+			"name": "a mountain peak",
+			"preposition": "on",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "small"
 		},
 		{
-			"name": "at an ancient cemetery",
+			"name": "an ancient cemetery",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in Transylvania",
+			"name": "Transylvania",
 			"properName": true,
 			"fantasy": true,
 			"medievalFantasy": true,
 			"horror": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "on the Orient Express",
+			"name": "the Orient Express",
+			"preposition": "on",
 			"properName": true,
 			"historicalFiction": true,
-			"type": "place"
+			"place": true
 		},
 		{
-			"name": "at the Taj Mahal",
+			"name": "the Taj Mahal",
+			"preposition": "at",
 			"properName": true,
-			"type": "place"
+			"place": true
 		},
 		{
-			"name": "on the Red Sea",
+			"name": "the Red Sea",
+			"preposition": "on",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Pennsylvania",
+			"name": "Pennsylvania",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Nigeria",
+			"name": "Nigeria",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "at Mt. Everest",
+			"name": "Mt. Everest",
+			"preposition": "at",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "small"
 		},
 		{
-			"name": "in Thailand",
+			"name": "Thailand",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Hong Kong",
+			"name": "Hong Kong",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "at the Sydney Opera House",
+			"name": "the Sydney Opera House",
+			"preposition": "at",
 			"properName": true,
-			"type": "place"
+			"place": true
 		},
 		{
-			"name": "at the World Cup",
+			"name": "the World Cup",
+			"preposition": "at",
 			"properName": true,
 			"specific": false,
-			"type": "place",
+			"place": true,
 			"size": "small"
 		},
 		{
-			"name": "in South Korea",
+			"name": "South Korea",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in a carnival",
+			"name": "a carnival",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "at a haunted house",
+			"name": "a haunted house",
+			"preposition": "at",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in Nebraska",
+			"name": "Nebraska",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Poland",
+			"name": "Poland",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Ethiopia",
+			"name": "Ethiopia",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Indonesia",
+			"name": "Indonesia",
 			"properName": true,
+			"political": true,
 			"size": "large"
 		},
 		{
-			"name": "in the middle of nowhere",
+			"name": "the middle of nowhere",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "variable"
 		},
 		{
-			"name": "in North Korea",
+			"name": "North Korea",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Europe",
+			"name": "Europe",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "large"
 		},
 		{
-			"name": "at The Vatican",
+			"name": "The Vatican",
+			"preposition": "at",
 			"properName": true,
 			"religionAndMyths": true,
 			"christianity": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in Rome",
+			"name": "Rome",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in Wakanda",
+			"name": "Wakanda",
 			"properName": true,
 			"modern": true,
 			"fantasy": true,
 			"superhero": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "on a plateau",
+			"name": "a plateau",
+			"preposition": "on",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "medium"
 		},
 		{
-			"name": "by a funeral pyre",
+			"name": "a funeral pyre",
+			"preposition": "by",
 			"humanDeath": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a river",
+			"name": "a river",
+			"preposition": "on",
 			"specific": false,
-			"type": "geographical",
+			"geographical": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Florida",
+			"name": "Florida",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in a maze of corridors, all alike",
+			"name": "a maze of corridors, all alike",
 			"modern": true,
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "on a painted pathway",
+			"name": "a painted pathway",
+			"preposition": "on",
 			"specific": false,
-			"type": "construct"
+			"construct": true
 		},
 		{
-			"name": "in a better place",
+			"name": "a better place",
 			"religionAndMyths": true,
 			"christianity": true,
 			"specific": false,
-			"type": "construct",
+			"construct": true,
 			"size": "variable"
 		},
 		{
-			"name": "in Death Valley",
+			"name": "Death Valley",
 			"properName": true,
 			"humanDeath": true,
 			"humanDistress": true,
-			"type": "geographical",
+			"geographical": true,
 			"size": "small"
 		},
 		{
-			"name": "in Switzerland",
+			"name": "Switzerland",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Morocco",
+			"name": "Morocco",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Argentina",
+			"name": "Argentina",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Chile",
+			"name": "Chile",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Iraq",
+			"name": "Iraq",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Iran",
+			"name": "Iran",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Dubai",
+			"name": "Dubai",
 			"properName": true,
+			"political": true,
 			"size": "small"
 		},
 		{
-			"name": "in Libya",
+			"name": "Libya",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in New Zealand",
+			"name": "New Zealand",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Alaska",
+			"name": "Alaska",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Hawaii",
+			"name": "Hawaii",
 			"properName": true,
-			"type": "geographical",
+			"geographical": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Mexico",
+			"name": "Mexico",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Spain",
+			"name": "Spain",
 			"properName": true,
+			"political": true,
 			"size": "medium"
 		},
 		{
-			"name": "in Istanbul",
+			"name": "Istanbul",
 			"properName": true,
+			"political": true,
+			"size": "small"
 		},
 		{
 			"name": "the Oscars",
@@ -719,6 +818,6 @@
 			"specific": false,
 			"place": true,
 			"size": "small"
-		}	
+		}
 	]
 }
