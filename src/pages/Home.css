@@ -1,0 +1,3 @@
+ion-list.striped ion-item:nth-child(even)::part(native) {
+	background: var(--ion-background-shader);
+}
