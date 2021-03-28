@@ -34,6 +34,7 @@ interface ReducerAction {
 }
 interface StateObject {
 	theme: string
+	shake: boolean
 }
 type boolProp = "shake";
 export const blankAppState: StateObject = {
