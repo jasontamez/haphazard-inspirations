@@ -3,6 +3,7 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import Settings from './pages/Settings';
 import Theme from './pages/Theme';
 import Menu from './components/Menu';
 
@@ -52,6 +53,7 @@ const App = () => {
 						*/}
 						<IonRouterOutlet id="main">
 							<Route exact path="/home" render={() => <Home />} />
+							<Route exact path="/settings" render={() => <Settings />} />
 							<Route exact path="/theme" render={() => <Theme />} />
 							<Redirect exact={true} from="/" to="/home" />
 						</IonRouterOutlet>
