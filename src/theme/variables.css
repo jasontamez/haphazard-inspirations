@@ -111,7 +111,7 @@ http://ionicframework.com/docs/theming/ */
 	--ion-card-background: var(--ion-color-step-50);
 	--ion-card-color: var(--ion-color-light-shade);
 
-	--ion-border-color: #222222;
+	--ion-border-color: var(--ion-color-step-50);
 
 	--ion-background-shader: #6661;
 
@@ -193,7 +193,7 @@ body.LightTheme {
 	--ion-card-background: var(--ion-color-step-50);
 	--ion-card-color: var(--ion-color-light-shade);
 
-	--ion-border-color: #222222;
+	--ion-border-color: var(--ion-color-step-50);
 
 	--ion-background-shader: #3332;
 
@@ -303,7 +303,7 @@ body.SolarizedLightTheme {
 	--ion-card-background: var(--ion-color-light-tint);
 	--ion-card-color: var(--ion-color-dark-tint);
 
-	--ion-border-color: #222222;
+	--ion-border-color: var(--ion-color-step-50);
 
 	--ion-background-shader: #3332;
 
@@ -413,7 +413,7 @@ body.SolarizedDarkTheme {
 	--ion-card-background: var(--ion-color-dark-shade);
 	--ion-card-color: var(--ion-color-dark-shade);
 
-	--ion-border-color: #222222;
+	--ion-border-color: var(--ion-color-step-50);
 
 	--ion-background-shader: #8882;
 
@@ -525,7 +525,7 @@ body.DeepPurpleTheme {
 	--ion-card-background: var(--ion-color-dark-shade);
 	--ion-card-color: var(--ion-color-light-shade);
 
-	--ion-border-color: #222222;
+	--ion-border-color: var(--ion-color-step-50);
 
 	--ion-background-shader: #9991;
 
@@ -636,7 +636,7 @@ body.RoseGlassesTheme {
 	--ion-card-background: var(--ion-color-light-shade);
 	--ion-card-color: var(--ion-color-dark-shade);
 
-	--ion-border-color: #222222;
+	--ion-border-color: var(--ion-color-step-50);
 
 	--ion-background-shader: #3332;
 

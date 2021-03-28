@@ -1,3 +1,6 @@
 ion-list.striped ion-item:nth-child(even)::part(native) {
 	background: var(--ion-background-shader);
 }
+ion-list.buttonFilled ion-item {
+	border-bottom: 0.1rem solid var(--ion-border-color);
+}
