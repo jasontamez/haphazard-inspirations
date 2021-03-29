@@ -14,3 +14,37 @@ ion-list.striped ion-item:nth-child(even)::part(native) {
 ion-list.buttonFilled ion-item {
 	border-bottom: 0.1rem solid var(--ion-border-color);
 }
+ion-list.buttonFilled ion-list-header {
+	border-bottom: 0.1rem solid var(--ion-border-color);
+	background: var(--ion-background-color);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+ion-list.buttonFilled ion-list-header:nth-of-type(n+2) {
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+ion-list.buttonFilled ion-list-header:first-of-type {
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	min-height: unset;
+}
+ion-list.buttonFilled ion-list-header ion-label {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+ion-list.buttonFilled ion-list-header ion-note {
+	color: var(--ion-color-step-650);
+	font-weight: normal;
+	text-indent: 1rem;
+}
+ion-list.longLabels ion-item[button="true"] ion-label,
+ion-list.longLabels ion-list-header[button="true"] > * {
+	white-space: normal;
+}
+ion-item ion-label.subTopic {
+	text-indent: 1rem;
+}
