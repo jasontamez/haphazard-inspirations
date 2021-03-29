@@ -29,10 +29,10 @@ const MaybeLoadPresetModal = () => {
 	const themes = [
 		"Default",
 		"Light",
-		"DeepPurple",
-		"RoseGlasses",
+		"Solarized Dark",
 		"Solarized Light",
-		"Solarized Dark"
+		"DeepPurple",
+		"RoseGlasses"
 	];
 	return (
 		<IonPage>
