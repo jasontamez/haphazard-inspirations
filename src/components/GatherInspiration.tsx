@@ -35,8 +35,9 @@ const EnglishNumbers = [
 	"twenty"
 ];
 
-class BasicIdea {
+export class BasicIdea {
 	name?: string
+	type?: string
 	fantasy?: boolean
 	medievalFantasy?: boolean
 	historicalFiction?: boolean
@@ -145,6 +146,7 @@ proto.rateFavorsLower = def.rateFavorsLower;
 proto.plural = def.plural;
 proto.article = def.article;
 proto.numerals = def.numerals;
+proto.type = "object";
 
 class Character extends PossiblePlural {
 	realPerson?: boolean
@@ -159,6 +161,7 @@ proto.plural = def.plural;
 proto.article = def.article;
 proto.numerals = def.numerals;
 proto.realPerson = def.realPerson;
+proto.type = "character";
 
 class Locale extends BasicIdea {
 	political?: boolean
@@ -176,6 +179,7 @@ def = locale.default;
 proto.size = def.size;
 proto.specific = def.specific;
 proto.preposition = def.preposition;
+proto.type = "locale";
 
 class AnEvent extends BasicIdea {
 	plural?: boolean
@@ -188,33 +192,47 @@ proto = AnEvent.prototype;
 def = event.default;
 proto.plural = def.plural;
 proto.punctual = def.punctual;
+proto.type = "event";
 
 class Topic extends BasicIdea {
 	getIdea() {
 		return this.name || "thing";
 	}
 }
+Topic.prototype.type = "topic";
 
 class Time extends BasicIdea {
 	getIdea() {
 		return this.name || "thing";
 	}
 }
+Time.prototype.type = "time";
 
 class Action extends BasicIdea {
 	getIdea() {
 		return this.name || "thing";
 	}
 }
+Action.prototype.type = "action";
 
-const inspirations = {
-	actions: action.content.map(a => new Action(a)),
-	characters: characters.content.map(c => new Character(c)),
-	events: event.content.map(e => new AnEvent(e)),
-	locales: locale.content.map(l => new Locale(l)),
-	objects: object.content.map(o => new AnObject(o)),
-	times: time.content.map(t => new Time(t)),
-	topics: topic.content.map(t => new Topic(t))
-};
+//const inspiration = {
+//	actions: action.content.map(a => new Action(a)),
+//	characters: characters.content.map(c => new Character(c)),
+//	events: event.content.map(e => new AnEvent(e)),
+//	locales: locale.content.map(l => new Locale(l)),
+//	objects: object.content.map(o => new AnObject(o)),
+//	times: time.content.map(t => new Time(t)),
+//	topics: topic.content.map(t => new Topic(t))
+//};
+
+const inspirations: BasicIdea[] = [
+	...action.content.map(a => new Action(a)),
+	...characters.content.map(c => new Character(c)),
+	...event.content.map(e => new AnEvent(e)),
+	...locale.content.map(l => new Locale(l)),
+	...object.content.map(o => new AnObject(o)),
+	...time.content.map(t => new Time(t)),
+	...topic.content.map(t => new Topic(t))
+];
 
 export default inspirations;
