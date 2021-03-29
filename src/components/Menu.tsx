@@ -26,7 +26,7 @@ const Menu = () => {
 					<IonListHeader>Haphazard Inspirations</IonListHeader>
 					<IonNote></IonNote>
 					<IonMenuToggle autoHide={false}>
-						<IonItem routerLink="/settings" routerDirection="forward" detail={false}>
+						<IonItem routerLink="/home" routerDirection="forward" detail={false}>
 							<IonIcon slot="start" icon={homeSharp} />
 							<IonLabel>Home</IonLabel>
 						</IonItem>
