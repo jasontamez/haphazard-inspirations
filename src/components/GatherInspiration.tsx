@@ -47,7 +47,6 @@ class BasicIdea {
 	scifi?: boolean
 	spacefaring?: boolean
 	properName?: boolean
-	realPerson?: boolean
 	humanDeath?: boolean
 	humanDistress?: boolean
 	animalDeath?: boolean
@@ -138,7 +137,9 @@ proto.plural = def.plural;
 proto.article = def.article;
 proto.numerals = def.numerals;
 
-class Character extends PossiblePlural {}
+class Character extends PossiblePlural {
+	realPerson?: boolean
+}
 proto = Character.prototype;
 def = characters.default;
 proto.min = def.min;
@@ -148,6 +149,7 @@ proto.rateFavorsLower = def.rateFavorsLower;
 proto.plural = def.plural;
 proto.article = def.article;
 proto.numerals = def.numerals;
+proto.realPerson = def.realPerson;
 
 class Locale extends BasicIdea {
 	place?: boolean

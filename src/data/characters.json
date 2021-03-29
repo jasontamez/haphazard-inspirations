@@ -6,7 +6,8 @@
 		"rateFavorsLower": true,
 		"plural": "s",
 		"article": "a",
-		"numerals": false
+		"numerals": false,
+		"realPerson": false
 	},
 	"content": [
 		{
