@@ -44,7 +44,7 @@ const MaybeLoadPresetModal = () => {
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>
-			<IonContent fullscreen>
+			<IonContent fullscreen className="onlyList">
 				<IonList lines="none" className="buttonFilled striped">
 					{themes.map((theme) => (
 						<IonItem key={theme} button={true} detail={false} onClick={() => changeAppTheme(theme)}>

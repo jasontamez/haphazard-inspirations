@@ -1,3 +1,13 @@
+ion-content.onlyList::part(background) {
+	background: var(--ion-item-background);
+}
+ion-content.onlyList {
+	--ion-background-shader: var(--ion-background-color);
+}
+ion-content.onlyList ion-list {
+	margin: 0;
+	padding: 0;
+}
 ion-list.striped ion-item:nth-child(even)::part(native) {
 	background: var(--ion-background-shader);
 }
