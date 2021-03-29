@@ -152,7 +152,6 @@ proto.numerals = def.numerals;
 proto.realPerson = def.realPerson;
 
 class Locale extends BasicIdea {
-	place?: boolean
 	political?: boolean
 	geographical?: boolean
 	construct?: boolean

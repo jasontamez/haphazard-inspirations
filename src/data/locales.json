@@ -76,7 +76,7 @@
 		{
 			"name": "a large newspaper",
 			"proposition": "at",
-			"properName": true,
+			"specific": false,
 			"construct": true
 		},
 		{
@@ -191,6 +191,7 @@
 			"name": "along the Nile",
 			"properName": true,
 			"geographical": true,
+			"preposition": "somewhere",
 			"size": "large"
 		},
 		{
@@ -202,8 +203,7 @@
 		{
 			"name": "Notre Dame",
 			"preposition": "at",
-			"properName": true,
-			"place": true
+			"properName": true
 		},
 		{
 			"name": "a brick road",
@@ -221,7 +221,6 @@
 		{
 			"name": "a famous birthplace",
 			"specific": false,
-			"place": true,
 			"size": "small"
 		},
 		{
@@ -319,7 +318,6 @@
 			"properName": true,
 			"humanDistress": true,
 			"humanDeath": true,
-			"place": true,
 			"size": "small"
 		},
 		{
@@ -527,14 +525,12 @@
 			"name": "the Orient Express",
 			"preposition": "on",
 			"properName": true,
-			"historicalFiction": true,
-			"place": true
+			"historicalFiction": true
 		},
 		{
 			"name": "the Taj Mahal",
 			"preposition": "at",
-			"properName": true,
-			"place": true
+			"properName": true
 		},
 		{
 			"name": "the Red Sea",
@@ -577,15 +573,13 @@
 		{
 			"name": "the Sydney Opera House",
 			"preposition": "at",
-			"properName": true,
-			"place": true
+			"properName": true
 		},
 		{
 			"name": "the World Cup",
 			"preposition": "at",
 			"properName": true,
 			"specific": false,
-			"place": true,
 			"size": "small"
 		},
 		{
@@ -816,7 +810,34 @@
 			"preposition": "at",
 			"properName": true,
 			"specific": false,
-			"place": true,
+			"size": "small"
+		},
+		{
+			"name": "the UN",
+			"preposition": "at",
+			"properName": true,
+			"specific": true,
+			"size": "small"
+		},
+		{
+			"name": "a bedroom",
+			"specific": false,
+			"construct": true
+		},
+		{
+			"name": "a bathroom",
+			"specific": false,
+			"construct": true
+		},
+		{
+			"name": "a wedding",
+			"specific": false,
+			"construct": true
+		},
+		{
+			"name": "an ancient kingdom",
+			"specific": false,
+			"political": true,
 			"size": "small"
 		}
 	]
