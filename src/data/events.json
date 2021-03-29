@@ -119,8 +119,7 @@
 		},
 		{
 			"name": "Netflix keeps buffering",
-			"modern": true,
-			"punctual": false
+			"modern": true
 		},
 		{
 			"name": "baptism",
