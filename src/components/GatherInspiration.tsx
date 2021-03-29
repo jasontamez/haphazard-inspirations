@@ -60,8 +60,17 @@ class BasicIdea {
 	tobacco?: boolean
 	modern?: boolean
 	constructor(initializer: any) {
-		let newObj = this;
-		Object.getOwnPropertyNames(initializer).forEach((prop) =>(newObj[prop as keyof BasicIdea] = initializer[prop]));
+		let newObj: any = this;
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+	}
+	omitIf(prop: any) {
+		if(this[prop as keyof this]) {
+			return true;
+		}
+		return false;
 	}
 }
 
