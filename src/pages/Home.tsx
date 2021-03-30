@@ -22,9 +22,28 @@ const Home = () => {
 	const dispatch = useDispatch();
 	const settings = state.settings;
 	// Handle shake-to-update
-	settings.shake && Shake.startWatch().subscribe(() => makeIdea());
+	settings.shake && Shake.startWatch().subscribe(() => {forceNewIdea(1); forceNewIdea(2);});
+	const getOmissions = () => {
+		let objects: any[] = [
+			state.locales,
+			state.genres,
+			state.content,
+			state.person,
+			state.event,
+			state.triggers
+		];
+		let omissions: string[] = [];
+		objects.forEach((o: any) => {
+			Object.keys(o).forEach((k: string) => {
+				if(o[k]) {
+					omissions.push(k);
+				}
+			});
+		});
+		return omissions;
+	};
 
-	const inspirations = makeInspirations();
+	const inspirations = makeInspirations(getOmissions());
 
 	const getNewIdea = () => {
 		return inspirations[generateRandomNumber(inspirations.length)];
