@@ -96,6 +96,10 @@ const Home = () => {
 						<IonLabel className="subTopic">Western Medieval Fantasy</IonLabel>
 						<IonToggle slot="end" disabled={genres.fantasy} checked={genres.fantasy || genres.medievalFantasy} />
 					</IonItem>
+					<IonItem button={true} onClick={() => dispatch(toggleGenre("superhero"))}>
+						<IonLabel className="subTopic">Superheroes</IonLabel>
+						<IonToggle slot="end" disabled={genres.superhero} checked={genres.fantasy || genres.superhero} />
+					</IonItem>
 					<IonItem button={true} onClick={() => dispatch(toggleGenre("historicalFiction"))}>
 						<IonLabel>Historical Fiction</IonLabel>
 						<IonToggle slot="end" checked={genres.historicalFiction} />
