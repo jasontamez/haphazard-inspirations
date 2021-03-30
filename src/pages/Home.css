@@ -48,3 +48,9 @@ ion-list.longLabels ion-list-header[button="true"] > * {
 ion-item ion-label.subTopic {
 	text-indent: 1rem;
 }
+p.theIdea::first-letter {
+	text-transform: capitalize;
+}
+p.theIdea span.idea {
+	font-style: italic;
+}
