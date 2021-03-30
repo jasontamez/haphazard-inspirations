@@ -1,10 +1,10 @@
 import characters from '../data/characters.json';
-import action from '../data/characters.json';
-import event from '../data/characters.json';
-import locale from '../data/characters.json';
-import time from '../data/characters.json';
-import object from '../data/characters.json';
-import topic from '../data/characters.json';
+import action from '../data/actions.json';
+import event from '../data/events.json';
+import locale from '../data/locales.json';
+import time from '../data/times.json';
+import object from '../data/objects.json';
+import topic from '../data/topics.json';
 
 //npm install english-number
 //import { nameOf } from 'english-number';
@@ -36,7 +36,7 @@ const EnglishNumbers = [
 ];
 
 export class BasicIdea {
-	name?: string
+	idea?: string
 	type?: string
 	fantasy?: boolean
 	medievalFantasy?: boolean
@@ -60,18 +60,11 @@ export class BasicIdea {
 	alcohol?: boolean
 	tobacco?: boolean
 	modern?: boolean
-	constructor(initializer: any) {
-		let newObj: any = this;
-		Object.getOwnPropertyNames(initializer).forEach(
-			(prop: string) =>
-				(newObj[prop] = initializer[prop])
-		);
-	}
-	omitIf(prop: any) {
-		if(this[prop as keyof this]) {
-			return true;
-		}
-		return false;
+	// eslint-disable-next-line
+	constructor() {}
+	getIdea() {
+		console.log(this);
+		return this.idea || "idea";
 	}
 }
 
@@ -87,18 +80,20 @@ class PossiblePlural extends BasicIdea {
 	getNumber(n: number) {
 		return EnglishNumbers[n];
 	}
-	getIdea() {
-		const plural = this.plural || "s";
-		const n = this.name || "thing";
-		if((typeof plural) === "boolean") {
-			return n;
+	getIdea(Idea = this) {
+		console.log(Idea);
+		const plu = Idea.plural;
+		const idea = Idea.idea || "idea";
+		if((typeof plu) === "boolean") {
+			return idea;
 		}
-		const article = this.article || "a";
+		const plural = plu || "s";
+		const article = Idea.article || "a";
 		let amounts: number[] = [];
-		const rate = this.rateBy;
-		let min = this.min || 0;
-		let max = this.max || 5;
-		if(this.rateFavorsLower) {
+		const rate = Idea.rateBy === undefined ? 1 : Idea.rateBy;
+		let min = Idea.min || 0;
+		let max = Idea.max || 5;
+		if(Idea.rateFavorsLower) {
 			let many = 1;
 			while(max >= min) {
 				for(let x = 0; x < many; x++) {
@@ -108,7 +103,7 @@ class PossiblePlural extends BasicIdea {
 				if(rate === "incremental") {
 					many++;
 				} else {
-					many = many * rate!;
+					many = many * rate;
 				}
 			}
 		} else {
@@ -121,47 +116,62 @@ class PossiblePlural extends BasicIdea {
 				if(rate === "incremental") {
 					many++;
 				} else {
-					many = many * rate!;
+					many = many * rate;
 				}
 			}
 		}
 		let choice = amounts[Math.floor(Math.random() * amounts.length)];
 		if(choice === 0) {
-			return n + plural;
+			return idea + plural;
 		} else if (choice === 1) {
-			return article + " " + n;
-		} else if (this.numerals) {
-			return choice.toString() + " " + n + plural;
+			return article + " " + idea;
+		} else if (Idea.numerals) {
+			return choice.toString() + " " + idea + plural;
 		}
-		return EnglishNumbers[choice] + " " + n + plural;
+		return EnglishNumbers[choice] + " " + idea + plural;
 	}
 }
-class AnObject extends PossiblePlural {}
-let proto: any = AnObject.prototype;
-let def: any = object.default;
-proto.min = def.min;
-proto.max = def.max;
-proto.rateBy = def.rateBy;
-proto.rateFavorsLower = def.rateFavorsLower;
-proto.plural = def.plural;
-proto.article = def.article;
-proto.numerals = def.numerals;
-proto.type = "object";
+class AnObject extends PossiblePlural {
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = object.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "object";
+	}
+}
 
 class Character extends PossiblePlural {
 	realPerson?: boolean
+	getIdea() {
+		if(this.realPerson) {
+			console.log(this);
+			return this.idea || "idea";
+		}
+		return super.getIdea(this);
+	}
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = characters.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "character";
+	}
 }
-proto = Character.prototype;
-def = characters.default;
-proto.min = def.min;
-proto.max = def.max;
-proto.rateBy = def.rateBy;
-proto.rateFavorsLower = def.rateFavorsLower;
-proto.plural = def.plural;
-proto.article = def.article;
-proto.numerals = def.numerals;
-proto.realPerson = def.realPerson;
-proto.type = "character";
 
 class Locale extends BasicIdea {
 	political?: boolean
@@ -171,68 +181,114 @@ class Locale extends BasicIdea {
 	size?: "large" | "medium" | "small" | "variable" | "tiny"
 	specific?: boolean
 	getIdea() {
-		return (this.preposition || "in") + " " + (this.name || "thing");
+		console.log(this);
+		return (this.preposition || "in") + " " + (this.idea || "idea");
+	}
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = locale.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "locale";
 	}
 }
-proto = Locale.prototype;
-def = locale.default;
-proto.size = def.size;
-proto.specific = def.specific;
-proto.preposition = def.preposition;
-proto.type = "locale";
 
 class AnEvent extends BasicIdea {
 	plural?: boolean
 	punctual?: boolean
-	getIdea() {
-		return this.name || "thing";
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = event.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "event";
 	}
 }
-proto = AnEvent.prototype;
-def = event.default;
-proto.plural = def.plural;
-proto.punctual = def.punctual;
-proto.type = "event";
 
 class Topic extends BasicIdea {
-	getIdea() {
-		return this.name || "thing";
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = topic.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "topic";
 	}
 }
-Topic.prototype.type = "topic";
 
 class Time extends BasicIdea {
-	getIdea() {
-		return this.name || "thing";
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = time.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "time";
 	}
 }
-Time.prototype.type = "time";
 
 class Action extends BasicIdea {
-	getIdea() {
-		return this.name || "thing";
+	constructor(initializer: any) {
+		super();
+		let newObj: any = this;
+		const parent: any = action.default;
+		Object.getOwnPropertyNames(parent).forEach(
+			(prop: string) =>
+				(newObj[prop] = parent[prop])
+		);
+		Object.getOwnPropertyNames(initializer).forEach(
+			(prop: string) =>
+				(newObj[prop] = initializer[prop])
+		);
+		this.type = "action";
 	}
 }
-Action.prototype.type = "action";
 
-//const inspiration = {
-//	actions: action.content.map(a => new Action(a)),
-//	characters: characters.content.map(c => new Character(c)),
-//	events: event.content.map(e => new AnEvent(e)),
-//	locales: locale.content.map(l => new Locale(l)),
-//	objects: object.content.map(o => new AnObject(o)),
-//	times: time.content.map(t => new Time(t)),
-//	topics: topic.content.map(t => new Topic(t))
-//};
+const filter = (original: any[], omit: string[] = []) => {
+	if(omit.length === 0) {
+		return original;
+	}
+	return original.filter((test: any) => 
+		!omit.some((prop: string) => test[prop])
+	);
+};
 
-const inspirations: BasicIdea[] = [
-	...action.content.map(a => new Action(a)),
-	...characters.content.map(c => new Character(c)),
-	...event.content.map(e => new AnEvent(e)),
-	...locale.content.map(l => new Locale(l)),
-	...object.content.map(o => new AnObject(o)),
-	...time.content.map(t => new Time(t)),
-	...topic.content.map(t => new Topic(t))
-];
-
-export default inspirations;
+const makeInspirations = (omit: string[] = []) => {
+	const inspirations: BasicIdea[] = [
+		...filter(action.contents, omit).map(a => new Action(a)),
+		...filter(characters.contents, omit).map(c => new Character(c)),
+		...filter(event.contents, omit).map(e => new AnEvent(e)),
+		...filter(locale.contents, omit).map(l => new Locale(l)),
+		...filter(object.contents, omit).map(o => new AnObject(o)),
+		...filter(time.contents, omit).map(t => new Time(t)),
+		...filter(topic.contents, omit).map(t => new Topic(t))
+	];
+	return inspirations;
+}
+export default makeInspirations;

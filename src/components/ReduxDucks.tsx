@@ -1,5 +1,6 @@
 import maybeUpdateTheme from './MaybeUpdateTheme';
 import { StateStorage } from './PersistentInfo';
+import { BasicIdea } from './GatherInspiration';
 import debounce from './Debounce';
 
 //
@@ -9,6 +10,7 @@ import debounce from './Debounce';
 //
 const p = "haphazard-inspiration/reducer/";
 const UPDATE_THEME = p+"UPDATE_THEME";
+const UPDATE_IDEA = p+"UPDATE_IDEA";
 const TOGGLE_SETTING = p+"TOGGLE_SETTING";
 const TOGGLE_LOCALE = p+"TOGGLE_LOCALE";
 const TOGGLE_GENRE = p+"TOGGLE_GENRE";
@@ -24,6 +26,9 @@ const TOGGLE_TRIGGER = p+"TOGGLE_TRIGGER";
 //
 export function updateTheme(payload: string) {
 	return {type: UPDATE_THEME, payload};
+}
+export function updateIdea(payload: [number, BasicIdea]) {
+	return {type: UPDATE_IDEA, payload};
 }
 export function toggleSetting(payload: keyof SettingsObject) {
 	return {type: TOGGLE_SETTING, payload};
@@ -103,6 +108,9 @@ interface TriggersObject {
 }
 export interface StateObject {
 	theme: string
+	idea1: BasicIdea | null
+	idea2: BasicIdea | null
+	used: string[]
 	settings: SettingsObject
 	locales: LocalesObject
 	genres: GenresObject
@@ -113,6 +121,9 @@ export interface StateObject {
 }
 export const blankAppState: StateObject = {
 	theme: "Default",
+	idea1: null,
+	idea2: null,
+	used: [],
 	settings: {
 		shake: false
 	},
@@ -168,6 +179,9 @@ export const blankAppState: StateObject = {
 const reduceAll = (state: StateObject) => {
 	return {
 		theme: state.theme,
+		idea1: state.idea1,
+		idea2: state.idea2,
+		used: [...state.used],
 		settings: {...state.settings},
 		locales: {...state.locales},
 		genres: {...state.genres},
@@ -192,6 +206,15 @@ export function reducer(state: StateObject = blankAppState, action: ReducerActio
 			final = reduceAll(state);
 			final.theme = payload;
 			maybeUpdateTheme(state.theme, payload);
+			break;
+		case UPDATE_IDEA:
+			final = reduceAll(state);
+			let [which, idea] = payload;
+			if(which === 1) {
+				final.idea1 = idea;
+			} else {
+				final.idea2 = idea;
+			}
 			break;
 		case TOGGLE_SETTING:
 			b = payload;

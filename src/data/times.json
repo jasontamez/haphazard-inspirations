@@ -1,76 +1,76 @@
 {
 	"default": {},
-	"content": [
+	"contents": [
 		{
-			"name": "on Christmas Eve",
+			"idea": "on Christmas Eve",
 			"properName": true,
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "at the crack of dawn"
+			"idea": "at the crack of dawn"
 		},
 		{
-			"name": "at midnight"
+			"idea": "at midnight"
 		},
 		{
-			"name": "at lunchtime"
+			"idea": "at lunchtime"
 		},
 		{
-			"name": "at dinnertime"
+			"idea": "at dinnertime"
 		},
 		{
-			"name": "at breakfast"
+			"idea": "at breakfast"
 		},
 		{
-			"name": "on New Year's Eve",
+			"idea": "on New Year's Eve",
 			"properName": true
 		},
 		{
-			"name": "on New Year's Day",
+			"idea": "on New Year's Day",
 			"properName": true
 		},
 		{
-			"name": "on Halloween",
+			"idea": "on Halloween",
 			"properName": true
 		},
 		{
-			"name": "at high noon",
+			"idea": "at high noon",
 			"properName": true,
 			"historicalFiction": true,
 			"western": true
 		},
 		{
-			"name": "at bedtime"
+			"idea": "at bedtime"
 		},
 		{
-			"name": "during the weekend"
+			"idea": "during the weekend"
 		},
 		{
-			"name": "tomorrow"
+			"idea": "tomorrow"
 		},
 		{
-			"name": "yesterday"
+			"idea": "yesterday"
 		},
 		{
-			"name": "sometime last week"
+			"idea": "sometime last week"
 		},
 		{
-			"name": "seven years from now"
+			"idea": "seven years from now"
 		},
 		{
-			"name": "in 100 years",
+			"idea": "in 100 years",
 			"scifi": true
 		},
 		{
-			"name": "during the Middle Ages",
+			"idea": "during the Middle Ages",
 			"historicalFiction": true
 		},
 		{
-			"name": "in the 20th century"
+			"idea": "in the 20th century"
 		},
 		{
-			"name": "during a week's vacation"
+			"idea": "during a week's vacation"
 		}
 	]
 }

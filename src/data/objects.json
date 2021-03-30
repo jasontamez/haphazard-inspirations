@@ -10,599 +10,599 @@
 	},
 	"contents": [
 		{
-			"name": "licorice"
+			"idea": "licorice"
 		},
 		{
-			"name": "cotton candy"
+			"idea": "cotton candy"
 		},
 		{
-			"name": "strangely-colored liquid"
+			"idea": "strangely-colored liquid"
 		},
 		{
-			"name": "whole wheat bread",
+			"idea": "whole wheat bread",
 			"modern": true
 		},
 		{
-			"name": "carbonated water",
+			"idea": "carbonated water",
 			"modern": true
 		},
 		{
-			"name": "nectarines",
+			"idea": "nectarines",
 			"plural": true
 		},
 		{
-			"name": "pumpkin",
+			"idea": "pumpkin",
 			"plural": "s"
 		},
 		{
-			"name": "a tandem bicycle"
+			"idea": "a tandem bicycle"
 		},
 		{
-			"name": "tanks",
+			"idea": "tanks",
 			"humanDistress": true,
 			"humanDeath": true,
 			"plural": true
 		},
 		{
-			"name": "very full shopping bag",
+			"idea": "very full shopping bag",
 			"plural": "s",
 			"max": 12,
 			"rateBy": 2
 		},
 		{
-			"name": "fireworks",
+			"idea": "fireworks",
 			"plural": true
 		},
 		{
-			"name": "rumpled sheets",
+			"idea": "rumpled sheets",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "tarts",
+			"idea": "tarts",
 			"plural": true
 		},
 		{
-			"name": "the vacuum cleaner"
+			"idea": "the vacuum cleaner"
 		},
 		{
-			"name": "a chrysalis"
+			"idea": "a chrysalis"
 		},
 		{
-			"name": "posies",
+			"idea": "posies",
 			"plural": true
 		},
 		{
-			"name": "posters on a bedroom wall",
+			"idea": "posters on a bedroom wall",
 			"plural": true
 		},
 		{
-			"name": "a jump rope"
+			"idea": "a jump rope"
 		},
 		{
-			"name": "psychoactive drugs",
+			"idea": "psychoactive drugs",
 			"modern": true,
 			"illicitSubstances": true,
 			"plural": true
 		},
 		{
-			"name": "whiskey",
+			"idea": "whiskey",
 			"alcohol": true
 		},
 		{
-			"name": "cyanide",
+			"idea": "cyanide",
 			"humanDeath": true,
 			"humanDistress": true
 		},
 		{
-			"name": "trees",
+			"idea": "trees",
 			"plural": true
 		},
 		{
-			"name": "a sword that is also a key",
+			"idea": "a sword that is also a key",
 			"modern": true,
 			"fantasy": true
 		},
 		{
-			"name": "cocaine",
+			"idea": "cocaine",
 			"illicitSubstances": true
 		},
 		{
-			"name": "vodka",
+			"idea": "vodka",
 			"alcohol": true
 		},
 		{
-			"name": "tornadoes",
+			"idea": "tornadoes",
 			"humanDistress": true,
 			"humanDeath": true,
 			"plural": true
 		},
 		{
-			"name": "jello shots",
+			"idea": "jello shots",
 			"alcohol": true,
 			"plural": true
 		},
 		{
-			"name": "parasites",
+			"idea": "parasites",
 			"humanDistress": true,
 			"animalDistress": true,
 			"plural": true
 		},
 		{
-			"name": "underground fires",
+			"idea": "underground fires",
 			"plural": true
 		},
 		{
-			"name": "a welcome mat"
+			"idea": "a welcome mat"
 		},
 		{
-			"name": "iodine"
+			"idea": "iodine"
 		},
 		{
-			"name": "a particular tattoo"
+			"idea": "a particular tattoo"
 		},
 		{
-			"name": "a Star of David",
+			"idea": "a Star of David",
 			"religionAndMyths": true
 		},
 		{
-			"name": "calcium"
+			"idea": "calcium"
 		},
 		{
-			"name": "vicodin"
+			"idea": "vicodin"
 		},
 		{
-			"name": "an aging star",
+			"idea": "an aging star",
 			"scifi": true,
 			"spacefaring": true
 		},
 		{
-			"name": "chalk"
+			"idea": "chalk"
 		},
 		{
-			"name": "different melodies",
+			"idea": "different melodies",
 			"plural": "",
 			"min": 2,
 			"rateBy": 2
 		},
 		{
-			"name": "gravy"
+			"idea": "gravy"
 		},
 		{
-			"name": "fresh fruit"
+			"idea": "fresh fruit"
 		},
 		{
-			"name": "ravioli"
+			"idea": "ravioli"
 		},
 		{
-			"name": "love letters",
+			"idea": "love letters",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "Webster's Dictionary",
+			"idea": "Webster's Dictionary",
 			"properName": true
 		},
 		{
-			"name": "a stomach"
+			"idea": "a stomach"
 		},
 		{
-			"name": "baby shoes",
+			"idea": "baby shoes",
 			"plural": true
 		},
 		{
-			"name": "kites",
+			"idea": "kites",
 			"plural": true
 		},
 		{
-			"name": "lanterns",
+			"idea": "lanterns",
 			"plural": true
 		},
 		{
-			"name": "menthol cigarettes",
+			"idea": "menthol cigarettes",
 			"tobacco": true,
 			"plural": true
 		},
 		{
-			"name": "helicopters",
+			"idea": "helicopters",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "tulips",
+			"idea": "tulips",
 			"plural": true
 		},
 		{
-			"name": "brightly-colored shoelaces",
+			"idea": "brightly-colored shoelaces",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "hand sanitizer",
+			"idea": "hand sanitizer",
 			"modern": true
 		},
 		{
-			"name": "tuna fish sandwiches",
+			"idea": "tuna fish sandwiches",
 			"plural": true
 		},
 		{
-			"name": "a clear box"
+			"idea": "a clear box"
 		},
 		{
-			"name": "thunder without lightning"
+			"idea": "thunder without lightning"
 		},
 		{
-			"name": "earmuffs",
+			"idea": "earmuffs",
 			"plural": true
 		},
 		{
-			"name": "zippers",
+			"idea": "zippers",
 			"plural": true
 		},
 		{
-			"name": "razor blades",
+			"idea": "razor blades",
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "silent windchimes",
+			"idea": "silent windchimes",
 			"plural": true
 		},
 		{
-			"name": "a whip",
+			"idea": "a whip",
 			"humanDistress": true
 		},
 		{
-			"name": "matches",
+			"idea": "matches",
 			"plural": true
 		},
 		{
-			"name": "zoning permits",
+			"idea": "zoning permits",
 			"plural": true
 		},
 		{
-			"name": "thirty-three teeth",
+			"idea": "thirty-three teeth",
 			"plural": true
 		},
 		{
-			"name": "skull",
+			"idea": "skull",
 			"humanDeath": true
 		},
 		{
-			"name": "zebra-patterned fabric"
+			"idea": "zebra-patterned fabric"
 		},
 		{
-			"name": "grilled cheese sandwiches",
+			"idea": "grilled cheese sandwiches",
 			"plural": true
 		},
 		{
-			"name": "gum"
+			"idea": "gum"
 		},
 		{
-			"name": "an arrow pointing to the left"
+			"idea": "an arrow pointing to the left"
 		},
 		{
-			"name": "a long rubber hose",
+			"idea": "a long rubber hose",
 			"humanDeath": true
 		},
 		{
-			"name": "Pandora's Box",
+			"idea": "Pandora's Box",
 			"religionAndMyths": true,
 			"greekRomanMyth": true
 		},
 		{
-			"name": "an out-of-tune organ"
+			"idea": "an out-of-tune organ"
 		},
 		{
-			"name": "glowing plutonium",
+			"idea": "glowing plutonium",
 			"modern": true,
 			"humanDistress": true
 		},
 		{
-			"name": "snap-button shirts",
+			"idea": "snap-button shirts",
 			"plural": true
 		},
 		{
-			"name": "a purple belt"
+			"idea": "a purple belt"
 		},
 		{
-			"name": "stained glass",
+			"idea": "stained glass",
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "ponytails",
+			"idea": "ponytails",
 			"plural": true
 		},
 		{
-			"name": "melting clocks",
+			"idea": "melting clocks",
 			"plural": true
 		},
 		{
-			"name": "a dead Jesus on a wall",
+			"idea": "a dead Jesus on a wall",
 			"religionAndMyths": true,
 			"christianity": true,
 			"humanDeath": true
 		},
 		{
-			"name": "a bra",
+			"idea": "a bra",
 			"sexual": true
 		},
 		{
-			"name": "shoes that are too tight",
+			"idea": "shoes that are too tight",
 			"plural": true
 		},
 		{
-			"name": "cheap beer",
+			"idea": "cheap beer",
 			"alcohol": true
 		},
 		{
-			"name": "seashells",
+			"idea": "seashells",
 			"plural": true
 		},
 		{
-			"name": "vomit",
+			"idea": "vomit",
 			"humanDistress": true
 		},
 		{
-			"name": "clean pajamas",
+			"idea": "clean pajamas",
 			"plural": true
 		},
 		{
-			"name": "a sunburn",
+			"idea": "a sunburn",
 			"humanDistress": true
 		},
 		{
-			"name": "old cologne"
+			"idea": "old cologne"
 		},
 		{
-			"name": "sulfur"
+			"idea": "sulfur"
 		},
 		{
-			"name": "a new scar",
+			"idea": "a new scar",
 			"humanDistress": true
 		},
 		{
-			"name": "cream pies",
+			"idea": "cream pies",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "a new hairdo"
+			"idea": "a new hairdo"
 		},
 		{
-			"name": "a lost key"
+			"idea": "a lost key"
 		},
 		{
-			"name": "a favorite shirt"
+			"idea": "a favorite shirt"
 		},
 		{
-			"name": "jelly beans",
+			"idea": "jelly beans",
 			"plural": true
 		},
 		{
-			"name": "a rusty nail"
+			"idea": "a rusty nail"
 		},
 		{
-			"name": "oily rags"
+			"idea": "oily rags"
 		},
 		{
-			"name": "soup that is too cold"
+			"idea": "soup that is too cold"
 		},
 		{
-			"name": "a new street drug",
+			"idea": "a new street drug",
 			"illicitSubstances": true
 		},
 		{
-			"name": "the perfect outfit"
+			"idea": "the perfect outfit"
 		},
 		{
-			"name": "a bloody piece of clothing",
+			"idea": "a bloody piece of clothing",
 			"humanDistress": true
 		},
 		{
-			"name": "dark lenses",
+			"idea": "dark lenses",
 			"plural": true
 		},
 		{
-			"name": "oncoming traffic",
+			"idea": "oncoming traffic",
 			"modern": true,
 			"humanDistress": true
 		},
 		{
-			"name": "newts",
+			"idea": "newts",
 			"plural": true
 		},
 		{
-			"name": "a silver trident",
+			"idea": "a silver trident",
 			"religionAndMyths": true,
 			"greekRomanMyth": true
 		},
 		{
-			"name": "Gorgonzola cheese",
+			"idea": "Gorgonzola cheese",
 			"properName": true
 		},
 		{
-			"name": "asteroids",
+			"idea": "asteroids",
 			"scifi": true,
 			"spacefaring": true,
 			"plural": true
 		},
 		{
-			"name": "planets",
+			"idea": "planets",
 			"scifi": true,
 			"spacefaring": true,
 			"plural": true
 		},
 		{
-			"name": "galaxies",
+			"idea": "galaxies",
 			"scifi": true,
 			"spacefaring": true,
 			"plural": true
 		},
 		{
-			"name": "star systems",
+			"idea": "star systems",
 			"scifi": true,
 			"spacefaring": true,
 			"plural": true
 		},
 		{
-			"name": "jumbo shrimp"
+			"idea": "jumbo shrimp"
 		},
 		{
-			"name": "a muddy flag"
+			"idea": "a muddy flag"
 		},
 		{
-			"name": "juniper bushes",
+			"idea": "juniper bushes",
 			"plural": true
 		},
 		{
-			"name": "cloudy water"
+			"idea": "cloudy water"
 		},
 		{
-			"name": "dog poop"
+			"idea": "dog poop"
 		},
 		{
-			"name": "fangs",
+			"idea": "fangs",
 			"animalDistress": true,
 			"humanDistress": true
 		},
 		{
-			"name": "elevators",
+			"idea": "elevators",
 			"plural": true
 		},
 		{
-			"name": "an electrical socket"
+			"idea": "an electrical socket"
 		},
 		{
-			"name": "a jukebox"
+			"idea": "a jukebox"
 		},
 		{
-			"name": "planks of wood"
+			"idea": "planks of wood"
 		},
 		{
-			"name": "a small piece of metal"
+			"idea": "a small piece of metal"
 		},
 		{
-			"name": "lost credit cards",
+			"idea": "lost credit cards",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "a cornucopia"
+			"idea": "a cornucopia"
 		},
 		{
-			"name": "two front teeth",
+			"idea": "two front teeth",
 			"plural": true
 		},
 		{
-			"name": "a treasure chest",
+			"idea": "a treasure chest",
 			"fantasy": true,
 			"historicalFiction": true
 		},
 		{
-			"name": "rings around a planet",
+			"idea": "rings around a planet",
 			"scifi": true,
 			"spacefaring": true,
 			"plural": true
 		},
 		{
-			"name": "a tourniquet",
+			"idea": "a tourniquet",
 			"humanDistress": true
 		},
 		{
-			"name": "a Molotov cocktail",
+			"idea": "a Molotov cocktail",
 			"humanDistress": true
 		},
 		{
-			"name": "peanuts",
+			"idea": "peanuts",
 			"plural": true
 		},
 		{
-			"name": "too much popcorn"
+			"idea": "too much popcorn"
 		},
 		{
-			"name": "a bad hairpiece"
+			"idea": "a bad hairpiece"
 		},
 		{
-			"name": "a broken hard drive",
+			"idea": "a broken hard drive",
 			"modern": true
 		},
 		{
-			"name": "a special camera"
+			"idea": "a special camera"
 		},
 		{
-			"name": "a surprising amount of hair",
+			"idea": "a surprising amount of hair",
 			"sexual": true
 		},
 		{
-			"name": "a corpse",
+			"idea": "a corpse",
 			"humanDeath": true
 		},
 		{
-			"name": "lottery tickets",
+			"idea": "lottery tickets",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "tears of joy",
+			"idea": "tears of joy",
 			"plural": true
 		},
 		{
-			"name": "a blank expression"
+			"idea": "a blank expression"
 		},
 		{
-			"name": "eyeglasses",
+			"idea": "eyeglasses",
 			"plural": true
 		},
 		{
-			"name": "a defective condom",
+			"idea": "a defective condom",
 			"sexual": true,
 			"modern": true
 		},
 		{
-			"name": "a mesh shirt",
+			"idea": "a mesh shirt",
 			"sexual": true
 		},
 		{
-			"name": "hairpins",
+			"idea": "hairpins",
 			"plural": true
 		},
 		{
-			"name": "handcuffs",
+			"idea": "handcuffs",
 			"humanDistress": true,
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "a jalopy"
+			"idea": "a jalopy"
 		},
 		{
-			"name": "trampolines"
+			"idea": "trampolines"
 		},
 		{
-			"name": "a fishnet",
+			"idea": "a fishnet",
 			"sexual": true
 		},
 		{
-			"name": "canned peas",
+			"idea": "canned peas",
 			"plural": true
 		},
 		{
-			"name": "an unopened letter"
+			"idea": "an unopened letter"
 		},
 		{
-			"name": "a firecracker"
+			"idea": "a firecracker"
 		},
 		{
-			"name": "a Newton's cradle",
+			"idea": "a Newton's cradle",
 			"properName": true
 		},
 		{
-			"name": "a new fossil"
+			"idea": "a new fossil"
 		},
 		{
-			"name": "a cross",
+			"idea": "a cross",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"horror": true,
@@ -610,1142 +610,1143 @@
 			"christianity": true
 		},
 		{
-			"name": "turnips"
+			"idea": "turnips"
 		},
 		{
-			"name": "giant diapers",
+			"idea": "giant diapers",
 			"plural": true
 		},
 		{
-			"name": "electric eels"
+			"idea": "electric eels"
 		},
 		{
-			"name": "piranhas",
+			"idea": "piranhas",
 			"plural": true
 		},
 		{
-			"name": "a fly"
+			"idea": "a fly"
 		},
 		{
-			"name": "markers",
+			"idea": "markers",
 			"plural": true
 		},
 		{
-			"name": "a broken guitar"
+			"idea": "a broken guitar"
 		},
 		{
-			"name": "a loaf of bread"
+			"idea": "a loaf of bread"
 		},
 		{
-			"name": "a phallus",
+			"idea": "a phallus",
 			"sexual": true
 		},
 		{
-			"name": "a crowbar"
+			"idea": "a crowbar"
 		},
 		{
-			"name": "a flat tire"
+			"idea": "a flat tire"
 		},
 		{
-			"name": "a trenchcoat"
+			"idea": "a trenchcoat"
 		},
 		{
-			"name": "Twinkies",
+			"idea": "Twinkies",
 			"properName": true,
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "a strange scar"
+			"idea": "a strange scar"
 		},
 		{
-			"name": "a golf club"
+			"idea": "a golf club"
 		},
 		{
-			"name": "a stop sign"
+			"idea": "a stop sign"
 		},
 		{
-			"name": "a picnic basket"
+			"idea": "a picnic basket"
 		},
 		{
-			"name": "horseradish"
+			"idea": "horseradish"
 		},
 		{
-			"name": "a bill"
+			"idea": "a bill"
 		},
 		{
-			"name": "tacos",
+			"idea": "tacos",
 			"plural": true
 		},
 		{
-			"name": "dirty clothes",
+			"idea": "dirty clothes",
 			"plural": true
 		},
 		{
-			"name": "sweet and sour sauce"
+			"idea": "sweet and sour sauce"
 		},
 		{
-			"name": "a new piano"
+			"idea": "a new piano"
 		},
 		{
-			"name": "a broken piano"
+			"idea": "a broken piano"
 		},
 		{
-			"name": "soy sauce"
+			"idea": "soy sauce"
 		},
 		{
-			"name": "a new recipe"
+			"idea": "a new recipe"
 		},
 		{
-			"name": "hard hats"
+			"idea": "hard hats"
 		},
 		{
-			"name": "a statue of an angel",
+			"idea": "a statue of an angel",
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "a Happy Meal",
+			"idea": "a Happy Meal",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "an atomic bomb",
+			"idea": "an atomic bomb",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "a bikini",
+			"idea": "a bikini",
 			"sexual": true
 		},
 		{
-			"name": "olive oil"
+			"idea": "olive oil"
 		},
 		{
-			"name": "lead-based paint"
+			"idea": "lead-based paint"
 		},
 		{
-			"name": "an erection",
+			"idea": "an erection",
 			"sexual": true
 		},
 		{
-			"name": "pants that are too tight",
+			"idea": "pants that are too tight",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "ketchup"
+			"idea": "ketchup"
 		},
 		{
-			"name": "diamond dust"
+			"idea": "diamond dust"
 		},
 		{
-			"name": "peanut butter"
+			"idea": "peanut butter"
 		},
 		{
-			"name": "a garishly wrapped present"
+			"idea": "a garishly wrapped present"
 		},
 		{
-			"name": "a wistful smile"
+			"idea": "a wistful smile"
 		},
 		{
-			"name": "a magic potion",
+			"idea": "a magic potion",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "a pot of boiling water"
+			"idea": "a pot of boiling water"
 		},
 		{
-			"name": "molten gold"
+			"idea": "molten gold"
 		},
 		{
-			"name": "a stick of dynamite"
+			"idea": "a stick of dynamite"
 		},
 		{
-			"name": "a rifle",
+			"idea": "a rifle",
 			"humanDistress": true,
 			"humanDeath": true,
 			"animalDeath": true
 		},
 		{
-			"name": "a car that flies",
+			"idea": "a car that flies",
 			"fantasy": true,
 			"modern": true
 		},
 		{
-			"name": "a dusty bookshelf"
+			"idea": "a dusty bookshelf"
 		},
 		{
-			"name": "a shrinkwrapped box",
+			"idea": "a shrinkwrapped box",
 			"modern": true
 		},
 		{
-			"name": "a used condom"
+			"idea": "a used condom"
 		},
 		{
-			"name": "a dreamcatcher"
+			"idea": "a dreamcatcher"
 		},
 		{
-			"name": "a secret smile"
+			"idea": "a secret smile"
 		},
 		{
-			"name": "a fake smile"
+			"idea": "a fake smile"
 		},
 		{
-			"name": "an ugly frown"
+			"idea": "an ugly frown"
 		},
 		{
-			"name": "bared teeth"
+			"idea": "bared teeth"
 		},
 		{
-			"name": "a wink"
+			"idea": "a wink"
 		},
 		{
-			"name": "a perforated eardrum",
+			"idea": "a perforated eardrum",
 			"humanDistress": true
 		},
 		{
-			"name": "two raw eggs",
+			"idea": "two raw eggs",
 			"plural": true
 		},
 		{
-			"name": "stale bread"
+			"idea": "stale bread"
 		},
 		{
-			"name": "defective brakes",
+			"idea": "defective brakes",
 			"humanDistress": true,
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "broken shoelaces",
+			"idea": "broken shoelaces",
 			"plural": true
 		},
 		{
-			"name": "a trough"
+			"idea": "a trough"
 		},
 		{
-			"name": "a sandwich"
+			"idea": "a sandwich"
 		},
 		{
-			"name": "hair dye"
+			"idea": "hair dye"
 		},
 		{
-			"name": "a paperback novel",
+			"idea": "a paperback novel",
 			"modern": true
 		},
 		{
-			"name": "a heavy tome"
+			"idea": "a heavy tome"
 		},
 		{
-			"name": "a bag of schoolbooks"
+			"idea": "a bag of schoolbooks"
 		},
 		{
-			"name": "a suppository",
+			"idea": "a suppository",
 			"modern": true
 		},
 		{
-			"name": "bagpipes",
+			"idea": "bagpipes",
 			"plural": true
 		},
 		{
-			"name": "carrots",
+			"idea": "carrots",
 			"plural": true
 		},
 		{
-			"name": "celery"
+			"idea": "celery"
 		},
 		{
-			"name": "erotic art",
+			"idea": "erotic art",
 			"sexual": true
 		},
 		{
-			"name": "a magnetic board",
+			"idea": "a magnetic board",
 			"modern": true
 		},
 		{
-			"name": "a dry-erase board",
+			"idea": "a dry-erase board",
 			"modern": true
 		},
 		{
-			"name": "cardboard boxes",
+			"idea": "cardboard boxes",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "an email",
+			"idea": "an email",
 			"modern": true
 		},
 		{
-			"name": "confetti"
+			"idea": "confetti"
 		},
 		{
-			"name": "safety scissors",
+			"idea": "safety scissors",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "tapioca pudding"
+			"idea": "tapioca pudding"
 		},
 		{
-			"name": "leg hair"
+			"idea": "leg hair"
 		},
 		{
-			"name": "deodorant"
+			"idea": "deodorant"
 		},
 		{
-			"name": "a ring"
+			"idea": "a ring"
 		},
 		{
-			"name": "an open drain"
+			"idea": "an open drain"
 		},
 		{
-			"name": "a balloon animal"
+			"idea": "a balloon animal"
 		},
 		{
-			"name": "an orchestra"
+			"idea": "an orchestra"
 		},
 		{
-			"name": "rotten food"
+			"idea": "rotten food"
 		},
 		{
-			"name": "a tentacle",
+			"idea": "a tentacle",
 			"fantasy": true,
 			"horror": true
 		},
 		{
-			"name": "a chemistry set"
+			"idea": "a chemistry set"
 		},
 		{
-			"name": "a flickering light"
+			"idea": "a flickering light"
 		},
 		{
-			"name": "dollar",
+			"idea": "dollar",
 			"plural": "s",
 			"min": 1,
 			"max": 25000,
 			"numerals": true
 		},
 		{
-			"name": "a six-pack",
+			"idea": "a six-pack",
 			"alcohol": true
 		},
 		{
-			"name": "land mines",
+			"idea": "land mines",
 			"humanDistress": true,
 			"humanDeath": true,
 			"plural": true
 		},
 		{
-			"name": "a violin"
+			"idea": "a violin"
 		},
 		{
-			"name": "a tell-all book"
+			"idea": "a tell-all book"
 		},
 		{
-			"name": "a thesis",
+			"idea": "a thesis",
 			"modern": true
 		},
 		{
-			"name": "a calculator"
+			"idea": "a calculator"
 		},
 		{
-			"name": "a polka-dot dress"
+			"idea": "a polka-dot dress"
 		},
 		{
-			"name": "a striped necktie"
+			"idea": "a striped necktie"
 		},
 		{
-			"name": "a bowtie"
+			"idea": "a bowtie"
 		},
 		{
-			"name": "an ascot"
+			"idea": "an ascot"
 		},
 		{
-			"name": "a spilled drink"
+			"idea": "a spilled drink"
 		},
 		{
-			"name": "a drink of water"
+			"idea": "a drink of water"
 		},
 		{
-			"name": "a blue star",
+			"idea": "a blue star",
 			"scifi": true,
 			"spacefaring": true
 		},
 		{
-			"name": "a crucifix",
+			"idea": "a crucifix",
 			"religionAndMyths": true,
 			"christianity": true,
 			"fantasy": true,
 			"horror": true
 		},
 		{
-			"name": "a tuba"
+			"idea": "a tuba"
 		},
 		{
-			"name": "a tube of toothpaste"
+			"idea": "a tube of toothpaste"
 		},
 		{
-			"name": "smelly socks",
+			"idea": "smelly socks",
 			"plural": true
 		},
 		{
-			"name": "an electrical hazard",
+			"idea": "an electrical hazard",
 			"humanDistress": true
 		},
 		{
-			"name": "a butter knife"
+			"idea": "a butter knife"
 		},
 		{
-			"name": "a letter opener"
+			"idea": "a letter opener"
 		},
 		{
-			"name": "a stopped watch"
+			"idea": "a stopped watch"
 		},
 		{
-			"name": "a window decal",
+			"idea": "a window decal",
 			"modern": true
 		},
 		{
-			"name": "a scale"
+			"idea": "a scale"
 		},
 		{
-			"name": "a ticket stub"
+			"idea": "a ticket stub"
 		},
 		{
-			"name": "a jar of mustard"
+			"idea": "a jar of mustard"
 		},
 		{
-			"name": "a black veil"
+			"idea": "a black veil"
 		},
 		{
-			"name": "a belt"
+			"idea": "a belt"
 		},
 		{
-			"name": "chalk dust"
+			"idea": "chalk dust"
 		},
 		{
-			"name": "chest hair"
+			"idea": "chest hair"
 		},
 		{
-			"name": "pubic hair",
+			"idea": "pubic hair",
 			"sexual": true
 		},
 		{
-			"name": "nose hair"
+			"idea": "nose hair"
 		},
 		{
-			"name": "underarm hair"
+			"idea": "underarm hair"
 		},
 		{
-			"name": "crickets at night"
+			"idea": "crickets at night"
 		},
 		{
-			"name": "a missing fingernail",
+			"idea": "a missing fingernail",
 			"humanDistress": true
 		},
 		{
-			"name": "shower curtains",
+			"idea": "shower curtains",
 			"plural": true
 		},
 		{
-			"name": "rubies",
+			"idea": "rubies",
 			"plural": true
 		},
 		{
-			"name": "eyebrows",
+			"idea": "eyebrows",
 			"plural": true
 		},
 		{
-			"name": "corduroy pants",
+			"idea": "corduroy pants",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "a handful of beans",
+			"idea": "a handful of beans",
 			"plural": true
 		},
 		{
-			"name": "macaroni and cheese"
+			"idea": "macaroni and cheese",
+			"plural": false
 		},
 		{
-			"name": "spaghetti and meatballs"
+			"idea": "spaghetti and meatballs"
 		},
 		{
-			"name": "a milk crate"
+			"idea": "a milk crate"
 		},
 		{
-			"name": "cranberry juice"
+			"idea": "cranberry juice"
 		},
 		{
-			"name": "pieces of eight",
+			"idea": "pieces of eight",
 			"plural": true
 		},
 		{
-			"name": "a half-empty glass"
+			"idea": "a half-empty glass"
 		},
 		{
-			"name": "a half-full glass"
+			"idea": "a half-full glass"
 		},
 		{
-			"name": "a dead battery"
+			"idea": "a dead battery"
 		},
 		{
-			"name": "a leaky faucet"
+			"idea": "a leaky faucet"
 		},
 		{
-			"name": "lost teeth",
+			"idea": "lost teeth",
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "a dirty toothbrush"
+			"idea": "a dirty toothbrush"
 		},
 		{
-			"name": "milk of magnesia"
+			"idea": "milk of magnesia"
 		},
 		{
-			"name": "plaster of paris"
+			"idea": "plaster of paris"
 		},
 		{
-			"name": "a tower of empty cans",
+			"idea": "a tower of empty cans",
 			"alcohol": true
 		},
 		{
-			"name": "a glass eye"
+			"idea": "a glass eye"
 		},
 		{
-			"name": "dryer lint"
+			"idea": "dryer lint"
 		},
 		{
-			"name": "collarbones"
+			"idea": "collarbones"
 		},
 		{
-			"name": "a trap",
+			"idea": "a trap",
 			"humanDistress": true,
 			"animalDistress": true
 		},
 		{
-			"name": "tall grass"
+			"idea": "tall grass"
 		},
 		{
-			"name": "circles",
+			"idea": "circles",
 			"plural": true
 		},
 		{
-			"name": "squares",
+			"idea": "squares",
 			"plural": true
 		},
 		{
-			"name": "triangles",
+			"idea": "triangles",
 			"plural": true
 		},
 		{
-			"name": "a trapezoid"
+			"idea": "a trapezoid"
 		},
 		{
-			"name": "old wine",
+			"idea": "old wine",
 			"alcohol": true
 		},
 		{
-			"name": "pirate loot",
+			"idea": "pirate loot",
 			"historicalFiction": true
 		},
 		{
-			"name": "a canary in a coal mine",
+			"idea": "a canary in a coal mine",
 			"animalDistress": true,
 			"humanDistress": true
 		},
 		{
-			"name": "bloody bandages",
+			"idea": "bloody bandages",
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "relaxed-fit jeans",
+			"idea": "relaxed-fit jeans",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "cut-offs",
+			"idea": "cut-offs",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "skinny jeans",
+			"idea": "skinny jeans",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "watermelon"
+			"idea": "watermelon"
 		},
 		{
-			"name": "a jock strap",
+			"idea": "a jock strap",
 			"sexual": true,
 			"modern": true
 		},
 		{
-			"name": "a tombstone"
+			"idea": "a tombstone"
 		},
 		{
-			"name": "a sundial"
+			"idea": "a sundial"
 		},
 		{
-			"name": "navels",
+			"idea": "navels",
 			"plural": true
 		},
 		{
-			"name": "greasy hair"
+			"idea": "greasy hair"
 		},
 		{
-			"name": "fingernail clippings",
+			"idea": "fingernail clippings",
 			"plural": true
 		},
 		{
-			"name": "high heels",
+			"idea": "high heels",
 			"plural": true
 		},
 		{
-			"name": "boots",
+			"idea": "boots",
 			"plural": true
 		},
 		{
-			"name": "a crack in the wall"
+			"idea": "a crack in the wall"
 		},
 		{
-			"name": "plastic forks",
+			"idea": "plastic forks",
 			"plural": true
 		},
 		{
-			"name": "sporks",
+			"idea": "sporks",
 			"plural": true
 		},
 		{
-			"name": "a silver spoon"
+			"idea": "a silver spoon"
 		},
 		{
-			"name": "yellow lights",
+			"idea": "yellow lights",
 			"plural": true
 		},
 		{
-			"name": "a torpedo"
+			"idea": "a torpedo"
 		},
 		{
-			"name": "chimneys",
+			"idea": "chimneys",
 			"plural": true
 		},
 		{
-			"name": "a diary"
+			"idea": "a diary"
 		},
 		{
-			"name": "homemade cookies",
+			"idea": "homemade cookies",
 			"plural": true
 		},
 		{
-			"name": "testicles",
+			"idea": "testicles",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "a record player"
+			"idea": "a record player"
 		},
 		{
-			"name": "a pot pie"
+			"idea": "a pot pie"
 		},
 		{
-			"name": "motes of dust",
+			"idea": "motes of dust",
 			"plural": true
 		},
 		{
-			"name": "bad wigs",
+			"idea": "bad wigs",
 			"plural": true
 		},
 		{
-			"name": "a splinter",
+			"idea": "a splinter",
 			"humanDistress": true
 		},
 		{
-			"name": "a fancy hat"
+			"idea": "a fancy hat"
 		},
 		{
-			"name": "a love potion",
+			"idea": "a love potion",
 			"fantasy": true
 		},
 		{
-			"name": "a teacup"
+			"idea": "a teacup"
 		},
 		{
-			"name": "a centrifuge"
+			"idea": "a centrifuge"
 		},
 		{
-			"name": "wings",
+			"idea": "wings",
 			"plural": true
 		},
 		{
-			"name": "an eyebrow piercing"
+			"idea": "an eyebrow piercing"
 		},
 		{
-			"name": "a ray gun",
+			"idea": "a ray gun",
 			"scifi": true
 		},
 		{
-			"name": "a cardboard cutout",
+			"idea": "a cardboard cutout",
 			"modern": true
 		},
 		{
-			"name": "hot tea"
+			"idea": "hot tea"
 		},
 		{
-			"name": "iced tea"
+			"idea": "iced tea"
 		},
 		{
-			"name": "parachutes",
+			"idea": "parachutes",
 			"plural": true
 		},
 		{
-			"name": "pipes",
+			"idea": "pipes",
 			"plural": true
 		},
 		{
-			"name": "coffee"
+			"idea": "coffee"
 		},
 		{
-			"name": "visible underwear",
+			"idea": "visible underwear",
 			"sexual": true
 		},
 		{
-			"name": "a pinch",
+			"idea": "a pinch",
 			"humanDistress": true
 		},
 		{
-			"name": "a beauty mark"
+			"idea": "a beauty mark"
 		},
 		{
-			"name": "pizza"
+			"idea": "pizza"
 		},
 		{
-			"name": "orchids",
+			"idea": "orchids",
 			"plural": true
 		},
 		{
-			"name": "jambalaya"
+			"idea": "jambalaya"
 		},
 		{
-			"name": "a magic wand",
+			"idea": "a magic wand",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "dirty dishes",
+			"idea": "dirty dishes",
 			"plural": true
 		},
 		{
-			"name": "a staff",
+			"idea": "a staff",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "an unreadable expression"
+			"idea": "an unreadable expression"
 		},
 		{
-			"name": "a helmet"
+			"idea": "a helmet"
 		},
 		{
-			"name": "diseased fleas",
+			"idea": "diseased fleas",
 			"animalDistress": true,
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "an exit sign"
+			"idea": "an exit sign"
 		},
 		{
-			"name": "corrugated metal",
+			"idea": "corrugated metal",
 			"modern": true
 		},
 		{
-			"name": "corrugated cardboard",
+			"idea": "corrugated cardboard",
 			"modern": true
 		},
 		{
-			"name": "an empty socket",
+			"idea": "an empty socket",
 			"humanDistress": true
 		},
 		{
-			"name": "a skylight"
+			"idea": "a skylight"
 		},
 		{
-			"name": "a jammed keyboard"
+			"idea": "a jammed keyboard"
 		},
 		{
-			"name": "charcoal"
+			"idea": "charcoal"
 		},
 		{
-			"name": "a bouquet of something that isn't flowers"
+			"idea": "a bouquet of something that isn't flowers"
 		},
 		{
-			"name": "explosives",
+			"idea": "explosives",
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "a crumpled roadmap"
+			"idea": "a crumpled roadmap"
 		},
 		{
-			"name": "opium",
+			"idea": "opium",
 			"illicitSubstances": true
 		},
 		{
-			"name": "a pot belly (beer belly)",
+			"idea": "a pot belly (beer belly)",
 			"alcohol": true
 		},
 		{
-			"name": "ridiculous clothes",
+			"idea": "ridiculous clothes",
 			"plural": true
 		},
 		{
-			"name": "a large oven"
+			"idea": "a large oven"
 		},
 		{
-			"name": "a crown"
+			"idea": "a crown"
 		},
 		{
-			"name": "lava lamps",
+			"idea": "lava lamps",
 			"plural": true
 		},
 		{
-			"name": "kitty litter"
+			"idea": "kitty litter"
 		},
 		{
-			"name": "melting ice"
+			"idea": "melting ice"
 		},
 		{
-			"name": "skimpy outfits",
+			"idea": "skimpy outfits",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "a jam jar"
+			"idea": "a jam jar"
 		},
 		{
-			"name": "dancing lights in the distance",
+			"idea": "dancing lights in the distance",
 			"fantasy": true,
 			"plural": true
 		},
 		{
-			"name": "a cheese danish"
+			"idea": "a cheese danish"
 		},
 		{
-			"name": "melted chocolate"
+			"idea": "melted chocolate"
 		},
 		{
-			"name": "a shiny new knife",
+			"idea": "a shiny new knife",
 			"humanDistress": true
 		},
 		{
-			"name": "an old, rusted blade",
+			"idea": "an old, rusted blade",
 			"humanDistress": true,
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "an old calendar"
+			"idea": "an old calendar"
 		},
 		{
-			"name": "a cellar door"
+			"idea": "a cellar door"
 		},
 		{
-			"name": "a bloody fingerprint",
+			"idea": "a bloody fingerprint",
 			"humanDistress": true
 		},
 		{
-			"name": "an arcane symbol",
+			"idea": "an arcane symbol",
 			"fantasy": true
 		},
 		{
-			"name": "cave paintings",
+			"idea": "cave paintings",
 			"plural": true
 		},
 		{
-			"name": "petroglyphs",
+			"idea": "petroglyphs",
 			"plural": true
 		},
 		{
-			"name": "a phone charger",
+			"idea": "a phone charger",
 			"modern": true
 		},
 		{
-			"name": "a suspiciously placed rock"
+			"idea": "a suspiciously placed rock"
 		},
 		{
-			"name": "stalactites and stalagmites",
+			"idea": "stalactites and stalagmites",
 			"plural": true
 		},
 		{
-			"name": "torn-out pages",
+			"idea": "torn-out pages",
 			"plural": true
 		},
 		{
-			"name": "an ugly carpet"
+			"idea": "an ugly carpet"
 		},
 		{
-			"name": "a gourd"
+			"idea": "a gourd"
 		},
 		{
-			"name": "funny-tasting water"
+			"idea": "funny-tasting water"
 		},
 		{
-			"name": "ears",
+			"idea": "ears",
 			"plural": true
 		},
 		{
-			"name": "dirty feet",
+			"idea": "dirty feet",
 			"plural": true
 		},
 		{
-			"name": "clean hair"
+			"idea": "clean hair"
 		},
 		{
-			"name": "hairspray"
+			"idea": "hairspray"
 		},
 		{
-			"name": "yeast"
+			"idea": "yeast"
 		},
 		{
-			"name": "buffalo",
+			"idea": "buffalo",
 			"plural": true
 		},
 		{
-			"name": "turpentine"
+			"idea": "turpentine"
 		},
 		{
-			"name": "mistletoe"
+			"idea": "mistletoe"
 		},
 		{
-			"name": "fertilizer"
+			"idea": "fertilizer"
 		},
 		{
-			"name": "garlic"
+			"idea": "garlic"
 		},
 		{
-			"name": "sushi"
+			"idea": "sushi"
 		},
 		{
-			"name": "seaweed"
+			"idea": "seaweed"
 		},
 		{
-			"name": "food that is the wrong color"
+			"idea": "food that is the wrong color"
 		},
 		{
-			"name": "the last of the rations",
+			"idea": "the last of the rations",
 			"humanDistress": true
 		},
 		{
-			"name": "a bloody nose",
+			"idea": "a bloody nose",
 			"humanDistress": true
 		},
 		{
-			"name": "a black eye",
+			"idea": "a black eye",
 			"humanDistress": true
 		},
 		{
-			"name": "a missing tooth",
+			"idea": "a missing tooth",
 			"humanDistress": true
 		},
 		{
-			"name": "a dislocated joint",
+			"idea": "a dislocated joint",
 			"humanDistress": true
 		},
 		{
-			"name": "ground beef"
+			"idea": "ground beef"
 		},
 		{
-			"name": "flat hair"
+			"idea": "flat hair"
 		},
 		{
-			"name": "curly hair"
+			"idea": "curly hair"
 		},
 		{
-			"name": "a dose of antibiotics",
+			"idea": "a dose of antibiotics",
 			"humanDistress": true
 		},
 		{
-			"name": "dark clouds",
+			"idea": "dark clouds",
 			"plural": true
 		},
 		{
-			"name": "slit wrists",
+			"idea": "slit wrists",
 			"humanDistress": true,
 			"humanDeath": true,
 			"plural": true
 		},
 		{
-			"name": "curling toes",
+			"idea": "curling toes",
 			"sexual": true,
 			"plural": true
 		},
 		{
-			"name": "a fireball",
+			"idea": "a fireball",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"humanDistress": true
 		},
 		{
-			"name": "calamari"
+			"idea": "calamari"
 		},
 		{
-			"name": "marijuana",
+			"idea": "marijuana",
 			"illicitSubstances": true,
 			"modern": true
 		},
 		{
-			"name": "an ad for a lawyer"
+			"idea": "an ad for a lawyer"
 		},
 		{
-			"name": "water"
+			"idea": "water"
 		},
 		{
-			"name": "video games",
+			"idea": "video games",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "sheet music"
+			"idea": "sheet music"
 		},
 		{
-			"name": "polka dots",
+			"idea": "polka dots",
 			"plural": true
 		},
 		{
-			"name": "metallic echoes",
+			"idea": "metallic echoes",
 			"plural": true
 		},
 		{
-			"name": "glitter"
+			"idea": "glitter"
 		},
 		{
-			"name": "fog"
+			"idea": "fog"
 		},
 		{
-			"name": "zinc"
+			"idea": "zinc"
 		},
 		{
-			"name": "frost"
+			"idea": "frost"
 		},
 		{
-			"name": "origami"
+			"idea": "origami"
 		},
 		{
-			"name": "aspirin",
+			"idea": "aspirin",
 			"humanDistress": true
 		},
 		{
-			"name": "sand"
+			"idea": "sand"
 		},
 		{
-			"name": "lava"
+			"idea": "lava"
 		},
 		{
-			"name": "gravel"
+			"idea": "gravel"
 		},
 		{
-			"name": "monkeys everywhere",
+			"idea": "monkeys everywhere",
 			"plural": true
 		},
 		{
-			"name": "smog"
+			"idea": "smog"
 		},
 		{
-			"name": "pointed ears",
+			"idea": "pointed ears",
 			"fantasy": true,
 			"scifi": true,
 			"medievalFantasy": true,
 			"plural": true
 		},
 		{
-			"name": "smoke",
+			"idea": "smoke",
 			"tobacco": true,
 			"humanDistress": true
 		},
 		{
-			"name": "too much salt"
+			"idea": "too much salt"
 		},
 		{
-			"name": "carbon nanotubes",
+			"idea": "carbon nanotubes",
 			"scifi": true,
 			"plural": true
 		},
 		{
-			"name": "gun oil",
+			"idea": "gun oil",
 			"humanDeath": true,
 			"humanDistress": true
 		},
 		{
-			"name": "the minutes of the meeting",
+			"idea": "the minutes of the meeting",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "silver"
+			"idea": "silver"
 		},
 		{
-			"name": "ions",
+			"idea": "ions",
 			"scifi": true
 		},
 		{
-			"name": "a blip on the radar"
+			"idea": "a blip on the radar"
 		},
 		{
-			"name": "checkers",
+			"idea": "checkers",
 			"plural": true
 		},
 		{
-			"name": "mother of pearl"
+			"idea": "mother of pearl"
 		},
 		{
-			"name": "root beer"
+			"idea": "root beer"
 		},
 		{
-			"name": "a navy"
+			"idea": "a navy"
 		},
 		{
-			"name": "toenail fungus",
+			"idea": "toenail fungus",
 			"humanDistress": true
 		},
 		{
-			"name": "living furniture"
+			"idea": "living furniture"
 		},
 		{
-			"name": "goosebumps",
+			"idea": "goosebumps",
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "lather"
+			"idea": "lather"
 		},
 		{
-			"name": "acid",
+			"idea": "acid",
 			"illicitSubstances": true,
 			"humanDistress": true
 		},
 		{
-			"name": "dog slobber"
+			"idea": "dog slobber"
 		},
 		{
-			"name": "ripples",
+			"idea": "ripples",
 			"plural": true
 		},
 		{
-			"name": "the wind"
+			"idea": "the wind"
 		},
 		{
-			"name": "crumbling infrastructure",
+			"idea": "crumbling infrastructure",
 			"modern": true,
 			"humanDistress": true
 		},
 		{
-			"name": "those mountains in the distance",
+			"idea": "those mountains in the distance",
 			"plural": true
 		}
 	]

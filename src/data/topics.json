@@ -2,987 +2,993 @@
 	"default": {},
 	"contents": [
 		{
-			"name": "film noir"
+			"idea": "film noir"
 		},
 		{
-			"name": "unrequited love"
+			"idea": "unrequited love"
 		},
 		{
-			"name": "ghosts",
+			"idea": "ghosts",
 			"fantasy": true,
 			"horror": true
 		},
 		{
-			"name": "sex",
+			"idea": "sex",
 			"sexual": true
 		},
 		{
-			"name": "OCD",
+			"idea": "OCD",
 			"humanDistress": true
 		},
 		{
-			"name": "quantum physics",
+			"idea": "quantum physics",
 			"scifi": true
 		},
 		{
-			"name": "translucent colors"
+			"idea": "translucent colors"
 		},
 		{
-			"name": "the color red"
+			"idea": "the color red"
 		},
 		{
-			"name": "the color orange"
+			"idea": "the color orange"
 		},
 		{
-			"name": "the color yellow"
+			"idea": "the color yellow"
 		},
 		{
-			"name": "the color green"
+			"idea": "the color green"
 		},
 		{
-			"name": "the color blue"
+			"idea": "the color blue"
 		},
 		{
-			"name": "the color purple"
+			"idea": "the color purple"
 		},
 		{
-			"name": "the color violet"
+			"idea": "the color violet"
 		},
 		{
-			"name": "the color black"
+			"idea": "the color black"
 		},
 		{
-			"name": "the color white"
+			"idea": "the color white"
 		},
 		{
-			"name": "the color gray"
+			"idea": "the color gray"
 		},
 		{
-			"name": "the color brown"
+			"idea": "the color brown"
 		},
 		{
-			"name": "the color pink"
+			"idea": "the color pink"
 		},
 		{
-			"name": "silence"
+			"idea": "silence"
 		},
 		{
-			"name": "alien life",
+			"idea": "alien life",
 			"scifi": true,
 			"spacefaring": true
 		},
 		{
-			"name": "prime numbers"
+			"idea": "prime numbers"
 		},
 		{
-			"name": "westerns"
+			"idea": "westerns"
 		},
 		{
-			"name": "Wikipedia",
+			"idea": "Wikipedia",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "the other"
+			"idea": "\"the other\""
 		},
 		{
-			"name": "happiness"
+			"idea": "happiness"
 		},
 		{
-			"name": "animal magnetism"
+			"idea": "animal magnetism"
 		},
 		{
-			"name": "Pokemon",
+			"idea": "Pokemon",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "stupidity"
+			"idea": "stupidity"
 		},
 		{
-			"name": "reality TV",
+			"idea": "reality TV",
 			"modern": true
 		},
 		{
-			"name": "too much free time"
+			"idea": "too much free time"
 		},
 		{
-			"name": "introspection"
+			"idea": "introspection"
 		},
 		{
-			"name": "WiFi",
+			"idea": "WiFi",
 			"modern": true
 		},
 		{
-			"name": "electricity"
+			"idea": "electricity"
 		},
 		{
-			"name": "the need for a night light",
+			"idea": "the need for a night light",
 			"humanDistress": true
 		},
 		{
-			"name": "xenophobia"
+			"idea": "xenophobia"
 		},
 		{
-			"name": "car racing"
+			"idea": "car racing"
 		},
 		{
-			"name": "umami"
+			"idea": "umami"
 		},
 		{
-			"name": "youth"
+			"idea": "youth"
 		},
 		{
-			"name": "locomotion"
+			"idea": "locomotion"
 		},
 		{
-			"name": "cancer",
+			"idea": "cancer",
 			"humanDistress": true
 		},
 		{
-			"name": "bronze"
+			"idea": "bronze"
 		},
 		{
-			"name": "indoor plumbing"
+			"idea": "indoor plumbing"
 		},
 		{
-			"name": "joy"
+			"idea": "joy"
 		},
 		{
-			"name": "tie dye"
+			"idea": "tie dye"
 		},
 		{
-			"name": "pornography",
+			"idea": "pornography",
 			"sexual": true
 		},
 		{
-			"name": "the best value"
+			"idea": "the best value"
 		},
 		{
-			"name": "math"
+			"idea": "math"
 		},
 		{
-			"name": "the number zero"
+			"idea": "the number zero"
 		},
 		{
-			"name": "amputation",
+			"idea": "amputation",
 			"humanDistress": true
 		},
 		{
-			"name": "adult circumcision",
-			"sexual": true
+			"idea": "adult circumcision",
+			"sexual": true,
+			"humanDistress": true
 		},
 		{
-			"name": "lactose intolerance",
+			"idea": "lactose intolerance",
 			"humanDistress": true,
 			"modern": true
 		},
 		{
-			"name": "quality"
+			"idea": "quality"
 		},
 		{
-			"name": "boredom"
+			"idea": "boredom"
 		},
 		{
-			"name": "victory"
+			"idea": "victory"
 		},
 		{
-			"name": "high-pitched voices"
+			"idea": "high-pitched voices"
 		},
 		{
-			"name": "the smell of bacon"
+			"idea": "the smell of bacon"
 		},
 		{
-			"name": "telekinesis",
+			"idea": "telekinesis",
 			"fantasy": true,
 			"scifi": true
 		},
 		{
-			"name": "voodoo",
+			"idea": "voodoo",
 			"fantasy": true,
 			"religionAndMyths": true
 		},
 		{
-			"name": "gentrification",
+			"idea": "gentrification",
 			"modern": true
 		},
 		{
-			"name": "racial profiling",
+			"idea": "racial profiling",
 			"humanDistress": true,
 			"humanDeath": true,
 			"modern": true
 		},
 		{
-			"name": "plaid"
+			"idea": "plaid"
 		},
 		{
-			"name": "mad science",
+			"idea": "mad science",
 			"scifi": true
 		},
 		{
-			"name": "professional football",
+			"idea": "professional football",
 			"modern": true
 		},
 		{
-			"name": "ballet"
+			"idea": "ballet"
 		},
 		{
-			"name": "gossip"
+			"idea": "gossip"
 		},
 		{
-			"name": "jazz"
+			"idea": "jazz"
 		},
 		{
-			"name": "nepotism"
+			"idea": "nepotism"
 		},
 		{
-			"name": "the Anasazi",
+			"idea": "the Anasazi",
 			"properName": true
 		},
 		{
-			"name": "a trademark"
+			"idea": "a trademark"
 		},
 		{
-			"name": "terminal velocity",
+			"idea": "terminal velocity",
 			"humanDistress": true
 		},
 		{
-			"name": "a twanging sound"
+			"idea": "a twanging sound"
 		},
 		{
-			"name": "vanilla"
+			"idea": "vanilla"
 		},
 		{
-			"name": "Star Trek",
+			"idea": "Star Trek",
 			"properName": true,
 			"scifi": true,
 			"spacefaring": true,
 			"modern": true
 		},
 		{
-			"name": "sarcasm"
+			"idea": "sarcasm"
 		},
 		{
-			"name": "identity theft",
+			"idea": "identity theft",
 			"humanDistress": true,
 			"modern": true
 		},
 		{
-			"name": "bacterial meningitis",
+			"idea": "bacterial meningitis",
 			"humanDistress": true,
 			"humanDeath": true,
 			"modern": true
 		},
 		{
-			"name": "surprising news"
+			"idea": "surprising news"
 		},
 		{
-			"name": "quickness"
+			"idea": "quickness"
 		},
 		{
-			"name": "karaoke",
+			"idea": "karaoke",
 			"modern": true
 		},
 		{
-			"name": "Simon Says"
+			"idea": "the game \"Simon Says\""
 		},
 		{
-			"name": "that \"new car\" smell",
+			"idea": "that \"new car\" smell",
 			"modern": true
 		},
 		{
-			"name": "molestation",
+			"idea": "molestation",
 			"humanDistress": true
 		},
 		{
-			"name": "domestic violence",
+			"idea": "domestic violence",
 			"humanDistress": true
 		},
 		{
-			"name": "the happiest day"
+			"idea": "the happiest day"
 		},
 		{
-			"name": "pure luck"
+			"idea": "pure luck"
 		},
 		{
-			"name": "Victorian values",
+			"idea": "Victorian values",
 			"properName": true,
 			"humanDistress": true,
 			"historicalFiction": true
 		},
 		{
-			"name": "body deformities",
+			"idea": "body deformities",
 			"humanDistress": true
 		},
 		{
-			"name": "public nudity",
+			"idea": "public nudity",
 			"sexual": true,
 			"humanDistress": true
 		},
 		{
-			"name": "Snapchat"
+			"idea": "Snapchat"
 		},
 		{
-			"name": "complete surrender",
+			"idea": "complete surrender",
 			"humanDistress": true
 		},
 		{
-			"name": "hope"
+			"idea": "hope"
 		},
 		{
-			"name": "morality"
+			"idea": "morality"
 		},
 		{
-			"name": "the lesser of two evils"
+			"idea": "the lesser of two evils"
 		},
 		{
-			"name": "gothic horror"
+			"idea": "gothic horror"
 		},
 		{
-			"name": "night blindness"
+			"idea": "night blindness"
 		},
 		{
-			"name": "when a dog needs grooming"
+			"idea": "when a dog needs grooming"
 		},
 		{
-			"name": "wedding vows"
+			"idea": "wedding vows"
 		},
 		{
-			"name": "a chill down one's spine"
+			"idea": "a chill down one's spine"
 		},
 		{
-			"name": "bisexuality",
+			"idea": "bisexuality",
 			"sexual": true
 		},
 		{
-			"name": "truth"
+			"idea": "truth"
 		},
 		{
-			"name": "justice"
+			"idea": "justice"
 		},
 		{
-			"name": "metaphors"
+			"idea": "metaphors"
 		},
 		{
-			"name": "a Disney song",
+			"idea": "a Disney song",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "multiplication tables"
+			"idea": "multiplication tables"
 		},
 		{
-			"name": "calculus"
+			"idea": "calculus"
 		},
 		{
-			"name": "geometry"
+			"idea": "geometry"
 		},
 		{
-			"name": "biology"
+			"idea": "biology"
 		},
 		{
-			"name": "physics"
+			"idea": "physics"
 		},
 		{
-			"name": "the speed of light"
+			"idea": "the speed of light"
 		},
 		{
-			"name": "a rerun on TV"
+			"idea": "a rerun on TV"
 		},
 		{
-			"name": "a podcast",
+			"idea": "a podcast",
 			"modern": true
 		},
 		{
-			"name": "YouTube",
+			"idea": "YouTube",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "a fad diet",
+			"idea": "a fad diet",
 			"modern": true
 		},
 		{
-			"name": "the downtown skyline"
+			"idea": "the downtown skyline"
 		},
 		{
-			"name": "liquid gold"
+			"idea": "liquid gold"
 		},
 		{
-			"name": "pirouettes"
+			"idea": "pirouettes"
 		},
 		{
-			"name": "the flu",
+			"idea": "the flu",
 			"humanDistress": true
 		},
 		{
-			"name": "unwanted attention",
+			"idea": "unwanted attention",
 			"humanDistress": true
 		},
 		{
-			"name": "nightmares",
+			"idea": "nightmares",
 			"humanDistress": true
 		},
 		{
-			"name": "a suntan"
+			"idea": "a suntan"
 		},
 		{
-			"name": "NPR",
+			"idea": "NPR",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "morse code"
+			"idea": "morse code"
 		},
 		{
-			"name": "braille"
+			"idea": "braille"
 		},
 		{
-			"name": "sign language"
+			"idea": "sign language"
 		},
 		{
-			"name": "repetition"
+			"idea": "repetition"
 		},
 		{
-			"name": "echoes"
+			"idea": "echoes"
 		},
 		{
-			"name": "Amazon.com",
+			"idea": "Amazon.com",
 			"properName": true,
 			"modern": true
 		},
 		{
-			"name": "trench warfare",
+			"idea": "trench warfare",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "a deep, dark secret",
+			"idea": "a deep, dark secret",
 			"humanDistress": true
 		},
 		{
-			"name": "sex without condoms",
+			"idea": "sex without condoms",
 			"sexual": true
 		},
 		{
-			"name": "unlawful penetration",
+			"idea": "unlawful penetration",
 			"sexual": true,
 			"humanDistress": true
 		},
 		{
-			"name": "LSD",
+			"idea": "LSD",
 			"illicitSubstances": true
 		},
 		{
-			"name": "the number 666",
+			"idea": "the number 666",
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "amnesia",
+			"idea": "amnesia",
 			"humanDistress": true
 		},
 		{
-			"name": "a sonic boom"
+			"idea": "a sonic boom"
 		},
 		{
-			"name": "a superhero movie"
+			"idea": "a superhero movie"
 		},
 		{
-			"name": "quiet reflection"
+			"idea": "quiet reflection"
 		},
 		{
-			"name": "gingivitis",
+			"idea": "gingivitis",
 			"humanDistress": true
 		},
 		{
-			"name": "conjunctivitis",
+			"idea": "conjunctivitis",
 			"humanDistress": true
 		},
 		{
-			"name": "unnecessary surgery",
+			"idea": "unnecessary surgery",
 			"humanDistress": true
 		},
 		{
-			"name": "corruption",
+			"idea": "corruption",
 			"humanDistress": true
 		},
 		{
-			"name": "deception",
+			"idea": "deception",
 			"humanDistress": true
 		},
 		{
-			"name": "anxiety",
+			"idea": "anxiety",
 			"humanDistress": true
 		},
 		{
-			"name": "cruelty",
+			"idea": "cruelty",
 			"humanDistress": true
 		},
 		{
-			"name": "loyalty"
+			"idea": "loyalty"
 		},
 		{
-			"name": "survival"
+			"idea": "survival"
 		},
 		{
-			"name": "the one that got away"
+			"idea": "the one that got away"
 		},
 		{
-			"name": "a lifetime"
+			"idea": "a lifetime"
 		},
 		{
-			"name": "the unknown"
+			"idea": "the unknown"
 		},
 		{
-			"name": "black and white"
+			"idea": "black and white"
 		},
 		{
-			"name": "power over life and death",
+			"idea": "power over life and death",
 			"fantasy": true,
 			"scifi": true
 		},
 		{
-			"name": "an empty bank account"
+			"idea": "an empty bank account"
 		},
 		{
-			"name": "darkness"
+			"idea": "darkness"
 		},
 		{
-			"name": "unspeakable horror",
+			"idea": "unspeakable horror",
 			"fantasy": true,
 			"horror": true
 		},
 		{
-			"name": "lucky number seven",
+			"idea": "lucky number seven",
 			"religionAndMyths": true
 		},
 		{
-			"name": "carpel tunnel syndrome",
+			"idea": "carpel tunnel syndrome",
 			"modern": true
 		},
 		{
-			"name": "Freudian imagery",
+			"idea": "Freudian imagery",
 			"properName": true,
 			"sexual": true
 		},
 		{
-			"name": "hypergraphia",
+			"idea": "hypergraphia",
 			"modern": true
 		},
 		{
-			"name": "hyperactivity",
+			"idea": "hyperactivity",
 			"modern": true
 		},
 		{
-			"name": "a familiar fragrance"
+			"idea": "a familiar fragrance"
 		},
 		{
-			"name": "laughter in the rain"
+			"idea": "laughter in the rain"
 		},
 		{
-			"name": "hysterics",
+			"idea": "hysterics",
 			"humanDistress": true
 		},
 		{
-			"name": "tic-tac-toe"
+			"idea": "tic-tac-toe"
 		},
 		{
-			"name": "dueling banjos",
+			"idea": "dueling banjos",
 			"humanDistress": true
 		},
 		{
-			"name": "planetary exploration",
+			"idea": "planetary exploration",
 			"scifi": true,
 			"spacefaring": true
 		},
 		{
-			"name": "coursing through veins",
+			"idea": "\"coursing through veins\"",
 			"illicitSubstances": true
 		},
 		{
-			"name": "courage"
+			"idea": "courage"
 		},
 		{
-			"name": "a bad haircut",
+			"idea": "a bad haircut",
 			"humanDistress": true
 		},
 		{
-			"name": "hair of the dog",
+			"idea": "hair of the dog",
 			"alcohol": true
 		},
 		{
-			"name": "a chirping noise"
+			"idea": "a chirping noise"
 		},
 		{
-			"name": "liposuction",
+			"idea": "liposuction",
 			"modern": true
 		},
 		{
-			"name": "criticism",
+			"idea": "criticism",
 			"humanDistress": true
 		},
 		{
-			"name": "oxygen",
+			"idea": "oxygen",
 			"scifi": true
 		},
 		{
-			"name": "carbon monoxide",
+			"idea": "carbon monoxide",
 			"modern": true
 		},
 		{
-			"name": "a true story"
+			"idea": "a true story"
 		},
 		{
-			"name": "jack squat"
+			"idea": "jack squat"
 		},
 		{
-			"name": "equal rights",
+			"idea": "equal rights",
 			"humanDistress": true
 		},
 		{
-			"name": "a foreign accent"
+			"idea": "a foreign accent"
 		},
 		{
-			"name": "epilepsy",
+			"idea": "epilepsy",
 			"humanDistress": true
 		},
 		{
-			"name": "the number eight"
+			"idea": "the number eight"
 		},
 		{
-			"name": "willpower"
+			"idea": "willpower"
 		},
 		{
-			"name": "triumph"
+			"idea": "triumph"
 		},
 		{
-			"name": "shots nearby",
+			"idea": "shots nearby",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "over the hill"
+			"idea": "over the hill"
 		},
 		{
-			"name": "body odor"
+			"idea": "body odor"
 		},
 		{
-			"name": "bad breath"
+			"idea": "bad breath"
 		},
 		{
-			"name": "dry cleaning",
+			"idea": "dry cleaning",
 			"modern": true
 		},
 		{
-			"name": "underage drinking",
+			"idea": "underage drinking",
 			"alcohol": true
 		},
 		{
-			"name": "a speed limit"
+			"idea": "a speed limit"
 		},
 		{
-			"name": "sorcery"
+			"idea": "sorcery"
 		},
 		{
-			"name": "cliques",
+			"idea": "cliques",
 			"modern": true
 		},
 		{
-			"name": "a great movie"
+			"idea": "a great movie"
 		},
 		{
-			"name": "computer animation",
+			"idea": "computer animation",
 			"modern": true
 		},
 		{
-			"name": "a sour note"
+			"idea": "a sour note"
 		},
 		{
-			"name": "a GED",
+			"idea": "a GED",
 			"modern": true
 		},
 		{
-			"name": "a dog's tools"
+			"idea": "a dog's tools"
 		},
 		{
-			"name": "memory error",
+			"idea": "memory error",
 			"modern": true,
 			"scifi": true
 		},
 		{
-			"name": "historical fiction"
+			"idea": "historical fiction"
 		},
 		{
-			"name": "global warming",
+			"idea": "global warming",
 			"humanDistress": true,
 			"animalDistress": true
 		},
 		{
-			"name": "a made-up language"
+			"idea": "a made-up language"
 		},
 		{
-			"name": "a foreign language"
+			"idea": "a foreign language"
 		},
 		{
-			"name": "the holy sacraments",
+			"idea": "the holy sacraments",
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "child endangerment",
+			"idea": "child endangerment",
 			"humanDistress": true
 		},
 		{
-			"name": "Minecraft",
+			"idea": "Minecraft",
 			"modern": true
 		},
 		{
-			"name": "crazed ramblings",
+			"idea": "crazed ramblings",
 			"humanDistress": true
 		},
 		{
-			"name": "mortality",
+			"idea": "mortality",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "strip poker",
+			"idea": "strip poker",
 			"modern": true,
 			"sexual": true
 		},
 		{
-			"name": "Cards Against Humanity",
+			"idea": "Cards Against Humanity",
 			"modern": true
 		},
 		{
-			"name": "serious allegations",
+			"idea": "serious allegations",
 			"humanDistress": true
 		},
 		{
-			"name": "hashtags",
+			"idea": "hashtags",
 			"modern": true
 		},
 		{
-			"name": "abortion",
+			"idea": "abortion",
 			"modern": true,
 			"sexual": true,
 			"humanDistress": true
 		},
 		{
-			"name": "a joke that went too far",
+			"idea": "a joke that went too far",
 			"humanDistress": true
 		},
 		{
-			"name": "sunbeams"
+			"idea": "sunbeams"
 		},
 		{
-			"name": "sexual dreams",
+			"idea": "sexual dreams",
 			"sexual": true
 		},
 		{
-			"name": "cold feet"
+			"idea": "cold feet"
 		},
 		{
-			"name": "mindreading",
+			"idea": "mindreading",
 			"fantasy": true,
 			"scifi": true
 		},
 		{
-			"name": "a secret in a castle",
+			"idea": "a secret in a castle",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "well-earned praise"
+			"idea": "well-earned praise"
 		},
 		{
-			"name": "tennis"
+			"idea": "tennis"
 		},
 		{
-			"name": "paranormal investigations",
+			"idea": "paranormal investigations",
 			"modern": true
 		},
 		{
-			"name": "subterfuge"
+			"idea": "subterfuge"
 		},
 		{
-			"name": "shock and terror",
+			"idea": "shock and terror",
 			"humanDistress": true
 		},
 		{
-			"name": "taxidermy",
+			"idea": "taxidermy",
 			"animalDistress": true
 		},
 		{
-			"name": "stock options",
+			"idea": "stock options",
 			"modern": true
 		},
 		{
-			"name": "taxes"
+			"idea": "taxes"
 		},
 		{
-			"name": "an overwhelming odor"
+			"idea": "an overwhelming odor"
 		},
 		{
-			"name": "pumpkin spice",
+			"idea": "pumpkin spice",
 			"modern": true
 		},
 		{
-			"name": "cramps"
+			"idea": "cramps"
 		},
 		{
-			"name": "chance"
+			"idea": "chance"
 		},
 		{
-			"name": "that \"not-so-fresh\" feeling",
+			"idea": "that \"not-so-fresh\" feeling",
 			"sexual": true
 		},
 		{
-			"name": "a knife in the back",
+			"idea": "a knife in the back",
 			"humanDistress": true
 		},
 		{
-			"name": "endless refills"
+			"idea": "endless refills"
 		},
 		{
-			"name": "strong cologne"
+			"idea": "strong cologne"
 		},
 		{
-			"name": "PTSD",
+			"idea": "PTSD",
 			"humanDistress": true
 		},
 		{
-			"name": "absolute freedom"
+			"idea": "absolute freedom"
 		},
 		{
-			"name": "national anthems"
+			"idea": "national anthems"
 		},
 		{
-			"name": "focus"
+			"idea": "focus"
 		},
 		{
-			"name": "brain damage",
+			"idea": "brain damage",
 			"humanDistress": true
 		},
 		{
-			"name": "self-service"
+			"idea": "self-service"
 		},
 		{
-			"name": "local cuisine"
+			"idea": "local cuisine"
 		},
 		{
-			"name": "endurance"
+			"idea": "endurance"
 		},
 		{
-			"name": "untold riches"
+			"idea": "untold riches"
 		},
 		{
-			"name": "hunger",
+			"idea": "hunger",
 			"humanDistress": true
 		},
 		{
-			"name": "the shape of a teardrop"
+			"idea": "the shape of a teardrop"
 		},
 		{
-			"name": "applause"
+			"idea": "applause"
 		},
 		{
-			"name": "depth perception"
+			"idea": "depth perception"
 		},
 		{
-			"name": "voiced implosives"
+			"idea": "voiced implosives"
 		},
 		{
-			"name": "large hadrons",
+			"idea": "large hadrons",
 			"scifi": true,
 			"modern": true
 		},
 		{
-			"name": "a blanket statement"
+			"idea": "a blanket statement"
 		},
 		{
-			"name": "unspecified problems"
+			"idea": "unspecified problems"
 		},
 		{
-			"name": "migration"
+			"idea": "migration"
 		},
 		{
-			"name": "cheap thrills",
+			"idea": "cheap thrills",
 			"sexual": true
 		},
 		{
-			"name": "a damp, musty smell"
+			"idea": "a damp, musty smell"
 		},
 		{
-			"name": "archaeology"
+			"idea": "archaeology"
 		},
 		{
-			"name": "intimacy",
+			"idea": "intimacy",
 			"sexual": true
 		},
 		{
-			"name": "correct authorization",
+			"idea": "correct authorization",
 			"modern": true
 		},
 		{
-			"name": "wish fulfillment"
+			"idea": "wish fulfillment"
 		},
 		{
-			"name": "a low health bar",
+			"idea": "a low health bar",
 			"modern": true
 		},
 		{
-			"name": "misunderstandings"
+			"idea": "misunderstandings"
 		},
 		{
-			"name": "torque"
+			"idea": "torque"
 		},
 		{
-			"name": "denim"
+			"idea": "denim"
 		},
 		{
-			"name": "calming, relaxing music"
+			"idea": "calming, relaxing music"
 		},
 		{
-			"name": "energizing music"
+			"idea": "energizing music"
 		},
 		{
-			"name": "what some might call music"
+			"idea": "what some might call music"
 		},
 		{
-			"name": "a 404 \"page not found\" error",
+			"idea": "a 404 \"page not found\" error",
 			"modern": true
 		},
 		{
-			"name": "a lack of privacy",
+			"idea": "a lack of privacy",
 			"modern": true,
 			"humanDistress": true
 		},
 		{
-			"name": "mistaken identity"
+			"idea": "mistaken identity"
 		},
 		{
-			"name": "the ole one-two punch",
+			"idea": "\"the ole one-two punch\"",
 			"humanDistress": true
 		},
 		{
-			"name": "ancient technology",
+			"idea": "ancient technology",
 			"scifi": true,
 			"fantasy": true
 		},
 		{
-			"name": "a faked accent"
+			"idea": "a faked accent"
 		},
 		{
-			"name": "free hugs",
+			"idea": "free hugs",
 			"modern": true
 		},
 		{
-			"name": "thumb sucking"
+			"idea": "thumb sucking"
 		},
 		{
-			"name": "a closure due to bad weather"
+			"idea": "a closure due to bad weather"
+		},
+		{
+			"idea": "COVID-19",
+			"modern": true,
+			"humanDistress": true
 		}
 	]
 }

@@ -9,440 +9,440 @@
 		"numerals": false,
 		"realPerson": false
 	},
-	"content": [
+	"contents": [
 		{
-			"name": "dragons",
+			"idea": "dragons",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "tortoises"
+			"idea": "tortoises"
 		},
 		{
-			"name": "chinchillas"
+			"idea": "chinchillas"
 		},
 		{
-			"name": "ostrich",
+			"idea": "ostrich",
 			"plural": "es",
 			"article": "an"
 		},
 		{
-			"name": "whale"
+			"idea": "whale"
 		},
 		{
-			"name": "dentist",
+			"idea": "dentist",
 			"max": 2,
 			"rateBy": 20,
 			"article": "the"
 		},
 		{
-			"name": "Garfield",
+			"idea": "Garfield",
 			"properName": true,
 			"modern": true,
 			"plural": false
 		},
 		{
-			"name": "long-haired cat",
+			"idea": "long-haired cat",
 			"max": 10,
 			"rateBy": 1
 		},
 		{
-			"name": "lesbian"
+			"idea": "lesbian"
 		},
 		{
-			"name": "librarian"
+			"idea": "librarian"
 		},
 		{
-			"name": "dance partners",
+			"idea": "dance partners",
 			"plural": true
 		},
 		{
-			"name": "elephant",
+			"idea": "elephant",
 			"article": "an"
 		},
 		{
-			"name": "fish in a bucket",
+			"idea": "fish in a bucket",
 			"plural": ""
 		},
 		{
-			"name": "koala"
+			"idea": "koala"
 		},
 		{
-			"name": "octopus",
+			"idea": "octopus",
 			"plural": "es",
 			"article": "an"
 		},
 		{
-			"name": "dinosaur"
+			"idea": "dinosaur"
 		},
 		{
-			"name": "leprechaun",
+			"idea": "leprechaun",
 			"fantasy": true
 		},
 		{
-			"name": "dead ruler",
+			"idea": "dead ruler",
 			"humanDeath": true
 		},
 		{
-			"name": "unicorn",
+			"idea": "unicorn",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "normal people",
+			"idea": "normal people",
 			"plural": true
 		},
 		{
-			"name": "vampire",
+			"idea": "vampire",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"horror": true
 		},
 		{
-			"name": "monsters under the bed",
+			"idea": "monsters under the bed",
 			"plural": true
 		},
 		{
-			"name": "Leonardo da Vinci",
+			"idea": "Leonardo da Vinci",
 			"properName": true,
 			"plural": false
 		},
 		{
-			"name": "crow"
+			"idea": "crow"
 		},
 		{
-			"name": "wicked witch",
+			"idea": "wicked witch",
 			"fantasy": true,
 			"plural": "es"
 		},
 		{
-			"name": "geese",
+			"idea": "geese",
 			"plural": true
 		},
 		{
-			"name": "private investigator"
+			"idea": "private investigator"
 		},
 		{
-			"name": "scientist"
+			"idea": "scientist"
 		},
 		{
-			"name": "seeing-eye dog",
+			"idea": "seeing-eye dog",
 			"modern": true,
 			"rateBy": 100,
 			"max": 3
 		},
 		{
-			"name": "the undead",
+			"idea": "the undead",
 			"fantasy": true,
 			"horror": true,
 			"plural": true
 		},
 		{
-			"name": "Superman",
+			"idea": "Superman",
 			"properName": true,
 			"fantasy": true,
 			"superhero": true,
 			"plural": false
 		},
 		{
-			"name": "camel"
+			"idea": "camel"
 		},
 		{
-			"name": "vulture"
+			"idea": "vulture"
 		},
 		{
-			"name": "drugged animals",
+			"idea": "drugged animals",
 			"animalDistress": true,
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "supermodel",
+			"idea": "supermodel",
 			"modern": true
 		},
 		{
-			"name": "owl",
+			"idea": "owl",
 			"article": "an"
 		},
 		{
-			"name": "electrician",
+			"idea": "electrician",
 			"modern": true,
 			"article": "an"
 		},
 		{
-			"name": "ferret"
+			"idea": "ferret"
 		},
 		{
-			"name": "porcupine"
+			"idea": "porcupine"
 		},
 		{
-			"name": "Harry Potter",
+			"idea": "Harry Potter",
 			"properName": true,
 			"modern": true,
 			"plural": false
 		},
 		{
-			"name": "the Pope",
+			"idea": "the Pope",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "Napoleon",
+			"idea": "Napoleon",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "George Washington",
+			"idea": "George Washington",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "Dr. Seuss",
+			"idea": "Dr. Seuss",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "albatross",
+			"idea": "albatross",
 			"plural": "es",
 			"article": "an"
 		},
 		{
-			"name": "gangster",
+			"idea": "gangster",
 			"modern": true
 		},
 		{
-			"name": "leopards that change their spots",
+			"idea": "leopards that change their spots",
 			"plural": true
 		},
 		{
-			"name": "a turtle laying on its back",
+			"idea": "a turtle laying on its back",
 			"animalDistress": true,
 			"plural": false
 		},
 		{
-			"name": "a captured royal",
+			"idea": "a captured royal",
 			"humanDistress": true,
 			"plural": false
 		},
 		{
-			"name": "lifeguard"
+			"idea": "lifeguard"
 		},
 		{
-			"name": "the last of its species",
+			"idea": "the last of its species",
 			"plural": false
 		},
 		{
-			"name": "foreign investor",
+			"idea": "foreign investor",
 			"modern": true
 		},
 		{
-			"name": "wrestler"
+			"idea": "wrestler"
 		},
 		{
-			"name": "identical twins",
+			"idea": "identical twins",
 			"plural": true
 		},
 		{
-			"name": "penguin"
+			"idea": "penguin"
 		},
 		{
-			"name": "Cthulhu",
+			"idea": "Cthulhu",
 			"fantasy": true,
 			"horror": true,
 			"plural": false
 		},
 		{
-			"name": "bumbling robber",
+			"idea": "bumbling robber",
 			"humanDistress": true
 		},
 		{
-			"name": "cheerleader",
+			"idea": "cheerleader",
 			"max": 12,
 			"rateBy": "incremental",
 			"rateFavorsLower": false
 		},
 		{
-			"name": "an old wizard",
+			"idea": "an old wizard",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"plural": false
 		},
 		{
-			"name": "a werewolf",
+			"idea": "a werewolf",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"plural": false
 		},
 		{
-			"name": "a fortune teller",
+			"idea": "a fortune teller",
 			"plural": false
 		},
 		{
-			"name": "a lost child",
+			"idea": "a lost child",
 			"plural": false
 		},
 		{
-			"name": "caribou",
+			"idea": "caribou",
 			"plural": ""
 		},
 		{
-			"name": "a babysitter",
+			"idea": "a babysitter",
 			"plural": false
 		},
 		{
-			"name": "a talking fish",
+			"idea": "a talking fish",
 			"fantasy": true,
 			"plural": false
 		},
 		{
-			"name": "the Tooth Fairy",
+			"idea": "the Tooth Fairy",
 			"religionAndMyths": true,
 			"fairyTales": true,
 			"plural": false
 		},
 		{
-			"name": "a basket case",
+			"idea": "a basket case",
 			"humanDistress": true,
 			"plural": false
 		},
 		{
-			"name": "triplets",
+			"idea": "triplets",
 			"plural": true
 		},
 		{
-			"name": "a motherIn-law",
+			"idea": "a mother-in-law",
 			"plural": true
 		},
 		{
-			"name": "Godzilla",
+			"idea": "Godzilla",
 			"fantasy": true,
 			"properName": true,
 			"plural": true
 		},
 		{
-			"name": "turkey"
+			"idea": "turkey"
 		},
 		{
-			"name": "a flock of seagulls",
+			"idea": "a flock of seagulls",
 			"plural": false
 		},
 		{
-			"name": "a hissing snake",
+			"idea": "a hissing snake",
 			"plural": false
 		},
 		{
-			"name": "the quiet man next door",
+			"idea": "the quiet man next door",
 			"plural": false
 		},
 		{
-			"name": "zombie",
+			"idea": "zombie",
 			"fantasy": true,
 			"horror": true
 		},
 		{
-			"name": "a man holding a brain",
+			"idea": "a man holding a brain",
 			"humanDistress": true,
 			"plural": false
 		},
 		{
-			"name": "a monkey with a banana",
+			"idea": "a monkey with a banana",
 			"plural": false
 		},
 		{
-			"name": "carnies",
+			"idea": "carnies",
 			"plural": true
 		},
 		{
-			"name": "the President of the United States",
+			"idea": "the President of the United States",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "the Prime Minister of Canada",
+			"idea": "the Prime Minister of Canada",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "a nun",
+			"idea": "a nun",
 			"religionAndMyths": true,
 			"christianity": true,
 			"plural": false
 		},
 		{
-			"name": "weasel"
+			"idea": "weasel"
 		},
 		{
-			"name": "Shakespeare",
+			"idea": "Shakespeare",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "a bald man",
+			"idea": "a bald man",
 			"plural": false
 		},
 		{
-			"name": "Chuck Norris",
+			"idea": "Chuck Norris",
 			"properName": true,
 			"realPerson": true,
 			"modern": true,
 			"plural": false
 		},
 		{
-			"name": "a John or Jane Doe",
+			"idea": "a John or Jane Doe",
 			"humanDistress": true,
 			"plural": false
 		},
 		{
-			"name": "shark",
+			"idea": "shark",
 			"rateBy": 20
 		},
 		{
-			"name": "a babydaddy",
+			"idea": "a babydaddy",
 			"sexual": true,
 			"modern": true,
 			"plural": false
 		},
 		{
-			"name": "a babymomma",
+			"idea": "a babymomma",
 			"sexual": true,
 			"modern": true,
 			"plural": false
 		},
 		{
-			"name": "a missing child",
+			"idea": "a missing child",
 			"humanDistress": true,
 			"plural": false
 		},
 		{
-			"name": "rabbit",
+			"idea": "rabbit",
 			"min": 2,
 			"max": 10
 		},
 		{
-			"name": "ogre",
+			"idea": "ogre",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "oxen",
+			"idea": "oxen",
 			"plural": true
 		},
 		{
-			"name": "a dalmatian",
+			"idea": "a dalmatian",
 			"plural": false
 		},
 		{
-			"name": "umpire"
+			"idea": "umpire"
 		},
 		{
-			"name": "the devil",
+			"idea": "the devil",
 			"fantasy": true,
 			"horror": true,
 			"religionAndMyths": true,
@@ -450,46 +450,46 @@
 			"plural": false
 		},
 		{
-			"name": "a monster",
+			"idea": "a monster",
 			"fantasy": true,
 			"horror": true,
 			"plural": false
 		},
 		{
-			"name": "a new priest",
+			"idea": "a new priest",
 			"religionAndMyths": true,
 			"christianity": true,
 			"plural": false
 		},
 		{
-			"name": "the leader of the tribe",
+			"idea": "the leader of the tribe",
 			"plural": false
 		},
 		{
-			"name": "pheasant"
+			"idea": "pheasant"
 		},
 		{
-			"name": "peasant"
+			"idea": "peasant"
 		},
 		{
-			"name": "tramp"
+			"idea": "tramp"
 		},
 		{
-			"name": "pig"
+			"idea": "pig"
 		},
 		{
-			"name": "rodeo clown"
+			"idea": "rodeo clown"
 		},
 		{
-			"name": "average, silly, unremarkable, yet utterly terrifying clown",
+			"idea": "average, silly, unremarkable, yet utterly terrifying clown",
 			"max": 3
 		},
 		{
-			"name": "your first pet",
+			"idea": "your first pet",
 			"plural": false
 		},
 		{
-			"name": "Nazis",
+			"idea": "Nazis",
 			"properName": true,
 			"realPerson": true,
 			"humanDistress": true,
@@ -497,19 +497,19 @@
 			"plural": true
 		},
 		{
-			"name": "a deer in the headlights",
+			"idea": "a deer in the headlights",
 			"plural": false
 		},
 		{
-			"name": "rich parents",
+			"idea": "rich parents",
 			"plural": true
 		},
 		{
-			"name": "a treehugger in a tree",
+			"idea": "a treehugger in a tree",
 			"plural": false
 		},
 		{
-			"name": "a flying horse",
+			"idea": "a flying horse",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"religionAndMyths": true,
@@ -517,115 +517,109 @@
 			"plural": false
 		},
 		{
-			"name": "too many people crammed into a van",
+			"idea": "too many people crammed into a van",
 			"plural": true
 		},
 		{
-			"name": "a samurai",
+			"idea": "a samurai",
 			"historicalFiction": true,
 			"samurai": true,
 			"plural": false
 		},
 		{
-			"name": "a gunslinger",
+			"idea": "a gunslinger",
 			"historicalFiction": true,
 			"western": true,
 			"plural": false
 		},
 		{
-			"name": "chipmunk"
+			"idea": "chipmunk"
 		},
 		{
-			"name": "goblin",
+			"idea": "goblin",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "frog"
+			"idea": "frog"
 		},
 		{
-			"name": "hummingbird"
+			"idea": "hummingbird"
 		},
 		{
-			"name": "a pregnant teenager",
+			"idea": "a pregnant teenager",
 			"sexual": true,
 			"plural": false
 		},
 		{
-			"name": "a foreign prince",
+			"idea": "a foreign prince",
 			"plural": false
 		},
 		{
-			"name": "an outlaw",
+			"idea": "an outlaw",
 			"historicalFiction": true,
 			"western": true,
 			"plural": false
 		},
 		{
-			"name": "a swashbuckler",
+			"idea": "a swashbuckler",
 			"historicalFiction": true,
 			"plural": false
 		},
 		{
-			"name": "robots",
+			"idea": "robots",
 			"modern": true,
 			"plural": true
 		},
 		{
-			"name": "a lapdog",
+			"idea": "a lapdog",
 			"plural": false
 		},
 		{
-			"name": "swarm of bees",
+			"idea": "swarm of bees",
 			"plural": ""
 		},
 		{
-			"name": "the UN Security Council",
+			"idea": "the UN Security Council",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "a rooster crowing",
+			"idea": "a rooster crowing",
 			"plural": false
 		},
 		{
-			"name": "Parliament",
+			"idea": "Parliament",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "Congress",
+			"idea": "Congress",
 			"properName": true,
 			"realPerson": true,
 			"plural": false
 		},
 		{
-			"name": "dead parents",
+			"idea": "dead parents",
 			"humanDeath": true,
 			"humanDistress": true,
 			"plural": true
 		},
 		{
-			"name": "head lice",
-			"humanDistress": true,
+			"idea": "kittens",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "kittens",
-			"plural": true,
-			"animate": true
-		},
-		{
-			"name": "an owlbear",
+			"idea": "an owlbear",
 			"fantasy": true,
 			"medievalFantasy": true,
 			"animate": true
 		},
 		{
-			"name": "scarab beetles",
+			"idea": "scarab beetles",
 			"historicalFiction": true,
 			"fantasy": true,
 			"horror": true,
@@ -633,47 +627,47 @@
 			"animate": true
 		},
 		{
-			"name": "a giant bug",
+			"idea": "a giant bug",
 			"animate": true
 		},
 		{
-			"name": "loud birds",
+			"idea": "loud birds",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "white rabbits",
+			"idea": "white rabbits",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "bumblebees",
+			"idea": "bumblebees",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "grasshoppers",
+			"idea": "grasshoppers",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "spiders",
+			"idea": "spiders",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "zoo animals",
+			"idea": "zoo animals",
 			"animalDistress": true,
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "bunnies",
+			"idea": "bunnies",
 			"plural": true,
 			"animate": true
 		},
 		{
-			"name": "mosquitoes",
+			"idea": "mosquitoes",
 			"humanDistress": true,
 			"plural": true,
 			"animate": true

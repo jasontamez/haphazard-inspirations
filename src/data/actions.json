@@ -2,761 +2,761 @@
 	"default": {},
 	"contents": [
 		{
-			"name": "digging"
+			"idea": "digging"
 		},
 		{
-			"name": "fighting with swords",
+			"idea": "fighting with swords",
 			"historicalFiction": true,
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"name": "taking a pulse"
+			"idea": "taking a pulse"
 		},
 		{
-			"name": "wiping away sweat"
+			"idea": "wiping away sweat"
 		},
 		{
-			"name": "eating too much"
+			"idea": "eating too much"
 		},
 		{
-			"name": "trying to dance"
+			"idea": "trying to dance"
 		},
 		{
-			"name": "ordering food"
+			"idea": "ordering food"
 		},
 		{
-			"name": "sleeping"
+			"idea": "sleeping"
 		},
 		{
-			"name": "scratching an itch"
+			"idea": "scratching an itch"
 		},
 		{
-			"name": "going to town"
+			"idea": "going to town"
 		},
 		{
-			"name": "driving"
+			"idea": "driving"
 		},
 		{
-			"name": "sleepwalking"
+			"idea": "sleepwalking"
 		},
 		{
-			"name": "prancing"
+			"idea": "prancing"
 		},
 		{
-			"name": "killing",
+			"idea": "killing",
 			"humanDeath": true,
 			"animalDeath": true
 		},
 		{
-			"name": "giving away clothes"
+			"idea": "giving away clothes"
 		},
 		{
-			"name": "returning a purchase"
+			"idea": "returning a purchase"
 		},
 		{
-			"name": "looking out"
+			"idea": "looking out"
 		},
 		{
-			"name": "going to church",
+			"idea": "going to church",
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "quilting"
+			"idea": "quilting"
 		},
 		{
-			"name": "jumping off a bridge",
+			"idea": "jumping off a bridge",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "muttering"
+			"idea": "muttering"
 		},
 		{
-			"name": "yodeling"
+			"idea": "yodeling"
 		},
 		{
-			"name": "a big gulp"
+			"idea": "a big gulp"
 		},
 		{
-			"name": "drinking shampoo by mistake"
+			"idea": "drinking shampoo by mistake"
 		},
 		{
-			"name": "growling",
+			"idea": "growling",
 			"animalDistress": true
 		},
 		{
-			"name": "dusting the room"
+			"idea": "dusting the room"
 		},
 		{
-			"name": "forgetting"
+			"idea": "forgetting"
 		},
 		{
-			"name": "choosing the undesirable"
+			"idea": "choosing the undesirable"
 		},
 		{
-			"name": "whittling"
+			"idea": "whittling"
 		},
 		{
-			"name": "not wearing underwear",
+			"idea": "not wearing underwear",
 			"sexual": true
 		},
 		{
-			"name": "sleeping with eyes open"
+			"idea": "sleeping with eyes open"
 		},
 		{
-			"name": "ignoring someone",
+			"idea": "ignoring someone",
 			"humanDistress": true
 		},
 		{
-			"name": "understanding something for the first time"
+			"idea": "understanding something for the first time"
 		},
 		{
-			"name": "rolling down a hill"
+			"idea": "rolling down a hill"
 		},
 		{
-			"name": "climbing a mountain"
+			"idea": "climbing a mountain"
 		},
 		{
-			"name": "freezing to death",
+			"idea": "freezing to death",
 			"humanDeath": true
 		},
 		{
-			"name": "wondering if cobwebs and spiderwebs are the same thing"
+			"idea": "wondering if cobwebs and spiderwebs are the same thing"
 		},
 		{
-			"name": "using a telescope"
+			"idea": "using a telescope"
 		},
 		{
-			"name": "repeating things"
+			"idea": "repeating things"
 		},
 		{
-			"name": "misspelling important words"
+			"idea": "misspelling important words"
 		},
 		{
-			"name": "popping up out of nowhere"
+			"idea": "popping up out of nowhere"
 		},
 		{
-			"name": "putting a collar on a giraffe"
+			"idea": "putting a collar on a giraffe"
 		},
 		{
-			"name": "making out",
+			"idea": "making out",
 			"sexual": true
 		},
 		{
-			"name": "flushing something down the toilet"
+			"idea": "flushing something down the toilet"
 		},
 		{
-			"name": "clutching a rosary",
+			"idea": "clutching a rosary",
 			"religionAndMyths": true,
 			"christianity": true
 		},
 		{
-			"name": "parallel parking"
+			"idea": "parallel parking"
 		},
 		{
-			"name": "wearing a turban"
+			"idea": "wearing a turban"
 		},
 		{
-			"name": "smoking"
+			"idea": "smoking"
 		},
 		{
-			"name": "using kneepads",
+			"idea": "using kneepads",
 			"sexual": true
 		},
 		{
-			"name": "spinning a globe"
+			"idea": "spinning a globe"
 		},
 		{
-			"name": "pulling up carpet"
+			"idea": "pulling up carpet"
 		},
 		{
-			"name": "being aroused in public",
+			"idea": "being aroused in public",
 			"sexual": true
 		},
 		{
-			"name": "stripping",
+			"idea": "stripping",
 			"sexual": true
 		},
 		{
-			"name": "getting drunk",
+			"idea": "getting drunk",
 			"alcohol": true
 		},
 		{
-			"name": "meeting the lawyer"
+			"idea": "meeting the lawyer"
 		},
 		{
-			"name": "eating tofu"
+			"idea": "eating tofu"
 		},
 		{
-			"name": "pretending to read"
+			"idea": "pretending to read"
 		},
 		{
-			"name": "trying to see at night"
+			"idea": "trying to see at night"
 		},
 		{
-			"name": "catching what is thrown"
+			"idea": "catching what is thrown"
 		},
 		{
-			"name": "turning something off and on again until it works",
+			"idea": "turning something off and on again until it works",
 			"modern": true
 		},
 		{
-			"name": "being tired"
+			"idea": "being tired"
 		},
 		{
-			"name": "believing in magic"
+			"idea": "believing in magic"
 		},
 		{
-			"name": "taking a shower with clothes still on"
+			"idea": "taking a shower with clothes still on"
 		},
 		{
-			"name": "reaching a new height"
+			"idea": "reaching a new height"
 		},
 		{
-			"name": "tricking someone",
+			"idea": "tricking someone",
 			"humanDistress": true
 		},
 		{
-			"name": "accidentally turning someone on",
+			"idea": "accidentally turning someone on",
 			"sexual": true,
 			"humanDistress": true
 		},
 		{
-			"name": "walking slowly"
+			"idea": "walking slowly"
 		},
 		{
-			"name": "spilling juice on a keyboard"
+			"idea": "spilling juice on a keyboard"
 		},
 		{
-			"name": "rolling a pair of dice"
+			"idea": "rolling a pair of dice"
 		},
 		{
-			"name": "trying not to breathe"
+			"idea": "trying not to breathe"
 		},
 		{
-			"name": "holding one's breath"
+			"idea": "holding one's breath"
 		},
 		{
-			"name": "uniting people"
+			"idea": "uniting people"
 		},
 		{
-			"name": "raising the dead",
+			"idea": "raising the dead",
 			"fantasy": true,
 			"horror": true
 		},
 		{
-			"name": "clapping"
+			"idea": "clapping"
 		},
 		{
-			"name": "quitting"
+			"idea": "quitting"
 		},
 		{
-			"name": "having one's papers in order",
+			"idea": "having one's papers in order",
 			"humanDistress": true
 		},
 		{
-			"name": "riding off into the sunset",
+			"idea": "riding off into the sunset",
 			"historicalFiction": true,
 			"western": true
 		},
 		{
-			"name": "hanging stockings"
+			"idea": "hanging stockings"
 		},
 		{
-			"name": "being out of medication",
+			"idea": "being out of medication",
 			"modern": true
 		},
 		{
-			"name": "being naked and afraid",
+			"idea": "being naked and afraid",
 			"humanDistress": true
 		},
 		{
-			"name": "playing chess"
+			"idea": "playing chess"
 		},
 		{
-			"name": "playing Russian roulette",
+			"idea": "playing Russian roulette",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "riding a dog",
+			"idea": "riding a dog",
 			"animalDistress": true
 		},
 		{
-			"name": "getting one's hair did",
+			"idea": "getting one's hair did",
 			"modern": true
 		},
 		{
-			"name": "hanging a mirror"
+			"idea": "hanging a mirror"
 		},
 		{
-			"name": "surfing",
+			"idea": "surfing",
 			"modern": true
 		},
 		{
-			"name": "skateboarding",
+			"idea": "skateboarding",
 			"modern": true
 		},
 		{
-			"name": "snow skiing"
+			"idea": "snow skiing"
 		},
 		{
-			"name": "water skiing",
+			"idea": "water skiing",
 			"modern": true
 		},
 		{
-			"name": "being stabbed in the foot",
+			"idea": "being stabbed in the foot",
 			"humanDistress": true
 		},
 		{
-			"name": "screaming",
+			"idea": "screaming",
 			"humanDistress": true
 		},
 		{
-			"name": "wailing",
+			"idea": "wailing",
 			"humanDistress": true,
 			"animalDistress": true
 		},
 		{
-			"name": "losing an eye",
+			"idea": "losing an eye",
 			"humanDistress": true
 		},
 		{
-			"name": "melting in the sun"
+			"idea": "melting in the sun"
 		},
 		{
-			"name": "the curtain falling"
+			"idea": "the curtain falling"
 		},
 		{
-			"name": "kicking the bucket",
+			"idea": "kicking the bucket",
 			"humanDeath": true
 		},
 		{
-			"name": "eating dirt"
+			"idea": "eating dirt"
 		},
 		{
-			"name": "opening a can of food"
+			"idea": "opening a can of food"
 		},
 		{
-			"name": "being at a loss for words"
+			"idea": "being at a loss for words"
 		},
 		{
-			"name": "throwing a hand axe",
+			"idea": "throwing a hand axe",
 			"historicalFiction": true,
 			"western": true
 		},
 		{
-			"name": "catching air",
+			"idea": "catching air",
 			"modern": true
 		},
 		{
-			"name": "watching a bad movie"
+			"idea": "watching a bad movie"
 		},
 		{
-			"name": "framing a diploma"
+			"idea": "framing a diploma"
 		},
 		{
-			"name": "dreaming"
+			"idea": "dreaming"
 		},
 		{
-			"name": "lucking out"
+			"idea": "lucking out"
 		},
 		{
-			"name": "hopping around"
+			"idea": "hopping around"
 		},
 		{
-			"name": "doing jumping jacks"
+			"idea": "doing jumping jacks"
 		},
 		{
-			"name": "biding one's time"
+			"idea": "biding one's time"
 		},
 		{
-			"name": "burning a flag"
+			"idea": "burning a flag"
 		},
 		{
-			"name": "burping loudly"
+			"idea": "burping loudly"
 		},
 		{
-			"name": "getting past an obstacle"
+			"idea": "getting past an obstacle"
 		},
 		{
-			"name": "forgetting a birthday"
+			"idea": "forgetting a birthday"
 		},
 		{
-			"name": "getting lost",
+			"idea": "getting lost",
 			"humanDistress": true
 		},
 		{
-			"name": "faking a death",
+			"idea": "faking a death",
 			"humanDeath": true
 		},
 		{
-			"name": "wetting the bed",
+			"idea": "wetting the bed",
 			"humanDistress": true
 		},
 		{
-			"name": "getting a membership"
+			"idea": "getting a membership"
 		},
 		{
-			"name": "feeling like a princess"
+			"idea": "feeling like a princess"
 		},
 		{
-			"name": "making the team"
+			"idea": "making the team"
 		},
 		{
-			"name": "hitting any key to continue",
+			"idea": "hitting any key to continue",
 			"modern": true
 		},
 		{
-			"name": "giggling uncontrollably"
+			"idea": "giggling uncontrollably"
 		},
 		{
-			"name": "writing a check"
+			"idea": "writing a check"
 		},
 		{
-			"name": "bouncing a check"
+			"idea": "bouncing a check"
 		},
 		{
-			"name": "dancing at the club",
+			"idea": "dancing at the club",
 			"modern": true
 		},
 		{
-			"name": "choking on a meal"
+			"idea": "choking on a meal"
 		},
 		{
-			"name": "walking for the first time"
+			"idea": "walking for the first time"
 		},
 		{
-			"name": "jumping the gap"
+			"idea": "jumping the gap"
 		},
 		{
-			"name": "burning a bridge"
+			"idea": "burning a bridge"
 		},
 		{
-			"name": "yelling in public"
+			"idea": "yelling in public"
 		},
 		{
-			"name": "solving an equation"
+			"idea": "solving an equation"
 		},
 		{
-			"name": "quoting a public figure"
+			"idea": "quoting a public figure"
 		},
 		{
-			"name": "obfuscating the truth"
+			"idea": "obfuscating the truth"
 		},
 		{
-			"name": "watching one's language"
+			"idea": "watching one's language"
 		},
 		{
-			"name": "holding hands"
+			"idea": "holding hands"
 		},
 		{
-			"name": "breathing fire"
+			"idea": "breathing fire"
 		},
 		{
-			"name": "playing hopscotch"
+			"idea": "playing hopscotch"
 		},
 		{
-			"name": "voting someone off the island",
+			"idea": "voting someone off the island",
 			"humanDistress": true
 		},
 		{
-			"name": "killing chickens for food",
+			"idea": "killing chickens for food",
 			"animalDeath": true
 		},
 		{
-			"name": "telling lies",
+			"idea": "telling lies",
 			"humanDistress": true
 		},
 		{
-			"name": "eating out",
+			"idea": "eating out",
 			"sexual": true
 		},
 		{
-			"name": "square dancing"
+			"idea": "square dancing"
 		},
 		{
-			"name": "bouncing"
+			"idea": "bouncing"
 		},
 		{
-			"name": "living the dream"
+			"idea": "living the dream"
 		},
 		{
-			"name": "looting",
+			"idea": "looting",
 			"humanDistress": true
 		},
 		{
-			"name": "destroying one's childhood",
+			"idea": "destroying one's childhood",
 			"humanDistress": true
 		},
 		{
-			"name": "not watching TV",
+			"idea": "not watching TV",
 			"modern": true
 		},
 		{
-			"name": "coming in second"
+			"idea": "coming in second"
 		},
 		{
-			"name": "carving initials into a tree"
+			"idea": "carving initials into a tree"
 		},
 		{
-			"name": "rolling one's eyes"
+			"idea": "rolling one's eyes"
 		},
 		{
-			"name": "skinny dipping",
+			"idea": "skinny dipping",
 			"sexual": true
 		},
 		{
-			"name": "burning the remains",
+			"idea": "burning the remains",
 			"humanDeath": true,
 			"animalDeath": true
 		},
 		{
-			"name": "going blind",
+			"idea": "going blind",
 			"humanDistress": true
 		},
 		{
-			"name": "diving in"
+			"idea": "diving in"
 		},
 		{
-			"name": "dividing fractions"
+			"idea": "dividing fractions"
 		},
 		{
-			"name": "coloring outside the lines"
+			"idea": "coloring outside the lines"
 		},
 		{
-			"name": "joining the band"
+			"idea": "joining the band"
 		},
 		{
-			"name": "being mistaken for someone famous"
+			"idea": "being mistaken for someone famous"
 		},
 		{
-			"name": "writing the great American novel",
+			"idea": "writing the great American novel",
 			"properName": true
 		},
 		{
-			"name": "tap dancing"
+			"idea": "tap dancing"
 		},
 		{
-			"name": "sleeping naked",
+			"idea": "sleeping naked",
 			"sexual": true
 		},
 		{
-			"name": "being too close for comfort"
+			"idea": "being too close for comfort"
 		},
 		{
-			"name": "pointing a finger"
+			"idea": "pointing a finger"
 		},
 		{
-			"name": "livestreaming a crime",
+			"idea": "livestreaming a crime",
 			"modern": true,
 			"humanDistress": true
 		},
 		{
-			"name": "using DVDs as shurikens",
+			"idea": "using DVDs as shurikens",
 			"modern": true,
 			"humanDistress": true
 		},
 		{
-			"name": "giving thanks"
+			"idea": "giving thanks"
 		},
 		{
-			"name": "getting laid",
+			"idea": "getting laid",
 			"sexual": true,
 			"modern": true
 		},
 		{
-			"name": "job hunting"
+			"idea": "job hunting"
 		},
 		{
-			"name": "looking for a parent",
+			"idea": "looking for a parent",
 			"humanDistress": true
 		},
 		{
-			"name": "getting fired from work",
+			"idea": "getting fired from work",
 			"humanDistress": true
 		},
 		{
-			"name": "checking in"
+			"idea": "checking in"
 		},
 		{
-			"name": "not knowing what day it is"
+			"idea": "not knowing what day it is"
 		},
 		{
-			"name": "screeching"
+			"idea": "screeching"
 		},
 		{
-			"name": "burning one's tongue",
+			"idea": "burning one's tongue",
 			"humanDistress": true
 		},
 		{
-			"name": "collecting the entire set",
+			"idea": "collecting the entire set",
 			"modern": true
 		},
 		{
-			"name": "lip reading"
+			"idea": "lip reading"
 		},
 		{
-			"name": "getting her period",
+			"idea": "getting her period",
 			"sexual": true,
 			"humanDistress": true
 		},
 		{
-			"name": "cooking with gas"
+			"idea": "cooking with gas"
 		},
 		{
-			"name": "ignoring an injury"
+			"idea": "ignoring an injury"
 		},
 		{
-			"name": "hacking",
+			"idea": "hacking",
 			"modern": true
 		},
 		{
-			"name": "carving a tunnel"
+			"idea": "carving a tunnel"
 		},
 		{
-			"name": "accepting your fate",
+			"idea": "accepting your fate",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "choosing your fate"
+			"idea": "choosing your fate"
 		},
 		{
-			"name": "making a strong offer",
+			"idea": "making a strong offer",
 			"modern": true
 		},
 		{
-			"name": "running from one's past",
+			"idea": "running from one's past",
 			"humanDistress": true
 		},
 		{
-			"name": "growing up too fast"
+			"idea": "growing up too fast"
 		},
 		{
-			"name": "adding the letter X to something's name",
+			"idea": "adding the letter X to something's name",
 			"modern": true
 		},
 		{
-			"name": "falling in love"
+			"idea": "falling in love"
 		},
 		{
-			"name": "having to change"
+			"idea": "having to change"
 		},
 		{
-			"name": "smelting"
+			"idea": "smelting"
 		},
 		{
-			"name": "eating on the run"
+			"idea": "eating on the run"
 		},
 		{
-			"name": "running from a killer",
+			"idea": "running from a killer",
 			"humanDistress": true,
 			"humanDeath": true
 		},
 		{
-			"name": "running from the police",
+			"idea": "running from the police",
 			"humanDistress": true
 		},
 		{
-			"name": "painting a window"
+			"idea": "painting a window"
 		},
 		{
-			"name": "scraping your knee",
+			"idea": "scraping your knee",
 			"humanDistress": true
 		},
 		{
-			"name": "turning a page"
+			"idea": "turning a page"
 		},
 		{
-			"name": "knowing all the lyrics"
+			"idea": "knowing all the lyrics"
 		},
 		{
-			"name": "singing off-key"
+			"idea": "singing off-key"
 		},
 		{
-			"name": "finding footprints where there shouldn't be any"
+			"idea": "finding footprints where there shouldn't be any"
 		},
 		{
-			"name": "spinning a bottle",
+			"idea": "spinning a bottle",
 			"sexual": true
 		},
 		{
-			"name": "stepping on a nail",
+			"idea": "stepping on a nail",
 			"humanDistress": true
 		},
 		{
-			"name": "managing tasks"
+			"idea": "managing tasks"
 		},
 		{
-			"name": "feeling cool",
+			"idea": "feeling cool",
 			"modern": true
 		},
 		{
-			"name": "being pretty"
+			"idea": "being pretty"
 		},
 		{
-			"name": "having enough"
+			"idea": "having enough"
 		},
 		{
-			"name": "getting 15% off of everything",
+			"idea": "getting 15% off of everything",
 			"modern": true
 		},
 		{
-			"name": "passing for another gender"
+			"idea": "passing for another gender"
 		},
 		{
-			"name": "being cold-blooded"
+			"idea": "being cold-blooded"
 		},
 		{
-			"name": "feeling free"
+			"idea": "feeling free"
 		},
 		{
-			"name": "having twelve different hair colors at once",
+			"idea": "having twelve different hair colors at once",
 			"modern": true
 		},
 		{
-			"name": "being thirsty",
+			"idea": "being thirsty",
 			"humanDistress": true
 		},
 		{
-			"name": "raising the bar"
+			"idea": "raising the bar"
 		},
 		{
-			"name": "being alone"
+			"idea": "being alone"
 		},
 		{
-			"name": "losing the remote control",
+			"idea": "losing the remote control",
 			"modern": true
 		},
 		{
-			"name": "gaining weight"
+			"idea": "gaining weight"
 		},
 		{
-			"name": "losing weight"
+			"idea": "losing weight"
 		},
 		{
-			"name": "finding oil"
+			"idea": "finding oil"
 		},
 		{
-			"name": "feeling funny"
+			"idea": "feeling funny"
 		},
 		{
-			"name": "dealing with sexual assault",
+			"idea": "dealing with sexual assault",
 			"sexual": true,
 			"humanDistress": true
 		},
 		{
-			"name": "repressing a hidden trauma",
+			"idea": "repressing a hidden trauma",
 			"humanDistress": true
 		},
 		{
-			"name": "counting sheep"
+			"idea": "counting sheep"
 		},
 		{
-			"name": "biting one's toenails"
+			"idea": "biting one's toenails"
 		}
 	]
 }
