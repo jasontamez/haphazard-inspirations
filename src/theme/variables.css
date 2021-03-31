@@ -1,10 +1,73 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+/** Font Faces **/
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('./font/NotoSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('./font/NotoSans-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('./font/NotoSans-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('./font/NotoSans-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'DM Mono';
+	src: url('./font/DMMono-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DM Mono';
+	src: url('./font/DMMono-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('./font/NotoSerif-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('./font/NotoSerif-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('./font/NotoSerif-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('./font/NotoSerif-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
 /** Ionic CSS Variables **/
 :root {
-	--ion-font-serif: 'Noto Serif', 'Georgia', serif;
-	--ion-font-sans: 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+	--ion-font-serif: 'Noto Serif', serif;
+	--ion-font-sans: 'Noto Sans', sans-serif;
+	--ion-font-monospace: 'DM Mono', monospace;
 	--ion-font-family: var(--ion-font-sans);
 	--ion-default-font: var(--ion-font-family);
 
