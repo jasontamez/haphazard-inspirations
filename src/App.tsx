@@ -23,44 +23,57 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
-/* Google webfontloader */
-import WebfontLoader from '@dr-kobros/react-webfont-loader';
-
 /* Theme variables */
 import './theme/variables.css';
 
-/* WebfontLoader config */
-const WFLconfig = {
-	google: {
-		families: [
-			'Noto Sans:400,400i,700,700i:latin,cyrillic,cyrillic-ext,greek,greek-ext,latin-ext',
-			'Noto Serif:400,400i,700,700i:latin,cyrillic,cyrillic-ext,greek,greek-ext,latin-ext'
-		],
-	}
-};
+import { VERSION, overwriteState, checkIfState, blankAppState } from './components/ReduxDucks';
+import compareVersions from 'compare-versions';
+import store from './components/ReduxStore';
+import { StateStorage } from './components/PersistentInfo';
+
 
 const App = () => {
+	const maybeSetState = () => {
+		return (dispatch: any) => {
+			return StateStorage.getItem("lastState").then((storedState: any) => {
+				if(storedState !== null) {
+					if(storedState && (typeof storedState) === "object") {
+						if (compareVersions.compare(storedState.currentVersion, "0.0.1", "<")) {
+							// Do stuff to possibly bring storedState up to date
+						}
+						if (compareVersions.compare(storedState.currentVersion, VERSION.current, "<")) {
+							// Do stuff to possibly bring storedState up to date
+							storedState.currentVersion = VERSION.current;
+						}
+						if(checkIfState(storedState)) {
+							return dispatch(overwriteState(storedState));
+						}
+					}
+				}
+				return dispatch(overwriteState(blankAppState));
+			});
+		}
+	};
+	store.dispatch(maybeSetState());
 	return (
-		<WebfontLoader config={WFLconfig}>
-			<IonApp>
-				<IonReactRouter>
-					<IonSplitPane contentId="main" when="xl">
-						<Menu />
-						{/* <Main />
-							Using the render method prop cuts down the number of renders your components
-							will have due to route changes. Use the component prop when your component
-							depends on the RouterComponentProps passed in automatically.
-						*/}
-						<IonRouterOutlet id="main">
-							<Route exact path="/home" render={() => <Home />} />
-							<Route exact path="/settings" render={() => <Settings />} />
-							<Route exact path="/theme" render={() => <Theme />} />
-							<Redirect exact={true} from="/" to="/home" />
-						</IonRouterOutlet>
-					</IonSplitPane>
-				</IonReactRouter>
-			</IonApp>
-		</WebfontLoader>
+		<IonApp>
+			<IonReactRouter>
+				<IonSplitPane contentId="main" when="xl">
+					<Menu />
+					{/* <Main />
+						Using the render method prop cuts down the number of renders your components
+						will have due to route changes. Use the component prop when your component
+						depends on the RouterComponentProps passed in automatically.
+					*/}
+					<IonRouterOutlet id="main">
+						<Route exact path="/home" render={() => <Home />} />
+						<Route exact path="/settings" render={() => <Settings />} />
+						<Route exact path="/theme" render={() => <Theme />} />
+						<Redirect exact={true} from="/" to="/home" />
+					</IonRouterOutlet>
+				</IonSplitPane>
+			</IonReactRouter>
+		</IonApp>
 	)
 };
 

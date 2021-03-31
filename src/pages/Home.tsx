@@ -22,7 +22,7 @@ const Home = () => {
 	const dispatch = useDispatch();
 	const settings = state.settings;
 	// Handle shake-to-update
-	settings.shake && Shake.startWatch().subscribe(() => {forceNewIdea(1); forceNewIdea(2);});
+	settings.shake && Shake.startWatch().subscribe(() => {maybeGenerateNewIdea(1); maybeGenerateNewIdea(2);});
 	const getOmissions = () => {
 		let objects: any[] = [
 			state.locales,
@@ -46,12 +46,17 @@ const Home = () => {
 	const inspirations = makeInspirations(getOmissions());
 
 	const getNewIdea = () => {
-		return inspirations[generateRandomNumber(inspirations.length)];
+		let i = generateRandomNumber(inspirations.length);
+		let [idea] = inspirations.splice(i, 1);
+		if(inspirations.length === 0) {
+			//dispatch(clearUsedIdeas());
+		}
+		return idea;
 	};
 
-	const forceNewIdea = (i: 1 | 2) => {
+	const maybeGenerateNewIdea = (i: 1 | 2) => {
 		const idea = getNewIdea();
-		dispatch(updateIdea([i, idea]));
+		dispatch(updateIdea(i));
 		return idea;
 	};
 
@@ -114,21 +119,14 @@ const Home = () => {
 	};
 
 	const makeIdea = () => {
+		if(state.idea1 === null && state.idea2 === null) {
+			return (<p className="theIdea loading">LOADING</p>);
+		}
 		let chosen: string[];
 		let singleFormatType = singleFormats;
 		let msg: any = "";
-		let idea1: BasicIdea;
-		if(state.idea1 !== null) {
-			idea1 = state.idea1;
-		} else {
-			idea1 = forceNewIdea(1);
-		}
-		let idea2: BasicIdea;
-		if(state.idea2 !== null) {
-			idea2 = state.idea2;
-		} else {
-			idea2 = forceNewIdea(2);
-		}
+		let idea1: BasicIdea = state.idea1;
+		let idea2: BasicIdea = state.idea2;
 		const type1 = idea1.type;
 		const type2 = idea2.type;
 		const i1 = idea1.getIdea();
@@ -181,7 +179,7 @@ const Home = () => {
 					<IonTitle>Get Inspired</IonTitle>
 					<IonButtons slot="start">
 						<IonMenuButton />
-						<IonButton onClick={() => {forceNewIdea(1); forceNewIdea(2);}}><IonLabel>CLICK</IonLabel></IonButton>
+						<IonButton onClick={() => {maybeGenerateNewIdea(1); maybeGenerateNewIdea(2);}}><IonLabel>CLICK</IonLabel></IonButton>
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>

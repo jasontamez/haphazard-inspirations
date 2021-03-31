@@ -1,3 +1,7 @@
+import { IdeaStorage } from './PersistentInfo';
+import { useDispatch } from "react-redux";
+import { StateObject, removeFromUsed, setIdeas } from './ReduxDucks';
+import shuffle from 'array-shuffle';
 import characters from '../data/characters.json';
 import action from '../data/actions.json';
 import event from '../data/events.json';
@@ -65,6 +69,9 @@ export class BasicIdea {
 	getIdea() {
 		console.log(this);
 		return this.idea || "idea";
+	}
+	id() {
+		return String(this.idea) + String(this.type);
 	}
 }
 
@@ -274,21 +281,152 @@ const filter = (original: any[], omit: string[] = []) => {
 	if(omit.length === 0) {
 		return original;
 	}
-	return original.filter((test: any) => 
-		!omit.some((prop: string) => test[prop])
-	);
+	let gone: any[] = [];
+	let staying: any[] =[];
+	original.forEach((testing: any) => {
+		let test: any = testing;
+		if(Array.isArray(test)) {
+			test = testing[0];
+		}
+		if(omit.some((prop: string) => test[prop])) {
+			gone.push(testing);
+		} else {
+			staying.push(testing);
+		}
+	});
+	return [gone, staying];
 };
 
 const makeInspirations = (omit: string[] = []) => {
 	const inspirations: BasicIdea[] = [
-		...filter(action.contents, omit).map(a => new Action(a)),
-		...filter(characters.contents, omit).map(c => new Character(c)),
-		...filter(event.contents, omit).map(e => new AnEvent(e)),
-		...filter(locale.contents, omit).map(l => new Locale(l)),
-		...filter(object.contents, omit).map(o => new AnObject(o)),
-		...filter(time.contents, omit).map(t => new Time(t)),
-		...filter(topic.contents, omit).map(t => new Topic(t))
+		...filter(action.contents, omit)[1].map((a: any) => new Action(a)),
+		...filter(characters.contents, omit)[1].map((c: any) => new Character(c)),
+		...filter(event.contents, omit)[1].map((e: any) => new AnEvent(e)),
+		...filter(locale.contents, omit)[1].map((l: any) => new Locale(l)),
+		...filter(object.contents, omit)[1].map((o: any) => new AnObject(o)),
+		...filter(time.contents, omit)[1].map((t: any) => new Time(t)),
+		...filter(topic.contents, omit)[1].map((t: any) => new Topic(t))
 	];
 	return inspirations;
 }
 export default makeInspirations;
+
+export const initializeIdeas = () => {
+	let all: BasicIdea[] = shuffle([
+		...action.contents.map(a => new Action(a)),
+		...characters.contents.map(c => new Character(c)),
+		...event.contents.map(e => new AnEvent(e)),
+		...locale.contents.map(l => new Locale(l)),
+		...object.contents.map(o => new AnObject(o)),
+		...time.contents.map(t => new Time(t)),
+		...topic.contents.map(t => new Topic(t))
+	]);
+	let sent: BasicIdea[] = all.slice(0, 100);
+	let ideas: BasicIdea[] = all.slice(100);
+	Promise.all([
+		IdeaStorage.setItem("sent", sent),
+		IdeaStorage.setItem("ideas", ideas),
+		IdeaStorage.setItem("used", []),
+		IdeaStorage.setItem("omit", []),
+		IdeaStorage.setItem("omissions", "")
+	]).then(() => {
+		const dispatch = useDispatch();
+		dispatch(setIdeas(sent));
+	}).catch((e) => {
+		console.log("ERROR - INIT IDEAS:");
+		console.log(e);
+	});
+};
+
+type UsedItem = [BasicIdea, number]
+
+export const updateFromState = (state: StateObject) => {
+	Promise.all([
+		IdeaStorage.getItem("sent"),
+		IdeaStorage.getItem("ideas"),
+		IdeaStorage.getItem("used"),
+		IdeaStorage.getItem("omit"),
+		IdeaStorage.getItem("omissions")
+	]).then((values: any[]) => {
+		const getOmissions = () => {
+			let objects: any[] = [
+				state.locales,
+				state.genres,
+				state.content,
+				state.person,
+				state.event,
+				state.triggers
+			];
+			let omissions: string[] = [];
+			objects.forEach((o: any) => {
+				Object.keys(o).forEach((k: string) => {
+					if(o[k]) {
+						omissions.push(k);
+					}
+				});
+			});
+			return omissions;
+		};
+		const usedSort = (a: [any, number], b: [any, number]) => {
+			return a[1] - b[1];
+		};
+		const now = Date.now();
+		let stateUsed = state.used.map((idea: BasicIdea) => idea.id());
+		let sent: BasicIdea[] = values.shift();
+		let ideas: BasicIdea[] = values.shift();
+		let used: UsedItem[] = values.shift();
+		let omit: (BasicIdea | UsedItem)[] = values.shift();
+		let omissions: string = values.shift();
+		let newOmissions = getOmissions();
+		if(omissions !== newOmissions.join("")) {
+			// Need to scan everything to omit/restore
+			let storage: any[] = [];
+			let o: any = [];
+			let k: any = [];
+			let u: UsedItem[] = [];
+			[o, k] = filter(omit, newOmissions);
+			omit = o;
+			storage = k.filter((x: any) => {
+				if(Array.isArray(x)) {
+					u.push(x as UsedItem);
+					return false;
+				}
+				return true;
+			});
+			[o, k] = filter(ideas, newOmissions);
+			omit = omit.concat(o);
+			ideas = k;
+			if(ideas.length > 100) {
+				let lenny = Math.floor(ideas.length / 2);
+				let front = ideas.slice(0, lenny);
+				let back = ideas.slice(lenny).concat(storage);
+				shuffle(back);
+				ideas = front.concat(back);
+			}
+			[o, k] = filter(sent, newOmissions);
+			omit = omit.concat(o);
+			sent = k;
+			[o, k] = filter(used, newOmissions);
+			omit = omit.concat(o);
+			used = k.concat(u);
+			used.sort(usedSort);
+		}
+		let removed: BasicIdea[] = [];
+		sent = sent.filter((idea: BasicIdea) => {
+			if(stateUsed.indexOf(idea.id())) {
+				used.push([idea, now]);
+				removed.push(idea);
+				return false;
+			}
+			return true;
+		});
+		const dispatch = useDispatch();
+		dispatch(removeFromUsed(removed));
+		IdeaStorage.setItem("sent", sent);
+		IdeaStorage.setItem("ideas", ideas);
+		IdeaStorage.setItem("used", used);
+		IdeaStorage.setItem("omit", omit);
+		IdeaStorage.setItem("omissions", newOmissions.join(""));
+	});
+	return null;
+};

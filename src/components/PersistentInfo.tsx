@@ -7,9 +7,9 @@ export const StateStorage = localForage.createInstance({
 	description: 'Stores state information for the next time we load.'
 });
 
-export const CustomStorage = localForage.createInstance({
+export const IdeaStorage = localForage.createInstance({
 	name: 'Haphazard Inspiration',
-	storeName: 'customStorage',
+	storeName: 'ideaStorage',
 	version: 1,
-	description: 'Stores custom information.'
+	description: 'Stores idea information.'
 });
