@@ -1,6 +1,4 @@
 import { IdeaStorage } from './PersistentInfo';
-import { useDispatch } from "react-redux";
-import { StateObject, removeFromUsed, setIdeas } from './ReduxDucks';
 import shuffle from 'array-shuffle';
 import characters from '../data/characters.json';
 import action from '../data/actions.json';
@@ -74,6 +72,15 @@ export class BasicIdea {
 		return String(this.idea) + String(this.type);
 	}
 }
+
+class BasicError extends BasicIdea {
+	constructor(msg: string) {
+		super();
+		this.idea = msg;
+		this.type = "error";
+	}
+}
+let BasicError1 = new BasicError("ERROR");
 
 // Character, Object
 class PossiblePlural extends BasicIdea {
@@ -243,7 +250,7 @@ class Topic extends BasicIdea {
 	}
 }
 
-class Time extends BasicIdea {
+class ATime extends BasicIdea {
 	constructor(initializer: any) {
 		super();
 		let newObj: any = this;
@@ -277,6 +284,8 @@ class Action extends BasicIdea {
 	}
 }
 
+type UsedIdea = [any, number];
+
 const filter = (original: any[], omit: string[] = []) => {
 	if(omit.length === 0) {
 		return original;
@@ -297,136 +306,132 @@ const filter = (original: any[], omit: string[] = []) => {
 	return [gone, staying];
 };
 
-const makeInspirations = (omit: string[] = []) => {
+// THIS IS NOT BEING USED ANYMORE
+// THIS IS NOT BEING USED ANYMORE |
+// THIS IS NOT BEING USED ANYMORE v
+export const makeInspirations = (omit: string[] = []) => {
 	const inspirations: BasicIdea[] = [
 		...filter(action.contents, omit)[1].map((a: any) => new Action(a)),
 		...filter(characters.contents, omit)[1].map((c: any) => new Character(c)),
 		...filter(event.contents, omit)[1].map((e: any) => new AnEvent(e)),
 		...filter(locale.contents, omit)[1].map((l: any) => new Locale(l)),
 		...filter(object.contents, omit)[1].map((o: any) => new AnObject(o)),
-		...filter(time.contents, omit)[1].map((t: any) => new Time(t)),
+		...filter(time.contents, omit)[1].map((t: any) => new ATime(t)),
 		...filter(topic.contents, omit)[1].map((t: any) => new Topic(t))
 	];
 	return inspirations;
 }
-export default makeInspirations;
+// THIS IS NOT BEING USED ANYMORE ^
+// THIS IS NOT BEING USED ANYMORE |
 
-export const initializeIdeas = () => {
-	let all: BasicIdea[] = shuffle([
-		...action.contents.map(a => new Action(a)),
-		...characters.contents.map(c => new Character(c)),
-		...event.contents.map(e => new AnEvent(e)),
-		...locale.contents.map(l => new Locale(l)),
-		...object.contents.map(o => new AnObject(o)),
-		...time.contents.map(t => new Time(t)),
-		...topic.contents.map(t => new Topic(t))
+const makeIdea = (idea: any) => {
+	switch(idea.type) {
+		case "action":
+			return new Action(idea);
+		case "character":
+			return new Character(idea);
+		case "event":
+			return new AnEvent(idea);
+		case "locale":
+			return new Locale(idea);
+		case "object":
+			return new AnObject(idea);
+		case "time":
+			return new ATime(idea);
+		case "topic":
+			return new Topic(idea);
+	}
+	return BasicError1;
+};
+
+export const initializeIdeas = (callback: Function) => {
+	let ideas: object[] = shuffle([
+		...action.contents.map(a => ({...a, type: "action"})),
+		...characters.contents.map(c => ({...c, type: "character"})),
+		...event.contents.map(e => ({...e, type: "event"})),
+		...locale.contents.map(l => ({...l, type: "locale"})),
+		...object.contents.map(o => ({...o, type: "object"})),
+		...time.contents.map(t => ({...t, type: "time"})),
+		...topic.contents.map(t => ({...t, type: "topic"}))
 	]);
-	let sent: BasicIdea[] = all.slice(0, 100);
-	let ideas: BasicIdea[] = all.slice(100);
 	Promise.all([
-		IdeaStorage.setItem("sent", sent),
+		IdeaStorage.setItem("sent", []),
 		IdeaStorage.setItem("ideas", ideas),
-		IdeaStorage.setItem("used", []),
-		IdeaStorage.setItem("omit", []),
-		IdeaStorage.setItem("omissions", "")
+		IdeaStorage.setItem("omit", [])
 	]).then(() => {
-		const dispatch = useDispatch();
-		dispatch(setIdeas(sent));
+		//const dispatch = useDispatch();
+		//dispatch(setIdeas(sent));
+		callback(true);
 	}).catch((e) => {
 		console.log("ERROR - INIT IDEAS:");
 		console.log(e);
+		callback(false);
 	});
 };
 
-type UsedItem = [BasicIdea, number]
-
-export const updateFromState = (state: StateObject) => {
+export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount: number = 2) => {
+	let flushFlag = false;
 	Promise.all([
 		IdeaStorage.getItem("sent"),
-		IdeaStorage.getItem("ideas"),
-		IdeaStorage.getItem("used"),
-		IdeaStorage.getItem("omit"),
-		IdeaStorage.getItem("omissions")
+		IdeaStorage.getItem("ideas")
 	]).then((values: any[]) => {
-		const getOmissions = () => {
-			let objects: any[] = [
-				state.locales,
-				state.genres,
-				state.content,
-				state.person,
-				state.event,
-				state.triggers
-			];
-			let omissions: string[] = [];
-			objects.forEach((o: any) => {
-				Object.keys(o).forEach((k: string) => {
-					if(o[k]) {
-						omissions.push(k);
-					}
-				});
-			});
-			return omissions;
-		};
-		const usedSort = (a: [any, number], b: [any, number]) => {
-			return a[1] - b[1];
-		};
-		const now = Date.now();
-		let stateUsed = state.used.map((idea: BasicIdea) => idea.id());
-		let sent: BasicIdea[] = values.shift();
-		let ideas: BasicIdea[] = values.shift();
-		let used: UsedItem[] = values.shift();
-		let omit: (BasicIdea | UsedItem)[] = values.shift();
-		let omissions: string = values.shift();
-		let newOmissions = getOmissions();
-		if(omissions !== newOmissions.join("")) {
-			// Need to scan everything to omit/restore
-			let storage: any[] = [];
-			let o: any = [];
-			let k: any = [];
-			let u: UsedItem[] = [];
-			[o, k] = filter(omit, newOmissions);
-			omit = o;
-			storage = k.filter((x: any) => {
-				if(Array.isArray(x)) {
-					u.push(x as UsedItem);
-					return false;
+		let NOW = Date.now();
+		let sent = values[0] as UsedIdea[];
+		let ideas = values[1] as any[];
+		if(doFlush) {
+			// Check sent ideas to see if they can be re-introduced to the pool
+			let ind = -1;
+			sent.every((pair: UsedIdea, i: number) => {
+				if(pair[1] > NOW) {
+					ind = i;
+					return true;
 				}
-				return true;
-			});
-			[o, k] = filter(ideas, newOmissions);
-			omit = omit.concat(o);
-			ideas = k;
-			if(ideas.length > 100) {
-				let lenny = Math.floor(ideas.length / 2);
-				let front = ideas.slice(0, lenny);
-				let back = ideas.slice(lenny).concat(storage);
-				shuffle(back);
-				ideas = front.concat(back);
-			}
-			[o, k] = filter(sent, newOmissions);
-			omit = omit.concat(o);
-			sent = k;
-			[o, k] = filter(used, newOmissions);
-			omit = omit.concat(o);
-			used = k.concat(u);
-			used.sort(usedSort);
-		}
-		let removed: BasicIdea[] = [];
-		sent = sent.filter((idea: BasicIdea) => {
-			if(stateUsed.indexOf(idea.id())) {
-				used.push([idea, now]);
-				removed.push(idea);
 				return false;
+			});
+			if(ind !== -1) {
+				ind++;
+				let expired: any[] = sent.slice(0, ind).map(pair => pair[0]);
+				sent = sent.slice(ind);
+				let lenny = ideas.length;
+				if(lenny > 50) {
+					lenny = Math.floor(lenny / 2);
+					let back = shuffle(ideas.slice(lenny).concat(expired));
+					ideas = ideas.slice(0, lenny).concat(back);
+				} else {
+					ideas = shuffle(ideas.concat(expired));
+				}
 			}
-			return true;
+			flushFlag = true;
+		}
+		if(ideas.length < 2) {
+			// We do not have enough ideas. Expire some from sent.
+			let expired: any[] = shuffle(sent.slice(0, 20).map(pair => pair[0]));
+			sent = sent.slice(20);
+			ideas = ideas.concat(expired);
+			flushFlag = true;
+		}
+		let idea1: BasicIdea = ideas.shift();
+		let idea2: BasicIdea = ideas.shift();
+		let Idea1: BasicIdea = makeIdea(idea1);
+		let Idea2: BasicIdea = makeIdea(idea2);
+		sent.push([idea1, NOW], [idea2, NOW]);
+		if(Idea1 === BasicError1 || Idea2 === BasicError1) {
+			Idea1 = BasicError1;
+			Idea2 = new BasicError("comp/GI/mi");
+		}
+		Promise.all([
+			IdeaStorage.setItem("sent", sent),
+			IdeaStorage.setItem("ideas", ideas)	
+		]).then(() => {
+			callback(Idea1, Idea2, flushFlag);
+		}).catch((e) => {
+			console.log("ERROR - SAVE IDEAS AFTER GET:");
+			console.log(e);
+			callback(BasicError1, new BasicError("comp/GI/gni2"), flushFlag)
 		});
-		const dispatch = useDispatch();
-		dispatch(removeFromUsed(removed));
-		IdeaStorage.setItem("sent", sent);
-		IdeaStorage.setItem("ideas", ideas);
-		IdeaStorage.setItem("used", used);
-		IdeaStorage.setItem("omit", omit);
-		IdeaStorage.setItem("omissions", newOmissions.join(""));
+	}).catch((e) => {
+		console.log("ERROR - GET NEW IDEAS:");
+		console.log(e);
+		callback(BasicError1, new BasicError("comp/GI/gni1"))
 	});
-	return null;
 };

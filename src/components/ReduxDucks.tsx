@@ -1,8 +1,9 @@
 import maybeUpdateTheme from './MaybeUpdateTheme';
 import { StateStorage } from './PersistentInfo';
-import { BasicIdea, updateFromState } from './GatherInspiration';
+//import { BasicIdea, updateFromState } from './GatherInspiration';
 import debounce from './Debounce';
 import packageJson from '../../package.json';
+import { BasicIdea } from './GatherInspiration';
 
 
 //
@@ -10,18 +11,16 @@ import packageJson from '../../package.json';
 // CONSTS
 //
 //
-//const ONE_DAY = 86400000; // 1000 * 60 * 60 * 24
+export const ONE_DAY = 86400000; // 1000 * 60 * 60 * 24
 //const THIRTY_DAYS = 2592000000; // 1000 * 60 * 60 * 24 * 30;
-const IDEA_DELAY = 2500; // 2.5 seconds
 export let VERSION = {
 	current: packageJson.version
 };
 const p = "haphazard-inspiration/reducer/";
 const OVERWRITE_STATE = p+"OVERWRITE_STATE";
 const UPDATE_THEME = p+"UPDATE_THEME";
-const UPDATE_IDEA = p+"UPDATE_IDEA";
-const SET_IDEAS = p+"SET_IDEAS";
-const REMOVE_FROM_USED = p+"REMOVE_FROM_USED";
+const UPDATE_IDEAS = p+"UPDATE_IDEAS";
+const UPDATE_FETCH_STATUS = p+"UPDATE_FETCH_STATUS";
 //const B = p+"";
 //const C = p+"";
 //const D = p+"";
@@ -47,15 +46,18 @@ export function overwriteState(payload: StateObject) {
 export function updateTheme(payload: string) {
 	return {type: UPDATE_THEME, payload};
 }
-export function updateIdea(payload: number) {
-	return {type: UPDATE_IDEA, payload};
+export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean]) {
+	return {type: UPDATE_IDEAS, payload};
 }
-export function setIdeas(payload: BasicIdea[]) {
-	return {type: SET_IDEAS, payload};
+export function setFetchStatus(payload: number) {
+	return {type: UPDATE_FETCH_STATUS, payload};
 }
-export function removeFromUsed(payload: BasicIdea[]) {
-	return {type: REMOVE_FROM_USED, payload};
-}
+//export function removeFromUsed(payload: BasicIdea[]) {
+//	return {type: REMOVE_FROM_USED, payload};
+//}
+//export function removeFromUsed(payload: BasicIdea[]) {
+//	return {type: REMOVE_FROM_USED, payload};
+//}
 export function toggleSetting(payload: keyof SettingsObject) {
 	return {type: TOGGLE_SETTING, payload};
 }
@@ -131,12 +133,14 @@ interface TriggersObject {
 }
 export interface StateObject {
 	currentVersion: string
+	newIdeas: boolean
 	theme: string
-	idea1: string | null
-	idea2: string | null
-	lastIdeaGenerated: number,
-	pending: BasicIdea[] | null
-	used: BasicIdea[]
+	idea1: BasicIdea | null
+	idea2: BasicIdea | null
+	lastIdeaGenerated: number
+	nextIdeaFlush: number
+	flushDays: number
+	fetchStatus: number
 	settings: SettingsObject
 	locales: LocalesObject
 	genres: GenresObject
@@ -147,12 +151,14 @@ export interface StateObject {
 }
 export const blankAppState: StateObject = {
 	currentVersion: VERSION.current,
+	newIdeas: true,
 	theme: "Default",
 	idea1: null,
 	idea2: null,
 	lastIdeaGenerated: 0,
-	pending: null,
-	used: [],
+	nextIdeaFlush: Date.now(),
+	flushDays: 365,
+	fetchStatus: 0,
 	settings: {
 		shake: false
 	},
@@ -209,12 +215,14 @@ export const blankAppState: StateObject = {
 const reduceAll = (state: StateObject, setPending: boolean = true) => {
 	return {
 		currentVersion: state.currentVersion,
+		newIdeas: state.newIdeas,
 		theme: state.theme,
 		idea1: state.idea1,
 		idea2: state.idea2,
 		lastIdeaGenerated: state.lastIdeaGenerated,
-		pending: setPending && state.pending ? [...state.pending] : null,
-		used: [...state.used],
+		nextIdeaFlush: state.nextIdeaFlush,
+		flushDays: state.flushDays,
+		fetchStatus: state.fetchStatus,
 		settings: {...state.settings},
 		locales: {...state.locales},
 		genres: {...state.genres},
@@ -241,8 +249,6 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 	const payload = action.payload;
 	let final: StateObject;
 	let b: string;
-	let idea: BasicIdea;
-	let ideaStateUpdate = false;
 	switch(action.type) {
 		case OVERWRITE_STATE:
 			final = reduceAll(payload);
@@ -252,30 +258,21 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final.theme = payload;
 			maybeUpdateTheme(state.theme, payload);
 			break;
-		case UPDATE_IDEA:
-			if(state.pending !== null) {
-				return state;
-			}
+		case UPDATE_IDEAS:
 			final = reduceAll(state);
-			idea = final.pending!.shift() as BasicIdea;
+			let [one, two, flush] = (payload as [BasicIdea, BasicIdea, boolean]);
 			if(payload === 1) {
-				final.idea1 = idea.getIdea();
+				final.idea1 = one;
 			} else {
-				final.idea2 = idea.getIdea();
+				final.idea2 = two;
 			}
-			final.used.push(idea);
-			final.lastIdeaGenerated = Date.now() + IDEA_DELAY;
-			ideaStateUpdate = true;
+			final.lastIdeaGenerated = Date.now();
+			flush && (final.nextIdeaFlush = Date.now() + ONE_DAY);
+			final.fetchStatus = 0;
 			break;
-		case SET_IDEAS:
-			final = reduceAll(state, false);
-			final.pending = [...payload];
-			break;
-		case REMOVE_FROM_USED:
+		case UPDATE_FETCH_STATUS:
 			final = reduceAll(state);
-			final.used = final.used.filter((used: BasicIdea) => {
-				return payload.indexOf(used) === -1;
-			});
+			final.fetchStatus = payload;
 			break;
 		case TOGGLE_SETTING:
 			b = payload;
@@ -316,9 +313,6 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			return state;
 	}
 	debounce(saveCurrentState, [final]);
-	if(ideaStateUpdate) {
-		debounce(updateFromState, [final], 250);
-	}
 	console.log(action.type);
 	console.log(final);
 	return final;
