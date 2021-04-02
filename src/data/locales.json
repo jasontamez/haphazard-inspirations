@@ -483,7 +483,8 @@
 			"construct": true
 		},
 		{
-			"idea": "somewhere far away",
+			"idea": "far away",
+			"preposition": "somewhere",
 			"specific": false,
 			"geographical": true,
 			"size": "variable"
