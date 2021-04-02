@@ -35,6 +35,12 @@ const Menu = () => {
 				</IonList>
 				<IonList lines="none">
 					<IonMenuToggle autoHide={false}>
+						<IonItem routerLink="/settings" routerDirection="forward" detail={false}>
+							<IonIcon slot="start" icon={settingsSharp} />
+							<IonLabel>App Settings</IonLabel>
+						</IonItem>
+					</IonMenuToggle>
+					<IonMenuToggle autoHide={false}>
 						<IonItem routerLink="/content" routerDirection="forward" detail={false}>
 							<IonIcon slot="start" icon={filterSharp} />
 							<IonLabel>Content Filters</IonLabel>
