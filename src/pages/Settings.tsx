@@ -131,145 +131,145 @@ const Home = () => {
 					<IonListHeader>
 						<IonLabel>General Settings</IonLabel>
 					</IonListHeader>
-					<IonItem button={true} onClick={() => toggleTempSetting("shake")}>
+					<IonItem>
 						<IonLabel>Shake for new idea</IonLabel>
-						<IonToggle slot="end" defaultChecked={settings.shake} />
+						<IonToggle onClick={() => toggleTempSetting("shake")} slot="end" checked={settings.shake} />
 					</IonItem>
 					<IonListHeader>
 						<IonLabel>Locales</IonLabel>
 						<IonNote>Do not suggest locations of the following types</IonNote>
 					</IonListHeader>
-					<IonItem button={true} onClick={() => toggleTempLocale("specific")}>
+					<IonItem>
 						<IonLabel>Specific places (Notre Dame, the UN, Texas, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={locales.specific} />
+						<IonToggle onClick={() => toggleTempLocale("specific")} slot="end" checked={locales.specific} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempLocale("political")}>
+					<IonItem>
 						<IonLabel>Countries, states and cities (Japan, California, Paris, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={locales.political} />
+						<IonToggle onClick={() => toggleTempLocale("political")} slot="end" checked={locales.political} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempLocale("large")}>
+					<IonItem>
 						<IonLabel>Large locations (India, the Amazon basic, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={locales.large} />
+						<IonToggle onClick={() => toggleTempLocale("large")} slot="end" checked={locales.large} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempLocale("medium")}>
+					<IonItem>
 						<IonLabel>Medium-sized locations (Jamaica, Siberia, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={locales.medium} />
+						<IonToggle onClick={() => toggleTempLocale("medium")} slot="end" checked={locales.medium} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempLocale("small")}>
+					<IonItem>
 						<IonLabel>Small locations (Mt. Everest, the Vatican, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={locales.small} />
+						<IonToggle onClick={() => toggleTempLocale("small")} slot="end" checked={locales.small} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempLocale("tiny")}>
+					<IonItem>
 						<IonLabel>Tiny locations (a bedroom, a wedding, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={locales.tiny} />
+						<IonToggle onClick={() => toggleTempLocale("tiny")} slot="end" checked={locales.tiny} />
 					</IonItem>
 					<IonListHeader>
 						<IonLabel>Genres</IonLabel>
 						<IonNote>Do not suggest ideas closely associated with any of the following</IonNote>
 					</IonListHeader>
-					<IonItem button={true} onClick={() => toggleTempGenre("fantasy")}>
+					<IonItem>
 						<IonLabel>Fantasy</IonLabel>
-						<IonToggle slot="end" defaultChecked={genres.fantasy} />
+						<IonToggle onClick={() => toggleTempGenre("fantasy")} slot="end" checked={genres.fantasy} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("medievalFantasy")}>
+					<IonItem>
 						<IonLabel className="subTopic">Western Medieval Fantasy</IonLabel>
-						<IonToggle slot="end" className="disableGenres-fantasy" data-prop="medievalFantasy" disabled={genres.fantasy} defaultChecked={genres.fantasy || genres.medievalFantasy} />
+						<IonToggle onClick={() => toggleTempGenre("medievalFantasy")} slot="end" className="disableGenres-fantasy" data-prop="medievalFantasy" disabled={genres.fantasy} checked={genres.medievalFantasy} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("superhero")}>
+					<IonItem>
 						<IonLabel className="subTopic">Superheroes</IonLabel>
-						<IonToggle slot="end" className="disableGenres-fantasy" data-prop="superhero" disabled={genres.fantasy} defaultChecked={genres.fantasy || genres.superhero} />
+						<IonToggle onClick={() => toggleTempGenre("superhero")} slot="end" className="disableGenres-fantasy" data-prop="superhero" disabled={genres.fantasy} checked={genres.superhero} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("historicalFiction")}>
+					<IonItem>
 						<IonLabel>Historical Fiction</IonLabel>
-						<IonToggle slot="end" defaultChecked={genres.historicalFiction} />
+						<IonToggle onClick={() => toggleTempGenre("historicalFiction")} slot="end" checked={genres.historicalFiction} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("western")}>
+					<IonItem>
 						<IonLabel className="subTopic">Westerns</IonLabel>
-						<IonToggle slot="end" className="disableGenres-historicalFiction" data-prop="western" disabled={genres.historicalFiction} defaultChecked={genres.historicalFiction || genres.western} />
+						<IonToggle onClick={() => toggleTempGenre("western")} slot="end" className="disableGenres-historicalFiction" data-prop="western" disabled={genres.historicalFiction} checked={genres.western} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("samurai")}>
+					<IonItem>
 						<IonLabel className="subTopic">Medieval Japan</IonLabel>
-						<IonToggle slot="end" className="disableGenres-historicalFiction" data-prop="samurai" disabled={genres.historicalFiction} defaultChecked={genres.historicalFiction || genres.samurai} />
+						<IonToggle onClick={() => toggleTempGenre("samurai")} slot="end" className="disableGenres-historicalFiction" data-prop="samurai" disabled={genres.historicalFiction} checked={genres.samurai} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("horror")}>
+					<IonItem>
 						<IonLabel>Horror</IonLabel>
-						<IonToggle slot="end" defaultChecked={genres.horror} />
+						<IonToggle onClick={() => toggleTempGenre("horror")} slot="end" checked={genres.horror} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("scifi")}>
+					<IonItem>
 						<IonLabel>Science Fiction</IonLabel>
-						<IonToggle slot="end" defaultChecked={genres.scifi} />
+						<IonToggle onClick={() => toggleTempGenre("scifi")} slot="end" checked={genres.scifi} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempGenre("spacefaring")}>
+					<IonItem>
 						<IonLabel className="subTopic">Spacefaring Sagas</IonLabel>
-						<IonToggle slot="end" className="disableGenres-scifi" data-prop="spacefaring" disabled={genres.scifi} defaultChecked={genres.scifi || genres.spacefaring} />
+						<IonToggle onClick={() => toggleTempGenre("spacefaring")} slot="end" className="disableGenres-scifi" data-prop="spacefaring" disabled={genres.scifi} checked={genres.spacefaring} />
 					</IonItem>
 					<IonListHeader>
 						<IonLabel>General Content</IonLabel>
 						<IonNote>Do not suggest ideas containing the following</IonNote>
 					</IonListHeader>
-					<IonItem button={true} onClick={() => toggleTempContent("properName")}>
+					<IonItem>
 						<IonLabel>Anything with a proper name (George Washington, Twinkies, Japan, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.properName} />
+						<IonToggle onClick={() => toggleTempContent("properName")} slot="end" checked={content.properName} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("modern")}>
+					<IonItem>
 						<IonLabel>Modern ideas (things that occured only in the last 50-70 years)</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.modern} />
+						<IonToggle onClick={() => toggleTempContent("modern")} slot="end" checked={content.modern} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("religionAndMyths")}>
+					<IonItem>
 						<IonLabel>Religion, Myths and similar topics</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.religionAndMyths} />
+						<IonToggle onClick={() => toggleTempContent("religionAndMyths")} slot="end" checked={content.religionAndMyths} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("christianity")}>
+					<IonItem>
 						<IonLabel className="subTopic">Christianity</IonLabel>
-						<IonToggle slot="end" className="disableContent-religionAndMyths" data-prop="christianity" disabled={content.religionAndMyths} defaultChecked={content.religionAndMyths || content.christianity} />
+						<IonToggle onClick={() => toggleTempContent("christianity")} slot="end" className="disableContent-religionAndMyths" data-prop="christianity" disabled={content.religionAndMyths} checked={content.christianity} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("greekRomanMyth")}>
+					<IonItem>
 						<IonLabel className="subTopic">Greek/Roman Mythology</IonLabel>
-						<IonToggle slot="end" className="disableContent-religionAndMyths" data-prop="greekRomanMyth" disabled={content.religionAndMyths} defaultChecked={content.religionAndMyths || content.greekRomanMyth} />
+						<IonToggle onClick={() => toggleTempContent("greekRomanMyth")} slot="end" className="disableContent-religionAndMyths" data-prop="greekRomanMyth" disabled={content.religionAndMyths} checked={content.greekRomanMyth} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("sexual")}>
+					<IonItem>
 						<IonLabel>Sexually suggestive material</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.sexual} />
+						<IonToggle onClick={() => toggleTempContent("sexual")} slot="end" checked={content.sexual} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("illicitSubstances")}>
+					<IonItem>
 						<IonLabel>Illicit Substances (marijuana, cocaine, etc)</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.illicitSubstances} />
+						<IonToggle onClick={() => toggleTempContent("illicitSubstances")} slot="end" checked={content.illicitSubstances} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("alcohol")}>
+					<IonItem>
 						<IonLabel>Alcohol use</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.alcohol} />
+						<IonToggle onClick={() => toggleTempContent("alcohol")} slot="end" checked={content.alcohol} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempContent("tobacco")}>
+					<IonItem>
 						<IonLabel>Tobacco Use</IonLabel>
-						<IonToggle slot="end" defaultChecked={content.tobacco} />
+						<IonToggle onClick={() => toggleTempContent("tobacco")} slot="end" checked={content.tobacco} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempPerson("realPerson")}>
+					<IonItem>
 						<IonLabel>Real people</IonLabel>
-						<IonToggle slot="end" defaultChecked={person.realPerson} />
+						<IonToggle onClick={() => toggleTempPerson("realPerson")} slot="end" checked={person.realPerson} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempEvent("nonPunctualEvent")}>
+					<IonItem>
 						<IonLabel>Events that generally last longer than an hour</IonLabel>
-						<IonToggle slot="end" defaultChecked={event.nonPunctualEvent} />
+						<IonToggle onClick={() => toggleTempEvent("nonPunctualEvent")} slot="end" checked={event.nonPunctualEvent} />
 					</IonItem>
 					<IonListHeader>
 						<IonLabel>Trigger Warnings</IonLabel>
 						<IonNote>Do not show ideas even somewhat related to the following</IonNote>
 					</IonListHeader>
-					<IonItem button={true} onClick={() => toggleTempTrigger("humanDeath")}>
+					<IonItem>
 						<IonLabel>Human death</IonLabel>
-						<IonToggle slot="end" defaultChecked={triggers.humanDeath} />
+						<IonToggle onClick={() => toggleTempTrigger("humanDeath")} slot="end" checked={triggers.humanDeath} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempTrigger("humanDistress")}>
+					<IonItem>
 						<IonLabel>Human distress</IonLabel>
-						<IonToggle slot="end" defaultChecked={triggers.humanDistress} />
+						<IonToggle onClick={() => toggleTempTrigger("humanDistress")} slot="end" checked={triggers.humanDistress} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempTrigger("animalDeath")}>
+					<IonItem>
 						<IonLabel>Animal death</IonLabel>
-						<IonToggle slot="end" defaultChecked={triggers.animalDeath} />
+						<IonToggle onClick={() => toggleTempTrigger("animalDeath")} slot="end" checked={triggers.animalDeath} />
 					</IonItem>
-					<IonItem button={true} onClick={() => toggleTempTrigger("animalDistress")}>
+					<IonItem>
 						<IonLabel>Animal distress</IonLabel>
-						<IonToggle slot="end" defaultChecked={triggers.animalDistress} />
+						<IonToggle onClick={() => toggleTempTrigger("animalDistress")} slot="end" checked={triggers.animalDistress} />
 					</IonItem>
 				</IonList>
 			</IonContent>
