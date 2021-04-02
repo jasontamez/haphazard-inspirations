@@ -14,7 +14,8 @@ import {
 	settingsSharp,
 	chatboxEllipsesSharp,
 	colorPaletteSharp,
-	homeSharp
+	homeSharp,
+	filterSharp
 } from 'ionicons/icons';
 import './Menu.css';
 
@@ -33,10 +34,16 @@ const Menu = () => {
 					</IonMenuToggle>
 				</IonList>
 				<IonList lines="none">
-					<IonMenuToggle autoHide={false}>
+				<IonMenuToggle autoHide={false}>
 						<IonItem routerLink="/settings" routerDirection="forward" detail={false}>
 							<IonIcon slot="start" icon={settingsSharp} />
-							<IonLabel>Settings</IonLabel>
+							<IonLabel>App Settings</IonLabel>
+						</IonItem>
+					</IonMenuToggle>
+					<IonMenuToggle autoHide={false}>
+						<IonItem routerLink="/content" routerDirection="forward" detail={false}>
+							<IonIcon slot="start" icon={filterSharp} />
+							<IonLabel>Content Filters</IonLabel>
 						</IonItem>
 					</IonMenuToggle>
 					<IonMenuToggle autoHide={false}>
@@ -52,9 +59,8 @@ const Menu = () => {
 						</IonItem>
 					</IonMenuToggle>
 					<IonMenuToggle autoHide={false}>
-						<IonItem routerLink="/settings" routerDirection="forward" detail={false}>
-							<IonIcon slot="start" icon={settingsSharp} />
-							<IonLabel></IonLabel>
+						<IonItem className="subItem" routerLink="/credits" routerDirection="forward" detail={false}>
+							<IonLabel>Credits</IonLabel>
 						</IonItem>
 					</IonMenuToggle>
 				</IonList>

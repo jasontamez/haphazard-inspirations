@@ -98,3 +98,13 @@ ion-split-pane ion-menu#mainMenu {
 	--side-max-width: 20rem;
 	--transition-duration: 0.2s;
 }
+
+ion-menu#mainMenu ion-list ion-item.subItem ion-label {
+	font-family: var(--ion-font-monospace);
+	font-size: 0.85rem;
+	text-align: right;
+}
+ion-menu#mainMenu ion-list ion-item.subItem {
+	margin-top: 2rem;
+	padding: 0;
+}
