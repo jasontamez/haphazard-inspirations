@@ -31,6 +31,9 @@ import compareVersions from 'compare-versions';
 import store from './components/ReduxStore';
 import { StateStorage } from './components/PersistentInfo';
 
+// Haircut by Icon Island from the Noun Project
+// Scattered Material by Stephen Plaster from the Noun Project
+// Information Overload by Jenny Chisnell from the Noun Project
 
 const App = () => {
 	const maybeSetState = () => {
@@ -38,10 +41,12 @@ const App = () => {
 			return StateStorage.getItem("lastState").then((storedState: any) => {
 				if(storedState !== null) {
 					if(storedState && (typeof storedState) === "object") {
-						if (compareVersions.compare(storedState.currentVersion, "0.0.1", "<")) {
+						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.1.1", "<")) {
 							// Do stuff to possibly bring storedState up to date
+							// MAYBE set storedState.newIdeas to true
+							storedState.fetchStatus = -1;
 						}
-						if (compareVersions.compare(storedState.currentVersion, VERSION.current, "<")) {
+						if (compareVersions.compare(storedState.currentVersion || "0.0.1", VERSION.current, "<")) {
 							// Do stuff to possibly bring storedState up to date
 							storedState.currentVersion = VERSION.current;
 						}

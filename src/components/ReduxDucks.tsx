@@ -21,18 +21,12 @@ const OVERWRITE_STATE = p+"OVERWRITE_STATE";
 const UPDATE_THEME = p+"UPDATE_THEME";
 const UPDATE_IDEAS = p+"UPDATE_IDEAS";
 const UPDATE_FETCH_STATUS = p+"UPDATE_FETCH_STATUS";
+const SET_CONTENT_LIMITS = p+"SET_CONTENT_LIMITS";
 //const B = p+"";
 //const C = p+"";
 //const D = p+"";
 //const E = p+"";
 //const F = p+"";
-const TOGGLE_SETTING = p+"TOGGLE_SETTING";
-const TOGGLE_LOCALE = p+"TOGGLE_LOCALE";
-const TOGGLE_GENRE = p+"TOGGLE_GENRE";
-const TOGGLE_CONTENT = p+"TOGGLE_CONTENT";
-const TOGGLE_PERSON = p+"TOGGLE_PERSON";
-const TOGGLE_EVENT = p+"TOGGLE_EVENT";
-const TOGGLE_TRIGGER = p+"TOGGLE_TRIGGER";
 
 
 //
@@ -55,29 +49,8 @@ export function setFetchStatus(payload: number) {
 //export function removeFromUsed(payload: BasicIdea[]) {
 //	return {type: REMOVE_FROM_USED, payload};
 //}
-//export function removeFromUsed(payload: BasicIdea[]) {
-//	return {type: REMOVE_FROM_USED, payload};
-//}
-export function toggleSetting(payload: keyof SettingsObject) {
-	return {type: TOGGLE_SETTING, payload};
-}
-export function toggleLocale(payload: keyof LocalesObject) {
-	return {type: TOGGLE_LOCALE, payload};
-}
-export function toggleGenre(payload: keyof GenresObject) {
-	return {type: TOGGLE_GENRE, payload};
-}
-export function toggleContent(payload: keyof ContentObject) {
-	return {type: TOGGLE_CONTENT, payload};
-}
-export function togglePerson(payload: keyof PersonObject) {
-	return {type: TOGGLE_PERSON, payload};
-}
-export function toggleEvent(payload: keyof EventObject) {
-	return {type: TOGGLE_EVENT, payload};
-}
-export function toggleTrigger(payload: keyof TriggersObject) {
-	return {type: TOGGLE_TRIGGER, payload};
+export function setSettings(payload: [SettingsObject, LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) {
+	return {type: SET_CONTENT_LIMITS, payload};
 }
 
 //
@@ -85,10 +58,10 @@ export function toggleTrigger(payload: keyof TriggersObject) {
 // INTERFACES
 //
 //
-interface SettingsObject {
+export interface SettingsObject {
 	shake: boolean
 }
-interface LocalesObject {
+export interface LocalesObject {
 	any: boolean
 	specific: boolean
 	political: boolean
@@ -97,7 +70,7 @@ interface LocalesObject {
 	small: boolean
 	tiny: boolean
 }
-interface GenresObject {
+export interface GenresObject {
 	fantasy: boolean
 	medievalFantasy: boolean
 	superhero: boolean
@@ -108,7 +81,7 @@ interface GenresObject {
 	scifi: boolean
 	spacefaring: boolean
 }
-interface ContentObject {
+export interface ContentObject {
 	properName: boolean
 	modern: boolean
 	religionAndMyths: boolean
@@ -119,13 +92,13 @@ interface ContentObject {
 	alcohol: boolean
 	tobacco: boolean
 }
-interface PersonObject {
+export interface PersonObject {
 	realPerson: boolean
 }
-interface EventObject {
+export interface EventObject {
 	nonPunctualEvent: boolean
 }
-interface TriggersObject {
+export interface TriggersObject {
 	humanDeath: boolean
 	humanDistress: boolean
 	animalDeath: boolean
@@ -158,7 +131,7 @@ export const blankAppState: StateObject = {
 	lastIdeaGenerated: 0,
 	nextIdeaFlush: Date.now(),
 	flushDays: 365,
-	fetchStatus: 0,
+	fetchStatus: -1,
 	settings: {
 		shake: false
 	},
@@ -248,7 +221,6 @@ export const checkIfState = (possibleState: StateObject | any): possibleState is
 export function reducer(state: StateObject = blankAppState, action: any) {
 	const payload = action.payload;
 	let final: StateObject;
-	let b: string;
 	switch(action.type) {
 		case OVERWRITE_STATE:
 			final = reduceAll(payload);
@@ -261,11 +233,8 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 		case UPDATE_IDEAS:
 			final = reduceAll(state);
 			let [one, two, flush] = (payload as [BasicIdea, BasicIdea, boolean]);
-			if(payload === 1) {
-				final.idea1 = one;
-			} else {
-				final.idea2 = two;
-			}
+			final.idea1 = one;
+			final.idea2 = two;
 			final.lastIdeaGenerated = Date.now();
 			flush && (final.nextIdeaFlush = Date.now() + ONE_DAY);
 			final.fetchStatus = 0;
@@ -274,40 +243,16 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final = reduceAll(state);
 			final.fetchStatus = payload;
 			break;
-		case TOGGLE_SETTING:
-			b = payload;
+		case SET_CONTENT_LIMITS:
 			final = reduceAll(state);
-			final.settings[b as keyof SettingsObject] = !final.settings[b as keyof SettingsObject];
-			break;
-		case TOGGLE_LOCALE:
-			b = payload;
-			final = reduceAll(state);
-			final.locales[b as keyof LocalesObject] = !final.locales[b as keyof LocalesObject];
-			break;
-		case TOGGLE_GENRE:
-			b = payload;
-			final = reduceAll(state);
-			final.genres[b as keyof GenresObject] = !final.genres[b as keyof GenresObject];
-			break;
-		case TOGGLE_CONTENT:
-			b = payload;
-			final = reduceAll(state);
-			final.content[b as keyof ContentObject] = !final.content[b as keyof ContentObject];
-			break;
-		case TOGGLE_PERSON:
-			b = payload;
-			final = reduceAll(state);
-			final.person[b as keyof PersonObject] = !final.person[b as keyof PersonObject];
-			break;
-		case TOGGLE_EVENT:
-			b = payload;
-			final = reduceAll(state);
-			final.event[b as keyof EventObject] = !final.event[b as keyof EventObject];
-			break;
-		case TOGGLE_TRIGGER:
-			b = payload;
-			final = reduceAll(state);
-			final.triggers[b as keyof TriggersObject] = !final.triggers[b as keyof TriggersObject];
+			final.settings = {...payload.shift()};
+			final.locales = {...payload.shift()};
+			final.genres = {...payload.shift()};
+			final.content = {...payload.shift()};
+			final.person = {...payload.shift()};
+			final.event = {...payload.shift()};
+			final.triggers = {...payload.shift()};
+			final.fetchStatus = 10;
 			break;
 		default:
 			return state;
