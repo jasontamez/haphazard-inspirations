@@ -1,4 +1,5 @@
 import { IdeaStorage } from './PersistentInfo';
+import { StateObject } from './ReduxDucks';
 import shuffle from 'array-shuffle';
 import characters from '../data/characters.json';
 import action from '../data/actions.json';
@@ -65,7 +66,6 @@ export class BasicIdea {
 	// eslint-disable-next-line
 	constructor() {}
 	getIdea() {
-		console.log(this);
 		return this.idea || "idea";
 	}
 	id() {
@@ -95,7 +95,6 @@ class PossiblePlural extends BasicIdea {
 		return EnglishNumbers[n];
 	}
 	getIdea(Idea = this) {
-		console.log(Idea);
 		const plu = Idea.plural;
 		const idea = Idea.idea || "idea";
 		if((typeof plu) === "boolean") {
@@ -434,4 +433,9 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 		console.log(e);
 		callback(BasicError1, new BasicError("comp/GI/gni1"))
 	});
+};
+
+export const pruneIdeas = (callback: Function, state: StateObject) => {
+	// 
+	callback("any message here");
 };

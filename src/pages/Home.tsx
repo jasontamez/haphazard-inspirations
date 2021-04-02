@@ -14,24 +14,23 @@ import ExploreContainer from '../components/ExploreContainer';
 import { updateIdeas, setFetchStatus } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
-import { BasicIdea, getNewIdeas } from '../components/GatherInspiration';
+import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
 import './Home.css';
 
 const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
 	const dispatch = useDispatch();
-	const settings = state.settings;
 	// fetchStatus controls whether or not we can spit out a new idea.
 	// It is 0 by default, which means updating is ok
 	// Any other value halts idea generation until it is reset to 0
 	const fetchStatus = state.fetchStatus;
 	const NOW = Date.now();
 	// Handle shake-to-update
-	if(settings.shake) {
+	if(state.settings.shake) {
 		const shakeToUpdate = () => {
 
 		};
-		settings.shake && Shake.startWatch().subscribe(() => shakeToUpdate());
+		Shake.startWatch().subscribe(() => shakeToUpdate());
 	}
 //	const getOmissions = () => {
 //		let objects: any[] = [
@@ -59,9 +58,26 @@ const Home = () => {
 
 	const generateNewIdea = () => {
 		if(fetchStatus === 0) {
+			// Ok to fetch!
 			dispatch(setFetchStatus(1));
 			getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < NOW));
+		} else if (fetchStatus === -1) {
+			// We need to initialize
+			initializeIdeas(afterInit);
+		} else if (fetchStatus === 10) {
+			// Settings have changed, need to check for new omissions.
+			pruneIdeas(afterPrune, state);
 		}
+	};
+	const afterInit = (flag: boolean) => {
+		console.log("INIT: " + String(flag))
+		dispatch(setFetchStatus(1));
+		getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < NOW));
+	};
+	const afterPrune = (result: string) => {
+		console.log("PRUNED: " + result)
+		dispatch(setFetchStatus(1));
+		getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < NOW));
 	};
 
 	// Set up variables
@@ -128,7 +144,7 @@ const Home = () => {
 	};
 
 	const displayIdea = () => {
-		if(fetchStatus || (state.idea1 === null && state.idea2 === null)) {
+		if(fetchStatus || state.idea1 === null || state.idea2 === null) {
 			return (<p className="theIdea loading">LOADING</p>);
 		}
 		let chosen: string[];
