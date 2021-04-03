@@ -149,19 +149,19 @@ const Home = () => {
 					</IonItem>
 					<IonItem>
 						<IonLabel>Large locations (India, the Amazon basic, etc)</IonLabel>
-						<IonToggle onClick={() => toggleTempLocale("large")} slot="end" checked={locales.large} />
+						<IonToggle onClick={() => toggleTempLocale("largeSize")} slot="end" checked={locales.largeSize} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Medium-sized locations (Jamaica, Siberia, etc)</IonLabel>
-						<IonToggle onClick={() => toggleTempLocale("medium")} slot="end" checked={locales.medium} />
+						<IonToggle onClick={() => toggleTempLocale("mediumSize")} slot="end" checked={locales.mediumSize} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Small locations (Mt. Everest, the Vatican, etc)</IonLabel>
-						<IonToggle onClick={() => toggleTempLocale("small")} slot="end" checked={locales.small} />
+						<IonToggle onClick={() => toggleTempLocale("smallSize")} slot="end" checked={locales.smallSize} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Tiny locations (a bedroom, a wedding, etc)</IonLabel>
-						<IonToggle onClick={() => toggleTempLocale("tiny")} slot="end" checked={locales.tiny} />
+						<IonToggle onClick={() => toggleTempLocale("tinySize")} slot="end" checked={locales.tinySize} />
 					</IonItem>
 					<IonListHeader>
 						<IonLabel>Genres</IonLabel>

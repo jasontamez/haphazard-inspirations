@@ -1,7 +1,6 @@
 {
 	"default": {
 		"specific": true,
-		"size": "tiny",
 		"preposition": "in"
 	},
 	"contents": [
@@ -10,74 +9,77 @@
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Amsterdam",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a beaver dam",
 			"proposition": "by",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "heaven",
 			"religionAndMyths": true,
 			"christianity": true,
-			"construct": true,
-			"size": "variable"
+			"construct": true
 		},
 		{
 			"idea": "an igloo",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "India",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "Scotland",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a dome",
 			"proposition": "inside",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "Cambodia",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Australia",
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "Ecuador",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a large newspaper",
 			"proposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "an island of horrors",
@@ -86,14 +88,14 @@
 			"horror": true,
 			"specific": false,
 			"construct": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Madagascar",
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Israel",
@@ -101,133 +103,138 @@
 			"religionAndMyths": true,
 			"christianity": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Siberia",
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a temple",
 			"religionAndMyths": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a boat on land",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "Singapore",
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "your hometown",
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Japan",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Saudi Arabia",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Denmark",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Kenya",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Germany",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Canada",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "the USA",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "a hammock",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "Oklahoma",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "along the Nile",
 			"properName": true,
 			"geographical": true,
 			"preposition": "somewhere",
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "the Amazon basin",
 			"properName": true,
 			"geographical": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "Notre Dame",
 			"preposition": "at",
-			"properName": true
+			"properName": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a brick road",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a city on fire",
 			"humanDistress": true,
 			"specific": false,
 			"construct": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a famous birthplace",
 			"specific": false,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a rainy forest",
 			"specific": false,
 			"geographical": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a black hole",
@@ -235,43 +242,45 @@
 			"scifi": true,
 			"spacefaring": true,
 			"specific": false,
-			"geographical": true
+			"geographical": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a circus tent",
 			"preposition": "under",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "New York City",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Paris",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "London",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Yellowstone National Park",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Antarctica",
 			"properName": true,
 			"geographical": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "the TARDIS",
@@ -280,37 +289,39 @@
 			"modern": true,
 			"scifi": true,
 			"spacefaring": true,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a train platform",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "Mother Russia",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "South Africa",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Brazil",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "Athens",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Chernobyl",
@@ -318,111 +329,126 @@
 			"properName": true,
 			"humanDistress": true,
 			"humanDeath": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a country club",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a crib",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a cathedral",
 			"religionAndMyths": true,
 			"christianity": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "China",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "a country no one has heard of",
 			"specific": false,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a courtroom",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a farm",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a cave",
 			"specific": false,
 			"geographical": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a condo",
 			"modern": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "an apartment",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a duplex",
 			"modern": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a mobile home",
 			"modern": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a Winnebago",
 			"properName": true,
 			"modern": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a houseboat",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a yacht",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a doghouse",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a shack in the woods",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "within an underpass",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a 7-11",
@@ -430,88 +456,97 @@
 			"properName": true,
 			"modern": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a ferris wheel",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a submarine",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "grandmother's mansion",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a fork in the road",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a crippled plane",
 			"preposition": "on",
 			"humanDistress": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "an empire",
 			"specific": false,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Cuba",
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "the post office",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "far away",
 			"preposition": "somewhere",
 			"specific": false,
-			"geographical": true,
-			"size": "variable"
+			"geographical": true
 		},
 		{
 			"idea": "an empty tower",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a laundromat",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a mountain peak",
 			"preposition": "on",
 			"specific": false,
 			"geographical": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "an ancient cemetery",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "Transylvania",
@@ -520,127 +555,131 @@
 			"medievalFantasy": true,
 			"horror": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "the Orient Express",
 			"preposition": "on",
 			"properName": true,
-			"historicalFiction": true
+			"historicalFiction": true,
+			"tinySize": true
 		},
 		{
 			"idea": "the Taj Mahal",
 			"preposition": "at",
-			"properName": true
+			"properName": true,
+			"tinySize": true
 		},
 		{
 			"idea": "the Red Sea",
 			"preposition": "on",
 			"properName": true,
 			"geographical": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Pennsylvania",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Nigeria",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Mt. Everest",
 			"preposition": "at",
 			"properName": true,
 			"geographical": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Thailand",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Hong Kong",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "the Sydney Opera House",
 			"preposition": "at",
-			"properName": true
+			"properName": true,
+			"tinySize": true
 		},
 		{
 			"idea": "the World Cup",
 			"preposition": "at",
 			"properName": true,
 			"specific": false,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "South Korea",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a carnival",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a haunted house",
 			"preposition": "at",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "Nebraska",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Poland",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Ethiopia",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Indonesia",
 			"properName": true,
 			"political": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "the middle of nowhere",
 			"specific": false,
-			"geographical": true,
-			"size": "variable"
+			"geographical": true
 		},
 		{
 			"idea": "North Korea",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Europe",
 			"properName": true,
 			"geographical": true,
-			"size": "large"
+			"largeSize": true
 		},
 		{
 			"idea": "The Vatican",
@@ -649,13 +688,13 @@
 			"religionAndMyths": true,
 			"christianity": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Rome",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Wakanda",
@@ -664,54 +703,56 @@
 			"fantasy": true,
 			"superhero": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a plateau",
 			"preposition": "on",
 			"specific": false,
 			"geographical": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a funeral pyre",
 			"preposition": "by",
 			"humanDeath": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a river",
 			"preposition": "on",
 			"specific": false,
 			"geographical": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Florida",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "a maze of corridors, all alike",
 			"modern": true,
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a painted pathway",
 			"preposition": "on",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a better place",
 			"religionAndMyths": true,
 			"christianity": true,
 			"specific": false,
-			"construct": true,
-			"size": "variable"
+			"construct": true
 		},
 		{
 			"idea": "Death Valley",
@@ -719,127 +760,130 @@
 			"humanDeath": true,
 			"humanDistress": true,
 			"geographical": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Switzerland",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Morocco",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Argentina",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Chile",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Iraq",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Iran",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Dubai",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "Libya",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "New Zealand",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Alaska",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Hawaii",
 			"properName": true,
 			"geographical": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Mexico",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Spain",
 			"properName": true,
 			"political": true,
-			"size": "medium"
+			"mediumSize": true
 		},
 		{
 			"idea": "Istanbul",
 			"properName": true,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "the Oscars",
 			"preposition": "at",
 			"properName": true,
 			"specific": false,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "the UN",
 			"preposition": "at",
 			"properName": true,
 			"specific": true,
-			"size": "small"
+			"smallSize": true
 		},
 		{
 			"idea": "a bedroom",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a bathroom",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "a wedding",
 			"specific": false,
-			"construct": true
+			"construct": true,
+			"tinySize": true
 		},
 		{
 			"idea": "an ancient kingdom",
 			"specific": false,
 			"political": true,
-			"size": "small"
+			"smallSize": true
 		}
 	]
 }
