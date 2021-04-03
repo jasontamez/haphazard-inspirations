@@ -16,10 +16,9 @@ import {
 	TriggersObject
 } from '../components/ReduxDucks';
 
-//npm install english-number
-//import { nameOf } from 'english-number';
-//const englishNumber = (input: number) => nameOf(input).toLowerCase().replace(/ and /g, " ");
-//export default englishNumber;
+let currentlyWorking = false;
+let incomingQueue: [Function, any[]][] = [];
+let outgoingQueue: [Function, any[]][] = [];
 
 const EnglishNumbers = [
 	"zero",
@@ -297,44 +296,6 @@ class Action extends BasicIdea {
 type UsedIdea = [any, number];
 type Omit = BasicIdea | UsedIdea;
 
-const filter = (original: any[], omit: string[] = []) => {
-	if(omit.length === 0) {
-		return original;
-	}
-	let gone: any[] = [];
-	let staying: any[] =[];
-	original.forEach((testing: any) => {
-		let test: any = testing;
-		if(Array.isArray(test)) {
-			test = testing[0];
-		}
-		if(omit.some((prop: string) => test[prop])) {
-			gone.push(testing);
-		} else {
-			staying.push(testing);
-		}
-	});
-	return [gone, staying];
-};
-
-// THIS IS NOT BEING USED ANYMORE
-// THIS IS NOT BEING USED ANYMORE |
-// THIS IS NOT BEING USED ANYMORE v
-export const makeInspirations = (omit: string[] = []) => {
-	const inspirations: BasicIdea[] = [
-		...filter(action.contents, omit)[1].map((a: any) => new Action(a)),
-		...filter(characters.contents, omit)[1].map((c: any) => new Character(c)),
-		...filter(event.contents, omit)[1].map((e: any) => new AnEvent(e)),
-		...filter(locale.contents, omit)[1].map((l: any) => new Locale(l)),
-		...filter(object.contents, omit)[1].map((o: any) => new AnObject(o)),
-		...filter(time.contents, omit)[1].map((t: any) => new ATime(t)),
-		...filter(topic.contents, omit)[1].map((t: any) => new Topic(t))
-	];
-	return inspirations;
-}
-// THIS IS NOT BEING USED ANYMORE ^
-// THIS IS NOT BEING USED ANYMORE |
-
 const makeIdea = (idea: any) => {
 	switch(idea.type) {
 		case "action":
@@ -355,7 +316,26 @@ const makeIdea = (idea: any) => {
 	return BasicError1;
 };
 
+const maybeRunExitQueue = (func: Function, args: any[]) => {
+	if(incomingQueue.length > 0) {
+		outgoingQueue.push([func, args]);
+		let pair: [Function, any[]] = incomingQueue.shift()!;
+		return pair[0](...pair[1]);
+	}
+	let all = outgoingQueue;
+	all.forEach((pair: [Function, any[]]) => {
+		pair[0](...pair[1]);
+	});
+	func(...args);
+	currentlyWorking = false;
+}
+
 export const initializeIdeas = (callback: Function) => {
+	if(currentlyWorking) {
+		incomingQueue.push([initializeIdeas, [callback]]);
+		return;
+	}
+	currentlyWorking = true;
 	let ideas: object[] = shuffle([
 		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
 		...characters.contents.map(c => ({...characters.default, ...c, type: "character"})),
@@ -370,11 +350,11 @@ export const initializeIdeas = (callback: Function) => {
 		IdeaStorage.setItem("ideas", ideas),
 		IdeaStorage.setItem("omit", [])
 	]).then(() => {
-		callback(true);
+		maybeRunExitQueue(callback, [true]);
 	}).catch((e) => {
 		console.log("ERROR - INIT IDEAS:");
 		console.log(e);
-		callback(false);
+		maybeRunExitQueue(callback, [false]);
 	});
 };
 
@@ -446,6 +426,11 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 };
 
 export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) => {
+	if(currentlyWorking) {
+		incomingQueue.push([initializeIdeas, [callback]]);
+		return;
+	}
+	currentlyWorking = true;
 	const getOmissions = () => {
 		let omissions: string[] = [];
 		objects.forEach((o: any) => {
@@ -519,7 +504,7 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 			IdeaStorage.setItem("ideas", ideas),
 			IdeaStorage.setItem("omit", omit)
 		]).then(() => {
-			callback();
+			maybeRunExitQueue(callback, []);
 		}).catch((e) => {
 			console.log("ERROR - SAVE IDEAS AFTER OMISSIONS:");
 			console.log(e);
