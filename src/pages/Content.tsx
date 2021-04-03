@@ -20,22 +20,23 @@ import {
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import {
 	setSettings,
-	SettingsObject,
 	LocalesObject,
 	GenresObject,
 	ContentObject,
 	PersonObject,
 	EventObject,
-	TriggersObject
+	TriggersObject,
+	setFetchStatus
 } from '../components/ReduxDucks';
 import { $a } from '../components/DollarSignImports';
 import './Home.css';
 import { saveOutline } from 'ionicons/icons';
+import { pruneIdeas } from '../components/GatherInspiration';
 
 const Home = () => {
 	const dispatch = useDispatch();
 	const [
-		settings,
+		fetchOk,
 		locales,
 		genres,
 		content,
@@ -43,7 +44,7 @@ const Home = () => {
 		event,
 		triggers
 	] = useSelector((state: any) => [
-		state.settings,
+		state.fetchOk,
 		state.locales,
 		state.genres,
 		state.content,
@@ -51,18 +52,12 @@ const Home = () => {
 		state.event,
 		state.triggers
 	], shallowEqual);
-	let TempSettings = {...settings};
-	let TempLocales = {...locales};
-	let TempGenres = {...genres};
-	let TempContent = {...content};
-	let TempPerson = {...person};
-	let TempEvent = {...event};
-	let TempTriggers = {...triggers};
-	const toggleTempSetting = (prop: keyof SettingsObject) => {
-		let value = TempSettings[prop];
-		TempSettings[prop] = !value;
-		console.log(TempSettings);
-	};
+	let TempLocales: LocalesObject = {...locales};
+	let TempGenres: GenresObject = {...genres};
+	let TempContent: ContentObject = {...content};
+	let TempPerson: PersonObject 	= {...person};
+	let TempEvent: EventObject = {...event};
+	let TempTriggers: TriggersObject = {...triggers};
 	const toggleTempLocale = (prop: keyof LocalesObject) => {
 		let value = TempLocales[prop];
 		TempLocales[prop] = !value;
@@ -106,8 +101,10 @@ const Home = () => {
 		console.log(TempTriggers);
 	};
 	const saveSettings = () => {
+		const afterPrune = () => {
+			dispatch(setFetchStatus(true));
+		};
 		dispatch(setSettings([
-			TempSettings,
 			TempLocales,
 			TempGenres,
 			TempContent,
@@ -115,12 +112,20 @@ const Home = () => {
 			TempEvent,
 			TempTriggers
 		]));
+		pruneIdeas(afterPrune, [
+			TempLocales,
+			TempGenres,
+			TempContent,
+			TempPerson,
+			TempEvent,
+			TempTriggers
+		]);
 	};
 	return (
 		<IonPage>
 			<IonHeader>
 				<IonToolbar>
-					<IonTitle>Settings</IonTitle>
+					<IonTitle>Content Filters</IonTitle>
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
@@ -128,13 +133,6 @@ const Home = () => {
 			</IonHeader>
 			<IonContent fullscreen className="onlyList">
 				<IonList lines="none" className="buttonFilled longLabels">
-					<IonListHeader>
-						<IonLabel>General Settings</IonLabel>
-					</IonListHeader>
-					<IonItem>
-						<IonLabel>Shake for new idea</IonLabel>
-						<IonToggle onClick={() => toggleTempSetting("shake")} slot="end" checked={settings.shake} />
-					</IonItem>
 					<IonListHeader>
 						<IonLabel>Locales</IonLabel>
 						<IonNote>Do not suggest locations of the following types</IonNote>
