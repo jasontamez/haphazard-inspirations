@@ -1,6 +1,5 @@
 import maybeUpdateTheme from './MaybeUpdateTheme';
 import { StateStorage } from './PersistentInfo';
-//import { BasicIdea, updateFromState } from './GatherInspiration';
 import debounce from './Debounce';
 import packageJson from '../../package.json';
 import { BasicIdea } from './GatherInspiration';
@@ -22,8 +21,8 @@ const UPDATE_THEME = p+"UPDATE_THEME";
 const UPDATE_IDEAS = p+"UPDATE_IDEAS";
 const UPDATE_FETCH_STATUS = p+"UPDATE_FETCH_STATUS";
 const SET_CONTENT_LIMITS = p+"SET_CONTENT_LIMITS";
-//const B = p+"";
-//const C = p+"";
+const SET_BOOLEAN = p+"SET_BOOLEAN";
+const SET_NUMBER = p+"SET_NUMBER";
 //const D = p+"";
 //const E = p+"";
 //const F = p+"";
@@ -43,13 +42,19 @@ export function updateTheme(payload: string) {
 export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean]) {
 	return {type: UPDATE_IDEAS, payload};
 }
-export function setFetchStatus(payload: number) {
+export function setFetchStatus(payload: boolean) {
 	return {type: UPDATE_FETCH_STATUS, payload};
+}
+export function setBoolean(payload: [keyof TogglesObject, boolean]) {
+	return {type: SET_BOOLEAN, payload};
+}
+export function setNumber(payload: [keyof SettingsObject, number]) {
+	return {type: SET_NUMBER, payload};
 }
 //export function removeFromUsed(payload: BasicIdea[]) {
 //	return {type: REMOVE_FROM_USED, payload};
 //}
-export function setSettings(payload: [SettingsObject, LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) {
+export function setSettings(payload: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) {
 	return {type: SET_CONTENT_LIMITS, payload};
 }
 
@@ -59,16 +64,26 @@ export function setSettings(payload: [SettingsObject, LocalesObject, GenresObjec
 //
 //
 export interface SettingsObject {
+	flushDays: number
+}
+const minSett: SettingsObject = {
+	flushDays: 1
+}
+const maxSett: SettingsObject = {
+	flushDays: 7305 // 20 years!
+}
+export interface TogglesObject {
 	shake: boolean
+	makeNoise: boolean
 }
 export interface LocalesObject {
 	any: boolean
 	specific: boolean
 	political: boolean
-	large: boolean
-	medium: boolean
-	small: boolean
-	tiny: boolean
+	largeSize: boolean
+	mediumSize: boolean
+	smallSize: boolean
+	tinySize: boolean
 }
 export interface GenresObject {
 	fantasy: boolean
@@ -112,8 +127,8 @@ export interface StateObject {
 	idea2: BasicIdea | null
 	lastIdeaGenerated: number
 	nextIdeaFlush: number
-	flushDays: number
-	fetchStatus: number
+	fetchOk: boolean
+	toggles: TogglesObject
 	settings: SettingsObject
 	locales: LocalesObject
 	genres: GenresObject
@@ -130,19 +145,22 @@ export const blankAppState: StateObject = {
 	idea2: null,
 	lastIdeaGenerated: 0,
 	nextIdeaFlush: Date.now(),
-	flushDays: 365,
-	fetchStatus: -1,
+	fetchOk: false,
+	toggles: {
+		shake: false,
+		makeNoise: true
+	},
 	settings: {
-		shake: false
+		flushDays: 365
 	},
 	locales: {
 		any: false,
 		specific: false,
 		political: false,
-		large: false,
-		medium: false,
-		small: false,
-		tiny: false
+		largeSize: false,
+		mediumSize: false,
+		smallSize: false,
+		tinySize: false
 	},
 	genres: {
 		fantasy: false,
@@ -194,9 +212,9 @@ const reduceAll = (state: StateObject, setPending: boolean = true) => {
 		idea2: state.idea2,
 		lastIdeaGenerated: state.lastIdeaGenerated,
 		nextIdeaFlush: state.nextIdeaFlush,
-		flushDays: state.flushDays,
-		fetchStatus: state.fetchStatus,
+		fetchOk: state.fetchOk,
 		settings: {...state.settings},
+		toggles: {...state.toggles},
 		locales: {...state.locales},
 		genres: {...state.genres},
 		content: {...state.content},
@@ -237,22 +255,31 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final.idea2 = two;
 			final.lastIdeaGenerated = Date.now();
 			flush && (final.nextIdeaFlush = Date.now() + ONE_DAY);
-			final.fetchStatus = 0;
+			final.fetchOk = true;
 			break;
 		case UPDATE_FETCH_STATUS:
 			final = reduceAll(state);
-			final.fetchStatus = payload;
+			final.fetchOk = payload;
 			break;
 		case SET_CONTENT_LIMITS:
 			final = reduceAll(state);
-			final.settings = {...payload.shift()};
 			final.locales = {...payload.shift()};
 			final.genres = {...payload.shift()};
 			final.content = {...payload.shift()};
 			final.person = {...payload.shift()};
 			final.event = {...payload.shift()};
 			final.triggers = {...payload.shift()};
-			final.fetchStatus = 10;
+			final.fetchOk = false;
+			break;
+		case SET_BOOLEAN:
+			final = reduceAll(state);
+			final.toggles[payload[0] as keyof TogglesObject] = payload[1] as boolean;
+			break;
+		case SET_NUMBER:
+			final = reduceAll(state);
+			let num = payload[1] as number;
+			let prop = payload[0] as keyof SettingsObject;
+			final.settings[prop] = Math.min(maxSett[prop], Math.max(minSett[prop], Math.floor(num)));
 			break;
 		default:
 			return state;

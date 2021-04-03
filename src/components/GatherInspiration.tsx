@@ -1,5 +1,4 @@
 import { IdeaStorage } from './PersistentInfo';
-import { StateObject } from './ReduxDucks';
 import shuffle from 'array-shuffle';
 import characters from '../data/characters.json';
 import action from '../data/actions.json';
@@ -8,6 +7,14 @@ import locale from '../data/locales.json';
 import time from '../data/times.json';
 import object from '../data/objects.json';
 import topic from '../data/topics.json';
+import {
+	LocalesObject,
+	GenresObject,
+	ContentObject,
+	PersonObject,
+	EventObject,
+	TriggersObject
+} from '../components/ReduxDucks';
 
 //npm install english-number
 //import { nameOf } from 'english-number';
@@ -191,7 +198,11 @@ class Locale extends BasicIdea {
 	geographical?: boolean
 	construct?: boolean
 	preposition?: string
-	size?: "large" | "medium" | "small" | "variable" | "tiny"
+	largeSize?: boolean
+	mediumSize?: boolean
+	smallSize?: boolean
+	variableSize?: boolean
+	tinySize?: boolean
 	specific?: boolean
 	getIdea() {
 		console.log(this);
@@ -284,6 +295,7 @@ class Action extends BasicIdea {
 }
 
 type UsedIdea = [any, number];
+type Omit = BasicIdea | UsedIdea;
 
 const filter = (original: any[], omit: string[] = []) => {
 	if(omit.length === 0) {
@@ -345,21 +357,19 @@ const makeIdea = (idea: any) => {
 
 export const initializeIdeas = (callback: Function) => {
 	let ideas: object[] = shuffle([
-		...action.contents.map(a => ({...a, type: "action"})),
-		...characters.contents.map(c => ({...c, type: "character"})),
-		...event.contents.map(e => ({...e, type: "event"})),
-		...locale.contents.map(l => ({...l, type: "locale"})),
-		...object.contents.map(o => ({...o, type: "object"})),
-		...time.contents.map(t => ({...t, type: "time"})),
-		...topic.contents.map(t => ({...t, type: "topic"}))
+		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
+		...characters.contents.map(c => ({...characters.default, ...c, type: "character"})),
+		...event.contents.map(e => ({...event.default, ...e, type: "event"})),
+		...locale.contents.map(l => ({...locale.default, ...l, type: "locale"})),
+		...object.contents.map(o => ({...object.default, ...o, type: "object"})),
+		...time.contents.map(t => ({...time.default, ...t, type: "time"})),
+		...topic.contents.map(t => ({...topic.default, ...t, type: "topic"}))
 	]);
 	Promise.all([
 		IdeaStorage.setItem("sent", []),
 		IdeaStorage.setItem("ideas", ideas),
 		IdeaStorage.setItem("omit", [])
 	]).then(() => {
-		//const dispatch = useDispatch();
-		//dispatch(setIdeas(sent));
 		callback(true);
 	}).catch((e) => {
 		console.log("ERROR - INIT IDEAS:");
@@ -409,8 +419,8 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 			ideas = ideas.concat(expired);
 			flushFlag = true;
 		}
-		let idea1: BasicIdea = ideas.shift();
-		let idea2: BasicIdea = ideas.shift();
+		let idea1: any = ideas.shift();
+		let idea2: any = ideas.shift();
 		let Idea1: BasicIdea = makeIdea(idea1);
 		let Idea2: BasicIdea = makeIdea(idea2);
 		sent.push([idea1, NOW], [idea2, NOW]);
@@ -420,7 +430,7 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 		}
 		Promise.all([
 			IdeaStorage.setItem("sent", sent),
-			IdeaStorage.setItem("ideas", ideas)	
+			IdeaStorage.setItem("ideas", ideas)
 		]).then(() => {
 			callback(Idea1, Idea2, flushFlag);
 		}).catch((e) => {
@@ -435,7 +445,87 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 	});
 };
 
-export const pruneIdeas = (callback: Function, state: StateObject) => {
-	// 
-	callback("any message here");
+export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) => {
+	const getOmissions = () => {
+		let omissions: string[] = [];
+		objects.forEach((o: any) => {
+			Object.keys(o).forEach((k: string) => {
+				if(o[k]) {
+					omissions.push(k);
+				}
+			});
+		});
+		return omissions;
+	};
+	const isOmittable = (check: any, omissions: string[]) => {
+		return omissions.some((p: string) => {
+			return check[p];
+		});
+	};
+	Promise.all([
+		IdeaStorage.getItem("sent"),
+		IdeaStorage.getItem("ideas"),
+		IdeaStorage.getItem("omit")
+	]).then((values: any[]) => {
+		let sent = values[0] as UsedIdea[];
+		let ideas = values[1] as BasicIdea[];
+		let omit = values[2] as Omit[];
+		let newOmit: Omit[] = [];
+		let unomit: Omit[] = [];
+		let omissions = getOmissions();
+		sent = sent.filter((s: UsedIdea) => {
+			let res: boolean = isOmittable(s[0], omissions);
+			if(res) {
+				newOmit.push(s);
+			}
+			return !res;
+		});
+		ideas = ideas.filter((s: BasicIdea) => {
+			let res: boolean = isOmittable(s, omissions);
+			if(res) {
+				newOmit.push(s);
+			}
+			return !res;
+		});
+		omit = omit.filter((s: Omit) => {
+			let test = Array.isArray(s) ? s[0] : s;
+			let res: boolean = isOmittable(test, omissions);
+			if(!res) {
+				unomit.push(s);
+			}
+			return res;
+		});
+		unomit = unomit.filter((s: Omit) => {
+			if(Array.isArray(s)) {
+				sent.push(s);
+				return false;
+			}
+			return true;
+		});
+		sent.sort((a: UsedIdea, b: UsedIdea) => {
+			return a[1] - b[1];
+		});
+		if(ideas.length > 50) {
+			let lenny = ideas.length;
+			let i1 = ideas.slice(0, lenny);
+			let i2 = shuffle(ideas.slice(lenny).concat(unomit as BasicIdea[]));
+			ideas = i1.concat(i2);
+		} else {
+			ideas = shuffle(ideas.concat(unomit as BasicIdea[]));
+		}
+		omit = omit.concat(newOmit);
+		Promise.all([
+			IdeaStorage.setItem("sent", sent),
+			IdeaStorage.setItem("ideas", ideas),
+			IdeaStorage.setItem("omit", omit)
+		]).then(() => {
+			callback();
+		}).catch((e) => {
+			console.log("ERROR - SAVE IDEAS AFTER OMISSIONS:");
+			console.log(e);
+		});
+	}).catch((e) => {
+		console.log("ERROR - SAVE IDEAS TRYING TO OMIT OMISSIONS:");
+		console.log(e);
+	});
 };

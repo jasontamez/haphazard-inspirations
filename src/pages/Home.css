@@ -41,6 +41,7 @@ ion-list.buttonFilled ion-list-header ion-note {
 	font-weight: normal;
 	text-indent: 1rem;
 }
+ion-content.onlyList ion-list.longLabels ion-item ion-label,
 ion-list.longLabels ion-item[button="true"] ion-label,
 ion-list.longLabels ion-list-header[button="true"] > * {
 	white-space: normal;
@@ -53,4 +54,9 @@ p.theIdea::first-letter {
 }
 p.theIdea span.idea {
 	font-style: italic;
+}
+ion-input input.native-input {
+	background: var(--ion-color-input-bg) !important;
+	color: var(--ion-color-input-fg) !important;
+	border-color: var(--ion-color-input-boder) !important;
 }
