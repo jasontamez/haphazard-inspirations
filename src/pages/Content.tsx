@@ -31,12 +31,11 @@ import {
 import { $a } from '../components/DollarSignImports';
 import './Home.css';
 import { saveOutline } from 'ionicons/icons';
-import { pruneIdeas } from '../components/GatherInspiration';
 
 const Home = () => {
 	const dispatch = useDispatch();
 	const [
-		fetchOk,
+		fetchStatus,
 		locales,
 		genres,
 		content,
@@ -44,7 +43,7 @@ const Home = () => {
 		event,
 		triggers
 	] = useSelector((state: any) => [
-		state.fetchOk,
+		state.fetchStatus,
 		state.locales,
 		state.genres,
 		state.content,
@@ -101,9 +100,19 @@ const Home = () => {
 		console.log(TempTriggers);
 	};
 	const saveSettings = () => {
-		const afterPrune = () => {
-			dispatch(setFetchStatus(true));
-		};
+		switch(fetchStatus) {
+			case 10:
+			case 11:
+			case 910:
+			case 911:
+			case 1010:
+			case 1011:
+			case 1910:
+			case 1911:
+				break;
+			default:
+				dispatch(setFetchStatus(fetchStatus + 10));
+		}
 		dispatch(setSettings([
 			TempLocales,
 			TempGenres,
@@ -112,14 +121,6 @@ const Home = () => {
 			TempEvent,
 			TempTriggers
 		]));
-		pruneIdeas(afterPrune, [
-			TempLocales,
-			TempGenres,
-			TempContent,
-			TempPerson,
-			TempEvent,
-			TempTriggers
-		]);
 	};
 	return (
 		<IonPage>

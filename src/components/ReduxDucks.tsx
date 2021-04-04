@@ -42,7 +42,7 @@ export function updateTheme(payload: string) {
 export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean]) {
 	return {type: UPDATE_IDEAS, payload};
 }
-export function setFetchStatus(payload: boolean) {
+export function setFetchStatus(payload: number) {
 	return {type: UPDATE_FETCH_STATUS, payload};
 }
 export function setBoolean(payload: [keyof TogglesObject, boolean]) {
@@ -127,7 +127,7 @@ export interface StateObject {
 	idea2: BasicIdea | null
 	lastIdeaGenerated: number
 	nextIdeaFlush: number
-	fetchOk: boolean
+	fetchStatus: number
 	toggles: TogglesObject
 	settings: SettingsObject
 	locales: LocalesObject
@@ -145,7 +145,7 @@ export const blankAppState: StateObject = {
 	idea2: null,
 	lastIdeaGenerated: 0,
 	nextIdeaFlush: Date.now(),
-	fetchOk: false,
+	fetchStatus: 1000,
 	toggles: {
 		shake: false,
 		makeNoise: true
@@ -212,7 +212,7 @@ const reduceAll = (state: StateObject, setPending: boolean = true) => {
 		idea2: state.idea2,
 		lastIdeaGenerated: state.lastIdeaGenerated,
 		nextIdeaFlush: state.nextIdeaFlush,
-		fetchOk: state.fetchOk,
+		fetchStatus: state.fetchStatus,
 		settings: {...state.settings},
 		toggles: {...state.toggles},
 		locales: {...state.locales},
@@ -255,11 +255,11 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final.idea2 = two;
 			final.lastIdeaGenerated = Date.now();
 			flush && (final.nextIdeaFlush = Date.now() + ONE_DAY);
-			final.fetchOk = true;
+			final.fetchStatus -= 1;
 			break;
 		case UPDATE_FETCH_STATUS:
 			final = reduceAll(state);
-			final.fetchOk = payload;
+			final.fetchStatus = payload;
 			break;
 		case SET_CONTENT_LIMITS:
 			final = reduceAll(state);
@@ -269,7 +269,6 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final.person = {...payload.shift()};
 			final.event = {...payload.shift()};
 			final.triggers = {...payload.shift()};
-			final.fetchOk = false;
 			break;
 		case SET_BOOLEAN:
 			final = reduceAll(state);

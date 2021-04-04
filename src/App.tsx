@@ -7,8 +7,6 @@ import Settings from './pages/Settings';
 import Content from './pages/Content';
 import Theme from './pages/Theme';
 import Menu from './components/Menu';
-import { setFetchStatus } from "./components/ReduxDucks";
-import { initializeIdeas } from './components/GatherInspiration';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -40,21 +38,16 @@ import { StateStorage } from './components/PersistentInfo';
 
 const App = () => {
 	const maybeSetState = () => {
-		return (dispatch: any) => {
-			const afterInit = (flag: boolean) => {
-				console.log("INIT: " + String(flag))
-				dispatch(setFetchStatus(true));
-			};
+		return async (dispatch: any) => {
 			return StateStorage.getItem("lastState").then((storedState: any) => {
 				if(storedState !== null) {
 					if(storedState && (typeof storedState) === "object") {
 						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.1.1", "<")) {
 							// Do stuff to possibly bring storedState up to date
 							// MAYBE set storedState.newIdeas to true
-							storedState.fetchOk = false;
+							storedState.fetchStatus = 1000;
 							storedState.idea1 = null;
 							storedState.idea2 = null;
-							initializeIdeas(afterInit);
 						}
 						if (compareVersions.compare(storedState.currentVersion || "0.0.1", VERSION.current, "<")) {
 							// Do stuff to possibly bring storedState up to date
@@ -65,8 +58,6 @@ const App = () => {
 						}
 					}
 				}
-				// We need to initialize
-				initializeIdeas(afterInit);
 				return dispatch(overwriteState(blankAppState));
 			});
 		}

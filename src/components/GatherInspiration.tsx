@@ -16,10 +16,6 @@ import {
 	TriggersObject
 } from '../components/ReduxDucks';
 
-let currentlyWorking = false;
-let incomingQueue: [Function, any[]][] = [];
-let outgoingQueue: [Function, any[]][] = [];
-
 const EnglishNumbers = [
 	"zero",
 	"one",
@@ -316,26 +312,7 @@ const makeIdea = (idea: any) => {
 	return BasicError1;
 };
 
-const maybeRunExitQueue = (func: Function, args: any[]) => {
-	if(incomingQueue.length > 0) {
-		outgoingQueue.push([func, args]);
-		let pair: [Function, any[]] = incomingQueue.shift()!;
-		return pair[0](...pair[1]);
-	}
-	let all = outgoingQueue;
-	all.forEach((pair: [Function, any[]]) => {
-		pair[0](...pair[1]);
-	});
-	func(...args);
-	currentlyWorking = false;
-}
-
-export const initializeIdeas = (callback: Function) => {
-	if(currentlyWorking) {
-		incomingQueue.push([initializeIdeas, [callback]]);
-		return;
-	}
-	currentlyWorking = true;
+export const initializeIdeas = (callback: Function, status: number) => {
 	let ideas: object[] = shuffle([
 		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
 		...characters.contents.map(c => ({...characters.default, ...c, type: "character"})),
@@ -350,11 +327,11 @@ export const initializeIdeas = (callback: Function) => {
 		IdeaStorage.setItem("ideas", ideas),
 		IdeaStorage.setItem("omit", [])
 	]).then(() => {
-		maybeRunExitQueue(callback, [true]);
+		callback(status, {type: "init"});
 	}).catch((e) => {
 		console.log("ERROR - INIT IDEAS:");
 		console.log(e);
-		maybeRunExitQueue(callback, [false]);
+		callback(status, {type: "init"});
 	});
 };
 
@@ -425,12 +402,7 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 	});
 };
 
-export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) => {
-	if(currentlyWorking) {
-		incomingQueue.push([initializeIdeas, [callback]]);
-		return;
-	}
-	currentlyWorking = true;
+export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject], status: number) => {
 	const getOmissions = () => {
 		let omissions: string[] = [];
 		objects.forEach((o: any) => {
@@ -504,7 +476,7 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 			IdeaStorage.setItem("ideas", ideas),
 			IdeaStorage.setItem("omit", omit)
 		]).then(() => {
-			maybeRunExitQueue(callback, []);
+			callback(status, {type: "omissions"});
 		}).catch((e) => {
 			console.log("ERROR - SAVE IDEAS AFTER OMISSIONS:");
 			console.log(e);

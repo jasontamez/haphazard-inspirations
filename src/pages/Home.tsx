@@ -6,61 +6,78 @@ import {
 	IonHeader,
 	IonMenuButton,
 	IonPage,
-	IonTitle,
+//	IonTitle,
 	IonToolbar,
-	IonLabel
+	IonLabel,
+	IonIcon
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { updateIdeas, setFetchStatus } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
-import { BasicIdea, getNewIdeas } from '../components/GatherInspiration';
+import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
 import './Home.css';
 
 const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
 	const dispatch = useDispatch();
-	// fetchOk controls whether or not we can spit out a new idea.
-	// It is 0 by default, which means updating is ok
-	// Any other value halts idea generation until it is reset to 0
-	const fetchOk = state.fetchOk;
-	const NOW = Date.now();
+	// fetchStatus controls whether or not we can spit out a new idea.
+	const fetchStatus = state.fetchStatus;
+
 	// Handle shake-to-update
 	if(state.settings.shake) {
 		const shakeToUpdate = () => {
-
+			generateNewIdea();
 		};
 		Shake.startWatch().subscribe(() => shakeToUpdate());
 	}
-//	const getOmissions = () => {
-//		let objects: any[] = [
-//			state.locales,
-//			state.genres,
-//			state.content,
-//			state.person,
-//			state.event,
-//			state.triggers
-//		];
-//		let omissions: string[] = [];
-//		objects.forEach((o: any) => {
-//			Object.keys(o).forEach((k: string) => {
-//				if(o[k]) {
-//					omissions.push(k);
-//				}
-//			});
-//		});
-//		return omissions;
-//	};
 
 	const receiveNewIdeas = (idea1: BasicIdea, idea2: BasicIdea, flushFlag: boolean = false) => {
 		dispatch(updateIdeas([idea1, idea2, flushFlag]));
 	};
 
-	const generateNewIdea = () => {
-		if(fetchOk) {
+	const generateNewIdea = (status = fetchStatus, output: any = undefined) => {
+		if(output) {
+			if(output.type) {
+				let adjust: number;
+				switch(output.type) {
+					case "init":
+						adjust = 1000;
+						break;
+					case "new ideas":
+						adjust = 900;
+						break;
+					case "omissions":
+						adjust = 10;
+						break;
+					default:
+						adjust = 0;
+				}
+				status -= adjust;
+			}
+		}
+		if(status !== fetchStatus) {
+			dispatch(setFetchStatus(status));
+		}
+		if(status >= 1000) {
+			// Inititalize;
+			initializeIdeas(generateNewIdea, status);
+		} else if(status >= 900) {
+			// New ideas
+		} else if(status >= 10) {
+			// Omits updated
+			pruneIdeas(generateNewIdea, [
+				state.locales,
+				state.genres,
+				state.content,
+				state.person,
+				state.event,
+				state.triggers
+			], status);
+		} else if(status === 0) {
 			// Ok to fetch!
-			dispatch(setFetchStatus(false));
-			getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < NOW));
+			dispatch(setFetchStatus(status + 1));
+			getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < Date.now()));
 		}
 	};
 
@@ -128,7 +145,7 @@ const Home = () => {
 	};
 
 	const displayIdea = () => {
-		if(!fetchOk || state.idea1 === null || state.idea2 === null) {
+		if(!fetchStatus || state.idea1 === null || state.idea2 === null) {
 			return (<p className="theIdea loading">LOADING</p>);
 		}
 		let chosen: string[];
