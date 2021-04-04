@@ -17,6 +17,7 @@ import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
 import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
 import './Home.css';
+import { starOutline } from 'ionicons/icons';
 
 const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
@@ -204,10 +205,13 @@ const Home = () => {
 		<IonPage>
 			<IonHeader>
 				<IonToolbar>
-					<IonTitle>Get Inspired</IonTitle>
+					{/*<IonTitle>Get Inspired</IonTitle>*/}
 					<IonButtons slot="start">
 						<IonMenuButton />
 						<IonButton onClick={() => {generateNewIdea()}}><IonLabel>CLICK</IonLabel></IonButton>
+					</IonButtons>
+					<IonButtons slot="end">
+						<IonButton onClick={() => {generateNewIdea()}}><IonIcon icon={starOutline} /></IonButton>
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>

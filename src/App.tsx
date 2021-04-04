@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Settings from './pages/Settings';
 import Content from './pages/Content';
 import Theme from './pages/Theme';
+import Favorites from './pages/Favorites';
 import Menu from './components/Menu';
 
 /* Core CSS required for Ionic components to work properly */
@@ -68,7 +69,7 @@ const App = () => {
 			<IonReactRouter>
 				<IonSplitPane contentId="main" when="xl">
 					<Menu />
-					{/* <Main />
+					{/*
 						Using the render method prop cuts down the number of renders your components
 						will have due to route changes. Use the component prop when your component
 						depends on the RouterComponentProps passed in automatically.
@@ -77,6 +78,7 @@ const App = () => {
 						<Route exact path="/home" render={() => <Home />} />
 						<Route exact path="/settings" render={() => <Settings />} />
 						<Route exact path="/content" render={() => <Content />} />
+						<Route exact path="/favorites" render={() => <Favorites />} />
 						<Route exact path="/theme" render={() => <Theme />} />
 						<Redirect exact={true} from="/" to="/home" />
 					</IonRouterOutlet>
