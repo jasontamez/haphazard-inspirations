@@ -52,11 +52,24 @@ ion-item ion-label.subTopic {
 p.theIdea::first-letter {
 	text-transform: capitalize;
 }
-p.theIdea span.idea {
+p.theIdea span.idea,
+ion-item span.idea {
 	font-style: italic;
 }
 ion-input input.native-input {
 	background: var(--ion-color-input-bg) !important;
 	color: var(--ion-color-input-fg) !important;
 	border-color: var(--ion-color-input-boder) !important;
+}
+ion-reorder.dragHandle {
+	width: 2.5rem;
+	text-align: center;
+}
+ion-reorder.dragHandle::part(icon) {
+	font-size: 32px;
+	color: var(--ion-color-tertiary-shade);
+	opacity: 1.0;
+}
+ion-list.dragArea {
+	min-height: 100%;
 }

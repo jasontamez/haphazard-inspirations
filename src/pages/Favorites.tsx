@@ -10,43 +10,116 @@ import {
 	IonList,
 	IonItem,
 	IonLabel,
-	IonToggle,
-	IonInput
+	IonIcon,
+	IonButton,
+	IonPopover,
+	IonReorderGroup,
+	IonReorder
 } from '@ionic/react';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
+import fireSwal from '../components/Swal';
 import {
+	removeFave,
 	setBoolean,
-	setNumber
+	openPopover,
+	closePopover,
+	reorderFaves
 } from '../components/ReduxDucks';
 import './Home.css';
+import { ellipsisVertical, reorderTwo, trashOutline } from 'ionicons/icons';
+//import { $i } from '../components/DollarSignImports';
 
 const Favorites = () => {
 	const dispatch = useDispatch();
-	const [settings, toggles] = useSelector((state: any) => [state.settings, state.toggles], shallowEqual);
+	const [showMin, popstate, faves] = useSelector((state: any) => [state.toggles.showMinimumFave, state.popover, state.favorites], shallowEqual);
+	const maybeDelete = (id: string) => {
+		const thenFunc = () => {
+			dispatch(removeFave(id));
+			fireSwal({
+				title: "Deleted",
+				toast: true,
+				timer: 2500,
+				timerProgressBar: true,
+				showConfirmButton: false
+			});
+		};
+		fireSwal({
+			text: "Are you sure you want to delete this favorite? It cannot be undone.",
+			customClass: {popup: 'deleteConfirm'},
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonText: "Yes, delete it."
+		}).then((result: any) => result.isConfirmed && thenFunc());
+	};
+	const doReorder = (event: CustomEvent) => {
+		const reorganize = (what: string[][], from: number, to: number) => {
+			let moved = what[from];
+			let remains = what.slice(0, from).concat(what.slice(from + 1));
+			return remains.slice(0, to).concat([moved], remains.slice(to)).map((a: string[]) => [...a]);
+		};
+		const ed = event.detail;
+		const reorganized = reorganize(faves, ed.from, ed.to);
+		dispatch(reorderFaves(reorganized));
+		ed.complete();
+	};
 	return (
 		<IonPage>
 			<IonHeader>
+				<IonPopover
+					id="poppy"
+					event={popstate && popstate[0]}
+					isOpen={popstate && popstate[1] === "favorites"}
+					onDidDismiss={() => dispatch(closePopover())}
+				>
+					<IonList className="longLabels">
+						<IonItem button={true} onClick={() => {
+							//$i("poppy").dismiss();
+							dispatch(setBoolean(["showMinimumFave", !showMin]));
+						}}>
+							<IonLabel>{showMin ? "Show entire inspirations" : "Show only basic elements"}</IonLabel>
+						</IonItem>
+					</IonList>
+				</IonPopover>
 				<IonToolbar>
 					<IonTitle>Favorites</IonTitle>
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
+					<IonButtons slot="end">
+						<IonButton onClick={(e: any) => {
+							e.persist();
+							dispatch(openPopover([e, "favorites"]));
+						}}>
+							<IonIcon icon={ellipsisVertical} />
+						</IonButton>
+					</IonButtons>
 				</IonToolbar>
 			</IonHeader>
 			<IonContent fullscreen className="onlyList">
-				<IonList lines="none" className="buttonFilled longLabels">
-					<IonItem>
-						<IonLabel>Shake for new idea</IonLabel>
-						<IonToggle onClick={() => dispatch(setBoolean(["shake", !toggles.shake]))} slot="end" checked={toggles.shake} />
-					</IonItem>
-					<IonItem>
-						<IonLabel>Make noise</IonLabel>
-						<IonToggle onClick={() => dispatch(setBoolean(["makeNoise", !toggles.makeNoise]))} slot="end" checked={toggles.makeNoise} />
-					</IonItem>
-					<IonItem>
-						<IonLabel style={ { minWidth: "calc(100% - 5rem)" } }>Try not to show the same idea twice within this many days:</IonLabel>
-						<IonInput style={ { maxWidth: "5rem" } } inputmode="numeric" step="1" type="number" max="7305" min="1" onIonChange={(e) => dispatch(setNumber(["flushDays", Number((e.target as HTMLInputElement).value)]))} value={settings.flushDays} />
-					</IonItem>
+				<IonList lines="none" className="longLabels striped dragArea">
+					<IonReorderGroup disabled={false} onIonItemReorder={doReorder}>
+						{faves.map((fave: string[]) => {
+							let [id, idea1, idea2, ...info] = fave;
+							let flag = true;
+							if(showMin) {
+								info = ["", idea1, ", ", idea2];
+							}
+							return (
+								<IonItem key={id}>
+									<IonReorder className="dragHandle"><IonIcon icon={reorderTwo} slot="start" color="tertiary" /></IonReorder>
+									<IonIcon icon={trashOutline} color="danger" slot="end" onClick={() => maybeDelete(id)} />
+									<IonLabel>{info.map((s: string) => {
+										if(flag) {
+											flag = false;
+											return s;
+										}
+										flag = true;
+										return (<span className="idea" key={id + s}>{s}</span>);
+									})}</IonLabel>
+								</IonItem>
+							);
+						})}
+					</IonReorderGroup>
 				</IonList>
 			</IonContent>
 		</IonPage>

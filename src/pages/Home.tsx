@@ -12,12 +12,22 @@ import {
 	IonIcon
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import { StatusObject, updateIdeas, setStatus, reduceStatus, setOmitStatus, setTotal } from "../components/ReduxDucks";
+import {
+	StatusObject,
+	updateIdeas,
+	setStatus,
+	reduceStatus,
+	setOmitStatus,
+	setTotal,
+	addFave,
+	removeFave
+} from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
 import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
 import './Home.css';
-import { starOutline } from 'ionicons/icons';
+import { starOutline, star } from 'ionicons/icons';
+import fireSwal from '../components/Swal';
 
 const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
@@ -32,10 +42,6 @@ const Home = () => {
 		};
 		Shake.startWatch().subscribe(() => shakeToUpdate());
 	}
-
-	const receiveNewIdeas = (idea1: BasicIdea, idea2: BasicIdea, flushFlag: boolean = false) => {
-		dispatch(updateIdeas([idea1, idea2, flushFlag]));
-	};
 
 	const maybeGenerateNewIdea = (status: StatusObject = fetchStatus, output: any = undefined) => {
 		if(output !== undefined) {
@@ -147,60 +153,111 @@ const Home = () => {
 		return Math.floor(Math.random() * n);
 	};
 
+	const receiveNewIdeas = (idea1: BasicIdea, idea2: BasicIdea, flushFlag: boolean = false) => {
+		let formatting: string[] = [];
+		let singleFormatType = singleFormats;
+		let ideasToDisplay: string[] = [];
+		const type1 = idea1.type;	
+		const type2 = idea2.type;
+		if(type1 === "error" || type2 === "error") {
+			return dispatch(updateIdeas([idea1, idea2, flushFlag, [idea1.idea!, idea2.idea!, "", idea1.idea!, ": ", idea2.idea!, ""]]));
+		}
+		const i1 = idea1.getIdea();
+		const i2 = idea2.getIdea();
+		let rawIdeas: string[] = [i1, i2];
+		if(type1 === "character" && type2 === "action")  {
+			// CHARACTER ACTION
+			ideasToDisplay = [i1 + " " + i2];
+		} else if (type1 === "action" && type2 === "character") {
+			// ACTION CHARACTER
+			rawIdeas = [i2 , i1];
+			ideasToDisplay = [i2 + " " + i1];
+		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
+			// TIME TIME
+			// LOCALE LOCALE
+			formatting = getFormat(singleLocaleFormats);
+			formatting = [formatting[0], " and ", formatting[1]];
+			ideasToDisplay = [i1, i2];
+		} else if (type1 === "time" && type2 === "locale") {
+			// TIME LOCALE
+			singleFormatType = singleLocaleFormats;
+			rawIdeas = [i2 , i1];
+			ideasToDisplay = [i2 + " " + i1];
+		} else if  (type2 === "time" && type1 === "locale") {
+			// LOCALE TIME
+			singleFormatType = singleLocaleFormats;
+			ideasToDisplay = [i1 + " " + i2];
+		} else if ((type1 === "time") || (type1 === "locale")) {
+			// TIME [ANY]
+			// LOCALE [ANY]
+			rawIdeas = [i2 , i1];
+			ideasToDisplay = [i2 + " " + i1];
+		} else if ((type2 === "time") || (type2 === "locale")) {
+			// [ANY] TIME
+			// [ANY] LOCALE
+			ideasToDisplay = [i1 + " " + i2];
+		} else {
+			// ALL OTHERS
+			formatting = getFormat(doubleFormats);
+			ideasToDisplay = [i1, i2];
+		}
+		// Apply the singular format
+		if(formatting.length === 0) {
+			formatting = getFormat(singleFormatType);
+		}
+		let final: string[] = [formatting.shift()!];
+		while(formatting.length > 0) {
+			final.push(ideasToDisplay.shift()!, formatting.shift()!)
+		}
+		dispatch(updateIdeas([idea1, idea2, flushFlag, [...rawIdeas, ...final]]));
+	};
+
 	const displayIdea = () => {
 		if(fetchStatus.generating || state.idea1 === null || state.idea2 === null) {
 			return (<p className="theIdea loading">LOADING</p>);
 		}
-		let chosen: string[];
-		let singleFormatType = singleFormats;
-		let msg: any = "";
-		let idea1: BasicIdea = state.idea1;
-		let idea2: BasicIdea = state.idea2;
-		const type1 = idea1.type;	
-		const type2 = idea2.type;
 		const encase = (text: string) => {
-			return (<span className="idea">{text}</span>);
+			return (<span className="idea" key={"ID"+text}>{text}</span>);
 		};
-		if(type1 === "error" || type2 === "error") {
-			return encase(idea1.idea + ": " + idea2.idea);
+		let flag = true;
+		return (<p className="theIdea">{
+			state.ideas.slice(2).map((s: string) => {
+				if(flag) {
+					flag = false;
+					return s;
+				}
+				flag = true;
+				return encase(s);
+			})
+		}</p>);
+	};
+
+	const toggleFavorite = () => {
+		if(state.status.generating) {
+			return;
 		}
-		const i1 = idea1.getIdea();
-		const i2 = idea2.getIdea();
-		if(type1 === "character" && type2 === "action")  {
-			// CHARACTER ACTION
-			msg = encase(i1 + " " + i2);
-		} else if (type1 === "action" && type2 === "character") {
-			// ACTION CHARACTER
-			msg = encase(i2 + " " + i1);
-		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
-			// TIME TIME
-			// LOCALE LOCALE
-			chosen = getFormat(singleLocaleFormats);
-			return (<p>{chosen[0]}{encase(i1)} and {encase(i2)}{chosen[1]}</p>);
-		} else if (type1 === "time" && type2 === "locale") {
-			// TIME LOCALE
-			singleFormatType = singleLocaleFormats;
-			msg = encase(i2 + " " + i1);
-		} else if  (type2 === "time" && type1 === "locale") {
-			// LOCALE TIME
-			singleFormatType = singleLocaleFormats;
-			msg = encase(i1 + " " + i2);
-		} else if ((type1 === "time") || (type1 === "locale")) {
-			// TIME [ANY]
-			// LOCALE [ANY]
-			msg = encase(i2 + " " + i1);
-		} else if ((type2 === "time") || (type2 === "locale")) {
-			// [ANY] TIME
-			// [ANY] LOCALE
-			msg = encase(i1 + " " + i2);
-		} else {
-			// ALL OTHERS
-			chosen = getFormat(doubleFormats);
-			return (<p className="theIdea">{chosen[0]}{encase(i1)}{chosen[1]}{encase(i2)}{chosen[2]}</p>);
+		if(state.currentFave) {
+			dispatch(removeFave(state.currentFave));
+			fireSwal({
+				title: "Removed from Favorites",
+				customClass: {popup: 'dangerToast'},
+				toast: true,
+				timer: 2500,
+				position: 'top',
+				timerProgressBar: true,
+				showConfirmButton: false
+			});
+			return;
 		}
-		// Apply the singular format
-		chosen = getFormat(singleFormatType);
-		return (<p className="theIdea">{chosen[0]}{msg}{chosen[1]}</p>);
+		dispatch(addFave());
+		fireSwal({
+			title: "Saved to Favorites",
+			toast: true,
+			timer: 2500,
+			position: 'top',
+			timerProgressBar: true,
+			showConfirmButton: false
+		});
 	};
 
 	return (
@@ -213,7 +270,7 @@ const Home = () => {
 						<IonButton onClick={() => {maybeGenerateNewIdea()}}><IonLabel>CLICK</IonLabel></IonButton>
 					</IonButtons>
 					<IonButtons slot="end">
-						<IonButton onClick={() => {maybeGenerateNewIdea()}}><IonIcon icon={starOutline} /></IonButton>
+						<IonButton onClick={() => {toggleFavorite()}} disabled={state.status.generating}><IonIcon icon={state.currentFave ? star : starOutline} color={state.currentFave ? undefined : "primary"} /></IonButton>
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>

@@ -3,6 +3,7 @@ import { StateStorage } from './PersistentInfo';
 import debounce from './Debounce';
 import packageJson from '../../package.json';
 import { BasicIdea } from './GatherInspiration';
+import { v4 as uuidv4 } from 'uuid';
 
 
 //
@@ -19,15 +20,18 @@ const p = "haphazard-inspiration/reducer/";
 const OVERWRITE_STATE = p+"OVERWRITE_STATE";
 const UPDATE_THEME = p+"UPDATE_THEME";
 const UPDATE_IDEAS = p+"UPDATE_IDEAS";
+const SET_EXACT_IDEAS = p+"SET_EXACT_IDEAS";
 const UPDATE_STATUS = p+"UPDATE_STATUS";
 const UPDATE_TOTAL_IDEAS = p+"UPDATE_TOTAL_IDEAS";
 const UPDATE_OMIT_STATUS = p+"UPDATE_OMIT_STATUS";
 const SET_CONTENT_LIMITS = p+"SET_CONTENT_LIMITS";
 const SET_BOOLEAN = p+"SET_BOOLEAN";
 const SET_NUMBER = p+"SET_NUMBER";
-//const D = p+"";
-//const E = p+"";
-//const F = p+"";
+const ADD_FAVORITE = p+"ADD_FAVORITE";
+const REMOVE_FAVORITE = p+"REMOVE_FAVORITE";
+const REORDER_FAVORITES = p+"REORDER_FAVORITES";
+const OPEN_POPOVER = p+"OPEN_POPOVER";
+const CLOSE_POPOVER = p+"CLOSE_POPOVER";
 
 
 //
@@ -41,8 +45,11 @@ export function overwriteState(payload: StateObject) {
 export function updateTheme(payload: string) {
 	return {type: UPDATE_THEME, payload};
 }
-export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean]) {
+export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean, string[]]) {
 	return {type: UPDATE_IDEAS, payload};
+}
+export function setExactIdeas(payload: string[]) {
+	return {type: SET_EXACT_IDEAS, payload};
 }
 export function setStatus(payload: boolean) {
 	return {type: UPDATE_STATUS, payload};
@@ -59,12 +66,27 @@ export function setBoolean(payload: [keyof TogglesObject, boolean]) {
 export function setNumber(payload: [keyof SettingsObject, number]) {
 	return {type: SET_NUMBER, payload};
 }
-//export function removeFromUsed(payload: BasicIdea[]) {
-//	return {type: REMOVE_FROM_USED, payload};
-//}
 export function setSettings(payload: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject]) {
 	return {type: SET_CONTENT_LIMITS, payload};
 }
+export function addFave() {
+	return {type: ADD_FAVORITE};
+}
+export function removeFave(payload: string) {
+	return {type: REMOVE_FAVORITE, payload};
+}
+export function reorderFaves(payload: string[][]) {
+	return {type: REORDER_FAVORITES, payload};
+}
+export function openPopover(payload: [Event, string]) {
+	return {type: OPEN_POPOVER, payload};
+}
+export function closePopover() {
+	return {type: CLOSE_POPOVER};
+}
+//export function removeFromUsed(payload: BasicIdea[]) {
+//	return {type: REMOVE_FROM_USED, payload};
+//}
 
 //
 //
@@ -83,6 +105,7 @@ const maxSett: SettingsObject = {
 export interface TogglesObject {
 	shake: boolean
 	makeNoise: boolean
+	showMinimumFave: boolean
 }
 export interface LocalesObject {
 	any: boolean
@@ -139,7 +162,10 @@ export interface StateObject {
 	theme: string
 	idea1: BasicIdea | null
 	idea2: BasicIdea | null
+	ideas: string[]
+	currentFave: string
 	status: StatusObject
+	favorites: string[][]
 	toggles: TogglesObject
 	settings: SettingsObject
 	locales: LocalesObject
@@ -148,21 +174,26 @@ export interface StateObject {
 	person: PersonObject
 	event: EventObject
 	triggers: TriggersObject
+	popover: [any, string] | null
 }
 export const blankAppState: StateObject = {
 	currentVersion: VERSION.current,
 	theme: "Default",
 	idea1: null,
 	idea2: null,
+	ideas: [],
+	currentFave: "",
 	status: {
 		total: 0,
 		omitsChanged: false,
 		generating: false,
 		nextIdeaFlush: Date.now() + ONE_DAY
 	},
+	favorites: [],
 	toggles: {
 		shake: false,
-		makeNoise: true
+		makeNoise: true,
+		showMinimumFave: false
 	},
 	settings: {
 		flushDays: 365
@@ -209,7 +240,8 @@ export const blankAppState: StateObject = {
 		humanDistress: false,
 		animalDeath: false,
 		animalDistress: false	
-	}
+	},
+	popover: null
 };
 
 //
@@ -218,12 +250,15 @@ export const blankAppState: StateObject = {
 //
 //
 const reduceAll = (state: StateObject, setPending: boolean = true) => {
-	return {
+	let o: StateObject = {
 		currentVersion: state.currentVersion,
 		theme: state.theme,
 		idea1: state.idea1,
 		idea2: state.idea2,
+		ideas: [...state.ideas],
+		currentFave: state.currentFave,
 		status: reduceStatus(state.status),
+		favorites: state.favorites.map((fave: string[]) => [...fave]),
 		settings: {...state.settings},
 		toggles: {...state.toggles},
 		locales: {...state.locales},
@@ -231,8 +266,10 @@ const reduceAll = (state: StateObject, setPending: boolean = true) => {
 		content: {...state.content},
 		person: {...state.person},
 		event: {...state.event},
-		triggers: {...state.triggers}
+		triggers: {...state.triggers},
+		popover: state.popover ? [state.popover[0], state.popover[1]] : null
 	};
+	return o;
 }
 export const reduceStatus = (status: StatusObject) => {
 	let reduced: StatusObject = {...status};
@@ -272,11 +309,13 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			break;
 		case UPDATE_IDEAS:
 			final = reduceAll(state);
-			let [one, two, flush] = (payload as [BasicIdea, BasicIdea, boolean]);
+			let [one, two, flush, ideas] = (payload as [BasicIdea, BasicIdea, boolean, string[]]);
 			final.idea1 = one;
 			final.idea2 = two;
 			flush && (final.status.nextIdeaFlush = Date.now() + ONE_DAY);
+			final.ideas = ideas;
 			final.status.generating = false;
+			final.currentFave = "";
 			break;
 		case UPDATE_STATUS:
 			final = reduceAll(state);
@@ -310,6 +349,33 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			let prop = payload[0] as keyof SettingsObject;
 			final.settings[prop] = Math.min(maxSett[prop], Math.max(minSett[prop], Math.floor(num)));
 			break;
+		case ADD_FAVORITE:
+			final = reduceAll(state);
+			let fave = state.ideas.slice();
+			let id = uuidv4();
+			fave.unshift(id);
+			final.favorites.push(fave);
+			final.currentFave = id;
+			break;
+		case REMOVE_FAVORITE:
+			final = reduceAll(state);
+			final.favorites = final.favorites.filter((fave: string[]) => fave[0] !== payload);
+			if(final.currentFave === payload) {
+				final.currentFave = "";
+			}
+			break;
+		case REORDER_FAVORITES:
+			final = reduceAll(state);
+			final.favorites = payload;
+			break;
+		case OPEN_POPOVER:
+			final = reduceAll(state);
+			final.popover = payload;
+			break;
+		case CLOSE_POPOVER:
+			final = reduceAll(state);
+			final.popover = null;
+			break;
 		default:
 			return state;
 	}
@@ -321,6 +387,7 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 
 const saveCurrentState = (state: StateObject) => {
 	let newState = reduceAll(state);
+	newState.popover = null;
 	// Save
 	StateStorage.setItem("lastState", newState);
 	console.log("Save");
