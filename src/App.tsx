@@ -45,7 +45,7 @@ const App = () => {
 					if(storedState && (typeof storedState) === "object") {
 						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.1.1", "<")) {
 							// Do stuff to possibly bring storedState up to date
-							// MAYBE set storedState.newIdeas to true
+							// - set storedState.status.new to... something
 							storedState.fetchStatus = 1000;
 							storedState.idea1 = null;
 							storedState.idea2 = null;
