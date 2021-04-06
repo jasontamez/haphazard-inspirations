@@ -12,7 +12,7 @@ import {
 	IonIcon
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import { updateIdeas, setFetchStatus } from "../components/ReduxDucks";
+import { StatusObject, updateIdeas, setStatus, reduceStatus, setOmitStatus, setTotal } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
 import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
@@ -23,12 +23,12 @@ const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
 	const dispatch = useDispatch();
 	// fetchStatus controls whether or not we can spit out a new idea.
-	const fetchStatus = state.fetchStatus;
+	const fetchStatus: StatusObject = state.status;
 
 	// Handle shake-to-update
 	if(state.settings.shake) {
 		const shakeToUpdate = () => {
-			generateNewIdea();
+			maybeGenerateNewIdea();
 		};
 		Shake.startWatch().subscribe(() => shakeToUpdate());
 	}
@@ -37,47 +37,49 @@ const Home = () => {
 		dispatch(updateIdeas([idea1, idea2, flushFlag]));
 	};
 
-	const generateNewIdea = (status = fetchStatus, output: any = undefined) => {
-		if(output) {
-			if(output.type) {
-				let adjust: number;
-				switch(output.type) {
-					case "init":
-						adjust = 1000;
-						break;
-					case "new ideas":
-						adjust = 900;
-						break;
-					case "omissions":
-						adjust = 10;
-						break;
-					default:
-						adjust = 0;
-				}
-				status -= adjust;
+	const maybeGenerateNewIdea = (status: StatusObject = fetchStatus, output: any = undefined) => {
+		if(output !== undefined) {
+			switch(output.type) {
+				case "initialized":
+					dispatch(setTotal(output.value));
+					status.total = output.value;
+					break;
+				case "new items loaded":
+					delete status.new;
+					break;
+				case "omissions noted":
+					status.omitsChanged = false;
+					dispatch(setOmitStatus(false));
+					break;
 			}
+		} else if (status.generating) {
+			return;
 		}
-		if(status !== fetchStatus) {
-			dispatch(setFetchStatus(status));
-		}
-		if(status >= 1000) {
+		if(!status.total) {
 			// Inititalize;
-			initializeIdeas(generateNewIdea, status);
-		} else if(status >= 900) {
+			let ns = reduceStatus(status);
+			initializeIdeas(maybeGenerateNewIdea, ns);
+		} else if(status.new !== undefined) {
 			// New ideas
-		} else if(status >= 10) {
+			//
+			//
+			//
+			//
+			//
+		} else if(status.omitsChanged) {
 			// Omits updated
-			pruneIdeas(generateNewIdea, [
+			let ns = reduceStatus(status);
+			pruneIdeas(maybeGenerateNewIdea, [
 				state.locales,
 				state.genres,
 				state.content,
 				state.person,
 				state.event,
 				state.triggers
-			], status);
-		} else if(status === 0) {
+			], ns);
+		} else {
 			// Ok to fetch!
-			dispatch(setFetchStatus(status + 1));
+			dispatch(setStatus(true));
 			getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < Date.now()));
 		}
 	};
@@ -208,10 +210,10 @@ const Home = () => {
 					{/*<IonTitle>Get Inspired</IonTitle>*/}
 					<IonButtons slot="start">
 						<IonMenuButton />
-						<IonButton onClick={() => {generateNewIdea()}}><IonLabel>CLICK</IonLabel></IonButton>
+						<IonButton onClick={() => {maybeGenerateNewIdea()}}><IonLabel>CLICK</IonLabel></IonButton>
 					</IonButtons>
 					<IonButtons slot="end">
-						<IonButton onClick={() => {generateNewIdea()}}><IonIcon icon={starOutline} /></IonButton>
+						<IonButton onClick={() => {maybeGenerateNewIdea()}}><IonIcon icon={starOutline} /></IonButton>
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>

@@ -13,7 +13,8 @@ import {
 	ContentObject,
 	PersonObject,
 	EventObject,
-	TriggersObject
+	TriggersObject,
+	StatusObject
 } from '../components/ReduxDucks';
 
 const EnglishNumbers = [
@@ -312,7 +313,8 @@ const makeIdea = (idea: any) => {
 	return BasicError1;
 };
 
-export const initializeIdeas = (callback: Function, status: number) => {
+export const initializeIdeas = (callback: Function, status: StatusObject) => {
+	let total = 0;
 	let ideas: object[] = shuffle([
 		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
 		...characters.contents.map(c => ({...characters.default, ...c, type: "character"})),
@@ -322,16 +324,21 @@ export const initializeIdeas = (callback: Function, status: number) => {
 		...time.contents.map(t => ({...time.default, ...t, type: "time"})),
 		...topic.contents.map(t => ({...topic.default, ...t, type: "topic"}))
 	]);
+	let c = ideas.length - 1;
+	while (c > 0) {
+		total += c;
+		c--;
+	}
 	Promise.all([
 		IdeaStorage.setItem("sent", []),
 		IdeaStorage.setItem("ideas", ideas),
 		IdeaStorage.setItem("omit", [])
 	]).then(() => {
-		callback(status, {type: "init"});
+		callback(status, {type: "initialized", value: total});
 	}).catch((e) => {
 		console.log("ERROR - INIT IDEAS:");
 		console.log(e);
-		callback(status, {type: "init"});
+		callback(status, {type: "initialized", value: total});
 	});
 };
 
@@ -402,7 +409,7 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 	});
 };
 
-export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject], status: number) => {
+export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresObject, ContentObject, PersonObject, EventObject, TriggersObject], status: StatusObject) => {
 	const getOmissions = () => {
 		let omissions: string[] = [];
 		objects.forEach((o: any) => {
@@ -476,7 +483,7 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 			IdeaStorage.setItem("ideas", ideas),
 			IdeaStorage.setItem("omit", omit)
 		]).then(() => {
-			callback(status, {type: "omissions"});
+			callback(status, {type: "omissions noted"});
 		}).catch((e) => {
 			console.log("ERROR - SAVE IDEAS AFTER OMISSIONS:");
 			console.log(e);

@@ -19,7 +19,9 @@ const p = "haphazard-inspiration/reducer/";
 const OVERWRITE_STATE = p+"OVERWRITE_STATE";
 const UPDATE_THEME = p+"UPDATE_THEME";
 const UPDATE_IDEAS = p+"UPDATE_IDEAS";
-const UPDATE_FETCH_STATUS = p+"UPDATE_FETCH_STATUS";
+const UPDATE_STATUS = p+"UPDATE_STATUS";
+const UPDATE_TOTAL_IDEAS = p+"UPDATE_TOTAL_IDEAS";
+const UPDATE_OMIT_STATUS = p+"UPDATE_OMIT_STATUS";
 const SET_CONTENT_LIMITS = p+"SET_CONTENT_LIMITS";
 const SET_BOOLEAN = p+"SET_BOOLEAN";
 const SET_NUMBER = p+"SET_NUMBER";
@@ -42,8 +44,14 @@ export function updateTheme(payload: string) {
 export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean]) {
 	return {type: UPDATE_IDEAS, payload};
 }
-export function setFetchStatus(payload: number) {
-	return {type: UPDATE_FETCH_STATUS, payload};
+export function setStatus(payload: boolean) {
+	return {type: UPDATE_STATUS, payload};
+}
+export function setTotal(payload: string) {
+	return {type: UPDATE_TOTAL_IDEAS, payload};
+}
+export function setOmitStatus(payload: boolean) {
+	return {type: UPDATE_OMIT_STATUS, payload};
 }
 export function setBoolean(payload: [keyof TogglesObject, boolean]) {
 	return {type: SET_BOOLEAN, payload};
@@ -119,15 +127,19 @@ export interface TriggersObject {
 	animalDeath: boolean
 	animalDistress: boolean
 }
+export interface StatusObject {
+	total: number
+	new?: any
+	omitsChanged: boolean
+	generating: boolean
+	nextIdeaFlush: number
+}
 export interface StateObject {
 	currentVersion: string
-	newIdeas: boolean
 	theme: string
 	idea1: BasicIdea | null
 	idea2: BasicIdea | null
-	lastIdeaGenerated: number
-	nextIdeaFlush: number
-	fetchStatus: number
+	status: StatusObject
 	toggles: TogglesObject
 	settings: SettingsObject
 	locales: LocalesObject
@@ -139,13 +151,15 @@ export interface StateObject {
 }
 export const blankAppState: StateObject = {
 	currentVersion: VERSION.current,
-	newIdeas: true,
 	theme: "Default",
 	idea1: null,
 	idea2: null,
-	lastIdeaGenerated: 0,
-	nextIdeaFlush: Date.now(),
-	fetchStatus: 1000,
+	status: {
+		total: 0,
+		omitsChanged: false,
+		generating: false,
+		nextIdeaFlush: Date.now() + ONE_DAY
+	},
 	toggles: {
 		shake: false,
 		makeNoise: true
@@ -206,13 +220,10 @@ export const blankAppState: StateObject = {
 const reduceAll = (state: StateObject, setPending: boolean = true) => {
 	return {
 		currentVersion: state.currentVersion,
-		newIdeas: state.newIdeas,
 		theme: state.theme,
 		idea1: state.idea1,
 		idea2: state.idea2,
-		lastIdeaGenerated: state.lastIdeaGenerated,
-		nextIdeaFlush: state.nextIdeaFlush,
-		fetchStatus: state.fetchStatus,
+		status: reduceStatus(state.status),
 		settings: {...state.settings},
 		toggles: {...state.toggles},
 		locales: {...state.locales},
@@ -223,6 +234,17 @@ const reduceAll = (state: StateObject, setPending: boolean = true) => {
 		triggers: {...state.triggers}
 	};
 }
+export const reduceStatus = (status: StatusObject) => {
+	let reduced: StatusObject = {...status};
+	if(reduced.new) {
+		reduced.new = reduceNew(reduced.new);
+	}
+	return reduced;
+};
+const reduceNew = (info: any) => {
+	// Nothing to do yet
+	return undefined;
+};
 export const checkIfState = (possibleState: StateObject | any): possibleState is StateObject => {
 	const check = (possibleState as StateObject);
 	return Object.keys(blankAppState).every((prop: string) => {
@@ -253,13 +275,16 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			let [one, two, flush] = (payload as [BasicIdea, BasicIdea, boolean]);
 			final.idea1 = one;
 			final.idea2 = two;
-			final.lastIdeaGenerated = Date.now();
-			flush && (final.nextIdeaFlush = Date.now() + ONE_DAY);
-			final.fetchStatus -= 1;
+			flush && (final.status.nextIdeaFlush = Date.now() + ONE_DAY);
+			final.status.generating = false;
 			break;
-		case UPDATE_FETCH_STATUS:
+		case UPDATE_STATUS:
 			final = reduceAll(state);
-			final.fetchStatus = payload;
+			final.status.generating = payload;
+			break;
+		case UPDATE_TOTAL_IDEAS:
+			final = reduceAll(state);
+			final.status.total = payload;
 			break;
 		case SET_CONTENT_LIMITS:
 			final = reduceAll(state);
@@ -269,6 +294,11 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final.person = {...payload.shift()};
 			final.event = {...payload.shift()};
 			final.triggers = {...payload.shift()};
+			final.status.omitsChanged = true;
+			break;
+		case UPDATE_OMIT_STATUS:
+			final = reduceAll(state);
+			final.status.omitsChanged = payload;
 			break;
 		case SET_BOOLEAN:
 			final = reduceAll(state);
