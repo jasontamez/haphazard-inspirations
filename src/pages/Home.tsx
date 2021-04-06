@@ -148,7 +148,7 @@ const Home = () => {
 	};
 
 	const displayIdea = () => {
-		if(!fetchStatus || state.idea1 === null || state.idea2 === null) {
+		if(fetchStatus.generating || state.idea1 === null || state.idea2 === null) {
 			return (<p className="theIdea loading">LOADING</p>);
 		}
 		let chosen: string[];
