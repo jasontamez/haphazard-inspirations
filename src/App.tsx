@@ -46,9 +46,15 @@ const App = () => {
 						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.1.1", "<")) {
 							// Do stuff to possibly bring storedState up to date
 							// - set storedState.status.new to... something
-							storedState.fetchStatus = 1000;
+							storedState.status = {
+								total: 0,
+								omitsChanged: false,
+								generating: false,
+								nextIdeaFlush: 0
+							};
 							storedState.idea1 = null;
 							storedState.idea2 = null;
+							storedState.currentFave = "";
 						}
 						if (compareVersions.compare(storedState.currentVersion || "0.0.1", VERSION.current, "<")) {
 							// Do stuff to possibly bring storedState up to date
