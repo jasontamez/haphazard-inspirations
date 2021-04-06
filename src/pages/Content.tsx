@@ -25,17 +25,15 @@ import {
 	ContentObject,
 	PersonObject,
 	EventObject,
-	TriggersObject,
-	setFetchStatus
+	TriggersObject
 } from '../components/ReduxDucks';
-import { $a } from '../components/DollarSignImports';
+import { $a, $i } from '../components/DollarSignImports';
 import './Home.css';
 import { saveOutline } from 'ionicons/icons';
 
 const Home = () => {
 	const dispatch = useDispatch();
 	const [
-		fetchStatus,
 		locales,
 		genres,
 		content,
@@ -43,7 +41,6 @@ const Home = () => {
 		event,
 		triggers
 	] = useSelector((state: any) => [
-		state.fetchStatus,
 		state.locales,
 		state.genres,
 		state.content,
@@ -57,10 +54,12 @@ const Home = () => {
 	let TempPerson: PersonObject 	= {...person};
 	let TempEvent: EventObject = {...event};
 	let TempTriggers: TriggersObject = {...triggers};
+	let button = $i("SaveButton") as HTMLInputElement;
 	const toggleTempLocale = (prop: keyof LocalesObject) => {
 		let value = TempLocales[prop];
 		TempLocales[prop] = !value;
 		console.log(TempLocales);
+		button.disabled = false;
 	};
 	const toggleTempGenre = (prop: keyof GenresObject) => {
 		let value = TempGenres[prop];
@@ -71,6 +70,7 @@ const Home = () => {
 			tog.disabled = !tog.disabled;
 			tog.checked = false;
 		});
+		button.disabled = false;
 		console.log(TempGenres);
 	};
 	const toggleTempContent = (prop: keyof ContentObject) => {
@@ -82,37 +82,28 @@ const Home = () => {
 			tog.disabled = !tog.disabled;
 			tog.checked = false;
 		});
+		button.disabled = false;
 		console.log(TempContent);
 	};
 	const toggleTempPerson = (prop: keyof PersonObject) => {
 		let value = TempPerson[prop];
 		TempPerson[prop] = !value;
 		console.log(TempPerson);
+		button.disabled = false;
 	};
 	const toggleTempEvent = (prop: keyof EventObject) => {
 		let value = TempEvent[prop];
 		TempEvent[prop] = !value;
 		console.log(TempEvent);
+		button.disabled = false;
 	};
 	const toggleTempTrigger = (prop: keyof TriggersObject) => {
 		let value = TempTriggers[prop];
 		TempTriggers[prop] = !value;
 		console.log(TempTriggers);
+		button.disabled = false;
 	};
 	const saveSettings = () => {
-		switch(fetchStatus) {
-			case 10:
-			case 11:
-			case 910:
-			case 911:
-			case 1010:
-			case 1011:
-			case 1910:
-			case 1911:
-				break;
-			default:
-				dispatch(setFetchStatus(fetchStatus + 10));
-		}
 		dispatch(setSettings([
 			TempLocales,
 			TempGenres,
@@ -121,6 +112,7 @@ const Home = () => {
 			TempEvent,
 			TempTriggers
 		]));
+		button.disabled = true;
 	};
 	return (
 		<IonPage>
@@ -275,7 +267,7 @@ const Home = () => {
 			<IonFooter>
 				<IonToolbar>
 					<IonButtons slot="end" className="ion-margin-horizontal">
-						<IonButton fill="solid" size="large" expand="block" shape="round" color="primary" onClick={() => saveSettings()}>
+						<IonButton fill="solid" size="large" expand="block" shape="round" color="primary" disabled={true} onClick={() => saveSettings()} id="SaveButton">
 							<IonIcon style={ { padding: "0 0 0 0.5rem", fontWeight: "bold" } } icon={saveOutline} />
 							<IonLabel style={ { padding: "0 0.5rem", fontWeight: "bold" } }>Save</IonLabel>
 						</IonButton>
