@@ -17,6 +17,7 @@ import {
 	IonButton,
 	IonIcon
 } from '@ionic/react';
+import fireSwal from '../components/Swal';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import {
 	setSettings,
@@ -113,6 +114,13 @@ const Home = () => {
 			TempTriggers
 		]));
 		button.disabled = true;
+		fireSwal({
+			title: "Filters saved",
+			toast: true,
+			timer: 3500,
+			timerProgressBar: true,
+			showConfirmButton: false
+		});
 	};
 	return (
 		<IonPage>
