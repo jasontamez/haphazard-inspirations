@@ -40,7 +40,7 @@ const Home = () => {
 						<IonToggle onClick={() => dispatch(setBoolean(["shake", !toggles.shake]))} slot="end" checked={toggles.shake} />
 					</IonItem>
 					<IonItem>
-						<IonLabel>Make noise</IonLabel>
+						<IonLabel>Sounds</IonLabel>
 						<IonToggle onClick={() => dispatch(setBoolean(["makeNoise", !toggles.makeNoise]))} slot="end" checked={toggles.makeNoise} />
 					</IonItem>
 					<IonItem>
