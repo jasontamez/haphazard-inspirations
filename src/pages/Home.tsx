@@ -9,7 +9,8 @@ import {
 //	IonTitle,
 	IonToolbar,
 	IonLabel,
-	IonIcon
+	IonIcon,
+	useIonViewDidEnter
 } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import {
@@ -20,7 +21,8 @@ import {
 	setOmitStatus,
 	setTotal,
 	addFave,
-	removeFave
+	removeFave,
+	currentPage
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
@@ -32,6 +34,9 @@ import fireSwal from '../components/Swal';
 const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
 	const dispatch = useDispatch();
+	useIonViewDidEnter(() => {
+		dispatch(currentPage("home"));
+	});
 	// fetchStatus controls whether or not we can spit out a new idea.
 	const fetchStatus: StatusObject = state.status;
 
@@ -267,10 +272,10 @@ const Home = () => {
 					{/*<IonTitle>Get Inspired</IonTitle>*/}
 					<IonButtons slot="start">
 						<IonMenuButton />
-						<IonButton onClick={() => {maybeGenerateNewIdea()}}><IonLabel>CLICK</IonLabel></IonButton>
+						<IonButton onClick={() => maybeGenerateNewIdea()}><IonLabel>CLICK</IonLabel></IonButton>
 					</IonButtons>
 					<IonButtons slot="end">
-						<IonButton onClick={() => {toggleFavorite()}} disabled={state.status.generating}><IonIcon icon={state.currentFave ? star : starOutline} color={state.currentFave ? undefined : "primary"} /></IonButton>
+						<IonButton onClick={() => toggleFavorite()} disabled={state.status.generating}><IonIcon icon={state.currentFave ? star : starOutline} color={state.currentFave ? undefined : "primary"} /></IonButton>
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>

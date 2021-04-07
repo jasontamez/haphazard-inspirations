@@ -32,6 +32,7 @@ const REMOVE_FAVORITE = p+"REMOVE_FAVORITE";
 const REORDER_FAVORITES = p+"REORDER_FAVORITES";
 const OPEN_POPOVER = p+"OPEN_POPOVER";
 const CLOSE_POPOVER = p+"CLOSE_POPOVER";
+const SET_PAGE = p+"SET_PAGE";
 
 
 //
@@ -83,6 +84,9 @@ export function openPopover(payload: [Event, string]) {
 }
 export function closePopover() {
 	return {type: CLOSE_POPOVER};
+}
+export function currentPage(payload: string) {
+	return {type: SET_PAGE, payload};
 }
 //export function removeFromUsed(payload: BasicIdea[]) {
 //	return {type: REMOVE_FROM_USED, payload};
@@ -175,6 +179,7 @@ export interface StateObject {
 	event: EventObject
 	triggers: TriggersObject
 	popover: [any, string] | null
+	page: string
 }
 export const blankAppState: StateObject = {
 	currentVersion: VERSION.current,
@@ -241,7 +246,8 @@ export const blankAppState: StateObject = {
 		animalDeath: false,
 		animalDistress: false	
 	},
-	popover: null
+	popover: null,
+	page: "home"
 };
 
 //
@@ -267,7 +273,8 @@ const reduceAll = (state: StateObject, setPending: boolean = true) => {
 		person: {...state.person},
 		event: {...state.event},
 		triggers: {...state.triggers},
-		popover: state.popover ? [state.popover[0], state.popover[1]] : null
+		popover: state.popover ? [state.popover[0], state.popover[1]] : null,
+		page: state.page
 	};
 	return o;
 }
@@ -375,6 +382,10 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 		case CLOSE_POPOVER:
 			final = reduceAll(state);
 			final.popover = null;
+			break;
+		case SET_PAGE:
+			final = reduceAll(state);
+			final.page = payload;
 			break;
 		default:
 			return state;

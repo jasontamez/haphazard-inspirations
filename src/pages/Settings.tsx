@@ -11,18 +11,23 @@ import {
 	IonItem,
 	IonLabel,
 	IonToggle,
-	IonInput
+	IonInput,
+	useIonViewDidEnter
 } from '@ionic/react';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import {
+	currentPage,
 	setBoolean,
 	setNumber
 } from '../components/ReduxDucks';
 import './Home.css';
 
-const Home = () => {
+const Settings = () => {
 	const dispatch = useDispatch();
 	const [settings, toggles] = useSelector((state: any) => [state.settings, state.toggles], shallowEqual);
+	useIonViewDidEnter(() => {
+		dispatch(currentPage("home"));
+	});
 	return (
 		<IonPage>
 			<IonHeader>
@@ -53,4 +58,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Settings;

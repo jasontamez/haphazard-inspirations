@@ -14,7 +14,8 @@ import {
 	IonButton,
 	IonPopover,
 	IonReorderGroup,
-	IonReorder
+	IonReorder,
+	useIonViewDidEnter
 } from '@ionic/react';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import fireSwal from '../components/Swal';
@@ -23,7 +24,8 @@ import {
 	setBoolean,
 	openPopover,
 	closePopover,
-	reorderFaves
+	reorderFaves,
+	currentPage
 } from '../components/ReduxDucks';
 import './Home.css';
 import { ellipsisVertical, reorderTwo, trashOutline } from 'ionicons/icons';
@@ -32,6 +34,9 @@ import { ellipsisVertical, reorderTwo, trashOutline } from 'ionicons/icons';
 const Favorites = () => {
 	const dispatch = useDispatch();
 	const [showMin, popstate, faves] = useSelector((state: any) => [state.toggles.showMinimumFave, state.popover, state.favorites], shallowEqual);
+	useIonViewDidEnter(() => {
+		dispatch(currentPage("faves"));
+	});
 	const maybeDelete = (id: string) => {
 		const thenFunc = () => {
 			dispatch(removeFave(id));

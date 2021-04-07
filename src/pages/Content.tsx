@@ -15,7 +15,8 @@ import {
 	IonNote,
 	IonFooter,
 	IonButton,
-	IonIcon
+	IonIcon,
+	useIonViewDidEnter
 } from '@ionic/react';
 import fireSwal from '../components/Swal';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
@@ -26,14 +27,18 @@ import {
 	ContentObject,
 	PersonObject,
 	EventObject,
-	TriggersObject
+	TriggersObject,
+	currentPage
 } from '../components/ReduxDucks';
 import { $a, $i } from '../components/DollarSignImports';
 import './Home.css';
 import { saveOutline } from 'ionicons/icons';
 
-const Home = () => {
+const ContentFilters = () => {
 	const dispatch = useDispatch();
+	useIonViewDidEnter(() => {
+		dispatch(currentPage("home"));
+	});
 	const [
 		locales,
 		genres,
@@ -286,4 +291,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default ContentFilters;

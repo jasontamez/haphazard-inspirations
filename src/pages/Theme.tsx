@@ -10,18 +10,22 @@ import {
 	IonToolbar,
 	IonButtons,
 	IonMenuButton,
-	IonTitle
+	IonTitle,
+	useIonViewDidEnter
 } from '@ionic/react';
 import {
 	checkmarkCircleOutline
 } from 'ionicons/icons';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
-import { updateTheme } from '../components/ReduxDucks';
+import { currentPage, updateTheme } from '../components/ReduxDucks';
 import './Home.css';
 
-const MaybeLoadPresetModal = () => {
+const Theme = () => {
 	const dispatch = useDispatch();
 	const state = useSelector((state: any) => state, shallowEqual);
+	useIonViewDidEnter(() => {
+		dispatch(currentPage("home"));
+	});
 	const appTheme = state.theme || "Default";
 	const changeAppTheme = (theme: string) => {
 		dispatch(updateTheme(theme));
@@ -58,4 +62,4 @@ const MaybeLoadPresetModal = () => {
 	);
 };
 
-export default MaybeLoadPresetModal;
+export default Theme;
