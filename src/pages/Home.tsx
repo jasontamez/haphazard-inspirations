@@ -1,18 +1,14 @@
 import React from 'react';
 import {
-	IonButton,
-	IonButtons,
 	IonContent,
-	IonHeader,
 	IonMenuButton,
 	IonPage,
 //	IonTitle,
-	IonToolbar,
-	IonLabel,
 	IonIcon,
-	useIonViewDidEnter
+	useIonViewDidEnter,
+	IonFab,
+	IonFabButton
 } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import {
 	StatusObject,
 	updateIdeas,
@@ -28,8 +24,9 @@ import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
 import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
 import './Home.css';
-import { starOutline, star } from 'ionicons/icons';
+import { starOutline, star, bulbOutline } from 'ionicons/icons';
 import fireSwal from '../components/Swal';
+import { $delay, $i } from '../components/DollarSignImports';
 
 const Home = () => {
 	const state = useSelector((state: any) => state, shallowEqual);
@@ -39,6 +36,7 @@ const Home = () => {
 	});
 	// fetchStatus controls whether or not we can spit out a new idea.
 	const fetchStatus: StatusObject = state.status;
+	const animToggle = Math.floor(Math.random() * 3);
 
 	// Handle shake-to-update
 	if(state.settings.shake) {
@@ -47,6 +45,16 @@ const Home = () => {
 		};
 		Shake.startWatch().subscribe(() => shakeToUpdate());
 	}
+
+	const getDirection = () => {
+		switch(animToggle) {
+			case 0:
+				return "Left";
+			case 1:
+				return "Right";
+		}
+		return "Up";
+	};
 
 	const maybeGenerateNewIdea = (status: StatusObject = fetchStatus, output: any = undefined) => {
 		if(output !== undefined) {
@@ -62,8 +70,19 @@ const Home = () => {
 					status.omitsChanged = false;
 					dispatch(setOmitStatus(false));
 					break;
+				case "animation finished":
+					dispatch(setStatus(true));
 			}
 		} else if (status.generating) {
+			// Did not come with an output object: hit by the user
+			return;
+		} else {
+			// Did not come with an output object: hit by the user
+			let cls = "exit" + getDirection();
+			$i("ideaWrap").classList.add(cls);
+			$delay(750).then(() => {
+				maybeGenerateNewIdea(status, {type: "animation finished"});
+			});
 			return;
 		}
 		if(!status.total) {
@@ -90,7 +109,6 @@ const Home = () => {
 			], ns);
 		} else {
 			// Ok to fetch!
-			dispatch(setStatus(true));
 			getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < Date.now()));
 		}
 	};
@@ -165,6 +183,12 @@ const Home = () => {
 		const type1 = idea1.type;	
 		const type2 = idea2.type;
 		if(type1 === "error" || type2 === "error") {
+			let cls = "start" + getDirection();
+			$i("ideaWrap").classList.remove(cls);
+			$delay(500).then(() => {
+				console.log("FALSE");
+				dispatch(setStatus(false));
+			});
 			return dispatch(updateIdeas([idea1, idea2, flushFlag, [idea1.idea!, idea2.idea!, "", idea1.idea!, ": ", idea2.idea!, ""]]));
 		}
 		const i1 = idea1.getIdea();
@@ -214,7 +238,13 @@ const Home = () => {
 		while(formatting.length > 0) {
 			final.push(ideasToDisplay.shift()!, formatting.shift()!)
 		}
+		let cls = "start" + getDirection();
+		$i("ideaWrap").classList.remove(cls);
 		dispatch(updateIdeas([idea1, idea2, flushFlag, [...rawIdeas, ...final]]));
+		$delay(500).then(() => {
+			console.log("FALSE");
+			dispatch(setStatus(false));
+		});
 	};
 
 	const displayIdea = () => {
@@ -267,23 +297,22 @@ const Home = () => {
 
 	return (
 		<IonPage>
-			<IonHeader>
-				<IonToolbar>
-					{/*<IonTitle>Get Inspired</IonTitle>*/}
-					<IonButtons slot="start">
-						<IonMenuButton />
-						<IonButton onClick={() => maybeGenerateNewIdea()}><IonLabel>CLICK</IonLabel></IonButton>
-					</IonButtons>
-					<IonButtons slot="end">
-						<IonButton onClick={() => toggleFavorite()} disabled={state.status.generating}><IonIcon icon={state.currentFave ? star : starOutline} color={state.currentFave ? undefined : "primary"} /></IonButton>
-					</IonButtons>
-				</IonToolbar>
-			</IonHeader>
-			<IonContent fullscreen>
-				{displayIdea()}
-				<ExploreContainer />
+			<IonContent fullscreen id="homePage">
+				<IonFab horizontal="start" vertical="top"><IonMenuButton color="primary" /></IonFab>
+				<IonFab horizontal="start" vertical="bottom">
+					<IonFabButton onClick={() => toggleFavorite()} disabled={state.status.generating !== false} color="secondary">
+						<IonIcon icon={state.currentFave ? star : starOutline} />
+					</IonFabButton>
+				</IonFab>
+				<IonFab horizontal="end" vertical="bottom">
+					<IonFabButton onClick={() => maybeGenerateNewIdea()} disabled={state.status.generating !== false} color="primary">
+						<IonIcon icon={bulbOutline} />
+					</IonFabButton>
+				</IonFab>
+				<div id="ideaWrap" className={fetchStatus.generating ? "start" + getDirection() : ""}>{displayIdea()}</div>				
 			</IonContent>
 		</IonPage>
+		
 	);
 };
 

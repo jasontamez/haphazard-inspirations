@@ -52,7 +52,7 @@ export function updateIdeas(payload: [BasicIdea, BasicIdea, boolean, string[]]) 
 export function setExactIdeas(payload: string[]) {
 	return {type: SET_EXACT_IDEAS, payload};
 }
-export function setStatus(payload: boolean) {
+export function setStatus(payload: boolean | 1) {
 	return {type: UPDATE_STATUS, payload};
 }
 export function setTotal(payload: string) {
@@ -158,7 +158,7 @@ export interface StatusObject {
 	total: number
 	new?: any
 	omitsChanged: boolean
-	generating: boolean
+	generating: boolean | 1
 	nextIdeaFlush: number
 }
 export interface StateObject {
@@ -321,7 +321,7 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			final.idea2 = two;
 			flush && (final.status.nextIdeaFlush = Date.now() + ONE_DAY);
 			final.ideas = ideas;
-			final.status.generating = false;
+			final.status.generating = 1;
 			final.currentFave = "";
 			break;
 		case UPDATE_STATUS:
