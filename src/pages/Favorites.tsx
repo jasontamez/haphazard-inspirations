@@ -37,7 +37,7 @@ const Favorites = () => {
 	useIonViewDidEnter(() => {
 		dispatch(currentPage("faves"));
 	});
-	const maybeDelete = (id: string) => {
+	const maybeDelete = (id: string, idea: string) => {
 		const thenFunc = () => {
 			dispatch(removeFave(id));
 			fireSwal({
@@ -49,6 +49,7 @@ const Favorites = () => {
 			});
 		};
 		fireSwal({
+			title: idea + "...",
 			text: "Are you sure you want to delete this favorite? It cannot be undone.",
 			customClass: {popup: 'deleteConfirm'},
 			icon: 'warning',
@@ -112,7 +113,7 @@ const Favorites = () => {
 							return (
 								<IonItem key={id}>
 									<IonReorder className="dragHandle"><IonIcon icon={reorderTwo} slot="start" color="tertiary" /></IonReorder>
-									<IonButton color="danger" slot="end" onClick={() => maybeDelete(id)}>
+									<IonButton color="danger" slot="end" onClick={() => maybeDelete(id, idea1)}>
 										<IonIcon icon={trashOutline} slot="icon-only" />
 									</IonButton>
 									<IonLabel className="selectable">{info.map((s: string) => {
