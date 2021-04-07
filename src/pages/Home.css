@@ -73,3 +73,42 @@ ion-reorder.dragHandle::part(icon) {
 ion-list.dragArea {
 	min-height: 100%;
 }
+.selectable,
+.selectable::part(native) {
+	-moz-user-select: text !important;
+	-webkit-user-select: text !important;
+	-ms-user-select: text !important;
+	user-select: text !important;
+}
+ion-card {
+	max-width: 30rem;
+	margin: 0.5rem auto;
+}
+ion-card * {
+	--inner-border-width: 0;
+}
+ion-card p {
+	text-indent: 0 !important;
+	text-align: center;
+	background: var(--ion-card-highlight);
+}
+ion-card ion-card-header {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: var(--ion-color-secondary);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+p.oomph {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--ion-color-primary);
+}
+p.newThought {
+	margin-top: 2rem;
+}
+p strong {
+	font-size: 1.2rem;
+}

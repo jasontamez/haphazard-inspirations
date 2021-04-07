@@ -43,7 +43,7 @@ const Home = () => {
 	// Handle shake-to-update
 	if(state.settings.shake) {
 		const shakeToUpdate = () => {
-			maybeGenerateNewIdea();
+			state.page === "home" && maybeGenerateNewIdea();
 		};
 		Shake.startWatch().subscribe(() => shakeToUpdate());
 	}
@@ -219,13 +219,13 @@ const Home = () => {
 
 	const displayIdea = () => {
 		if(fetchStatus.generating || state.idea1 === null || state.idea2 === null) {
-			return (<p className="theIdea loading">LOADING</p>);
+			return (<p className="theIdea loading selectable">LOADING</p>);
 		}
 		const encase = (text: string) => {
 			return (<span className="idea" key={"ID"+text}>{text}</span>);
 		};
 		let flag = true;
-		return (<p className="theIdea">{
+		return (<p className="theIdea selectable">{
 			state.ideas.slice(2).map((s: string) => {
 				if(flag) {
 					flag = false;

@@ -112,8 +112,10 @@ const Favorites = () => {
 							return (
 								<IonItem key={id}>
 									<IonReorder className="dragHandle"><IonIcon icon={reorderTwo} slot="start" color="tertiary" /></IonReorder>
-									<IonIcon icon={trashOutline} color="danger" slot="end" onClick={() => maybeDelete(id)} />
-									<IonLabel>{info.map((s: string) => {
+									<IonButton color="danger" slot="end" onClick={() => maybeDelete(id)}>
+										<IonIcon icon={trashOutline} slot="icon-only" />
+									</IonButton>
+									<IonLabel className="selectable">{info.map((s: string) => {
 										if(flag) {
 											flag = false;
 											return s;
