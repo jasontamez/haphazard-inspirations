@@ -103,7 +103,7 @@ class PossiblePlural extends BasicIdea {
 		if((typeof plu) === "boolean") {
 			return idea;
 		}
-		const plural = plu || "s";
+		const plural = (plu === "" ? "" : (plu || "s"));
 		const article = Idea.article || "a";
 		let amounts: number[] = [];
 		const rate = Idea.rateBy === undefined ? 1 : Idea.rateBy;
