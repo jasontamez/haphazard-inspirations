@@ -884,6 +884,12 @@
 			"specific": false,
 			"political": true,
 			"smallSize": true
+		},
+		{
+			"idea": "a gas station",
+			"specific": false,
+			"tinySize": true,
+			"preposition": "at"
 		}
 	]
 }
