@@ -609,68 +609,63 @@
 		},
 		{
 			"idea": "kittens",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "an owlbear",
 			"fantasy": true,
-			"medievalFantasy": true,
-			"animate": true
+			"medievalFantasy": true
 		},
 		{
 			"idea": "scarab beetles",
 			"historicalFiction": true,
 			"fantasy": true,
 			"horror": true,
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
-			"idea": "a giant bug",
-			"animate": true
+			"idea": "a giant bug"
 		},
 		{
 			"idea": "loud birds",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "white rabbits",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "bumblebees",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "grasshoppers",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "spiders",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "zoo animals",
 			"animalDistress": true,
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "bunnies",
-			"plural": true,
-			"animate": true
+			"plural": true
 		},
 		{
 			"idea": "mosquitoes",
 			"humanDistress": true,
-			"plural": true,
-			"animate": true
+			"plural": true
+		},
+		{
+			"idea": "ventrilloquist"
+		},
+		{
+			"idea": "ventrilloquist's dummy",
+			"plural": false
 		}
 	]
 }
