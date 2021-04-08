@@ -297,19 +297,19 @@ const Home = () => {
 
 	return (
 		<IonPage>
-			<IonContent fullscreen id="homePage">
+			<IonContent fullscreen id="homePage" className={"blown" + String(1 + Math.floor(Math.random() * 6))}>
 				<IonFab horizontal="start" vertical="top"><IonMenuButton color="primary" /></IonFab>
 				<IonFab horizontal="start" vertical="bottom">
-					<IonFabButton onClick={() => toggleFavorite()} disabled={state.status.generating !== false} color="secondary">
+					<IonFabButton onClick={() => toggleFavorite()} color="secondary">
 						<IonIcon icon={state.currentFave ? star : starOutline} />
 					</IonFabButton>
 				</IonFab>
 				<IonFab horizontal="end" vertical="bottom">
-					<IonFabButton onClick={() => maybeGenerateNewIdea()} disabled={state.status.generating !== false} color="primary">
+					<IonFabButton onClick={() => maybeGenerateNewIdea()} color="primary">
 						<IonIcon icon={bulbOutline} />
 					</IonFabButton>
 				</IonFab>
-				<div id="ideaWrap" className={fetchStatus.generating ? "start" + getDirection() : ""}>{displayIdea()}</div>				
+				<div id="ideaWrap" className={fetchStatus.generating ? "start" + getDirection() : ""}>{displayIdea()}</div>
 			</IonContent>
 		</IonPage>
 		

@@ -132,6 +132,24 @@ p strong {
 	background-size: contain;
 	background-position: center;
 }
+#homePage.blown1::part(background) {
+	background-image: url('svg/blown1.svg');
+}
+#homePage.blown2::part(background) {
+	background-image: url('svg/blown2.svg');
+}
+#homePage.blown3::part(background) {
+	background-image: url('svg/blown3.svg');
+}
+#homePage.blown4::part(background) {
+	background-image: url('svg/blown4.svg');
+}
+#homePage.blown5::part(background) {
+	background-image: url('svg/blown5.svg');
+}
+#homePage.blown6::part(background) {
+	background-image: url('svg/blown6.svg');
+}
 #ideaWrap.startLeft {
 	transition: all 0s ease;
 	transform: translateX(-100vw);
