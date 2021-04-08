@@ -114,7 +114,7 @@ p strong {
 }
 
 #ideaWrap {
-	transition: all 750ms ease 500ms;
+	transition: background-color 1s ease 500ms, transform 750ms ease 500ms;
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -127,7 +127,6 @@ p strong {
 	background-color: var(--ion-background-color);
 }
 #homePage::part(background) {
-	background-image: url('icon.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: contain;
@@ -149,17 +148,17 @@ p strong {
 	background-color: var(--ion-color-tertiary);
 }
 #ideaWrap.exitLeft {
-	transition: all 750ms ease;
+	transition: transform 750ms ease, background-color 500ms ease;
 	transform: translateX(-100vw);
 	background-color: var(--ion-color-primary);
 }
 #ideaWrap.exitRight {
-	transition: all 750ms ease;
+	transition: transform 750ms ease, background-color 500ms ease;
 	transform: translateX(100vw);
 	background-color: var(--ion-color-secondary);
 }
 #ideaWrap.exitUp {
-	transition: all 750ms ease;
+	transition: transform 750ms ease, background-color 500ms ease;
 	transform: translateY(-100vh);
 	background-color: var(--ion-color-tertiary);
 }
@@ -169,4 +168,3 @@ p strong {
 	text-align: center;
 	margin: auto 10vw;
 }
-
