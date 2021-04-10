@@ -8,6 +8,7 @@ import Content from './pages/Content';
 import Theme from './pages/Theme';
 import Favorites from './pages/Favorites';
 import About from './pages/About';
+import Credits from './pages/Credits';
 import Menu from './components/Menu';
 
 /* Core CSS required for Ionic components to work properly */
@@ -88,7 +89,7 @@ const App = () => {
 						<Route exact path="/favorites" render={() => <Favorites />} />
 						<Route exact path="/theme" render={() => <Theme />} />
 						<Route exact path="/about" render={() => <About />} />
-						<Route exact path="/credits" render={() => <About />} />
+						<Route exact path="/credits" render={() => <Credits />} />
 						<Redirect exact={true} from="/" to="/home" />
 					</IonRouterOutlet>
 				</IonSplitPane>
