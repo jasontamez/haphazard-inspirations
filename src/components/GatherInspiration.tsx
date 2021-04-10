@@ -315,19 +315,41 @@ const makeIdea = (idea: any) => {
 
 export const initializeIdeas = (callback: Function, status: StatusObject) => {
 	let total = 0;
+	let mtot = 0;
+	let mods: number[] = [];
+	const mapAndMods = (base: any, item: any, type: string) => {
+		const o = {...base, ...item, type: type};
+		if(typeof item.plural === "string") {
+			let m = o.max - o.min + 1;
+			mtot += m;
+			mods.push(m);
+		}
+		return o;
+	};
 	let ideas: object[] = shuffle([
 		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
-		...characters.contents.map(c => ({...characters.default, ...c, type: "character"})),
+		...characters.contents.map(c => mapAndMods(characters.default, c, "character")),
 		...event.contents.map(e => ({...event.default, ...e, type: "event"})),
 		...locale.contents.map(l => ({...locale.default, ...l, type: "locale"})),
-		...object.contents.map(o => ({...object.default, ...o, type: "object"})),
+		...object.contents.map(o => mapAndMods(object.default, o, "object")),
 		...time.contents.map(t => ({...time.default, ...t, type: "time"})),
 		...topic.contents.map(t => ({...topic.default, ...t, type: "topic"}))
 	]);
-	let c = ideas.length - 1;
+	let items = ideas.length + mtot - 1;
+	let c = ideas.length - mods.length;
 	while (c > 0) {
-		total += c;
+		total += items;
+		items--;
 		c--;
+	}
+	// sort
+	mods.sort();
+	// remove highest number
+	mods.pop();
+	while(mods.length > 0) {
+		let m = mods.shift()!;
+		mtot -= m;
+		total += mtot * m;
 	}
 	Promise.all([
 		IdeaStorage.setItem("sent", []),

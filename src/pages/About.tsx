@@ -47,7 +47,7 @@ const About = () => {
 								<IonCardContent>
 									{totalPossibilities ? (
 										<div>
-											<p>There are currently over</p>
+											<p>There are currently</p>
 											<p className="oomph">{totalPossibilities.toLocaleString()}</p>
 											<p>inspirations possible.</p>
 										</div>
