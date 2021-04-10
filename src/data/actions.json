@@ -1,5 +1,7 @@
 {
-	"default": {},
+	"default": {
+		"possessive": false
+	},
 	"contents": [
 		{
 			"idea": "digging"
@@ -236,7 +238,8 @@
 			"idea": "trying not to breathe"
 		},
 		{
-			"idea": "holding one's breath"
+			"idea": "holding [THEIR] breath",
+			"possessive": true
 		},
 		{
 			"idea": "uniting people"
@@ -253,7 +256,8 @@
 			"idea": "quitting"
 		},
 		{
-			"idea": "having one's papers in order",
+			"idea": "having [THEIR] papers in order",
+			"possessive": true,
 			"humanDistress": true
 		},
 		{
@@ -285,7 +289,8 @@
 			"animalDistress": true
 		},
 		{
-			"idea": "getting one's hair did",
+			"idea": "getting [THEIR] hair did",
+			"possessive": true,
 			"modern": true
 		},
 		{
@@ -370,7 +375,8 @@
 			"idea": "doing jumping jacks"
 		},
 		{
-			"idea": "biding one's time"
+			"idea": "biding [THEIR] time",
+			"possessive": true
 		},
 		{
 			"idea": "burning a flag"
@@ -447,7 +453,8 @@
 			"idea": "obfuscating the truth"
 		},
 		{
-			"idea": "watching one's language"
+			"idea": "watching [THEIR] language",
+			"possessive": true
 		},
 		{
 			"idea": "holding hands"
@@ -488,7 +495,7 @@
 			"humanDistress": true
 		},
 		{
-			"idea": "destroying one's childhood",
+			"idea": "destroying someone's childhood",
 			"humanDistress": true
 		},
 		{
@@ -502,7 +509,8 @@
 			"idea": "carving initials into a tree"
 		},
 		{
-			"idea": "rolling one's eyes"
+			"idea": "rolling [THEIR] eyes",
+			"possessive": true
 		},
 		{
 			"idea": "skinny dipping",
@@ -588,7 +596,8 @@
 			"idea": "screeching"
 		},
 		{
-			"idea": "burning one's tongue",
+			"idea": "burning [THEIR] tongue",
+			"possessive": true,
 			"humanDistress": true
 		},
 		{
@@ -629,7 +638,8 @@
 			"modern": true
 		},
 		{
-			"idea": "running from one's past",
+			"idea": "running from [THEIR] past",
+			"possessive": true,
 			"humanDistress": true
 		},
 		{
@@ -756,7 +766,8 @@
 			"idea": "counting sheep"
 		},
 		{
-			"idea": "biting one's toenails"
+			"idea": "biting [THEIR] toenails",
+			"possessive": true
 		}
 	]
 }

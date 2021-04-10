@@ -7,7 +7,8 @@
 		"plural": "s",
 		"article": "a",
 		"numerals": false,
-		"realPerson": false
+		"realPerson": false,
+		"genderPossessive": false
 	},
 	"contents": [
 		{
@@ -39,7 +40,8 @@
 			"idea": "Garfield",
 			"properName": true,
 			"modern": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "long-haired cat",
@@ -47,7 +49,8 @@
 			"rateBy": 1
 		},
 		{
-			"idea": "lesbian"
+			"idea": "a same-sex couple",
+			"plural": true
 		},
 		{
 			"idea": "librarian"
@@ -76,8 +79,10 @@
 			"idea": "dinosaur"
 		},
 		{
-			"idea": "leprechaun",
-			"fantasy": true
+			"idea": "a leprechaun",
+			"fantasy": true,
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "dead ruler",
@@ -105,7 +110,8 @@
 		{
 			"idea": "Leonardo da Vinci",
 			"properName": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "crow"
@@ -113,7 +119,8 @@
 		{
 			"idea": "wicked witch",
 			"fantasy": true,
-			"plural": "es"
+			"plural": "es",
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "geese",
@@ -142,7 +149,8 @@
 			"properName": true,
 			"fantasy": true,
 			"superhero": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "camel"
@@ -157,8 +165,10 @@
 			"plural": true
 		},
 		{
-			"idea": "supermodel",
-			"modern": true
+			"idea": "a supermodel",
+			"modern": true,
+			"plural": false,
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "owl",
@@ -179,31 +189,36 @@
 			"idea": "Harry Potter",
 			"properName": true,
 			"modern": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "the Pope",
 			"properName": true,
 			"realPerson": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "Napoleon",
 			"properName": true,
 			"realPerson": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "George Washington",
 			"properName": true,
 			"realPerson": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "Dr. Seuss",
 			"properName": true,
 			"realPerson": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "albatross",
@@ -253,7 +268,8 @@
 			"idea": "Cthulhu",
 			"fantasy": true,
 			"horror": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "its"
 		},
 		{
 			"idea": "bumbling robber",
@@ -315,13 +331,15 @@
 		},
 		{
 			"idea": "a mother-in-law",
-			"plural": true
+			"plural": true,
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "Godzilla",
 			"fantasy": true,
 			"properName": true,
-			"plural": true
+			"plural": true,
+			"genderPossessive": "its"
 		},
 		{
 			"idea": "turkey"
@@ -336,7 +354,8 @@
 		},
 		{
 			"idea": "the quiet man next door",
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "zombie",
@@ -346,7 +365,8 @@
 		{
 			"idea": "a man holding a brain",
 			"humanDistress": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a monkey with a banana",
@@ -372,7 +392,8 @@
 			"idea": "a nun",
 			"religionAndMyths": true,
 			"christianity": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "weasel"
@@ -381,18 +402,21 @@
 			"idea": "Shakespeare",
 			"properName": true,
 			"realPerson": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a bald man",
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "Chuck Norris",
 			"properName": true,
 			"realPerson": true,
 			"modern": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a John or Jane Doe",
@@ -407,13 +431,15 @@
 			"idea": "a babydaddy",
 			"sexual": true,
 			"modern": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a babymomma",
 			"sexual": true,
 			"modern": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "a missing child",
@@ -447,7 +473,8 @@
 			"horror": true,
 			"religionAndMyths": true,
 			"christianity": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a monster",
@@ -524,7 +551,8 @@
 			"idea": "a samurai",
 			"historicalFiction": true,
 			"samurai": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a gunslinger",
@@ -549,11 +577,13 @@
 		{
 			"idea": "a pregnant teenager",
 			"sexual": true,
-			"plural": false
+			"plural": false,
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "a foreign prince",
-			"plural": false
+			"plural": false,
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "an outlaw",
@@ -587,7 +617,8 @@
 		},
 		{
 			"idea": "a crowing rooster",
-			"plural": false
+			"plural": false,
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "Parliament",

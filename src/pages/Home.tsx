@@ -22,7 +22,7 @@ import {
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
-import { BasicIdea, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
+import { BasicIdea, Character, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
 import './Home.css';
 import { starOutline, star, bulbOutline } from 'ionicons/icons';
 import fireSwal from '../components/Swal';
@@ -180,6 +180,10 @@ const Home = () => {
 		let formatting: string[] = [];
 		let singleFormatType = singleFormats;
 		let ideasToDisplay: string[] = [];
+		const modifyForGender = (idea: string, character: Character) => {
+			let possessive = character.genderPossessive || "their";
+			return idea.replace(/\[THEIR\]/g, possessive);
+		};
 		const type1 = idea1.type;	
 		const type2 = idea2.type;
 		if(type1 === "error" || type2 === "error") {
@@ -196,11 +200,14 @@ const Home = () => {
 		let rawIdeas: string[] = [i1, i2];
 		if(type1 === "character" && type2 === "action")  {
 			// CHARACTER ACTION
-			ideasToDisplay = [i1 + " " + i2];
+			let action = modifyForGender(i2, idea1 as Character);
+			ideasToDisplay = [i1 + " " + action];
+			rawIdeas = [i1, action];
 		} else if (type1 === "action" && type2 === "character") {
 			// ACTION CHARACTER
-			rawIdeas = [i2 , i1];
-			ideasToDisplay = [i2 + " " + i1];
+			let action = modifyForGender(i1, idea2 as Character);
+			rawIdeas = [i2 , action];
+			ideasToDisplay = [i2 + " " + action];
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
 			// TIME TIME
 			// LOCALE LOCALE

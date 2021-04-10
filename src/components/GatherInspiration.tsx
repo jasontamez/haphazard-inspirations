@@ -94,6 +94,7 @@ class PossiblePlural extends BasicIdea {
 	plural?: string | boolean
 	article?: string
 	numerals?: boolean
+	genderPossessive?: string | false
 	getNumber(n: number) {
 		return EnglishNumbers[n];
 	}
@@ -164,7 +165,7 @@ class AnObject extends PossiblePlural {
 	}
 }
 
-class Character extends PossiblePlural {
+export class Character extends PossiblePlural {
 	realPerson?: boolean
 	getIdea() {
 		if(this.realPerson) {
