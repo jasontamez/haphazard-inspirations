@@ -12,15 +12,15 @@
 	},
 	"contents": [
 		{
-			"idea": "dragons",
+			"idea": "dragon",
 			"fantasy": true,
 			"medievalFantasy": true
 		},
 		{
-			"idea": "tortoises"
+			"idea": "tortoise"
 		},
 		{
-			"idea": "chinchillas"
+			"idea": "chinchilla"
 		},
 		{
 			"idea": "ostrich",
@@ -124,7 +124,10 @@
 		},
 		{
 			"idea": "geese",
-			"plural": true
+			"plural": true,
+			"min": 2,
+			"max": 10,
+			"rateBy": "incremental"
 		},
 		{
 			"idea": "private investigator"
@@ -299,6 +302,7 @@
 		},
 		{
 			"idea": "a lost child",
+			"humanDistress": true,
 			"plural": false
 		},
 		{
@@ -442,9 +446,9 @@
 			"genderPossessive": "her"
 		},
 		{
-			"idea": "a missing child",
+			"idea": "missing child",
 			"humanDistress": true,
-			"plural": false
+			"plural": "ren"
 		},
 		{
 			"idea": "rabbit",
@@ -606,8 +610,8 @@
 			"plural": false
 		},
 		{
-			"idea": "swarm of bees",
-			"plural": ""
+			"idea": "a swarm of bees",
+			"plural": false
 		},
 		{
 			"idea": "the UN Security Council",
@@ -645,7 +649,8 @@
 		{
 			"idea": "an owlbear",
 			"fantasy": true,
-			"medievalFantasy": true
+			"medievalFantasy": true,
+			"plural": false
 		},
 		{
 			"idea": "scarab beetles",
@@ -655,7 +660,7 @@
 			"plural": true
 		},
 		{
-			"idea": "a giant bug"
+			"idea": "giant bug"
 		},
 		{
 			"idea": "loud birds",
