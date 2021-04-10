@@ -22,7 +22,7 @@ import { currentPage } from '../components/ReduxDucks';
 
 const About = () => {
 	const dispatch = useDispatch();
-	const [totalPossibilities, version] = useSelector((state: any) => [state.status.total, state.currentVersion], shallowEqual);
+	const totalPossibilities = useSelector((state: any) => state.status.total, shallowEqual);
 	useIonViewDidEnter(() => {
 		dispatch(currentPage("home"));
 	});
@@ -42,16 +42,19 @@ const About = () => {
 						<IonCol>
 							<IonCard>
 								<IonCardHeader className="ion-text-center">
-									<IonLabel>Haphazard Inspirations v{version}</IonLabel>
+									<IonLabel>Haphazard Inspirations</IonLabel>
 								</IonCardHeader>
 								<IonCardContent>
-									<p>There are currently over</p>
-									<p className="oomph">{
-										totalPossibilities ? totalPossibilities.toLocaleString() : "[unknown: this will be calculated on first use]"
-									}</p>
-									<p>inspirations possible.</p>
+									{totalPossibilities ? (
+										<div>
+											<p>There are currently over</p>
+											<p className="oomph">{totalPossibilities.toLocaleString()}</p>
+											<p>inspirations possible.</p>
+										</div>
+									) : ""}
 									<p className="newThought">Use the <strong>Content Filters</strong> to avoid topics you'd rather not explore.</p>
-									<p className="newThought">Hit the star in the upper corner to save a particular inspiration to your <strong>Favorites</strong>.</p>
+									<p className="newThought">Tap the lightbulb to get a new inspiration.</p>
+									<p className="newThought">Tap the star to save a particular inspiration to your <strong>Favorites</strong>.</p>
 								</IonCardContent>
 							</IonCard>
 						</IonCol>
