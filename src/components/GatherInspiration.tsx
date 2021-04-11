@@ -322,7 +322,7 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 	let mods: number[] = [];
 	const mapAndMods = (base: any, item: any, type: string) => {
 		const o = {...base, ...item, type: type};
-		if(typeof item.plural === "string") {
+		if(typeof o.plural === "string") {
 			let m = o.max - o.min + 1;
 			mtot += m;
 			mods.push(m);
@@ -346,13 +346,13 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 		c--;
 	}
 	// sort
-	mods.sort();
+	mods.sort((a: number, b: number) => a - b);
 	// remove highest number
 	mods.pop();
 	while(mods.length > 0) {
 		let m = mods.shift()!;
 		mtot -= m;
-		total += mtot * m;
+		total += (mtot * m);
 	}
 	Promise.all([
 		IdeaStorage.setItem("sent", []),
