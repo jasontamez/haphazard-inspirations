@@ -768,6 +768,16 @@
 		{
 			"idea": "biting [THEIR] toenails",
 			"possessive": true
+		},
+		{
+			"idea": "going to a synagogue",
+			"religionAndMyths": true,
+			"judaism": true
+		},
+		{
+			"idea": "going to the mosque",
+			"religionAndMyths": true,
+			"islam": true
 		}
 	]
 }

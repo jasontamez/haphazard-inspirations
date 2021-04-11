@@ -894,6 +894,23 @@
 			"specific": false,
 			"tinySize": true,
 			"preposition": "at"
+		},
+		{
+			"idea": "Mecca",
+			"specific": true,
+			"smallSize": true,
+			"political": true,
+			"religionAndMyths": true,
+			"islam": true
+		},
+		{
+			"idea": "Camelot",
+			"specific": true,
+			"smallSize": true,
+			"religionAndMyths": true,
+			"christianity": true,
+			"fantasy": true,
+			"historicalFiction": true
 		}
 	]
 }

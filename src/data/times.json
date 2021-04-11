@@ -71,6 +71,11 @@
 		},
 		{
 			"idea": "during a week's vacation"
+		},
+		{
+			"idea": "during Ramadan",
+			"religionAndMyths": true,
+			"islam": true
 		}
 	]
 }

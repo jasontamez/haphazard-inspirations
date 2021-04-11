@@ -989,6 +989,20 @@
 			"idea": "COVID-19",
 			"modern": true,
 			"humanDistress": true
+		},
+		{
+			"idea": "cybernetic enhancements",
+			"scifi": true
+		},
+		{
+			"idea": "the Haj",
+			"religionAndMyths": true,
+			"islam": true
+		},
+		{
+			"idea": "Hannukah",
+			"religionAndMyths": true,
+			"judaism": true
 		}
 	]
 }

@@ -124,7 +124,7 @@
 		},
 		{
 			"idea": "geese",
-			"plural": true,
+			"plural": "",
 			"min": 2,
 			"max": 10,
 			"rateBy": "incremental"
@@ -704,6 +704,23 @@
 		{
 			"idea": "ventrilloquist's dummy",
 			"plural": false
+		},
+		{
+			"idea": "moose",
+			"plural": "",
+			"max": 25
+		},
+		{
+			"idea": "a genie in a bottle",
+			"plural": false,
+			"religionAndMyths": true,
+			"islam": true
+		},
+		{
+			"idea": "a djin",
+			"plural": false,
+			"religionAndMyths": true,
+			"islam": true
 		}
 	]
 }

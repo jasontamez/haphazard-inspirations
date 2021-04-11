@@ -1748,6 +1748,26 @@
 		{
 			"idea": "those mountains in the distance",
 			"plural": true
+		},
+		{
+			"idea": "an out-of-control blaze",
+			"humanDistress": true,
+			"humanDeath": true,
+			"animalDeath": true,
+			"animalDistress": true
+		},
+		{
+			"idea": "fake snow"
+		},
+		{
+			"idea": "a dreidel",
+			"religionAndMyths": true,
+			"judaism": true
+		},
+		{
+			"idea": "a lit menorah",
+			"religionAndMyths": true,
+			"judaism": true
 		}
 	]
 }
