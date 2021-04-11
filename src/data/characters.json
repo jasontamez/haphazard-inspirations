@@ -476,7 +476,9 @@
 			"fantasy": true,
 			"horror": true,
 			"religionAndMyths": true,
+			"judaism": true,
 			"christianity": true,
+			"islam": true,
 			"plural": false,
 			"genderPossessive": "his"
 		},

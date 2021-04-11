@@ -27,7 +27,9 @@
 		{
 			"idea": "heaven",
 			"religionAndMyths": true,
+			"judaism": true,
 			"christianity": true,
+			"islam": true,
 			"construct": true
 		},
 		{
@@ -101,7 +103,9 @@
 			"idea": "Israel",
 			"properName": true,
 			"religionAndMyths": true,
+			"judaism": true,
 			"christianity": true,
+			"islam": true,
 			"political": true,
 			"mediumSize": true
 		},

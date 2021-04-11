@@ -135,7 +135,9 @@ export interface ContentObject {
 	properName: boolean
 	modern: boolean
 	religionAndMyths: boolean
+	judaism: boolean
 	christianity: boolean
+	islam: boolean
 	greekRomanMyth: boolean
 	sexual: boolean
 	illicitSubstances: boolean
@@ -227,7 +229,9 @@ export const blankAppState: StateObject = {
 		properName: false,
 		modern: false,
 		religionAndMyths: false,
+		judaism: false,
 		christianity: false,
+		islam: false,
 		greekRomanMyth: false,
 		sexual: false,
 		illicitSubstances: false,

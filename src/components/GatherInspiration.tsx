@@ -59,7 +59,9 @@ export class BasicIdea {
 	animalDeath?: boolean
 	animalDistress?: boolean
 	religionAndMyths?: boolean
+	judaism?: boolean
 	christianity?: boolean
+	islam?: boolean
 	greekRomanMyth?: boolean
 	sexual?: boolean
 	illicitSubstances?: boolean

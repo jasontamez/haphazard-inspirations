@@ -224,8 +224,16 @@ const ContentFilters = () => {
 						<IonToggle onClick={() => toggleTempContent("religionAndMyths")} slot="end" checked={content.religionAndMyths} />
 					</IonItem>
 					<IonItem>
+						<IonLabel className="subTopic">Judaism</IonLabel>
+						<IonToggle onClick={() => toggleTempContent("judaism")} slot="end" className="disableContent-religionAndMyths" data-prop="judaism" disabled={content.religionAndMyths} checked={content.judaism} />
+					</IonItem>
+					<IonItem>
 						<IonLabel className="subTopic">Christianity</IonLabel>
 						<IonToggle onClick={() => toggleTempContent("christianity")} slot="end" className="disableContent-religionAndMyths" data-prop="christianity" disabled={content.religionAndMyths} checked={content.christianity} />
+					</IonItem>
+					<IonItem>
+						<IonLabel className="subTopic">Islam</IonLabel>
+						<IonToggle onClick={() => toggleTempContent("islam")} slot="end" className="disableContent-religionAndMyths" data-prop="islam" disabled={content.religionAndMyths} checked={content.islam} />
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Greek/Roman Mythology</IonLabel>
