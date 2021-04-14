@@ -778,6 +778,21 @@
 			"idea": "going to the mosque",
 			"mythsReligionsAndMetaphysics": true,
 			"islam": true
+		},
+		{
+			"idea": "seeing the future",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
+		},
+		{
+			"idea": "haunting a house",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
+		},
+		{
+			"idea": "performing a seance",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
 		}
 	]
 }

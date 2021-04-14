@@ -1768,6 +1768,21 @@
 			"idea": "a lit menorah",
 			"mythsReligionsAndMetaphysics": true,
 			"judaism": true
+		},
+		{
+			"idea": "a Ouiji board",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
+		},
+		{
+			"idea": "a dowsing rod",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
+		},
+		{
+			"idea": "ectoplasm",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
 		}
 	]
 }

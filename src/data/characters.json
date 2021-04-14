@@ -382,7 +382,8 @@
 			"idea": "a man holding a brain",
 			"humanDistress": true,
 			"plural": false,
-			"genderPossessive": "his"
+			"genderPossessive": "his",
+			"scifi": true
 		},
 		{
 			"idea": "a monkey with a banana",
@@ -719,7 +720,7 @@
 			"idea": "ventrilloquist"
 		},
 		{
-			"idea": "ventrilloquist's dummy",
+			"idea": "a ventrilloquist's dummy",
 			"plural": false
 		},
 		{
@@ -738,6 +739,19 @@
 			"plural": false,
 			"mythsReligionsAndMetaphysics": true,
 			"islam": true
+		},
+		{
+			"idea": "ghost",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true
+		},
+		{
+			"idea": "demons",
+			"plural": true,
+			"metaphysics": true,
+			"mythsReligionsAndMetaphysics": true,
+			"christianity": true,
+			"monster": true
 		}
 	]
 }
