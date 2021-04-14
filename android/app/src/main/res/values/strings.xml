@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Haphazard Inspirations</string>
+    <string name="title_activity_main">Haphazard Inspirations</string>
+    <string name="package_name">net.jasontank.haphazardinspirations</string>
+    <string name="custom_url_scheme">net.jasontank.haphazardinspirations</string>
+</resources>
