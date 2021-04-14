@@ -41,6 +41,7 @@ const Home = () => {
 	// Handle shake-to-update
 	if(state.settings.shake) {
 		const shakeToUpdate = () => {
+			console.log("SHAKE DETECTED on " + state.page);
 			state.page === "home" && maybeGenerateNewIdea();
 		};
 		Shake.startWatch().subscribe(() => shakeToUpdate());
@@ -266,7 +267,7 @@ const Home = () => {
 
 	const displayIdea = () => {
 		if(fetchStatus.generating || state.idea1 === null || state.idea2 === null) {
-			return (<p className="theIdea loading selectable">LOADING</p>);
+			return (<p className="theIdea loading selectable">Click on the light bulb icon to start generating ideas.</p>);
 		}
 		const encase = (text: string) => {
 			return (<span className="idea" key={"ID"+text}>{text}</span>);
