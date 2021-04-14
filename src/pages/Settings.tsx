@@ -45,10 +45,6 @@ const Settings = () => {
 						<IonToggle onClick={() => dispatch(setBoolean(["shake", !toggles.shake]))} slot="end" checked={toggles.shake} />
 					</IonItem>
 					<IonItem>
-						<IonLabel>Sounds</IonLabel>
-						<IonToggle onClick={() => dispatch(setBoolean(["makeNoise", !toggles.makeNoise]))} slot="end" checked={toggles.makeNoise} />
-					</IonItem>
-					<IonItem>
 						<IonLabel style={ { minWidth: "calc(100% - 5rem)" } }>Try not to show the same idea twice within this many days:</IonLabel>
 						<IonInput style={ { maxWidth: "5rem" } } inputmode="numeric" step="1" type="number" max="7305" min="1" onIonChange={(e) => dispatch(setNumber(["flushDays", Number((e.target as HTMLInputElement).value)]))} value={settings.flushDays} />
 					</IonItem>

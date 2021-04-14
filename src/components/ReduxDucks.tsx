@@ -108,7 +108,6 @@ const maxSett: SettingsObject = {
 }
 export interface TogglesObject {
 	shake: boolean
-	makeNoise: boolean
 	showMinimumFave: boolean
 }
 export interface LocalesObject {
@@ -202,7 +201,6 @@ export const blankAppState: StateObject = {
 	favorites: [],
 	toggles: {
 		shake: false,
-		makeNoise: true,
 		showMinimumFave: false
 	},
 	settings: {
