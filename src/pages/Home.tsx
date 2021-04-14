@@ -180,8 +180,8 @@ const Home = () => {
 		let formatting: string[] = [];
 		let singleFormatType = singleFormats;
 		let ideasToDisplay: string[] = [];
-		const modifyForGender = (idea: string, character: Character) => {
-			let possessive = character.genderPossessive || "their";
+		const modifyForGender = (idea: string, character: Character | null) => {
+			let possessive = character ? character.genderPossessive || "their" : "one's";
 			return idea.replace(/\[THEIR\]/g, possessive);
 		};
 		const type1 = idea1.type;	
@@ -226,16 +226,26 @@ const Home = () => {
 		} else if ((type1 === "time") || (type1 === "locale")) {
 			// TIME [ANY]
 			// LOCALE [ANY]
-			rawIdeas = [i2 , i1];
-			ideasToDisplay = [i2 + " " + i1];
+			let two = i2;
+			type2 === "character" && (two = modifyForGender(i2, null));
+			rawIdeas = [two , i1];
+			ideasToDisplay = [two + " " + i1];
 		} else if ((type2 === "time") || (type2 === "locale")) {
 			// [ANY] TIME
 			// [ANY] LOCALE
-			ideasToDisplay = [i1 + " " + i2];
+			let one = i1;
+			type1 === "character" && (one = modifyForGender(i1, null));
+			rawIdeas = [one, i2];
+			ideasToDisplay = [one + " " + i2];
 		} else {
 			// ALL OTHERS
+			let one = i1;
+			let two = i2;
+			type1 === "character" && (one = modifyForGender(i1, null));
+			type2 === "character" && (two = modifyForGender(i2, null));
 			formatting = getFormat(doubleFormats);
-			ideasToDisplay = [i1, i2];
+			rawIdeas = [one, two];
+			ideasToDisplay = [one, two];
 		}
 		// Apply the singular format
 		if(formatting.length === 0) {
