@@ -61,7 +61,7 @@
 		},
 		{
 			"idea": "going to church",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -151,7 +151,7 @@
 		},
 		{
 			"idea": "clutching a rosary",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -771,12 +771,12 @@
 		},
 		{
 			"idea": "going to a synagogue",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true
 		},
 		{
 			"idea": "going to the mosque",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"islam": true
 		}
 	]

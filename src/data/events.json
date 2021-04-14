@@ -118,7 +118,7 @@
 		},
 		{
 			"idea": "someone waking up in Hell",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"humanDistress": true
 		},
@@ -128,7 +128,7 @@
 		},
 		{
 			"idea": "baptism",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -184,7 +184,7 @@
 		},
 		{
 			"idea": "a sacrifice",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"humanDeath": true,
 			"animalDeath": true
 		},
@@ -216,7 +216,7 @@
 		},
 		{
 			"idea": "a pilgrimage",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"punctual": false
 		},
 		{

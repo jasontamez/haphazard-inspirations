@@ -14,7 +14,8 @@
 		{
 			"idea": "dragon",
 			"fantasy": true,
-			"medievalFantasy": true
+			"medievalFantasy": true,
+			"monster": true
 		},
 		{
 			"idea": "tortoise"
@@ -76,12 +77,15 @@
 			"article": "an"
 		},
 		{
-			"idea": "dinosaur"
+			"idea": "dinosaur",
+			"monster": true
 		},
 		{
 			"idea": "a leprechaun",
 			"fantasy": true,
 			"plural": false,
+			"mythsReligionsAndMetaphysics": true,
+			"fairyTales": true,
 			"genderPossessive": "his"
 		},
 		{
@@ -101,11 +105,15 @@
 			"idea": "vampire",
 			"fantasy": true,
 			"medievalFantasy": true,
-			"horror": true
+			"horror": true,
+			"monster": true
 		},
 		{
 			"idea": "monsters under the bed",
-			"plural": true
+			"plural": true,
+			"fantasy": true,
+			"fairyTales": true,
+			"monster": true
 		},
 		{
 			"idea": "Leonardo da Vinci",
@@ -145,7 +153,8 @@
 			"idea": "the undead",
 			"fantasy": true,
 			"horror": true,
-			"plural": true
+			"plural": true,
+			"monster": true
 		},
 		{
 			"idea": "Superman",
@@ -272,7 +281,8 @@
 			"fantasy": true,
 			"horror": true,
 			"plural": false,
-			"genderPossessive": "its"
+			"genderPossessive": "its",
+			"monster": true
 		},
 		{
 			"idea": "bumbling robber",
@@ -298,7 +308,8 @@
 		},
 		{
 			"idea": "a fortune teller",
-			"plural": false
+			"plural": false,
+			"metaphysics": false
 		},
 		{
 			"idea": "a lost child",
@@ -320,7 +331,7 @@
 		},
 		{
 			"idea": "the Tooth Fairy",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"fairyTales": true,
 			"plural": false
 		},
@@ -343,7 +354,8 @@
 			"fantasy": true,
 			"properName": true,
 			"plural": true,
-			"genderPossessive": "its"
+			"genderPossessive": "its",
+			"monster": true
 		},
 		{
 			"idea": "turkey"
@@ -394,7 +406,7 @@
 		},
 		{
 			"idea": "a nun",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"plural": false,
 			"genderPossessive": "her"
@@ -458,7 +470,8 @@
 		{
 			"idea": "ogre",
 			"fantasy": true,
-			"medievalFantasy": true
+			"medievalFantasy": true,
+			"monster": true
 		},
 		{
 			"idea": "oxen",
@@ -475,22 +488,24 @@
 			"idea": "the devil",
 			"fantasy": true,
 			"horror": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true,
 			"christianity": true,
 			"islam": true,
 			"plural": false,
-			"genderPossessive": "his"
+			"genderPossessive": "his",
+			"monster": true
 		},
 		{
 			"idea": "a monster",
 			"fantasy": true,
 			"horror": true,
-			"plural": false
+			"plural": false,
+			"monster": true
 		},
 		{
 			"idea": "a new priest",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"plural": false
 		},
@@ -545,7 +560,7 @@
 			"idea": "a flying horse",
 			"fantasy": true,
 			"medievalFantasy": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"greekRomanMyth": true,
 			"plural": false
 		},
@@ -652,7 +667,8 @@
 			"idea": "an owlbear",
 			"fantasy": true,
 			"medievalFantasy": true,
-			"plural": false
+			"plural": false,
+			"monster": true
 		},
 		{
 			"idea": "scarab beetles",
@@ -662,7 +678,8 @@
 			"plural": true
 		},
 		{
-			"idea": "giant bug"
+			"idea": "giant bug",
+			"monster": true
 		},
 		{
 			"idea": "loud birds",
@@ -713,13 +730,13 @@
 		{
 			"idea": "a genie in a bottle",
 			"plural": false,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"islam": true
 		},
 		{
 			"idea": "a djin",
 			"plural": false,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"islam": true
 		}
 	]

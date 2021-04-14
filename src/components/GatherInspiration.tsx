@@ -58,7 +58,7 @@ export class BasicIdea {
 	humanDistress?: boolean
 	animalDeath?: boolean
 	animalDistress?: boolean
-	religionAndMyths?: boolean
+	mythsReligionsAndMetaphysics?: boolean
 	judaism?: boolean
 	christianity?: boolean
 	islam?: boolean

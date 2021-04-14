@@ -201,7 +201,7 @@
 		{
 			"idea": "voodoo",
 			"fantasy": true,
-			"religionAndMyths": true
+			"mythsReligionsAndMetaphysics": true
 		},
 		{
 			"idea": "gentrification",
@@ -476,7 +476,7 @@
 		},
 		{
 			"idea": "the number 666",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -556,7 +556,7 @@
 		},
 		{
 			"idea": "lucky number seven",
-			"religionAndMyths": true
+			"mythsReligionsAndMetaphysics": true
 		},
 		{
 			"idea": "carpel tunnel syndrome",
@@ -727,7 +727,7 @@
 		},
 		{
 			"idea": "the holy sacraments",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -996,12 +996,12 @@
 		},
 		{
 			"idea": "the Haj",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"islam": true
 		},
 		{
 			"idea": "Hannukah",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true
 		}
 	]

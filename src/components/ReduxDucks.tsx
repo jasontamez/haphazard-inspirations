@@ -124,6 +124,7 @@ export interface GenresObject {
 	fantasy: boolean
 	medievalFantasy: boolean
 	superhero: boolean
+	fairyTales: boolean
 	historicalFiction: boolean
 	western: boolean
 	samurai: boolean
@@ -134,11 +135,13 @@ export interface GenresObject {
 export interface ContentObject {
 	properName: boolean
 	modern: boolean
-	religionAndMyths: boolean
+	monster: boolean
+	mythsReligionsAndMetaphysics: boolean
 	judaism: boolean
 	christianity: boolean
 	islam: boolean
 	greekRomanMyth: boolean
+	metaphysics: boolean
 	sexual: boolean
 	illicitSubstances: boolean
 	alcohol: boolean
@@ -218,6 +221,7 @@ export const blankAppState: StateObject = {
 		fantasy: false,
 		medievalFantasy: false,
 		superhero: false,
+		fairyTales: false,
 		historicalFiction: false,
 		western: false,
 		samurai: false,
@@ -228,11 +232,13 @@ export const blankAppState: StateObject = {
 	content: {
 		properName: false,
 		modern: false,
-		religionAndMyths: false,
+		monster: false,
+		mythsReligionsAndMetaphysics: false,
 		judaism: false,
 		christianity: false,
 		islam: false,
 		greekRomanMyth: false,
+		metaphysics: false,
 		sexual: false,
 		illicitSubstances: false,
 		alcohol: false,

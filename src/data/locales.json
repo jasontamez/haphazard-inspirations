@@ -26,7 +26,7 @@
 		},
 		{
 			"idea": "heaven",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true,
 			"christianity": true,
 			"islam": true,
@@ -102,7 +102,7 @@
 		{
 			"idea": "Israel",
 			"properName": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true,
 			"christianity": true,
 			"islam": true,
@@ -118,7 +118,7 @@
 		},
 		{
 			"idea": "a temple",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"specific": false,
 			"construct": true,
 			"tinySize": true
@@ -350,7 +350,7 @@
 		},
 		{
 			"idea": "a cathedral",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"specific": false,
 			"construct": true,
@@ -689,7 +689,7 @@
 			"idea": "The Vatican",
 			"preposition": "at",
 			"properName": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"political": true,
 			"smallSize": true
@@ -753,7 +753,7 @@
 		},
 		{
 			"idea": "a better place",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"specific": false,
 			"construct": true
@@ -900,14 +900,14 @@
 			"specific": true,
 			"smallSize": true,
 			"political": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"islam": true
 		},
 		{
 			"idea": "Camelot",
 			"specific": true,
 			"smallSize": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"fantasy": true,
 			"historicalFiction": true

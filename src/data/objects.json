@@ -143,7 +143,7 @@
 		},
 		{
 			"idea": "a Star of David",
-			"religionAndMyths": true
+			"mythsReligionsAndMetaphysics": true
 		},
 		{
 			"idea": "calcium"
@@ -287,7 +287,7 @@
 		},
 		{
 			"idea": "Pandora's Box",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"greekRomanMyth": true
 		},
 		{
@@ -307,7 +307,7 @@
 		},
 		{
 			"idea": "stained glass",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -320,7 +320,7 @@
 		},
 		{
 			"idea": "a dead Jesus on a wall",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"humanDeath": true
 		},
@@ -415,7 +415,7 @@
 		},
 		{
 			"idea": "a silver trident",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"greekRomanMyth": true
 		},
 		{
@@ -606,7 +606,7 @@
 			"fantasy": true,
 			"medievalFantasy": true,
 			"horror": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -701,7 +701,7 @@
 		},
 		{
 			"idea": "a statue of an angel",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -975,7 +975,7 @@
 		},
 		{
 			"idea": "a crucifix",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"fantasy": true,
 			"horror": true
@@ -1761,12 +1761,12 @@
 		},
 		{
 			"idea": "a dreidel",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true
 		},
 		{
 			"idea": "a lit menorah",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"judaism": true
 		}
 	]

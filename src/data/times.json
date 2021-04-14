@@ -4,7 +4,7 @@
 		{
 			"idea": "on Christmas Eve",
 			"properName": true,
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"christianity": true
 		},
 		{
@@ -74,7 +74,7 @@
 		},
 		{
 			"idea": "during Ramadan",
-			"religionAndMyths": true,
+			"mythsReligionsAndMetaphysics": true,
 			"islam": true
 		}
 	]

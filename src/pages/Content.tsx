@@ -184,6 +184,10 @@ const ContentFilters = () => {
 						<IonToggle onClick={() => toggleTempGenre("superhero")} slot="end" className="disableGenres-fantasy" data-prop="superhero" disabled={genres.fantasy} checked={genres.superhero} />
 					</IonItem>
 					<IonItem>
+						<IonLabel className="subTopic">Fairy Tales and Urban Legends</IonLabel>
+						<IonToggle onClick={() => toggleTempGenre("fairyTales")} slot="end" className="disableGenres-fantasy" data-prop="fairyTales" disabled={genres.fantasy} checked={genres.fairyTales} />
+					</IonItem>
+					<IonItem>
 						<IonLabel>Historical Fiction</IonLabel>
 						<IonToggle onClick={() => toggleTempGenre("historicalFiction")} slot="end" checked={genres.historicalFiction} />
 					</IonItem>
@@ -220,24 +224,32 @@ const ContentFilters = () => {
 						<IonToggle onClick={() => toggleTempContent("modern")} slot="end" checked={content.modern} />
 					</IonItem>
 					<IonItem>
-						<IonLabel>Religion, Myths and similar topics</IonLabel>
-						<IonToggle onClick={() => toggleTempContent("religionAndMyths")} slot="end" checked={content.religionAndMyths} />
+						<IonLabel>Monsters and monstrous creatures</IonLabel>
+						<IonToggle onClick={() => toggleTempContent("monster")} slot="end" checked={content.monster} />
+					</IonItem>
+					<IonItem>
+						<IonLabel>Myths, Religion and Metaphysics</IonLabel>
+						<IonToggle onClick={() => toggleTempContent("mythsReligionsAndMetaphysics")} slot="end" checked={content.mythsReligionsAndMetaphysics} />
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Judaism</IonLabel>
-						<IonToggle onClick={() => toggleTempContent("judaism")} slot="end" className="disableContent-religionAndMyths" data-prop="judaism" disabled={content.religionAndMyths} checked={content.judaism} />
+						<IonToggle onClick={() => toggleTempContent("judaism")} slot="end" className="disableContent-mythsReligionsAndMetaphysics" data-prop="judaism" disabled={content.mythsReligionsAndMetaphysics} checked={content.judaism} />
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Christianity</IonLabel>
-						<IonToggle onClick={() => toggleTempContent("christianity")} slot="end" className="disableContent-religionAndMyths" data-prop="christianity" disabled={content.religionAndMyths} checked={content.christianity} />
+						<IonToggle onClick={() => toggleTempContent("christianity")} slot="end" className="disableContent-mythsReligionsAndMetaphysics" data-prop="christianity" disabled={content.mythsReligionsAndMetaphysics} checked={content.christianity} />
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Islam</IonLabel>
-						<IonToggle onClick={() => toggleTempContent("islam")} slot="end" className="disableContent-religionAndMyths" data-prop="islam" disabled={content.religionAndMyths} checked={content.islam} />
+						<IonToggle onClick={() => toggleTempContent("islam")} slot="end" className="disableContent-mythsReligionsAndMetaphysics" data-prop="islam" disabled={content.mythsReligionsAndMetaphysics} checked={content.islam} />
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Greek/Roman Mythology</IonLabel>
-						<IonToggle onClick={() => toggleTempContent("greekRomanMyth")} slot="end" className="disableContent-religionAndMyths" data-prop="greekRomanMyth" disabled={content.religionAndMyths} checked={content.greekRomanMyth} />
+						<IonToggle onClick={() => toggleTempContent("greekRomanMyth")} slot="end" className="disableContent-mythsReligionsAndMetaphysics" data-prop="greekRomanMyth" disabled={content.mythsReligionsAndMetaphysics} checked={content.greekRomanMyth} />
+					</IonItem>
+					<IonItem>
+						<IonLabel className="subTopic">Metaphysics (psychics, spirits, etc)</IonLabel>
+						<IonToggle onClick={() => toggleTempContent("metaphysics")} slot="end" className="disableContent-mythsReligionsAndMetaphysics" data-prop="metaphysics" disabled={content.mythsReligionsAndMetaphysics} checked={content.metaphysics} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Sexually suggestive material</IonLabel>
