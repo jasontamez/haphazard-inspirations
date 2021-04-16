@@ -18,7 +18,8 @@ import {
 	setTotal,
 	addFave,
 	removeFave,
-	currentPage
+	currentPage,
+	setFlushNowStatus
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
@@ -61,6 +62,7 @@ const Home = () => {
 		if(output !== undefined) {
 			switch(output.type) {
 				case "initialized":
+					// Save the number of inspirations possible
 					dispatch(setTotal(output.value));
 					status.total = output.value;
 					break;
@@ -75,10 +77,10 @@ const Home = () => {
 					dispatch(setStatus(true));
 			}
 		} else if (status.generating) {
-			// Did not come with an output object: hit by the user
+			// Did not come with an output object: hit by the user while generation in progress
 			return;
 		} else {
-			// Did not come with an output object: hit by the user
+			// Did not come with an output object: hit by the user, so start generation
 			let cls = "exit" + getDirection();
 			$i("ideaWrap").classList.add(cls);
 			$delay(750).then(() => {
@@ -94,7 +96,7 @@ const Home = () => {
 			// New ideas
 			//
 			//
-			//
+			// To be filled in after we deploy
 			//
 			//
 		} else if(status.omitsChanged) {
@@ -110,7 +112,14 @@ const Home = () => {
 			], ns);
 		} else {
 			// Ok to fetch!
-			getNewIdeas(receiveNewIdeas, (state.nextIdeaFlush < Date.now()));
+			let doFlush: boolean;
+			if(status.flushNow) {
+				doFlush = true;
+				dispatch(setFlushNowStatus(false));
+			} else {
+				doFlush = (state.nextIdeaFlush < Date.now());
+			}
+			getNewIdeas(receiveNewIdeas, doFlush);
 		}
 	};
 

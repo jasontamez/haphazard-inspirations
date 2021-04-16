@@ -24,6 +24,7 @@ const SET_EXACT_IDEAS = p+"SET_EXACT_IDEAS";
 const UPDATE_STATUS = p+"UPDATE_STATUS";
 const UPDATE_TOTAL_IDEAS = p+"UPDATE_TOTAL_IDEAS";
 const UPDATE_OMIT_STATUS = p+"UPDATE_OMIT_STATUS";
+const UPDATE_FLUSH_STATUS = p+"UPDATE_FLUSH_STATUS";
 const SET_CONTENT_LIMITS = p+"SET_CONTENT_LIMITS";
 const SET_BOOLEAN = p+"SET_BOOLEAN";
 const SET_NUMBER = p+"SET_NUMBER";
@@ -60,6 +61,9 @@ export function setTotal(payload: string) {
 }
 export function setOmitStatus(payload: boolean) {
 	return {type: UPDATE_OMIT_STATUS, payload};
+}
+export function setFlushNowStatus(payload: boolean) {
+	return {type: UPDATE_FLUSH_STATUS, payload};
 }
 export function setBoolean(payload: [keyof TogglesObject, boolean]) {
 	return {type: SET_BOOLEAN, payload};
@@ -164,6 +168,7 @@ export interface StatusObject {
 	omitsChanged: boolean
 	generating: boolean | 1
 	nextIdeaFlush: number
+	flushNow: boolean
 }
 export interface StateObject {
 	currentVersion: string
@@ -196,7 +201,8 @@ export const blankAppState: StateObject = {
 		total: 0,
 		omitsChanged: false,
 		generating: false,
-		nextIdeaFlush: Date.now() + ONE_DAY
+		nextIdeaFlush: Date.now() + ONE_DAY,
+		flushNow: false
 	},
 	favorites: [],
 	toggles: {
@@ -353,6 +359,10 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 		case UPDATE_OMIT_STATUS:
 			final = reduceAll(state);
 			final.status.omitsChanged = payload;
+			break;
+		case UPDATE_FLUSH_STATUS:
+			final = reduceAll(state);
+			final.status.flushNow = payload;
 			break;
 		case SET_BOOLEAN:
 			final = reduceAll(state);
