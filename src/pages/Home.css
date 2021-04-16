@@ -46,6 +46,13 @@ ion-list.longLabels ion-item[button="true"] ion-label,
 ion-list.longLabels ion-list-header[button="true"] > * {
 	white-space: normal;
 }
+ion-content.onlyList.settingsPage ion-list.longLabels ion-item ion-label {
+	min-width: calc(100% - 5rem);
+}
+ion-content.onlyList.settingsPage ion-list.longLabels ion-item ion-toggle,
+ion-content.onlyList.settingsPage ion-list.longLabels ion-item ion-input {
+	max-width: 5rem;
+}
 ion-item ion-label.subTopic {
 	text-indent: 1rem;
 }

@@ -137,7 +137,7 @@ const ContentFilters = () => {
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>
-			<IonContent fullscreen className="onlyList">
+			<IonContent fullscreen className="onlyList settingsPage">
 				<IonList lines="none" className="buttonFilled longLabels">
 					<IonListHeader>
 						<IonLabel>Locales</IonLabel>

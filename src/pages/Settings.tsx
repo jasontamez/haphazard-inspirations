@@ -39,18 +39,18 @@ const Settings = () => {
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>
-			<IonContent fullscreen className="onlyList">
+			<IonContent fullscreen className="onlyList settingsPage">
 				<IonList lines="none" className="buttonFilled longLabels">
 					<IonItem>
 						<IonLabel>Shake for new idea</IonLabel>
 						<IonToggle onClick={() => dispatch(setBoolean(["shake", !toggles.shake]))} slot="end" checked={toggles.shake} />
 					</IonItem>
 					<IonItem>
-						<IonLabel style={ { minWidth: "calc(100% - 5rem)" } }>Try not to show the same idea twice within this many days:</IonLabel>
-						<IonInput style={ { maxWidth: "5rem" } } inputmode="numeric" step="1" type="number" max="7305" min="1" onIonChange={(e) => dispatch(setNumber(["flushDays", Number((e.target as HTMLInputElement).value)]))} value={settings.flushDays} />
+						<IonLabel>Try not to show the same idea twice within this many days:</IonLabel>
+						<IonInput inputmode="numeric" step="1" type="number" max="7305" min="1" onIonChange={(e) => dispatch(setNumber(["flushDays", Number((e.target as HTMLInputElement).value)]))} value={settings.flushDays} />
 					</IonItem>
 					<IonItem>
-						<IonLabel style={ { minWidth: "calc(100% - 5rem)" } }>Empty the queue of recently-shown ideas the next time you generate an inspiration.</IonLabel>
+						<IonLabel>Empty the queue of recently-shown ideas the next time you generate an inspiration.</IonLabel>
 						<IonToggle onClick={() => dispatch(setFlushNowStatus(!status.flushNow))} slot="end" checked={status.flushNow} />
 					</IonItem>
 				</IonList>
