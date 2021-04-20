@@ -107,10 +107,10 @@ const Favorites = () => {
 				</IonList>
 			</IonContent>
 			<IonFooter>
-				<IonItem>
-					<IonLabel>Show entire inspirations</IonLabel>
-					<IonToggle slot="end" onClick={() => dispatch(setBoolean(["showMinimumFave", !showMin]))} />
-				</IonItem>
+				<IonToolbar>
+					<IonLabel slot="primary">Show entire inspirations</IonLabel>
+					<IonToggle slot="end" checked={!showMin} onClick={() => dispatch(setBoolean(["showMinimumFave", !showMin]))} />
+				</IonToolbar>
 			</IonFooter>
 		</IonPage>
 	);
