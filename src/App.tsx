@@ -45,7 +45,7 @@ const App = () => {
 			return StateStorage.getItem("lastState").then((storedState: any) => {
 				if(storedState !== null) {
 					if(storedState && (typeof storedState) === "object") {
-						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.1.1", "<")) {
+						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.0.1", "<")) {
 							// Do stuff to possibly bring storedState up to date
 							// - set storedState.status.new to... something
 							storedState.status = {
