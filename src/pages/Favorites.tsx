@@ -12,28 +12,27 @@ import {
 	IonLabel,
 	IonIcon,
 	IonButton,
-	IonPopover,
 	IonReorderGroup,
 	IonReorder,
-	useIonViewDidEnter
+	useIonViewDidEnter,
+	IonFooter,
+	IonToggle
 } from '@ionic/react';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import fireSwal from '../components/Swal';
 import {
 	removeFave,
 	setBoolean,
-	openPopover,
-	closePopover,
 	reorderFaves,
 	currentPage
 } from '../components/ReduxDucks';
 import './Home.css';
-import { ellipsisVertical, reorderTwo, trashOutline } from 'ionicons/icons';
+import { reorderTwo, trashOutline } from 'ionicons/icons';
 //import { $i } from '../components/DollarSignImports';
 
 const Favorites = () => {
 	const dispatch = useDispatch();
-	const [showMin, popstate, faves] = useSelector((state: any) => [state.toggles.showMinimumFave, state.popover, state.favorites], shallowEqual);
+	const [showMin, faves] = useSelector((state: any) => [state.toggles.showMinimumFave, state.favorites], shallowEqual);
 	useIonViewDidEnter(() => {
 		dispatch(currentPage("faves"));
 	});
@@ -71,33 +70,10 @@ const Favorites = () => {
 	return (
 		<IonPage>
 			<IonHeader>
-				<IonPopover
-					id="poppy"
-					event={popstate && popstate[0]}
-					isOpen={popstate && popstate[1] === "favorites"}
-					onDidDismiss={() => dispatch(closePopover())}
-				>
-					<IonList className="longLabels">
-						<IonItem button={true} onClick={() => {
-							//$i("poppy").dismiss();
-							dispatch(setBoolean(["showMinimumFave", !showMin]));
-						}}>
-							<IonLabel>{showMin ? "Show entire inspirations" : "Show only basic elements"}</IonLabel>
-						</IonItem>
-					</IonList>
-				</IonPopover>
 				<IonToolbar>
 					<IonTitle>Favorites</IonTitle>
 					<IonButtons slot="start">
 						<IonMenuButton />
-					</IonButtons>
-					<IonButtons slot="end">
-						<IonButton onClick={(e: any) => {
-							e.persist();
-							dispatch(openPopover([e, "favorites"]));
-						}}>
-							<IonIcon icon={ellipsisVertical} />
-						</IonButton>
 					</IonButtons>
 				</IonToolbar>
 			</IonHeader>
@@ -130,6 +106,12 @@ const Favorites = () => {
 					</IonReorderGroup>
 				</IonList>
 			</IonContent>
+			<IonFooter>
+				<IonItem>
+					<IonLabel>Show entire inspirations</IonLabel>
+					<IonToggle slot="end" onClick={() => dispatch(setBoolean(["showMinimumFave", !showMin]))} />
+				</IonItem>
+			</IonFooter>
 		</IonPage>
 	);
 };
