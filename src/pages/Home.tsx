@@ -130,39 +130,41 @@ const Home = () => {
 	let singleFormats: Format = [
 		["Create a story about ", "."],
 		["Write about ", "."],
-		["What do you think about a story involving ", "?"],
+		["Picture this: ", "."],
 		["", " could be the nucleus of a story."],
-		["Maybe you can write about ", "?"],
-		["When nothing else comes to mind, you can still write about ", "."],
-		["Here's a random seed for a story: ", "."],
-		["What would happen in a story with ", "?"],
+		["You can write about ", "."],
+		["Go write about ", "."],
+		["Here's a story seed: ", "."],
+		["Imagine ", "."],
 		["Try writing about ", "."],
-		["Write about ", " and see what happens."],
-		["Stop everything and write about ", "!"],
+		["Contemplate ", " and imagine what happens."],
+		["Topic: ", "."],
 		["Your new muse: ", "."],
 		["Consider ", "."],
 		["Ponder ", " and start writing."]
 	];
 	let doubleFormats: Format = [
-		["What would happen in a story with ", " that also involved ", "?"],
+		["Write about ", " and include ", "."],
 		["Ponder ", " and ", " before you start writing."],
 		["", " could be a part of a story about ", "."],
-		["Your next plot could involve ", ", but also have ", "."],
-		["Put ", " and ", " together and see what happens."],
+		["Go write about ", ", but also have ", " be important."],
+		["Put ", " and ", " together."],
 		["Try writing about ", " and ", "."],
-		["Here's a random seed for a story: ", " mixed up with ", "."],
-		["Your new muse: ", " with ", "."],
+		["Here's a story seed: ", " mixed up with ", "."],
+		["Your new muses: ", " and ", "."],
+		["Scrutinize ", " through the lens of ", "."],
 		["Consider ", " transposed with ", "."],
 		["Think about ", ", and then consider ", "."],
-		["Write about ", " and ", "."]
+		["Write about ", " and ", "."],
+		["How does ", " affect ", "? Or vice versa?"]
 	];
-	let singleLocaleFormats: Format = [
+	let doubleLocaleFormats: Format = [
 		["Create a story set ", "."],
-		["What do you think about a tale set ", "?"],
+		["Your tale begins and ends ", "."],
 		["A story set ", " might be interesting."],
-		["What would happen in a book set ", "?"],
+		["Ruminate on goings-on ", "."],
 		["Try writing a story set ", "."],
-		["Write about anything, but set the story ", "!"],
+		["Write about anything, but set the story ", "."],
 		["Imagine what happens ", " and start writing."]
 	];
 
@@ -221,17 +223,17 @@ const Home = () => {
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
 			// TIME TIME
 			// LOCALE LOCALE
-			formatting = getFormat(singleLocaleFormats);
+			formatting = getFormat(doubleLocaleFormats);
 			formatting = [formatting[0], " and ", formatting[1]];
 			ideasToDisplay = [i1, i2];
 		} else if (type1 === "time" && type2 === "locale") {
 			// TIME LOCALE
-			singleFormatType = singleLocaleFormats;
+			singleFormatType = doubleLocaleFormats;
 			rawIdeas = [i2 , i1];
 			ideasToDisplay = [i2 + " " + i1];
 		} else if  (type2 === "time" && type1 === "locale") {
 			// LOCALE TIME
-			singleFormatType = singleLocaleFormats;
+			singleFormatType = doubleLocaleFormats;
 			ideasToDisplay = [i1 + " " + i2];
 		} else if ((type1 === "time") || (type1 === "locale")) {
 			// TIME [ANY]
