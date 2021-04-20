@@ -64,7 +64,6 @@ const ContentFilters = () => {
 	const toggleTempLocale = (prop: keyof LocalesObject) => {
 		let value = TempLocales[prop];
 		TempLocales[prop] = !value;
-		console.log(TempLocales);
 		button.disabled = false;
 	};
 	const toggleTempGenre = (prop: keyof GenresObject) => {
@@ -77,7 +76,6 @@ const ContentFilters = () => {
 			tog.checked = false;
 		});
 		button.disabled = false;
-		console.log(TempGenres);
 	};
 	const toggleTempContent = (prop: keyof ContentObject) => {
 		let value = TempContent[prop];
@@ -89,24 +87,20 @@ const ContentFilters = () => {
 			tog.checked = false;
 		});
 		button.disabled = false;
-		console.log(TempContent);
 	};
 	const toggleTempPerson = (prop: keyof PersonObject) => {
 		let value = TempPerson[prop];
 		TempPerson[prop] = !value;
-		console.log(TempPerson);
 		button.disabled = false;
 	};
 	const toggleTempEvent = (prop: keyof EventObject) => {
 		let value = TempEvent[prop];
 		TempEvent[prop] = !value;
-		console.log(TempEvent);
 		button.disabled = false;
 	};
 	const toggleTempTrigger = (prop: keyof TriggersObject) => {
 		let value = TempTriggers[prop];
 		TempTriggers[prop] = !value;
-		console.log(TempTriggers);
 		button.disabled = false;
 	};
 	const saveSettings = () => {

@@ -202,7 +202,6 @@ const Home = () => {
 			let cls = "start" + getDirection();
 			$i("ideaWrap").classList.remove(cls);
 			$delay(500).then(() => {
-				console.log("FALSE");
 				dispatch(setStatus(false));
 			});
 			return dispatch(updateIdeas([idea1, idea2, flushFlag, [idea1.idea!, idea2.idea!, "", idea1.idea!, ": ", idea2.idea!, ""]]));
@@ -271,7 +270,6 @@ const Home = () => {
 		$i("ideaWrap").classList.remove(cls);
 		dispatch(updateIdeas([idea1, idea2, flushFlag, [...rawIdeas, ...final]]));
 		$delay(500).then(() => {
-			console.log("FALSE");
 			dispatch(setStatus(false));
 		});
 	};
