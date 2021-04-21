@@ -16,6 +16,7 @@ import {
 	TriggersObject,
 	StatusObject
 } from '../components/ReduxDucks';
+import compareVersions from 'compare-versions';
 
 const EnglishNumbers = [
 	"zero",
@@ -44,6 +45,8 @@ const EnglishNumbers = [
 export class BasicIdea {
 	idea?: string
 	type?: string
+	mod?: string
+	new?: string
 	fantasy?: boolean
 	medievalFantasy?: boolean
 	historicalFiction?: boolean
@@ -171,7 +174,6 @@ export class Character extends PossiblePlural {
 	realPerson?: boolean
 	getIdea() {
 		if(this.realPerson) {
-			console.log(this);
 			return this.idea || "idea";
 		}
 		return super.getIdea(this);
@@ -204,7 +206,6 @@ class Locale extends BasicIdea {
 	tinySize?: boolean
 	specific?: boolean
 	getIdea() {
-		console.log(this);
 		return (this.preposition || "in") + " " + (this.idea || "idea");
 	}
 	constructor(initializer: any) {
@@ -316,7 +317,7 @@ const makeIdea = (idea: any) => {
 	return BasicError1;
 };
 
-export const initializeIdeas = (callback: Function, status: StatusObject) => {
+const loadAndTotalInformation = () => {
 	let total = 0;
 	let mtot = 0;
 	let mods: number[] = [];
@@ -329,7 +330,7 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 		}
 		return o;
 	};
-	let ideas: object[] = shuffle([
+	let ideas: object[] = [
 		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
 		...characters.contents.map(c => mapAndMods(characters.default, c, "character")),
 		...event.contents.map(e => ({...event.default, ...e, type: "event"})),
@@ -337,7 +338,7 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 		...object.contents.map(o => mapAndMods(object.default, o, "object")),
 		...time.contents.map(t => ({...time.default, ...t, type: "time"})),
 		...topic.contents.map(t => ({...topic.default, ...t, type: "topic"}))
-	]);
+	];
 	let items = ideas.length + mtot - 1;
 	let c = ideas.length - mods.length;
 	while (c > 0) {
@@ -354,6 +355,16 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 		mtot -= m;
 		total += (mtot * m);
 	}
+	return {
+		ideas,
+		total
+	};
+};
+
+export const initializeIdeas = (callback: Function, status: StatusObject) => {
+	let info = loadAndTotalInformation();
+	let ideas = shuffle(info.ideas);
+	let total = info.total;
 	Promise.all([
 		IdeaStorage.setItem("sent", []),
 		IdeaStorage.setItem("ideas", ideas),
@@ -364,6 +375,69 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 		console.log("ERROR - INIT IDEAS:");
 		console.log(e);
 		callback(status, {type: "initialized", value: total});
+	});
+};
+
+export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject) => {
+	Promise.all([
+		IdeaStorage.getItem("sent"),
+		IdeaStorage.getItem("ideas"),
+		IdeaStorage.getItem("omit")
+	]).then((values: any[]) => {
+		let sent = values[0] as UsedIdea[];
+		let ideas = values[1] as any[];
+		let omit = values[2] as Omit[];
+		let info = loadAndTotalInformation();
+		let allIdeas = info.ideas;
+		let total = info.total;
+		let modded: any = { length: 0 };
+		let added: any[] = [];
+		const lastUpdate = status.new as string;
+		allIdeas.forEach((i: any) => {
+			if(i.mod && compareVersions.compare(i.mod, lastUpdate, ">")) {
+				delete i.mod;
+				modded[(i.idea as string) + " " + (i.type as string)] = i;
+				modded.length++;
+			}
+			if(i.new && compareVersions.compare(i.new, lastUpdate, ">")) {
+				delete i.new;
+				added.push(i);
+			}
+		});
+		if(modded.length > 1) {
+			ideas = ideas.map((i: any) => {
+				let prop = (i.idea as string) + " " + (i.type as string);
+				return modded[prop] || i;
+			});
+			sent = sent.map((s: UsedIdea) => {
+				let i = s[0];
+				let prop = i.idea + " " + i.type;
+				return [modded[prop] || i, s[1]];
+			});
+			omit = omit.map((o: Omit) => {
+				if(Array.isArray(o)) {
+					let i = o[0];
+					let prop = i.idea + " " + i.type;
+					return [modded[prop] || i, o[1]];
+				}
+				let prop = (o.idea as string) + " " + (o.type as string);
+				return modded[prop] || o;
+			});
+		}
+		if(added.length > 1) {
+			ideas = shuffle(ideas.concat(added));
+		}
+		Promise.all([
+			IdeaStorage.setItem("sent", sent),
+			IdeaStorage.setItem("ideas", ideas),
+			IdeaStorage.setItem("omit", omit)
+		]).then(() => {
+			callback(status, {type: "new items loaded", value: total});
+		}).catch((e) => {
+			console.log("ERROR - NEW/MODDED IDEAS:");
+			console.log(e);
+			callback(status, {type: "new items loaded", value: total});
+		});
 	});
 };
 
@@ -457,7 +531,7 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 		IdeaStorage.getItem("omit")
 	]).then((values: any[]) => {
 		let sent = values[0] as UsedIdea[];
-		let ideas = values[1] as BasicIdea[];
+		let ideas = values[1] as any[];
 		let omit = values[2] as Omit[];
 		let newOmit: Omit[] = [];
 		let unomit: Omit[] = [];
@@ -469,7 +543,7 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 			}
 			return !res;
 		});
-		ideas = ideas.filter((s: BasicIdea) => {
+		ideas = ideas.filter((s: any) => {
 			let res: boolean = isOmittable(s, omissions);
 			if(res) {
 				newOmit.push(s);

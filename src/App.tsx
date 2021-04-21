@@ -60,6 +60,11 @@ const App = () => {
 						}
 						if (compareVersions.compare(storedState.currentVersion || "0.0.1", VERSION.current, "<")) {
 							// Do stuff to possibly bring storedState up to date
+
+							// Save current (old) version as "new" so we can check for updates
+							// This may need to be modified once we go into production, especially for non-idea updates
+							storedState.status.new = storedState.currentVersion;
+							// Update current version to (new) actual current version
 							storedState.currentVersion = VERSION.current;
 						}
 						if(checkIfState(storedState)) {

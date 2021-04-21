@@ -15,6 +15,7 @@ import {
 	setStatus,
 	reduceStatus,
 	setOmitStatus,
+	deleteNewItemsFlag,
 	setTotal,
 	addFave,
 	removeFave,
@@ -23,7 +24,7 @@ import {
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
-import { BasicIdea, Character, getNewIdeas, initializeIdeas, pruneIdeas } from '../components/GatherInspiration';
+import { BasicIdea, Character, getNewIdeas, initializeIdeas, pruneIdeas, loadNewAndModifiedIdeas } from '../components/GatherInspiration';
 import './Home.css';
 import { starOutline, star, bulbOutline } from 'ionicons/icons';
 import fireSwal from '../components/Swal';
@@ -67,6 +68,8 @@ const Home = () => {
 					status.total = output.value;
 					break;
 				case "new items loaded":
+					dispatch(deleteNewItemsFlag());
+					dispatch(setTotal(output.value));
 					delete status.new;
 					break;
 				case "omissions noted":
@@ -94,11 +97,8 @@ const Home = () => {
 			initializeIdeas(maybeGenerateNewIdea, ns);
 		} else if(status.new !== undefined) {
 			// New ideas
-			//
-			//
-			// To be filled in after we deploy
-			//
-			//
+			let ns = reduceStatus(status);
+			loadNewAndModifiedIdeas(maybeGenerateNewIdea, ns);
 		} else if(status.omitsChanged) {
 			// Omits updated
 			let ns = reduceStatus(status);

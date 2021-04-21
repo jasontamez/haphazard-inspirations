@@ -24,6 +24,7 @@ const SET_EXACT_IDEAS = p+"SET_EXACT_IDEAS";
 const UPDATE_STATUS = p+"UPDATE_STATUS";
 const UPDATE_TOTAL_IDEAS = p+"UPDATE_TOTAL_IDEAS";
 const UPDATE_OMIT_STATUS = p+"UPDATE_OMIT_STATUS";
+const DELETE_NEW_ITEMS_FLAG = p+"DELETE_NEW_ITEMS_FLAG";
 const UPDATE_FLUSH_STATUS = p+"UPDATE_FLUSH_STATUS";
 const SET_CONTENT_LIMITS = p+"SET_CONTENT_LIMITS";
 const SET_BOOLEAN = p+"SET_BOOLEAN";
@@ -59,6 +60,9 @@ export function setTotal(payload: string) {
 }
 export function setOmitStatus(payload: boolean) {
 	return {type: UPDATE_OMIT_STATUS, payload};
+}
+export function deleteNewItemsFlag() {
+	return {type: DELETE_NEW_ITEMS_FLAG};
 }
 export function setFlushNowStatus(payload: boolean) {
 	return {type: UPDATE_FLUSH_STATUS, payload};
@@ -156,7 +160,7 @@ export interface TriggersObject {
 }
 export interface StatusObject {
 	total: number
-	new?: any
+	new?: string
 	omitsChanged: boolean
 	generating: boolean | 1
 	nextIdeaFlush: number
@@ -283,14 +287,7 @@ const reduceAll = (state: StateObject, setPending: boolean = true) => {
 }
 export const reduceStatus = (status: StatusObject) => {
 	let reduced: StatusObject = {...status};
-	if(reduced.new) {
-		reduced.new = reduceNew(reduced.new);
-	}
 	return reduced;
-};
-const reduceNew = (info: any) => {
-	// Nothing to do yet
-	return undefined;
 };
 export const checkIfState = (possibleState: StateObject | any): possibleState is StateObject => {
 	const check = (possibleState as StateObject);
@@ -348,6 +345,10 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 		case UPDATE_OMIT_STATUS:
 			final = reduceAll(state);
 			final.status.omitsChanged = payload;
+			break;
+		case DELETE_NEW_ITEMS_FLAG:
+			final = reduceAll(state);
+			delete final.status.new;
 			break;
 		case UPDATE_FLUSH_STATUS:
 			final = reduceAll(state);
