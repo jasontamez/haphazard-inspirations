@@ -743,7 +743,10 @@
 		{
 			"idea": "ghost",
 			"mythsReligionsAndMetaphysics": true,
-			"metaphysics": true
+			"metaphysics": true,
+			"max": 13,
+			"rateBy": "incremental",
+			"mod": "0.2.2"
 		},
 		{
 			"idea": "demons",
@@ -752,6 +755,14 @@
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"monster": true
+		},
+		{
+			"idea": "angels",
+			"plural": true,
+			"metaphysics": true,
+			"mythsReligionsAndMetaphysics": true,
+			"christianity": true,
+			"new": "0.2.2"
 		}
 	]
 }

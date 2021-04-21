@@ -1013,6 +1013,12 @@
 			"modern": true,
 			"mythsReligionsAndMetaphysics": true,
 			"metaphysics": true
+		},
+		{
+			"idea": "incest",
+			"sexual": true,
+			"humanDistress": true,
+			"new": "0.2.2"
 		}
 	]
 }

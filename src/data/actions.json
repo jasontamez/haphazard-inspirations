@@ -793,6 +793,22 @@
 			"idea": "performing a seance",
 			"mythsReligionsAndMetaphysics": true,
 			"metaphysics": true
+		},
+		{
+			"idea": "going on a date",
+			"sexual": true,
+			"new": "0.2.2"
+		},
+		{
+			"idea": "upsetting the neighbors",
+			"humanDistress": true,
+			"new": "0.2.2"
+		},
+		{
+			"idea": "tormenting [THEIR] enemy",
+			"humanDistress": true,
+			"possessive": true,
+			"new": "0.2.2"
 		}
 	]
 }

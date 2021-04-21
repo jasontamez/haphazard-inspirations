@@ -76,6 +76,28 @@
 			"idea": "during Ramadan",
 			"mythsReligionsAndMetaphysics": true,
 			"islam": true
+		},
+		{
+			"idea": "during the 1980s",
+			"modern": true,
+			"new": "0.2.2"
+		},
+		{
+			"idea": "during the Great Depression",
+			"new": "0.2.2"
+		},
+		{
+			"idea": "during prehistoric times",
+			"historicalFiction": true,
+			"new": "0.2.2"
+		},
+		{
+			"idea": "on the day after tomorrow",
+			"new": "0.2.2"
+		},
+		{
+			"idea": "right now",
+			"new": "0.2.2"
 		}
 	]
 }

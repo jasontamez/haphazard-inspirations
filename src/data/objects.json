@@ -1783,6 +1783,13 @@
 			"idea": "ectoplasm",
 			"mythsReligionsAndMetaphysics": true,
 			"metaphysics": true
+		},
+		{
+			"idea": "crop circles",
+			"plural": true,
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true,
+			"new": "0.2.2"
 		}
 	]
 }

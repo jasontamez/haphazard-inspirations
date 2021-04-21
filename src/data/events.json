@@ -310,6 +310,11 @@
 		},
 		{
 			"idea": "a dawning realization"
+		},
+		{
+			"idea": "a single siren in the distance",
+			"humanDistress": true,
+			"new": "0.2.2"
 		}
 	]
 }
