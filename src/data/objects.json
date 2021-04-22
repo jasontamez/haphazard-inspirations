@@ -266,7 +266,9 @@
 		},
 		{
 			"idea": "skull",
-			"humanDeath": true
+			"humanDeath": true,
+			"plural": "s",
+			"mod": "0.203"
 		},
 		{
 			"idea": "zebra-patterned fabric"
@@ -465,7 +467,9 @@
 		{
 			"idea": "fangs",
 			"animalDistress": true,
-			"humanDistress": true
+			"humanDistress": true,
+			"plural": true,
+			"mod": "0.2.3"
 		},
 		{
 			"idea": "elevators",
@@ -644,7 +648,9 @@
 			"idea": "a crowbar"
 		},
 		{
-			"idea": "a flat tire"
+			"idea": "flat tire",
+			"plural": "s",
+			"mod": "0.2.3"
 		},
 		{
 			"idea": "a trenchcoat"
@@ -697,7 +703,9 @@
 			"idea": "a new recipe"
 		},
 		{
-			"idea": "hard hats"
+			"idea": "hard hats",
+			"plural": true,
+			"mod": "0.2.3"
 		},
 		{
 			"idea": "a statue of an angel",
@@ -1692,7 +1700,9 @@
 		},
 		{
 			"idea": "ions",
-			"scifi": true
+			"scifi": true,
+			"plural": true,
+			"mod": "0.2.3"
 		},
 		{
 			"idea": "a blip on the radar"

@@ -98,6 +98,18 @@
 		{
 			"idea": "right now",
 			"new": "0.2.2"
+		},
+		{
+			"idea": "in the not-too-distant future",
+			"scifi": true,
+			"new": "0.2.3"
+		},
+		{
+			"idea": "in a post-apocalyptic future",
+			"scifi": true,
+			"humanDeath": true,
+			"humanMisery": true,
+			"new": "0.2.3"
 		}
 	]
 }

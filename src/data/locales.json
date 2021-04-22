@@ -919,6 +919,12 @@
 			"preposition": "at",
 			"tinySize": true,
 			"new": "0.2.2"
+		},
+		{
+			"idea": "Uganda",
+			"smallSize": true,
+			"political": true,
+			"new": "0.2.3"
 		}
 	]
 }
