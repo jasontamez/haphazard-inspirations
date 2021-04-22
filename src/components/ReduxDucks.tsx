@@ -308,6 +308,7 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 	switch(action.type) {
 		case OVERWRITE_STATE:
 			final = reduceAll(payload);
+			maybeUpdateTheme(state.theme, final.theme);
 			break;
 		case UPDATE_THEME:
 			final = reduceAll(state);

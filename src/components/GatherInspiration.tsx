@@ -404,6 +404,8 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 				added.push(i);
 			}
 		});
+		console.log(modded);
+		console.log(added);
 		if(modded.length > 1) {
 			ideas = ideas.map((i: any) => {
 				let prop = (i.idea as string) + " " + (i.type as string);
