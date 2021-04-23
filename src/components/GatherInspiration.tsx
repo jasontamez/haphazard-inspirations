@@ -395,19 +395,29 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 		let added: any[] = [];
 		const lastUpdate = status.new as string;
 		allIdeas.forEach((i: any) => {
-			if(i.mod && compareVersions.compare(i.mod, lastUpdate, ">")) {
-				let front: string = i.idea as string;
-				if(i.rename !== undefined) {
-					front = i.rename;
-					delete i.rename;
+			if(i.new) {
+				if(compareVersions.compare(i.new, lastUpdate, ">")) {
+					// no need to modify if it's new to us
+					i.mod && (delete i.mod);
+					i.rename && (delete i.rename);
+					added.push(i);	
 				}
-				delete i.mod;
-				modded[front + " " + (i.type as string)] = i;
-				modded.length++;
-			}
-			if(i.new && compareVersions.compare(i.new, lastUpdate, ">")) {
 				delete i.new;
-				added.push(i);
+			}
+			if(i.mod) {
+				if(compareVersions.compare(i.mod, lastUpdate, ">")) {
+					let front: string = i.idea as string;
+					if(i.rename !== undefined) {
+						front = i.rename;
+						delete i.rename;
+					}
+					delete i.mod;
+					modded[front + " " + (i.type as string)] = i;
+					modded.length++;
+				} else {
+					delete i.mod;
+					i.rename && (delete i.rename);
+				}
 			}
 		});
 		console.log(modded);
