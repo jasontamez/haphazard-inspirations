@@ -192,7 +192,11 @@ const Home = () => {
 		let formatting: string[] = [];
 		let singleFormatType = singleFormats;
 		let ideasToDisplay: string[] = [];
-		const modifyForGender = (idea: string, character: Character | null) => {
+		const maybeModifyForGender = (ideaObj: BasicIdea, character: Character | null) => {
+			let idea = ideaObj.getIdea();
+			if(!ideaObj.possessive) {
+				return idea;
+			}
 			let possessive = character ? character.genderPossessive || "their" : "one's";
 			return idea.replace(/\[THEIR\]/g, possessive);
 		};
@@ -206,19 +210,16 @@ const Home = () => {
 			});
 			return dispatch(updateIdeas([idea1, idea2, flushFlag, [idea1.idea!, idea2.idea!, "", idea1.idea!, ": ", idea2.idea!, ""]]));
 		}
-		const i1 = idea1.getIdea();
-		const i2 = idea2.getIdea();
+		const i1 = maybeModifyForGender(idea1, type2 === "character" ? idea2 as Character : null);
+		const i2 = maybeModifyForGender(idea2, type1 === "character" ? idea1 as Character : null);
 		let rawIdeas: string[] = [i1, i2];
 		if(type1 === "character" && type2 === "action")  {
 			// CHARACTER ACTION
-			let action = idea2.possessive ? modifyForGender(i2, idea1 as Character) : i1;
-			ideasToDisplay = [i1 + " " + action];
-			rawIdeas = [i1, action];
+			ideasToDisplay = [i1 + " " + i2];
 		} else if (type1 === "action" && type2 === "character") {
 			// ACTION CHARACTER
-			let action = idea1.possessive ? modifyForGender(i1, idea2 as Character) : i2;
-			rawIdeas = [i2 , action];
-			ideasToDisplay = [i2 + " " + action];
+			rawIdeas = [i2 , i1];
+			ideasToDisplay = [i2 + " " + i1];
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
 			// TIME TIME
 			// LOCALE LOCALE
@@ -237,26 +238,16 @@ const Home = () => {
 		} else if ((type1 === "time") || (type1 === "locale")) {
 			// TIME [ANY]
 			// LOCALE [ANY]
-			let two = i2;
-			type2 === "character" && (two = modifyForGender(i2, null));
-			rawIdeas = [two , i1];
-			ideasToDisplay = [two + " " + i1];
+			ideasToDisplay = [i2 + " " + i1];
+			rawIdeas = [i2, i1];
 		} else if ((type2 === "time") || (type2 === "locale")) {
 			// [ANY] TIME
 			// [ANY] LOCALE
-			let one = i1;
-			type1 === "character" && (one = modifyForGender(i1, null));
-			rawIdeas = [one, i2];
-			ideasToDisplay = [one + " " + i2];
+			ideasToDisplay = [i1 + " " + i2];
 		} else {
 			// ALL OTHERS
-			let one = i1;
-			let two = i2;
-			type1 === "character" && (one = modifyForGender(i1, null));
-			type2 === "character" && (two = modifyForGender(i2, null));
 			formatting = getFormat(doubleFormats);
-			rawIdeas = [one, two];
-			ideasToDisplay = [one, two];
+			ideasToDisplay = [i1, i2];
 		}
 		// Apply the singular format
 		if(formatting.length === 0) {
