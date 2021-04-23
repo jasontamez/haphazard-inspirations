@@ -10,7 +10,10 @@
 			"idea": "fighting with swords",
 			"historicalFiction": true,
 			"fantasy": true,
-			"medievalFantasy": true
+			"medievalFantasy": true,
+			"humanDeath": true,
+			"humanDistress": true,
+			"mod": "0.2.5"
 		},
 		{
 			"idea": "taking a pulse"
@@ -28,7 +31,9 @@
 			"idea": "ordering food"
 		},
 		{
-			"idea": "sleeping"
+			"idea": "sleeping soundly",
+			"mod": "0.2.5",
+			"rename": "sleeping"
 		},
 		{
 			"idea": "scratching an itch"
@@ -809,6 +814,18 @@
 			"humanDistress": true,
 			"possessive": true,
 			"new": "0.2.2"
+		},
+		{
+			"idea": "translating a foreign sign",
+			"new": "0.2.5"
+		},
+		{
+			"idea": "reading an ancient text",
+			"new": "0.2.5"
+		},
+		{
+			"idea": "cracking a secret code",
+			"new": "0.2.5"
 		}
 	]
 }

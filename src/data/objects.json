@@ -1800,6 +1800,15 @@
 			"mythsReligionsAndMetaphysics": true,
 			"metaphysics": true,
 			"new": "0.2.2"
+		},
+		{
+			"idea": "a campfire",
+			"new": "0.2.5"
+		},
+		{
+			"idea": "sleeping bag",
+			"plural": "s",
+			"new": "0.2.5"
 		}
 	]
 }
