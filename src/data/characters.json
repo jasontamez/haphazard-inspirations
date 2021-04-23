@@ -763,6 +763,20 @@
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"new": "0.2.2"
+		},
+		{
+			"idea": "elves",
+			"plural": true,
+			"fantasy": true,
+			"medievalFantasy": true,
+			"new": "0.2.5"
+		},
+		{
+			"ideas": "Slenderman",
+			"plural": false,
+			"horror": true,
+			"mythsReligionsAndMetaphysics": true,
+			"new": "0.2.5"
 		}
 	]
 }

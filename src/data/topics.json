@@ -1023,6 +1023,15 @@
 			"sexual": true,
 			"humanDistress": true,
 			"new": "0.2.2"
+		},
+		{
+			"idea": "side effects",
+			"humanDistress": true,
+			"new": "0.2.5"
+		},
+		{
+			"idea": "an unexpected reaction",
+			"new": "0.2.5"
 		}
 	]
 }

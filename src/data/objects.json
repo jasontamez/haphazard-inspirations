@@ -1809,6 +1809,18 @@
 			"idea": "sleeping bag",
 			"plural": "s",
 			"new": "0.2.5"
+		},
+		{
+			"idea": "an empty coffin",
+			"horror": true,
+			"humanDeath": true,
+			"new": "0.2.5"
+		},
+		{
+			"idea": "strange shadows",
+			"plural": true,
+			"horror": true,
+			"new": "0.2.5"
 		}
 	]
 }

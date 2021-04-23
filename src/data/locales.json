@@ -862,7 +862,6 @@
 			"idea": "the UN",
 			"preposition": "at",
 			"properName": true,
-			"specific": true,
 			"smallSize": true
 		},
 		{
@@ -897,7 +896,6 @@
 		},
 		{
 			"idea": "Mecca",
-			"specific": true,
 			"smallSize": true,
 			"political": true,
 			"mythsReligionsAndMetaphysics": true,
@@ -905,7 +903,6 @@
 		},
 		{
 			"idea": "Camelot",
-			"specific": true,
 			"smallSize": true,
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
@@ -918,13 +915,26 @@
 			"idea": "the market",
 			"preposition": "at",
 			"tinySize": true,
-			"new": "0.2.2"
+			"specific": false,
+			"mod": "0.2.5"
 		},
 		{
 			"idea": "Uganda",
 			"smallSize": true,
 			"political": true,
 			"new": "0.2.3"
+		},
+		{
+			"idea": "day-care center",
+			"specific": false,
+			"tinySize": true,
+			"new": "0.2.5"
+		},
+		{
+			"idea": "nursery",
+			"specific": false,
+			"tinySize": true,
+			"new": "0.2.5"
 		}
 	]
 }
