@@ -395,8 +395,13 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 		const lastUpdate = status.new as string;
 		allIdeas.forEach((i: any) => {
 			if(i.mod && compareVersions.compare(i.mod, lastUpdate, ">")) {
+				let front: string = i.idea as string;
+				if(i.rename !== undefined) {
+					front = i.rename;
+					delete i.rename;
+				}
 				delete i.mod;
-				modded[(i.idea as string) + " " + (i.type as string)] = i;
+				modded[front + " " + (i.type as string)] = i;
 				modded.length++;
 			}
 			if(i.new && compareVersions.compare(i.new, lastUpdate, ">")) {
@@ -408,12 +413,7 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 		console.log(added);
 		if(modded.length > 1) {
 			ideas = ideas.map((i: any) => {
-				let front: string = i.idea as string;
-				if(i.rename !== undefined) {
-					front = i.rename;
-					delete i.rename;
-				}
-				let prop = front + " " + (i.type as string);
+				let prop = (i.idea as string) + " " + (i.type as string);
 				return modded[prop] || i;
 			});
 			sent = sent.map((s: UsedIdea) => {

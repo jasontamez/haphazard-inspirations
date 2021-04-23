@@ -998,14 +998,14 @@
 			"idea": "the Hajj",
 			"mythsReligionsAndMetaphysics": true,
 			"islam": true,
-			"mod": "0.2.3",
+			"mod": "0.2.4",
 			"rename": "the Haj"
 		},
 		{
 			"idea": "Hanukkah",
 			"mythsReligionsAndMetaphysics": true,
 			"judaism": true,
-			"mod": "0.2.3",
+			"mod": "0.2.4",
 			"rename": "Hannukah"
 		},
 		{
