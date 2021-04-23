@@ -408,7 +408,12 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 		console.log(added);
 		if(modded.length > 1) {
 			ideas = ideas.map((i: any) => {
-				let prop = (i.idea as string) + " " + (i.type as string);
+				let front: string = i.idea as string;
+				if(i.rename !== undefined) {
+					front = i.rename;
+					delete i.rename;
+				}
+				let prop = front + " " + (i.type as string);
 				return modded[prop] || i;
 			});
 			sent = sent.map((s: UsedIdea) => {

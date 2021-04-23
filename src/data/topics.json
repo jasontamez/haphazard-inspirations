@@ -995,14 +995,18 @@
 			"scifi": true
 		},
 		{
-			"idea": "the Haj",
+			"idea": "the Hajj",
 			"mythsReligionsAndMetaphysics": true,
-			"islam": true
+			"islam": true,
+			"mod": "0.2.3",
+			"rename": "the Haj"
 		},
 		{
-			"idea": "Hannukah",
+			"idea": "Hanukkah",
 			"mythsReligionsAndMetaphysics": true,
-			"judaism": true
+			"judaism": true,
+			"mod": "0.2.3",
+			"rename": "Hannukah"
 		},
 		{
 			"idea": "an app that does nothing but make fart noises",
