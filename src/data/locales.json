@@ -925,16 +925,20 @@
 			"new": "0.2.3"
 		},
 		{
-			"idea": "day-care center",
+			"idea": "a day-care center",
 			"specific": false,
 			"tinySize": true,
-			"new": "0.2.5"
+			"new": "0.2.5",
+			"mod": "0.2.7",
+			"rename": "day-care center"
 		},
 		{
-			"idea": "nursery",
+			"idea": "a nursery",
 			"specific": false,
 			"tinySize": true,
-			"new": "0.2.5"
+			"new": "0.2.5",
+			"mod": "0.2.7",
+			"rename": "nursery"
 		}
 	]
 }
