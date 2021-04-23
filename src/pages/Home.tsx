@@ -211,12 +211,12 @@ const Home = () => {
 		let rawIdeas: string[] = [i1, i2];
 		if(type1 === "character" && type2 === "action")  {
 			// CHARACTER ACTION
-			let action = modifyForGender(i2, idea1 as Character);
+			let action = idea2.possessive ? modifyForGender(i2, idea1 as Character) : i1;
 			ideasToDisplay = [i1 + " " + action];
 			rawIdeas = [i1, action];
 		} else if (type1 === "action" && type2 === "character") {
 			// ACTION CHARACTER
-			let action = modifyForGender(i1, idea2 as Character);
+			let action = idea1.possessive ? modifyForGender(i1, idea2 as Character) : i2;
 			rawIdeas = [i2 , action];
 			ideasToDisplay = [i2 + " " + action];
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {

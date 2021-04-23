@@ -47,6 +47,7 @@ export class BasicIdea {
 	type?: string
 	mod?: string
 	new?: string
+	possessive?: boolean
 	fantasy?: boolean
 	medievalFantasy?: boolean
 	historicalFiction?: boolean
