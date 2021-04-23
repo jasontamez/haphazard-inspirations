@@ -50,7 +50,7 @@ const Settings = () => {
 						<IonInput inputmode="numeric" step="1" type="number" max="7305" min="1" onIonChange={(e) => dispatch(setNumber(["flushDays", Number((e.target as HTMLInputElement).value)]))} value={settings.flushDays} />
 					</IonItem>
 					<IonItem>
-						<IonLabel>Empty the queue of recently-shown ideas the next time you generate an inspiration.</IonLabel>
+						<IonLabel>Clear and reset the internal list of recently-shown ideas the next time you generate an inspiration</IonLabel>
 						<IonToggle onClick={() => dispatch(setFlushNowStatus(!status.flushNow))} slot="end" checked={status.flushNow} />
 					</IonItem>
 				</IonList>
