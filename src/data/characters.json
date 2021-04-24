@@ -9,7 +9,8 @@
 		"article": "a",
 		"numerals": false,
 		"realPerson": false,
-		"genderPossessive": false
+		"genderPossessive": false,
+		"fictionalCharacter": false
 	},
 	"contents": [
 		{
@@ -43,7 +44,9 @@
 			"properName": true,
 			"modern": true,
 			"plural": false,
-			"genderPossessive": "his"
+			"genderPossessive": "his",
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "long-haired cat",
@@ -163,7 +166,9 @@
 			"fantasy": true,
 			"superhero": true,
 			"plural": false,
-			"genderPossessive": "his"
+			"genderPossessive": "his",
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "camel"
@@ -203,7 +208,9 @@
 			"properName": true,
 			"modern": true,
 			"plural": false,
-			"genderPossessive": "his"
+			"genderPossessive": "his",
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "the Pope",
@@ -283,7 +290,9 @@
 			"horror": true,
 			"plural": false,
 			"genderPossessive": "its",
-			"monster": true
+			"monster": true,
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "bumbling robber",
@@ -334,7 +343,9 @@
 			"idea": "the Tooth Fairy",
 			"mythsReligionsAndMetaphysics": true,
 			"fairyTales": true,
-			"plural": false
+			"plural": false,
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "a basket case",
@@ -356,7 +367,9 @@
 			"properName": true,
 			"plural": true,
 			"genderPossessive": "its",
-			"monster": true
+			"monster": true,
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "turkey"
@@ -777,7 +790,9 @@
 			"plural": false,
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,
-			"new": "0.2.5"
+			"new": "0.2.5",
+			"fictionalCharacter": true,
+			"mod": "0.2.8"
 		}
 	]
 }

@@ -155,6 +155,7 @@ class AnObject extends PossiblePlural {
 }
 export class Character extends PossiblePlural {
 	realPerson?: boolean
+	fictionalCharacter?: boolean
 	getIdea() {
 		if(this.realPerson) {
 			return this.idea || "idea";

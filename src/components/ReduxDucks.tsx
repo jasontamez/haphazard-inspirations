@@ -148,6 +148,7 @@ export interface ContentObject {
 }
 export interface PersonObject {
 	realPerson: boolean
+	fictionalCharacter: boolean
 }
 export interface EventObject {
 	nonPunctualEvent: boolean
@@ -244,7 +245,8 @@ export const blankAppState: StateObject = {
 		tobacco: false
 	},
 	person: {
-		realPerson: false
+		realPerson: false,
+		fictionalCharacter: false
 	},
 	event: {
 		nonPunctualEvent: false

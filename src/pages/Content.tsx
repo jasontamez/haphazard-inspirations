@@ -266,6 +266,10 @@ const ContentFilters = () => {
 						<IonToggle onClick={() => toggleTempPerson("realPerson")} slot="end" checked={person.realPerson} />
 					</IonItem>
 					<IonItem>
+						<IonLabel>Specific fictional characters</IonLabel>
+						<IonToggle onClick={() => toggleTempPerson("fictionalCharacter")} slot="end" checked={person.fictionalCharacter} />
+					</IonItem>
+					<IonItem>
 						<IonLabel>Events that generally last longer than an hour</IonLabel>
 						<IonToggle onClick={() => toggleTempEvent("nonPunctualEvent")} slot="end" checked={event.nonPunctualEvent} />
 					</IonItem>
