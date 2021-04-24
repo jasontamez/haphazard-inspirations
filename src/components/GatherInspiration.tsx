@@ -17,30 +17,7 @@ import {
 	StatusObject
 } from '../components/ReduxDucks';
 import compareVersions from 'compare-versions';
-
-const EnglishNumbers = [
-	"zero",
-	"one",
-	"two",
-	"three",
-	"four",
-	"five",
-	"six",
-	"seven",
-	"eight",
-	"nine",
-	"ten",
-	"eleven",
-	"twelve",
-	"thirteen",
-	"fourteen",
-	"fifteen",
-	"sixteen",
-	"seventeen",
-	"eighteen",
-	"nineteen",
-	"twenty"
-];
+import converter from 'number-to-words';
 
 export class BasicIdea {
 	idea?: string
@@ -97,21 +74,17 @@ class PossiblePlural extends BasicIdea {
 	max?: number
 	rateBy?: number | "incremental"
 	rateFavorsLower?: boolean
-	plural?: string | boolean
+	plural?: string | boolean | [string, string]
 	article?: string
 	numerals?: boolean
 	genderPossessive?: string | false
-	getNumber(n: number) {
-		return EnglishNumbers[n];
-	}
 	getIdea(Idea = this) {
-		const plu = Idea.plural;
-		const idea = Idea.idea || "idea";
-		if((typeof plu) === "boolean") {
+		const plural = Idea.plural;
+		const idea = Idea.idea || "blank idea";
+		if(plural === true || plural === false) {
+			// Permanently plural or singular. No further action needed.
 			return idea;
 		}
-		const plural = (plu === "" ? "" : (plu || "s"));
-		const article = Idea.article || "a";
 		let amounts: number[] = [];
 		const rate = Idea.rateBy === undefined ? 1 : Idea.rateBy;
 		let min = Idea.min || 0;
@@ -144,14 +117,25 @@ class PossiblePlural extends BasicIdea {
 			}
 		}
 		let choice = amounts[Math.floor(Math.random() * amounts.length)];
+		if(Array.isArray(plural)) {
+			// [pre number, post number]
+			if(choice === 1) {
+				return idea;
+			} else if (Idea.numerals) {
+				return plural[0] + String(choice) + plural[1];
+			}
+			return plural[0] + converter.toWords(choice) + plural[1];
+		}
+		const pluralEnd: string = (plural === "" ? "" : (plural || "s"));
+		const article = Idea.article || "a";
 		if(choice === 0) {
-			return idea + plural;
+			return idea + pluralEnd;
 		} else if (choice === 1) {
 			return article + " " + idea;
 		} else if (Idea.numerals) {
-			return choice.toString() + " " + idea + plural;
+			return choice.toString() + " " + idea + pluralEnd;
 		}
-		return EnglishNumbers[choice] + " " + idea + plural;
+		return converter.toWords(choice) + " " + idea + pluralEnd;
 	}
 }
 class AnObject extends PossiblePlural {
