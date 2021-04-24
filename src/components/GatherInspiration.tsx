@@ -587,3 +587,30 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 		console.log(e);
 	});
 };
+
+
+export const hiddenDebugInfo = (callback: Function) => {
+	Promise.all([
+		IdeaStorage.getItem("sent"),
+		IdeaStorage.getItem("ideas"),
+		IdeaStorage.getItem("omit")
+	]).then((values: any[]) => {
+		let output: string[] = [];
+		let sent = values[0] as UsedIdea[];
+		let ideas = values[1] as any[];
+		let omit = values[2] as Omit[];
+		output.push("SENT", "----");
+		sent.forEach((s: UsedIdea) => {
+			output.push(JSON.stringify(s));
+		});
+		output.push("", "", "IDEAS", "-----");
+		ideas.forEach((i: any) => {
+			output.push(JSON.stringify(i));
+		});
+		output.push("", "", "OMITTED", "-------");
+		omit.forEach((o: Omit) => {
+			output.push(JSON.stringify(o));
+		});
+		callback(output);
+	});
+};
