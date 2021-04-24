@@ -1,5 +1,6 @@
 {
 	"default": {
+		"type": "object",
 		"min": 1,
 		"max": 5,
 		"rateBy": 1,

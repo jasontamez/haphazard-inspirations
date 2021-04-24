@@ -1,5 +1,6 @@
 {
 	"default": {
+		"type": "character",
 		"min": 1,
 		"max": 5,
 		"rateBy": 2,

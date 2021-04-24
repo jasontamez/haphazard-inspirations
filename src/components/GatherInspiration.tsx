@@ -167,10 +167,8 @@ class AnObject extends PossiblePlural {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "object";
 	}
 }
-
 export class Character extends PossiblePlural {
 	realPerson?: boolean
 	getIdea() {
@@ -191,7 +189,6 @@ export class Character extends PossiblePlural {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "character";
 	}
 }
 
@@ -221,7 +218,6 @@ class Locale extends BasicIdea {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "locale";
 	}
 }
 
@@ -240,7 +236,6 @@ class AnEvent extends BasicIdea {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "event";
 	}
 }
 
@@ -257,7 +252,6 @@ class Topic extends BasicIdea {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "topic";
 	}
 }
 
@@ -274,7 +268,6 @@ class ATime extends BasicIdea {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "time";
 	}
 }
 
@@ -291,7 +284,6 @@ class Action extends BasicIdea {
 			(prop: string) =>
 				(newObj[prop] = initializer[prop])
 		);
-		this.type = "action";
 	}
 }
 

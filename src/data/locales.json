@@ -1,5 +1,6 @@
 {
 	"default": {
+		"type": "locale",
 		"specific": true,
 		"preposition": "in"
 	},

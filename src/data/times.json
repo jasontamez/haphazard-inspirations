@@ -1,5 +1,7 @@
 {
-	"default": {},
+	"default": {
+		"type": "time"
+	},
 	"contents": [
 		{
 			"idea": "on Christmas Eve",
