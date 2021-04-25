@@ -386,15 +386,12 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 					let front: string = i.idea as string;
 					if(i.rename !== undefined) {
 						front = i.rename;
-						delete i.rename;
 					}
-					delete i.mod;
 					modded[front + " " + (i.type as string)] = i;
 					modded.length++;
-				} else {
-					delete i.mod;
-					i.rename && (delete i.rename);
 				}
+				delete i.mod;
+				i.rename && (delete i.rename);
 			}
 		});
 		console.log(modded);
