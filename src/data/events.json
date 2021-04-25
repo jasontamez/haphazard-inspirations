@@ -316,6 +316,18 @@
 			"idea": "a single siren in the distance",
 			"humanDistress": true,
 			"new": "0.2.2"
+		},
+		{
+			"idea": "a game of poker",
+			"new": "0.2.8"
+		},
+		{
+			"idea": "a game of blackjack",
+			"new": "0.2.8"
+		},
+		{
+			"idea": "a game of solitaire",
+			"new": "0.2.8"
 		}
 	]
 }

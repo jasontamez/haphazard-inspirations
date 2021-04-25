@@ -217,7 +217,10 @@
 			"idea": "believing in magic"
 		},
 		{
-			"idea": "taking a shower with clothes still on"
+			"idea": "taking a shower with [THEIR] clothes still on",
+			"possessive": true,
+			"mod": "0.2.8",
+			"rename": "taking a shower with clothes still on"
 		},
 		{
 			"idea": "reaching a new height"
@@ -831,6 +834,16 @@
 		{
 			"idea": "groaning",
 			"new": "0.2.5"
+		},
+		{
+			"idea": "falling down, unable to get back up",
+			"new": "0.2.8"
+		},
+		{
+			"idea": "cracking [THEIR] knuckles",
+			"humanDistress": true,
+			"possessive": true,
+			"new": "0.2.8"
 		}
 	]
 }

@@ -75,7 +75,9 @@
 		},
 		{
 			"idea": "posters on a bedroom wall",
-			"plural": true
+			"plural": "",
+			"max": 15,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "a jump rope"
@@ -121,7 +123,8 @@
 		{
 			"idea": "jello shots",
 			"alcohol": true,
-			"plural": true
+			"max": 10,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "parasites",
@@ -381,7 +384,9 @@
 		},
 		{
 			"idea": "jelly beans",
-			"plural": true
+			"min": 5,
+			"max": 100,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "a rusty nail"
@@ -413,8 +418,10 @@
 			"humanDistress": true
 		},
 		{
-			"idea": "newts",
-			"plural": true
+			"idea": "a newt",
+			"plural": true,
+			"mod": "0.2.8",
+			"rename": "newts"
 		},
 		{
 			"idea": "a silver trident",
@@ -483,7 +490,10 @@
 			"idea": "a jukebox"
 		},
 		{
-			"idea": "planks of wood"
+			"idea": "a plank of wood",
+			"plural": ["", " planks of wood"],
+			"mod": "0.2.8",
+			"rename": "planks of wood"
 		},
 		{
 			"idea": "a small piece of metal"
@@ -780,7 +790,9 @@
 		{
 			"idea": "a car that flies",
 			"fantasy": true,
-			"modern": true
+			"scifi": true,
+			"modern": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "a dusty bookshelf"
@@ -993,7 +1005,9 @@
 			"idea": "a tuba"
 		},
 		{
-			"idea": "a tube of toothpaste"
+			"idea": "a tube of toothpaste",
+			"plural": ["", " tubes of toothpaste"],
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "smelly socks",
@@ -1621,7 +1635,9 @@
 			"plural": true
 		},
 		{
-			"idea": "sheet music"
+			"idea": "sheet music",
+			"plural": ["", " pages of sheet music"],
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "polka dots",
@@ -1822,6 +1838,20 @@
 			"plural": true,
 			"horror": true,
 			"new": "0.2.5"
+		},
+		{
+			"idea": "pyramid",
+			"plural": "s",
+			"rateBy": 2,
+			"max": 3,
+			"new": "0.2.8"
+		},
+		{
+			"idea": "a bag of sand",
+			"plural": ["", " bags of sand"],
+			"rateBy": "incremental",
+			"max": 15,
+			"new": "0.2.8"
 		}
 	]
 }

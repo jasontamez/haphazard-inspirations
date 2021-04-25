@@ -123,7 +123,9 @@
 			"idea": "Leonardo da Vinci",
 			"properName": true,
 			"plural": false,
-			"genderPossessive": "his"
+			"genderPossessive": "his",
+			"realPerson": true,
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "crow"
@@ -545,7 +547,9 @@
 		},
 		{
 			"idea": "average, silly, unremarkable, yet utterly terrifying clown",
-			"max": 3
+			"max": 3,
+			"article": "an",
+			"mod": "0.2.8"
 		},
 		{
 			"idea": "your first pet",
