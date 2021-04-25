@@ -163,11 +163,10 @@ const Home = () => {
 	let doubleLocaleFormats: Format = [
 		["Create a story set ", "."],
 		["Your tale begins and ends ", "."],
-		["A story set ", " might be interesting."],
+		["What happens ", "?"],
 		["Ruminate on goings-on ", "."],
-		["Try writing a story set ", "."],
-		["Write about anything, but set the story ", "."],
-		["Imagine what happens ", " and start writing."]
+		["Set your story ", "."],
+		["Imagine what happens ", "."]
 	];
 
 	const getFormat = (format: Format) => {
