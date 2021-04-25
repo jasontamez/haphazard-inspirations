@@ -36,8 +36,7 @@ const Home = () => {
 	useIonViewDidEnter(() => {
 		dispatch(currentPage("home"));
 	});
-	// fetchStatus controls whether or not we can spit out a new idea.
-	const fetchStatus: StatusObject = state.status;
+	const fetchStatus: StatusObject = reduceStatus(state.status);
 	const animToggle = Math.floor(Math.random() * 3);
 
 	// Handle shake-to-update
@@ -70,7 +69,10 @@ const Home = () => {
 				case "new items loaded":
 					dispatch(deleteNewItemsFlag());
 					dispatch(setTotal(output.value));
+					dispatch(setOmitStatus(true));
 					delete status.new;
+					status.total = output.value;
+					status.omitsChanged = true;
 					break;
 				case "omissions noted":
 					status.omitsChanged = false;
