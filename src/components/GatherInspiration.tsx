@@ -26,10 +26,11 @@ export class BasicIdea {
 	new?: string
 	fantasy?: boolean
 	medievalFantasy?: boolean
+	superhero?: boolean
+	fairyTalesAndUrbanLegends?: boolean
 	historicalFiction?: boolean
 	western?: boolean
 	samurai?: boolean
-	superhero?: boolean
 	horror?: boolean
 	scifi?: boolean
 	spacefaring?: boolean
@@ -156,6 +157,7 @@ class AnObject extends PossiblePlural {
 	}
 }
 export class Character extends PossiblePlural {
+	monster?: boolean
 	realPerson?: boolean
 	fictionalCharacter?: boolean
 	getIdea() {

@@ -89,7 +89,7 @@
 			"fantasy": true,
 			"plural": false,
 			"mythsReligionsAndMetaphysics": true,
-			"fairyTales": true,
+			"fairyTalesAndUrbanLegends": true,
 			"genderPossessive": "his"
 		},
 		{
@@ -116,7 +116,7 @@
 			"idea": "monsters under the bed",
 			"plural": true,
 			"fantasy": true,
-			"fairyTales": true,
+			"fairyTalesAndUrbanLegends": true,
 			"monster": true
 		},
 		{
@@ -344,7 +344,7 @@
 		{
 			"idea": "the Tooth Fairy",
 			"mythsReligionsAndMetaphysics": true,
-			"fairyTales": true,
+			"fairyTalesAndUrbanLegends": true,
 			"plural": false,
 			"fictionalCharacter": true,
 			"mod": "0.2.8"
@@ -787,11 +787,14 @@
 			"plural": true,
 			"fantasy": true,
 			"medievalFantasy": true,
+			"fairyTalesAndUrbanLegends": true,
 			"new": "0.2.5"
 		},
 		{
 			"ideas": "Slenderman",
 			"plural": false,
+			"fantasy": true,
+			"fairyTalesAndUrbanLegends": true,
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,
 			"new": "0.2.5",

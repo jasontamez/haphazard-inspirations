@@ -123,7 +123,7 @@ export interface GenresObject {
 	fantasy: boolean
 	medievalFantasy: boolean
 	superhero: boolean
-	fairyTales: boolean
+	fairyTalesAndUrbanLegends: boolean
 	historicalFiction: boolean
 	western: boolean
 	samurai: boolean
@@ -221,7 +221,7 @@ export const blankAppState: StateObject = {
 		fantasy: false,
 		medievalFantasy: false,
 		superhero: false,
-		fairyTales: false,
+		fairyTalesAndUrbanLegends: false,
 		historicalFiction: false,
 		western: false,
 		samurai: false,

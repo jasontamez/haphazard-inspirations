@@ -36,6 +36,7 @@ All are optional and take a boolean value. Unused properties are treated as if t
 * `fantasy`
 * `medievalFantasy`
 * `superhero`
+* `fairyTalesAndUrbanLegends`
 * `historicalFiction`
 * `western`
 * `samurai`
@@ -108,6 +109,7 @@ If a `plural` string or string array is found, the generator will randomly assig
 
 * `realPerson`: `boolean` - if `true`, this is a real person or persons, living or dead
 * `fictionalCharacter`: `boolean` - if `true`, this is a specific fictional entity (e.g. `true` for "Dracula", but `false` for "vampire")
+* `monster`: `boolean` - if true, this is some sort of monstrous, fictional creature
 
 ## `Locale`
 
