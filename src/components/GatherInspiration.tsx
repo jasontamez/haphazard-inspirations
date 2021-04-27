@@ -20,8 +20,8 @@ import compareVersions from 'compare-versions';
 import converter from 'number-to-words';
 
 export class BasicIdea {
-	idea?: string
-	type?: string
+	idea: string
+	type: string
 	mod?: string
 	new?: string
 	fantasy?: boolean
@@ -49,8 +49,10 @@ export class BasicIdea {
 	alcohol?: boolean
 	tobacco?: boolean
 	modern?: boolean
-	// eslint-disable-next-line
-	constructor() {}
+	constructor() {
+		this.idea = "idea";
+		this.type = "unknown";
+	}
 	getIdea() {
 		return this.idea || "idea";
 	}
@@ -185,7 +187,6 @@ class Locale extends BasicIdea {
 	largeSize?: boolean
 	mediumSize?: boolean
 	smallSize?: boolean
-	variableSize?: boolean
 	tinySize?: boolean
 	specific?: boolean
 	getIdea() {

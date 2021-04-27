@@ -78,7 +78,7 @@ These share a number of properties, so will be lumped together.
   * `false` indicates it has no possessive pronoun
 * `plural`: `string | boolean | [string, string]`
   * `string` will be appended to the `idea` if it is deemed to be plural
-  * The array, if present, overrides the above: if deemed plural, the idea will generate `string[0]+idea+string[1]`
+  * The array, if present, overrides the above: if deemed plural, the idea will ignore the `idea` property and generate `array[0] + number + array[1]`
   * `boolean` indicates the idea is permanently plural (`true`) or singular (`false`)
 
 ### Potentially mandatory properties
@@ -99,7 +99,7 @@ If a `plural` string or string array is found, the generator will randomly assig
     8. a random number is chosen from the array and assigned to `idea`
   * `"incremental"` follows the above, but the `value` is *incremented* by `1` each time
 * `rateFavorsLower`: `boolean` - if `true`, the *counter* starts at `max` and is *decremented* by `1` each loop
-* `numerals`: boolean
+* `numerals`: `boolean`
   * `true`: the number is represented by `String(number)` ("4", "27", etc)
   * `false`: the number is translated into English words ("four", "twenty-seven", etc)
 * `article`: `string` ("a", "an", "the") which will be used instead if the number turns out to be `1`
@@ -131,7 +131,6 @@ One of the following properties should be set to `true`. The others may be set `
 * `mediumSize` - Country-sized, generally somewhere between Jamaica and India
 * `smallSize` - Smaller than Jamaica, generally cities and islands
 * `tinySize` - Very small locations, generally no bigger than a city block or two
-* `variableSize` - Locales of an unknown and, unknowable size ("heaven")
 
 ## `AnEvent`
 
