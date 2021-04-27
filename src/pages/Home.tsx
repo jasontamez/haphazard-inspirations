@@ -24,7 +24,7 @@ import {
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import { Shake } from '@ionic-native/shake';
-import { BasicIdea, Character, getNewIdeas, initializeIdeas, pruneIdeas, loadNewAndModifiedIdeas } from '../components/GatherInspiration';
+import { BasicIdea, Character, Action, getNewIdeas, initializeIdeas, pruneIdeas, loadNewAndModifiedIdeas } from '../components/GatherInspiration';
 import './Home.css';
 import { starOutline, star, bulbOutline } from 'ionicons/icons';
 import fireSwal from '../components/Swal';
@@ -195,7 +195,7 @@ const Home = () => {
 		let ideasToDisplay: string[] = [];
 		const maybeModifyForGender = (ideaObj: BasicIdea, character: Character | null) => {
 			let idea = ideaObj.getIdea();
-			if(!ideaObj.possessive) {
+			if(!(ideaObj as Action).possessive) {
 				return idea;
 			}
 			let possessive = character ? character.genderPossessive || "their" : "one's";

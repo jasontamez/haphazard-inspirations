@@ -24,7 +24,6 @@ export class BasicIdea {
 	type?: string
 	mod?: string
 	new?: string
-	possessive?: boolean
 	fantasy?: boolean
 	medievalFantasy?: boolean
 	historicalFiction?: boolean
@@ -44,6 +43,7 @@ export class BasicIdea {
 	christianity?: boolean
 	islam?: boolean
 	greekRomanMyth?: boolean
+	metaphysics?: boolean
 	sexual?: boolean
 	illicitSubstances?: boolean
 	alcohol?: boolean
@@ -256,7 +256,8 @@ class ATime extends BasicIdea {
 	}
 }
 
-class Action extends BasicIdea {
+export class Action extends BasicIdea {
+	possessive?: boolean
 	constructor(initializer: any) {
 		super();
 		let newObj: any = this;

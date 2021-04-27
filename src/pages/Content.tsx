@@ -146,7 +146,7 @@ const ContentFilters = () => {
 						<IonToggle onClick={() => toggleTempLocale("political")} slot="end" checked={locales.political} />
 					</IonItem>
 					<IonItem>
-						<IonLabel>Large locations (India, the Amazon basic, etc)</IonLabel>
+						<IonLabel>Large locations (India, the Amazon basin, etc)</IonLabel>
 						<IonToggle onClick={() => toggleTempLocale("largeSize")} slot="end" checked={locales.largeSize} />
 					</IonItem>
 					<IonItem>
