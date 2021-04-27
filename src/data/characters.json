@@ -45,8 +45,7 @@
 			"modern": true,
 			"plural": false,
 			"genderPossessive": "his",
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "long-haired cat",
@@ -124,8 +123,7 @@
 			"properName": true,
 			"plural": false,
 			"genderPossessive": "his",
-			"realPerson": true,
-			"mod": "0.2.8"
+			"realPerson": true
 		},
 		{
 			"idea": "crow"
@@ -169,8 +167,7 @@
 			"superhero": true,
 			"plural": false,
 			"genderPossessive": "his",
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "camel"
@@ -211,8 +208,7 @@
 			"modern": true,
 			"plural": false,
 			"genderPossessive": "his",
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "the Pope",
@@ -293,8 +289,7 @@
 			"plural": false,
 			"genderPossessive": "its",
 			"monster": true,
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "bumbling robber",
@@ -346,8 +341,7 @@
 			"mythsReligionsAndMetaphysics": true,
 			"fairyTalesAndUrbanLegends": true,
 			"plural": false,
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "a basket case",
@@ -370,8 +364,7 @@
 			"plural": true,
 			"genderPossessive": "its",
 			"monster": true,
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "turkey"
@@ -548,8 +541,7 @@
 		{
 			"idea": "average, silly, unremarkable, yet utterly terrifying clown",
 			"max": 3,
-			"article": "an",
-			"mod": "0.2.8"
+			"article": "an"
 		},
 		{
 			"idea": "your first pet",
@@ -763,8 +755,7 @@
 			"mythsReligionsAndMetaphysics": true,
 			"metaphysics": true,
 			"max": 13,
-			"rateBy": "incremental",
-			"mod": "0.2.2"
+			"rateBy": "incremental"
 		},
 		{
 			"idea": "demons",
@@ -779,16 +770,14 @@
 			"plural": true,
 			"metaphysics": true,
 			"mythsReligionsAndMetaphysics": true,
-			"christianity": true,
-			"new": "0.2.2"
+			"christianity": true
 		},
 		{
 			"idea": "elves",
 			"plural": true,
 			"fantasy": true,
 			"medievalFantasy": true,
-			"fairyTalesAndUrbanLegends": true,
-			"new": "0.2.5"
+			"fairyTalesAndUrbanLegends": true
 		},
 		{
 			"ideas": "Slenderman",
@@ -797,9 +786,7 @@
 			"fairyTalesAndUrbanLegends": true,
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,
-			"new": "0.2.5",
-			"fictionalCharacter": true,
-			"mod": "0.2.8"
+			"fictionalCharacter": true
 		}
 	]
 }

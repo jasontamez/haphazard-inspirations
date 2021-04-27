@@ -81,37 +81,30 @@
 		},
 		{
 			"idea": "during the 1980s",
-			"modern": true,
-			"new": "0.2.2"
+			"modern": true
 		},
 		{
-			"idea": "during the Great Depression",
-			"new": "0.2.2"
+			"idea": "during the Great Depression"
 		},
 		{
 			"idea": "during prehistoric times",
-			"historicalFiction": true,
-			"new": "0.2.2"
+			"historicalFiction": true
 		},
 		{
-			"idea": "on the day after tomorrow",
-			"new": "0.2.2"
+			"idea": "on the day after tomorrow"
 		},
 		{
-			"idea": "right now",
-			"new": "0.2.2"
+			"idea": "right now"
 		},
 		{
 			"idea": "in the not-too-distant future",
-			"scifi": true,
-			"new": "0.2.3"
+			"scifi": true
 		},
 		{
 			"idea": "in a post-apocalyptic future",
 			"scifi": true,
 			"humanDeath": true,
-			"humanMisery": true,
-			"new": "0.2.3"
+			"humanMisery": true
 		}
 	]
 }

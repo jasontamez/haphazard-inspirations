@@ -909,37 +909,34 @@
 			"christianity": true,
 			"fantasy": true,
 			"medievalFantasy": true,
-			"historicalFiction": true,
-			"mod": "0.2.2"
+			"historicalFiction": true
 		},
 		{
 			"idea": "the market",
 			"preposition": "at",
 			"tinySize": true,
-			"specific": false,
-			"mod": "0.2.5"
+			"specific": false
 		},
 		{
 			"idea": "Uganda",
 			"smallSize": true,
-			"political": true,
-			"new": "0.2.3"
+			"political": true
 		},
 		{
 			"idea": "a day-care center",
 			"specific": false,
-			"tinySize": true,
-			"new": "0.2.5",
-			"mod": "0.2.7",
-			"rename": "day-care center"
+			"tinySize": true
 		},
 		{
 			"idea": "a nursery",
 			"specific": false,
-			"tinySize": true,
-			"new": "0.2.5",
-			"mod": "0.2.7",
-			"rename": "nursery"
+			"tinySize": true
+		},
+		{
+			"idea": "Wonderland",
+			"fantasy": true,
+			"fairyTalesAndUrbanLegends": true,
+			"new": "0.2.9"
 		}
 	]
 }

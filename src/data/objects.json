@@ -76,8 +76,7 @@
 		{
 			"idea": "posters on a bedroom wall",
 			"plural": "",
-			"max": 15,
-			"mod": "0.2.8"
+			"max": 15
 		},
 		{
 			"idea": "a jump rope"
@@ -123,8 +122,7 @@
 		{
 			"idea": "jello shots",
 			"alcohol": true,
-			"max": 10,
-			"mod": "0.2.8"
+			"max": 10
 		},
 		{
 			"idea": "parasites",
@@ -271,8 +269,7 @@
 		{
 			"idea": "skull",
 			"humanDeath": true,
-			"plural": "s",
-			"mod": "0.2.3"
+			"plural": "s"
 		},
 		{
 			"idea": "zebra-patterned fabric"
@@ -385,8 +382,7 @@
 		{
 			"idea": "jelly beans",
 			"min": 5,
-			"max": 100,
-			"mod": "0.2.8"
+			"max": 100
 		},
 		{
 			"idea": "a rusty nail"
@@ -419,9 +415,7 @@
 		},
 		{
 			"idea": "a newt",
-			"plural": true,
-			"mod": "0.2.8",
-			"rename": "newts"
+			"plural": true
 		},
 		{
 			"idea": "a silver trident",
@@ -476,8 +470,7 @@
 			"idea": "fangs",
 			"animalDistress": true,
 			"humanDistress": true,
-			"plural": true,
-			"mod": "0.2.3"
+			"plural": true
 		},
 		{
 			"idea": "elevators",
@@ -491,9 +484,7 @@
 		},
 		{
 			"idea": "a plank of wood",
-			"plural": ["", " planks of wood"],
-			"mod": "0.2.8",
-			"rename": "planks of wood"
+			"plural": ["", " planks of wood"]
 		},
 		{
 			"idea": "a small piece of metal"
@@ -660,8 +651,7 @@
 		},
 		{
 			"idea": "flat tire",
-			"plural": "s",
-			"mod": "0.2.3"
+			"plural": "s"
 		},
 		{
 			"idea": "a trenchcoat"
@@ -715,8 +705,7 @@
 		},
 		{
 			"idea": "hard hats",
-			"plural": true,
-			"mod": "0.2.3"
+			"plural": true
 		},
 		{
 			"idea": "a statue of an angel",
@@ -791,8 +780,7 @@
 			"idea": "a car that flies",
 			"fantasy": true,
 			"scifi": true,
-			"modern": true,
-			"mod": "0.2.8"
+			"modern": true
 		},
 		{
 			"idea": "a dusty bookshelf"
@@ -942,11 +930,13 @@
 			"idea": "a flickering light"
 		},
 		{
-			"idea": "dollar",
-			"plural": "s",
+			"idea": "$1",
+			"plural": ["$", ""],
 			"min": 1,
 			"max": 25000,
-			"numerals": true
+			"numerals": true,
+			"mod": "0.2.9",
+			"rename": "dollar"
 		},
 		{
 			"idea": "a six-pack",
@@ -1006,8 +996,7 @@
 		},
 		{
 			"idea": "a tube of toothpaste",
-			"plural": ["", " tubes of toothpaste"],
-			"mod": "0.2.8"
+			"plural": ["", " tubes of toothpaste"]
 		},
 		{
 			"idea": "smelly socks",
@@ -1636,8 +1625,7 @@
 		},
 		{
 			"idea": "sheet music",
-			"plural": ["", " pages of sheet music"],
-			"mod": "0.2.8"
+			"plural": ["", " pages of sheet music"]
 		},
 		{
 			"idea": "polka dots",
@@ -1718,8 +1706,7 @@
 		{
 			"idea": "ions",
 			"scifi": true,
-			"plural": true,
-			"mod": "0.2.3"
+			"plural": true
 		},
 		{
 			"idea": "a blip on the radar"
@@ -1815,43 +1802,36 @@
 			"idea": "crop circles",
 			"plural": true,
 			"mythsReligionsAndMetaphysics": true,
-			"metaphysics": true,
-			"new": "0.2.2"
+			"metaphysics": true
 		},
 		{
-			"idea": "a campfire",
-			"new": "0.2.5"
+			"idea": "a campfire"
 		},
 		{
 			"idea": "sleeping bag",
-			"plural": "s",
-			"new": "0.2.5"
+			"plural": "s"
 		},
 		{
 			"idea": "an empty coffin",
 			"horror": true,
-			"humanDeath": true,
-			"new": "0.2.5"
+			"humanDeath": true
 		},
 		{
 			"idea": "strange shadows",
 			"plural": true,
-			"horror": true,
-			"new": "0.2.5"
+			"horror": true
 		},
 		{
 			"idea": "pyramid",
 			"plural": "s",
 			"rateBy": 2,
-			"max": 3,
-			"new": "0.2.8"
+			"max": 3
 		},
 		{
 			"idea": "a bag of sand",
 			"plural": ["", " bags of sand"],
 			"rateBy": "incremental",
-			"max": 15,
-			"new": "0.2.8"
+			"max": 15
 		}
 	]
 }

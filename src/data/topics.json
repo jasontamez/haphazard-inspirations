@@ -999,16 +999,12 @@
 		{
 			"idea": "the Hajj",
 			"mythsReligionsAndMetaphysics": true,
-			"islam": true,
-			"mod": "0.2.4",
-			"rename": "the Haj"
+			"islam": true
 		},
 		{
 			"idea": "Hanukkah",
 			"mythsReligionsAndMetaphysics": true,
-			"judaism": true,
-			"mod": "0.2.4",
-			"rename": "Hannukah"
+			"judaism": true
 		},
 		{
 			"idea": "an app that does nothing but make fart noises",
@@ -1023,17 +1019,14 @@
 		{
 			"idea": "incest",
 			"sexual": true,
-			"humanDistress": true,
-			"new": "0.2.2"
+			"humanDistress": true
 		},
 		{
 			"idea": "side effects",
-			"humanDistress": true,
-			"new": "0.2.5"
+			"humanDistress": true
 		},
 		{
-			"idea": "an unexpected reaction",
-			"new": "0.2.5"
+			"idea": "an unexpected reaction"
 		}
 	]
 }

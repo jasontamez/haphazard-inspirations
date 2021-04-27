@@ -13,8 +13,7 @@
 			"fantasy": true,
 			"medievalFantasy": true,
 			"humanDeath": true,
-			"humanDistress": true,
-			"mod": "0.2.5"
+			"humanDistress": true
 		},
 		{
 			"idea": "taking a pulse"
@@ -32,9 +31,7 @@
 			"idea": "ordering food"
 		},
 		{
-			"idea": "sleeping soundly",
-			"mod": "0.2.5",
-			"rename": "sleeping"
+			"idea": "sleeping soundly"
 		},
 		{
 			"idea": "scratching an itch"
@@ -218,9 +215,7 @@
 		},
 		{
 			"idea": "taking a shower with [THEIR] clothes still on",
-			"possessive": true,
-			"mod": "0.2.8",
-			"rename": "taking a shower with clothes still on"
+			"possessive": true
 		},
 		{
 			"idea": "reaching a new height"
@@ -805,45 +800,36 @@
 		},
 		{
 			"idea": "going on a date",
-			"sexual": true,
-			"new": "0.2.2"
+			"sexual": true
 		},
 		{
 			"idea": "upsetting the neighbors",
-			"humanDistress": true,
-			"new": "0.2.2"
+			"humanDistress": true
 		},
 		{
 			"idea": "tormenting [THEIR] enemy",
 			"humanDistress": true,
-			"possessive": true,
-			"new": "0.2.2"
+			"possessive": true
 		},
 		{
-			"idea": "translating a foreign sign",
-			"new": "0.2.5"
+			"idea": "translating a foreign sign"
 		},
 		{
-			"idea": "reading an ancient text",
-			"new": "0.2.5"
+			"idea": "reading an ancient text"
 		},
 		{
-			"idea": "cracking a secret code",
-			"new": "0.2.5"
+			"idea": "cracking a secret code"
 		},
 		{
-			"idea": "groaning",
-			"new": "0.2.5"
+			"idea": "groaning"
 		},
 		{
-			"idea": "falling down, unable to get back up",
-			"new": "0.2.8"
+			"idea": "falling down, unable to get back up"
 		},
 		{
 			"idea": "cracking [THEIR] knuckles",
 			"humanDistress": true,
-			"possessive": true,
-			"new": "0.2.8"
+			"possessive": true
 		}
 	]
 }
