@@ -730,7 +730,9 @@
 		},
 		{
 			"idea": "a ventrilloquist's dummy",
-			"plural": false
+			"horror": true,
+			"plural": false,
+			"mod": "0.2.9"
 		},
 		{
 			"idea": "moose",
@@ -785,6 +787,20 @@
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,
 			"fictionalCharacter": true
+		},
+		{
+			"ideas": "a frog that is actually royalty",
+			"plural": false,
+			"fantasy": true,
+			"fairyTalesAndUrbanLegends": true,
+			"medievalFantasy": true,
+			"new": "0.2.9"
+		},
+		{
+			"ideas": "the big bad wolf",
+			"plural": false,
+			"fairyTalesAndUrbanLegends": true,
+			"new": "0.2.9"
 		}
 	]
 }

@@ -326,6 +326,19 @@
 		},
 		{
 			"idea": "a game of solitaire"
+		},
+		{
+			"idea": "breaking the enchantment",
+			"fantasy": true,
+			"medievalFantasy": true,
+			"fairyTalesAndUrbanLegends": true,
+			"new": "0.2.9"
+		},
+		{
+			"idea": "a call that is coming from inside of the house",
+			"horror": true,
+			"fairyTalesAndUrbanLegends": true,
+			"new": "0.2.9"
 		}
 	]
 }

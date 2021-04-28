@@ -830,6 +830,24 @@
 			"idea": "cracking [THEIR] knuckles",
 			"humanDistress": true,
 			"possessive": true
+		},
+		{
+			"idea": "making a wish",
+			"fairyTalesAndUrbanLegends": true,
+			"new": "0.2.9"
+		},
+		{
+			"idea": "hiding in the back seat",
+			"fairyTalesAndUrbanLegends": true,
+			"horror": true,
+			"new": "0.2.9"
+		},
+		{
+			"idea": "flashing [THEIR] headlights on and off",
+			"possessive": true,
+			"fairyTalesAndUrbanLegends": true,
+			"horror": true,
+			"new": "0.2.9"
 		}
 	]
 }
