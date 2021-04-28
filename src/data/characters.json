@@ -114,7 +114,6 @@
 		{
 			"idea": "monsters under the bed",
 			"plural": true,
-			"fantasy": true,
 			"fairyTalesAndUrbanLegends": true,
 			"monster": true
 		},
@@ -782,7 +781,6 @@
 		{
 			"ideas": "Slenderman",
 			"plural": false,
-			"fantasy": true,
 			"fairyTalesAndUrbanLegends": true,
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,

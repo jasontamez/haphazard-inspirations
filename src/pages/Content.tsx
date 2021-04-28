@@ -178,8 +178,8 @@ const ContentFilters = () => {
 						<IonToggle onClick={() => toggleTempGenre("superhero")} slot="end" className="disableGenres-fantasy" data-prop="superhero" disabled={genres.fantasy} checked={genres.superhero} />
 					</IonItem>
 					<IonItem>
-						<IonLabel className="subTopic">Fairy Tales and Urban Legends</IonLabel>
-						<IonToggle onClick={() => toggleTempGenre("fairyTalesAndUrbanLegends")} slot="end" className="disableGenres-fantasy" data-prop="fairyTalesAndUrbanLegends" disabled={genres.fantasy} checked={genres.fairyTalesAndUrbanLegends} />
+						<IonLabel>Fairy Tales and Urban Legends</IonLabel>
+						<IonToggle onClick={() => toggleTempGenre("fairyTalesAndUrbanLegends")} slot="end" checked={genres.fairyTalesAndUrbanLegends} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Historical Fiction</IonLabel>
