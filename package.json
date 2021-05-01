@@ -1,6 +1,6 @@
 {
   "name": "haphazard-inspirations",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "private": true,
   "dependencies": {
     "@capacitor/android": "^2.4.7",
