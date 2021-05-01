@@ -934,9 +934,7 @@
 			"plural": ["$", ""],
 			"min": 1,
 			"max": 25000,
-			"numerals": true,
-			"mod": "0.2.9",
-			"rename": "dollar"
+			"numerals": true
 		},
 		{
 			"idea": "a six-pack",
@@ -1832,6 +1830,16 @@
 			"plural": ["", " bags of sand"],
 			"rateBy": "incremental",
 			"max": 15
+		},
+		{
+			"idea": "apple",
+			"plural": "s",
+			"article": "an"
+		},
+		{
+			"idea": "orange",
+			"plural": "s",
+			"article": "an"
 		}
 	]
 }

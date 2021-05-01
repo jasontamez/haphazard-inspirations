@@ -833,21 +833,18 @@
 		},
 		{
 			"idea": "making a wish",
-			"fairyTalesAndUrbanLegends": true,
-			"new": "0.2.9"
+			"fairyTalesAndUrbanLegends": true
 		},
 		{
 			"idea": "hiding in the back seat",
 			"fairyTalesAndUrbanLegends": true,
-			"horror": true,
-			"new": "0.2.9"
+			"horror": true
 		},
 		{
 			"idea": "flashing [THEIR] headlights on and off",
 			"possessive": true,
 			"fairyTalesAndUrbanLegends": true,
-			"horror": true,
-			"new": "0.2.9"
+			"horror": true
 		}
 	]
 }

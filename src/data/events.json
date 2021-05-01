@@ -318,8 +318,7 @@
 		},
 		{
 			"idea": "a game of poker",
-			"punctual": false,
-			"mod": "0.2.9"
+			"punctual": false
 		},
 		{
 			"idea": "a game of blackjack"
@@ -331,14 +330,12 @@
 			"idea": "breaking the enchantment",
 			"fantasy": true,
 			"medievalFantasy": true,
-			"fairyTalesAndUrbanLegends": true,
-			"new": "0.2.9"
+			"fairyTalesAndUrbanLegends": true
 		},
 		{
 			"idea": "a call that is coming from inside of the house",
 			"horror": true,
-			"fairyTalesAndUrbanLegends": true,
-			"new": "0.2.9"
+			"fairyTalesAndUrbanLegends": true
 		}
 	]
 }

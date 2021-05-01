@@ -731,8 +731,7 @@
 		{
 			"idea": "a ventrilloquist's dummy",
 			"horror": true,
-			"plural": false,
-			"mod": "0.2.9"
+			"plural": false
 		},
 		{
 			"idea": "moose",
@@ -781,7 +780,7 @@
 			"fairyTalesAndUrbanLegends": true
 		},
 		{
-			"ideas": "Slenderman",
+			"idea": "Slenderman",
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
 			"horror": true,
@@ -789,18 +788,22 @@
 			"fictionalCharacter": true
 		},
 		{
-			"ideas": "a frog that is actually royalty",
+			"idea": "a frog that is actually royalty",
 			"plural": false,
 			"fantasy": true,
 			"fairyTalesAndUrbanLegends": true,
-			"medievalFantasy": true,
-			"new": "0.2.9"
+			"medievalFantasy": true
 		},
 		{
-			"ideas": "the big bad wolf",
+			"idea": "the big bad wolf",
+			"plural": false,
+			"fairyTalesAndUrbanLegends": true
+		},
+		{
+			"idea": "a mermaid",
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
-			"new": "0.2.9"
+			"fantasy": true
 		}
 	]
 }

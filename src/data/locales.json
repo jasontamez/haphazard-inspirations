@@ -935,8 +935,7 @@
 		{
 			"idea": "Wonderland",
 			"fantasy": true,
-			"fairyTalesAndUrbanLegends": true,
-			"new": "0.2.9"
+			"fairyTalesAndUrbanLegends": true
 		}
 	]
 }
