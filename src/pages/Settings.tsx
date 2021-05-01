@@ -17,7 +17,6 @@ import {
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import {
 	currentPage,
-	setBoolean,
 	setNumber,
 	setFlushNowStatus
 } from '../components/ReduxDucks';
@@ -25,7 +24,7 @@ import './Home.css';
 
 const Settings = () => {
 	const dispatch = useDispatch();
-	const [settings, toggles, status] = useSelector((state: any) => [state.settings, state.toggles, state.status], shallowEqual);
+	const [settings,  status] = useSelector((state: any) => [state.settings, state.toggles, state.status], shallowEqual);
 	useIonViewDidEnter(() => {
 		dispatch(currentPage("home"));
 	});
@@ -41,10 +40,6 @@ const Settings = () => {
 			</IonHeader>
 			<IonContent fullscreen className="onlyList settingsPage">
 				<IonList lines="none" className="buttonFilled longLabels">
-					<IonItem>
-						<IonLabel>Shake for new idea</IonLabel>
-						<IonToggle onClick={() => dispatch(setBoolean(["shake", !toggles.shake]))} slot="end" checked={toggles.shake} />
-					</IonItem>
 					<IonItem>
 						<IonLabel>Try not to show the same idea twice within this many days:</IonLabel>
 						<IonInput inputmode="numeric" step="1" type="number" max="7305" min="1" onIonChange={(e) => dispatch(setNumber(["flushDays", Number((e.target as HTMLInputElement).value)]))} value={settings.flushDays} />

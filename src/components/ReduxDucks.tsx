@@ -107,7 +107,6 @@ const maxSett: SettingsObject = {
 	flushDays: 7305 // 20 years!
 }
 export interface TogglesObject {
-	shake: boolean
 	showMinimumFave: boolean
 }
 export interface LocalesObject {
@@ -202,7 +201,6 @@ export const blankAppState: StateObject = {
 	},
 	favorites: [],
 	toggles: {
-		shake: false,
 		showMinimumFave: false
 	},
 	settings: {

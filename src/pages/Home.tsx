@@ -23,7 +23,6 @@ import {
 	setFlushNowStatus
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
-import { Shake } from '@ionic-native/shake';
 import { BasicIdea, Character, Action, getNewIdeas, initializeIdeas, pruneIdeas, loadNewAndModifiedIdeas } from '../components/GatherInspiration';
 import './Home.css';
 import { starOutline, star, bulbOutline } from 'ionicons/icons';
@@ -38,15 +37,6 @@ const Home = () => {
 	});
 	const fetchStatus: StatusObject = reduceStatus(state.status);
 	const animToggle = Math.floor(Math.random() * 3);
-
-	// Handle shake-to-update
-	if(state.settings.shake) {
-		const shakeToUpdate = () => {
-			console.log("SHAKE DETECTED on " + state.page);
-			state.page === "home" && maybeGenerateNewIdea();
-		};
-		Shake.startWatch().subscribe(() => shakeToUpdate());
-	}
 
 	const getDirection = () => {
 		switch(animToggle) {
