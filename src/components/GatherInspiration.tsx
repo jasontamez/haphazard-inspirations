@@ -343,6 +343,11 @@ const loadAndTotalInformation = () => {
 	};
 };
 
+const maybeLog = (...args: any[]) => {
+	// Comment out if no longer debugging
+	args.forEach((x: any) => console.log(x));
+};
+
 export const initializeIdeas = (callback: Function, status: StatusObject) => {
 	let info = loadAndTotalInformation();
 	let ideas = shuffle(info.ideas);
@@ -615,3 +620,49 @@ export const hiddenDebugInfo = (callback: Function) => {
 		callback(output);
 	});
 };
+
+export const doubleCheck = (callback: Function) => {
+	Promise.all([
+		IdeaStorage.getItem("sent"),
+		IdeaStorage.getItem("ideas"),
+		IdeaStorage.getItem("omit")
+	]).then((values: any[]) => {
+		let output: string[] = [];
+		let sent = values[0] as UsedIdea[];
+		let ideas = values[1] as any[];
+		let omit = values[2] as Omit[];
+
+		let map = new Map();
+		const check = (o: any) => {
+			let a = map.get(o.type) || [];
+			a.push(o.idea);
+			map.set(o.type, a);
+		};
+		sent.forEach((s: UsedIdea) => {
+			check(s[0]);
+		});
+		ideas.forEach((i: any) => {
+			check(i);
+		});
+		omit.forEach((o: Omit) => {
+			check(Array.isArray(o) ? o[0] : o);
+		});
+
+		let all = [characters, action, event, locale, time, object, topic];
+		all.forEach((q: any) => {
+			let c = q.contents.map((k:any) => k.idea);
+			let s = map.get(q.default.type);
+			c.sort();
+			s.sort();
+			let y = JSON.stringify(c);
+			let z = JSON.stringify(s);
+			if(y === z) {
+				output.push(q.default.type + " OK", "");
+			} else {
+				output.push(q.default.type + " NOT OK", "ORIGIN: " + y, "STORED: " + z, "");
+			}
+		});
+		callback(output);
+	});
+}
+

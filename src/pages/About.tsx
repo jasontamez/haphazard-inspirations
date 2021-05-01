@@ -20,7 +20,7 @@ import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import './Home.css';
 import { currentPage } from '../components/ReduxDucks';
 import { $i } from '../components/DollarSignImports';
-import { hiddenDebugInfo } from '../components/GatherInspiration';
+import { hiddenDebugInfo, doubleCheck } from '../components/GatherInspiration';
 
 const About = () => {
 	const dispatch = useDispatch();
@@ -33,6 +33,7 @@ const About = () => {
 		dd++;
 		if(dd > 4) {
 			dd = 0;
+			doubleCheck(finishDebug);
 			hiddenDebugInfo(finishDebug);
 		}
 	};
