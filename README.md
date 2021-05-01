@@ -120,7 +120,7 @@ Physical locations.
 Unless noted otherwise, these are all `boolean`
 
 * `preposition`: a `string` such as "on" that will precede the `idea`; defaults to "in"
-* `political`: if true, indicates a county, state, city, province, etc
+* `political`: if true, indicates a country, state, city, province, etc
 * `geographical`: if true, indicates a continent, an island, a specific location ("Mt. Everest", "The Red Sea", etc), or a generic landmass ("an island", "a mountain", etc); this may include designations that coincide with a `political` identity ("Australia", "Jamaica", "Siberia", etc.)
 * `construct`: if true, indicates a physically man-made locale
 * `specific`: if true, indicates a specific, non-generic location

@@ -305,7 +305,7 @@ const loadAndTotalInformation = () => {
 	let mods: number[] = [];
 	const mapAndMods = (base: any, item: any, type: string) => {
 		const o = {...base, ...item, type: type};
-		if(typeof o.plural === "string") {
+		if(typeof o.plural === "string" || Array.isArray(o.plural)) {
 			let m = o.max - o.min + 1;
 			mtot += m;
 			mods.push(m);
