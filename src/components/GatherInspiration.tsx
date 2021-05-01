@@ -359,8 +359,7 @@ export const initializeIdeas = (callback: Function, status: StatusObject) => {
 	]).then(() => {
 		callback(status, {type: "initialized", value: total});
 	}).catch((e) => {
-		console.log("ERROR - INIT IDEAS:");
-		console.log(e);
+		maybeLog("ERROR - INIT IDEAS:", e);
 		callback(status, {type: "initialized", value: total});
 	});
 };
@@ -378,11 +377,15 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 		let allIdeas = info.ideas;
 		let total = info.total;
 		let modded: any = { length: 0 };
+		let doublecheck: any = {};
 		let added: any[] = [];
 		const lastUpdate = status.new as string;
+		// Check for new and modified
 		allIdeas.forEach((i: any) => {
 			if(i.new) {
+				maybeLog("NEW: " + i.idea);
 				if(compareVersions.compare(i.new, lastUpdate, ">")) {
+					maybeLog("!");
 					// no need to modify if it's new to us
 					i.mod && (delete i.mod);
 					i.rename && (delete i.rename);
@@ -391,43 +394,98 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 				delete i.new;
 			}
 			if(i.mod) {
+				maybeLog("MOD: " + i.idea);
 				if(compareVersions.compare(i.mod, lastUpdate, ">")) {
+					maybeLog("!");
 					let front: string = i.idea as string;
 					if(i.rename !== undefined) {
 						front = i.rename;
 					}
-					modded[front + " " + (i.type as string)] = i;
+					modded[front] = i;
 					modded.length++;
 				}
 				delete i.mod;
 				i.rename && (delete i.rename);
 			}
 		});
-		console.log(modded);
-		console.log(added);
-		if(modded.length > 1) {
+		maybeLog(modded, added);
+		// Check for modifications
+		if(modded.length > 0) {
 			ideas = ideas.map((i: any) => {
-				let prop = (i.idea as string) + " " + (i.type as string);
+				let prop = (i.idea as string);
 				return modded[prop] || i;
 			});
 			sent = sent.map((s: UsedIdea) => {
 				let i = s[0];
-				let prop = i.idea + " " + i.type;
+				let prop = i.idea;
 				return [modded[prop] || i, s[1]];
 			});
 			omit = omit.map((o: Omit) => {
 				if(Array.isArray(o)) {
 					let i = o[0];
-					let prop = i.idea + " " + i.type;
+					let prop = i.idea;
 					return [modded[prop] || i, o[1]];
 				}
-				let prop = (o.idea as string) + " " + (o.type as string);
+				let prop = (o.idea as string);
 				return modded[prop] || o;
 			});
 		}
-		if(added.length > 1) {
+		// Add new
+		if(added.length > 0) {
 			ideas = shuffle(ideas.concat(added));
+			maybeLog(ideas);
 		}
+		// Check for duplicates.
+		ideas = ideas.filter((i: any) => {
+			if(!i || !i.idea) {
+				maybeLog("NULL", i);
+				return false;
+			}
+			let prop = (i.idea as string);
+			if(doublecheck[prop]) {
+				maybeLog("DUPE", i);
+				return false;
+			}
+			doublecheck[prop] = true;
+			return true;
+		});
+		sent = sent.filter((s: UsedIdea) => {
+			if(!s || !s[0] || !s[0].idea) {
+				maybeLog("NULL", s);
+				return false;
+			}
+			let i = s[0];
+			let prop = i.idea;
+			if(doublecheck[prop]) {
+				maybeLog("DUPE", s);
+				return false;
+			}
+			doublecheck[prop] = true;
+			return true;
+		});
+		omit = omit.filter((o: Omit) => {
+			if(!o) {
+				maybeLog("NULL", o);
+				return false;
+			}
+			let prop: string;
+			if(Array.isArray(o)) {
+				if(!o[0] || !o[0].idea) {
+					maybeLog("NULL", o);
+						return false;
+				}
+				let i = o[0];
+				prop = i.idea;
+			} else {
+				prop = (o.idea as string);
+			}
+			if(doublecheck[prop]) {
+				maybeLog("DUPE", o);
+				return false;
+			}
+			doublecheck[prop] = true;
+			return true;
+		});
 		Promise.all([
 			IdeaStorage.setItem("sent", sent),
 			IdeaStorage.setItem("ideas", ideas),
@@ -435,8 +493,7 @@ export const loadNewAndModifiedIdeas = (callback: Function, status: StatusObject
 		]).then(() => {
 			callback(status, {type: "new items loaded", value: total});
 		}).catch((e) => {
-			console.log("ERROR - NEW/MODDED IDEAS:");
-			console.log(e);
+			maybeLog("ERROR - NEW/MODDED IDEAS:", e);
 			callback(status, {type: "new items loaded", value: total});
 		});
 	});
@@ -498,13 +555,11 @@ export const getNewIdeas = (callback: Function, doFlush: boolean = false, amount
 		]).then(() => {
 			callback(Idea1, Idea2, flushFlag);
 		}).catch((e) => {
-			console.log("ERROR - SAVE IDEAS AFTER GET:");
-			console.log(e);
+			maybeLog("ERROR - SAVE IDEAS AFTER GET:", e);
 			callback(BasicError1, new BasicError("comp/GI/gni2"), flushFlag)
 		});
 	}).catch((e) => {
-		console.log("ERROR - GET NEW IDEAS:");
-		console.log(e);
+		maybeLog("ERROR - GET NEW IDEAS:", e);
 		callback(BasicError1, new BasicError("comp/GI/gni1"))
 	});
 };
@@ -585,12 +640,10 @@ export const pruneIdeas = (callback: Function, objects: [LocalesObject, GenresOb
 		]).then(() => {
 			callback(status, {type: "omissions noted"});
 		}).catch((e) => {
-			console.log("ERROR - SAVE IDEAS AFTER OMISSIONS:");
-			console.log(e);
+			maybeLog("ERROR - SAVE IDEAS AFTER OMISSIONS:", e);
 		});
 	}).catch((e) => {
-		console.log("ERROR - SAVE IDEAS TRYING TO OMIT OMISSIONS:");
-		console.log(e);
+		maybeLog("ERROR - SAVE IDEAS TRYING TO OMIT OMISSIONS:", e);
 	});
 };
 
@@ -665,4 +718,3 @@ export const doubleCheck = (callback: Function) => {
 		callback(output);
 	});
 }
-
