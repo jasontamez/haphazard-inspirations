@@ -1027,6 +1027,22 @@
 		},
 		{
 			"idea": "an unexpected reaction"
+		},
+		{
+			"idea": "the government",
+			"new": "0.3.1"
+		},
+		{
+			"idea": "teleportation",
+			"scifi": true,
+			"new": "0.3.1"
+		},
+		{
+			"idea": "x-ray vision",
+			"fantasy": true,
+			"superhero": true,
+			"scifi": true,
+			"new": "0.3.1"
 		}
 	]
 }

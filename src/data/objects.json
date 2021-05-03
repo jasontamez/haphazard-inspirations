@@ -1840,6 +1840,19 @@
 			"idea": "orange",
 			"plural": "s",
 			"article": "an"
+		},
+		{
+			"idea": "bright red hair",
+			"new": "0.3.1"
+		},
+		{
+			"idea": "frozen yogurt",
+			"modern": true,
+			"new": "0.3.1"
+		},
+		{
+			"idea": "shrunken laundry",
+			"new": "0.3.1"
 		}
 	]
 }

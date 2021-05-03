@@ -845,6 +845,17 @@
 			"possessive": true,
 			"fairyTalesAndUrbanLegends": true,
 			"horror": true
+		},
+		{
+			"idea": "twerking",
+			"sexual": true,
+			"modern": true,
+			"new": "0.3.1"
+		},
+		{
+			"idea": "sorting the recyclables",
+			"modern": true,
+			"new": "0.3.1"
 		}
 	]
 }

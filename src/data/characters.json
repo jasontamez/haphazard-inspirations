@@ -804,6 +804,29 @@
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
 			"fantasy": true
+		},
+		{
+			"idea": "James Bond",
+			"plural": false,
+			"fictionalCharacter": true,
+			"scifi": true,
+			"new": "0.3.1"
+		},
+		{
+			"idea": "Batman",
+			"plural": false,
+			"fictionalCharacter": true,
+			"fantasy": true,
+			"superhero": true,
+			"new": "0.3.1"
+		},
+		{
+			"idea": "Captain America",
+			"plural": false,
+			"fictionalCharacter": true,
+			"fantasy": true,
+			"superhero": true,
+			"new": "0.3.1"
 		}
 	]
 }
