@@ -160,31 +160,34 @@ p strong {
 #ideaWrap.startLeft {
 	transition: all 0s ease;
 	transform: translateX(-100vw);
-	background-color: var(--ion-color-primary);
 }
 #ideaWrap.startRight {
 	transition: all 0s ease;
 	transform: translateX(100vw);
-	background-color: var(--ion-color-secondary);
 }
 #ideaWrap.startUp {
 	transition: all 0s ease;
 	transform: translateY(-100vh);
-	background-color: var(--ion-color-tertiary);
 }
 #ideaWrap.exitLeft {
 	transition: transform 750ms ease, background-color 500ms ease;
 	transform: translateX(-100vw);
-	background-color: var(--ion-color-primary);
 }
 #ideaWrap.exitRight {
 	transition: transform 750ms ease, background-color 500ms ease;
 	transform: translateX(100vw);
-	background-color: var(--ion-color-secondary);
 }
 #ideaWrap.exitUp {
 	transition: transform 750ms ease, background-color 500ms ease;
 	transform: translateY(-100vh);
+}
+#ideaWrap.back1 {
+	background-color: var(--ion-color-primary);
+}
+#ideaWrap.back2 {
+	background-color: var(--ion-color-secondary);
+}
+#ideaWrap.back3 {
 	background-color: var(--ion-color-tertiary);
 }
 

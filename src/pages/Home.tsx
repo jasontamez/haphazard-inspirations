@@ -37,6 +37,7 @@ const Home = () => {
 	});
 	const fetchStatus: StatusObject = reduceStatus(state.status);
 	const animToggle = Math.floor(Math.random() * 3);
+	const backToggle = Math.floor(Math.random() * 3) + 1;
 
 	const getDirection = () => {
 		switch(animToggle) {
@@ -77,7 +78,7 @@ const Home = () => {
 		} else {
 			// Did not come with an output object: hit by the user, so start generation
 			let cls = "exit" + getDirection();
-			$i("ideaWrap").classList.add(cls);
+			$i("ideaWrap").classList.add(cls, "back" + String(backToggle));
 			$delay(750).then(() => {
 				maybeGenerateNewIdea(status, {type: "animation finished"});
 			});
@@ -195,7 +196,7 @@ const Home = () => {
 		const type2 = idea2.type;
 		if(type1 === "error" || type2 === "error") {
 			let cls = "start" + getDirection();
-			$i("ideaWrap").classList.remove(cls);
+			$i("ideaWrap").classList.remove(cls, "back" + String(backToggle));
 			$delay(500).then(() => {
 				dispatch(setStatus(false));
 			});
@@ -249,7 +250,7 @@ const Home = () => {
 			final.push(ideasToDisplay.shift()!, formatting.shift()!)
 		}
 		let cls = "start" + getDirection();
-		$i("ideaWrap").classList.remove(cls);
+		$i("ideaWrap").classList.remove(cls, "back" + String(backToggle));
 		dispatch(updateIdeas([idea1, idea2, flushFlag, [...rawIdeas, ...final]]));
 		$delay(500).then(() => {
 			dispatch(setStatus(false));
@@ -318,7 +319,7 @@ const Home = () => {
 						<IonIcon icon={bulbOutline} />
 					</IonFabButton>
 				</IonFab>
-				<div id="ideaWrap" className={fetchStatus.generating ? "start" + getDirection() : ""}>{displayIdea()}</div>
+				<div id="ideaWrap" className={fetchStatus.generating ? "back" + String(backToggle) + " start" + getDirection() : ""}>{displayIdea()}</div>
 			</IonContent>
 		</IonPage>
 		
