@@ -310,16 +310,26 @@ const loadAndTotalInformation = () => {
 			mtot += m;
 			mods.push(m);
 		}
-		return o;
+		return removeNewAndMod(o);
+	};
+	const removeNewAndMod = (base: any) => {
+		if(base.new) {
+			delete base.new;
+		}
+		if(base.mod) {
+			delete base.mod;
+			base.rename && delete base.rename;
+		}
+		return base;
 	};
 	let ideas: object[] = [
-		...action.contents.map(a => ({...action.default, ...a, type: "action"})),
+		...action.contents.map(a => removeNewAndMod({...action.default, ...a, type: "action"})),
 		...characters.contents.map(c => mapAndMods(characters.default, c, "character")),
-		...event.contents.map(e => ({...event.default, ...e, type: "event"})),
-		...locale.contents.map(l => ({...locale.default, ...l, type: "locale"})),
+		...event.contents.map(e => removeNewAndMod({...event.default, ...e, type: "event"})),
+		...locale.contents.map(l => removeNewAndMod({...locale.default, ...l, type: "locale"})),
 		...object.contents.map(o => mapAndMods(object.default, o, "object")),
-		...time.contents.map(t => ({...time.default, ...t, type: "time"})),
-		...topic.contents.map(t => ({...topic.default, ...t, type: "topic"}))
+		...time.contents.map(t => removeNewAndMod({...time.default, ...t, type: "time"})),
+		...topic.contents.map(t => removeNewAndMod({...topic.default, ...t, type: "topic"}))
 	];
 	let items = ideas.length + mtot - 1;
 	let c = ideas.length - mods.length;
