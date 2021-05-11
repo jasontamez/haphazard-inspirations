@@ -219,8 +219,8 @@ body.LightTheme {
 	--ion-background-color: #c6d8ff;
 	--ion-background-color-rgb: 198,216,255;
 
-	--ion-text-color: #101935;
-	--ion-text-color-rgb: 16,25,53;
+	--ion-text-color: var(--ion-color-dark);
+	--ion-text-color-rgb: var(--ion-color-dark-rgb);
 
 	--ion-color-step-50: #bdcef5;
 	--ion-color-step-100: #b4c5eb;
@@ -253,8 +253,8 @@ body.LightTheme {
 
 	--ion-tab-bar-background: var(--ion-color-light);
 
-	--ion-card-background: var(--ion-color-step-50);
-	--ion-card-color: var(--ion-color-light-shade);
+	--ion-card-background: var(--ion-color-step-100);
+	--ion-card-color: var(--ion-color-dark-tint);
 
 	--ion-border-color: var(--ion-color-step-50);
 
@@ -473,8 +473,8 @@ body.SolarizedDarkTheme {
 
 	--ion-tab-bar-background: var(--ion-color-dark);
 
-	--ion-card-background: var(--ion-color-dark-shade);
-	--ion-card-color: var(--ion-color-dark-shade);
+	--ion-card-background: var(--ion-color-step-50);
+	--ion-card-color: var(--ion-color-light-shade);
 
 	--ion-border-color: var(--ion-color-step-50);
 
