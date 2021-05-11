@@ -47,7 +47,7 @@ const Credits = () => {
 								<IonCardContent>
 									<p>App icon based on <a href="https://thenounproject.com/term/information-overload/579861/">Information Overload</a> by Jenny Chisnell, via the Noun Project.</p>
 									<p className="newThought">Background image on Inspirations page based on <a href="https://thenounproject.com/Stephen_Plaster/collection/flow-states/?i=366701">Scattered Material</a> by Stephen Plaster, GB, and <a href="https://thenounproject.com/iconisland/collection/hair-styles/?i=484400">Haircut</a> by Icon Island, both via the Noun Project.</p>
-									<p>Send bug reports to <a href="mailto:jasontankapps@gmail.com">jasontankapps@gmail.com</a>.</p>
+									<p className="newThought">Send bug reports to <a href="mailto:jasontankapps@gmail.com">jasontankapps@gmail.com</a>.</p>
 								</IonCardContent>
 							</IonCard>
 						</IonCol>
