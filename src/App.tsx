@@ -45,25 +45,13 @@ const App = () => {
 			return StateStorage.getItem("lastState").then((storedState: any) => {
 				if(storedState !== null) {
 					if(storedState && (typeof storedState) === "object") {
-						if (compareVersions.compare(storedState.currentVersion || "0.0.1", "0.0.1", "<")) {
-							// Do stuff to possibly bring storedState up to date
-							// - set storedState.status.new to... something
-							storedState.status = {
-								total: 0,
-								omitsChanged: false,
-								generating: false,
-								nextIdeaFlush: 0
-							};
-							storedState.idea1 = null;
-							storedState.idea2 = null;
-							storedState.currentFave = "";
-						}
-						if (compareVersions.compare(storedState.currentVersion || "0.0.1", VERSION.current, "<")) {
+						const storedVersion = storedState.currentVersion || "0.0.1";
+						if (compareVersions.compare(storedVersion, VERSION.current, "<")) {
 							// Do stuff to possibly bring storedState up to date
 
 							// Save current (old) version as "new" so we can check for updates
 							// This may need to be modified once we go into production, especially for non-idea updates
-							storedState.status.new = storedState.currentVersion;
+							storedState.status.new = storedVersion;
 							// Update current version to (new) actual current version
 							storedState.currentVersion = VERSION.current;
 						}
