@@ -355,7 +355,7 @@ const loadAndTotalInformation = () => {
 
 const maybeLog = (...args: any[]) => {
 	// Comment out if no longer debugging
-	args.forEach((x: any) => console.log(x));
+	//args.forEach((x: any) => console.log(x));
 };
 
 export const initializeIdeas = (callback: Function, status: StatusObject) => {

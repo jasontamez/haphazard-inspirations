@@ -392,8 +392,8 @@ export function reducer(state: StateObject = blankAppState, action: any) {
 			return state;
 	}
 	debounce(saveCurrentState, [final]);
-	console.log(action.type);
-	console.log(final);
+	maybeLog(action.type);
+	maybeLog(final);
 	return final;
 }
 
@@ -401,6 +401,11 @@ const saveCurrentState = (state: StateObject) => {
 	let newState = reduceAll(state);
 	// Save
 	StateStorage.setItem("lastState", newState);
-	console.log("Save");
-	console.log(newState);
+	maybeLog("Save");
+	maybeLog(newState);
+};
+
+const maybeLog = (...args: any[]) => {
+	// Comment out if no longer debugging
+	//args.forEach((x: any) => console.log(x));
 };
