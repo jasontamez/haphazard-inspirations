@@ -161,6 +161,30 @@ const ContentFilters = () => {
 						<IonLabel>Tiny locations (a bedroom, a wedding, etc)</IonLabel>
 						<IonToggle onClick={() => toggleTempLocale("tinySize")} slot="end" checked={locales.tinySize} />
 					</IonItem>
+					<IonItem>
+						<IonLabel>The Americas</IonLabel>
+						<IonToggle onClick={() => toggleTempLocale("americas")} slot="end" checked={locales.americas} />
+					</IonItem>
+					<IonItem>
+						<IonLabel>Europe</IonLabel>
+						<IonToggle onClick={() => toggleTempLocale("europe")} slot="end" checked={locales.europe} />
+					</IonItem>
+					<IonItem>
+						<IonLabel>Africa</IonLabel>
+						<IonToggle onClick={() => toggleTempLocale("africa")} slot="end" checked={locales.africa} />
+					</IonItem>
+					<IonItem>
+						<IonLabel>West Asia (Saudi Arabia, India, Turkey...)</IonLabel>
+						<IonToggle onClick={() => toggleTempLocale("westAsia")} slot="end" checked={locales.westAsia} />
+					</IonItem>
+					<IonItem>
+						<IonLabel>East Asia (China, Indonesia, Siberia...)</IonLabel>
+						<IonToggle onClick={() => toggleTempLocale("eastAsia")} slot="end" checked={locales.eastAsia} />
+					</IonItem>
+					<IonItem>
+						<IonLabel>Australia and Oceania</IonLabel>
+						<IonToggle onClick={() => toggleTempLocale("oceania")} slot="end" checked={locales.oceania} />
+					</IonItem>
 					<IonListHeader>
 						<IonLabel>Genres</IonLabel>
 						<IonNote>Do not suggest ideas closely associated with any of the following</IonNote>

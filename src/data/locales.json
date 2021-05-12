@@ -8,22 +8,28 @@
 		{
 			"idea": "Jamaica",
 			"properName": true,
+			"americas": true,
 			"geographical": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Amsterdam",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a beaver dam",
+			"americas": true,
 			"proposition": "by",
 			"specific": false,
 			"construct": true,
-			"tinySize": true
+			"tinySize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "heaven",
@@ -42,14 +48,18 @@
 		{
 			"idea": "India",
 			"properName": true,
+			"westAsia": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Scotland",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a dome",
@@ -61,21 +71,27 @@
 		{
 			"idea": "Cambodia",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Australia",
 			"properName": true,
+			"oceania": true,
 			"geographical": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Ecuador",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a large newspaper",
@@ -96,26 +112,32 @@
 		{
 			"idea": "Madagascar",
 			"properName": true,
+			"africa": true,
 			"geographical": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Israel",
 			"properName": true,
+			"westAsia": true,
 			"mythsReligionsAndMetaphysics": true,
 			"judaism": true,
 			"christianity": true,
 			"islam": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Siberia",
 			"properName": true,
+			"eastAsia": true,
 			"geographical": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a temple",
@@ -134,9 +156,11 @@
 		{
 			"idea": "Singapore",
 			"properName": true,
+			"eastAsia": true,
 			"geographical": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "your hometown",
@@ -146,44 +170,58 @@
 		{
 			"idea": "Japan",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Saudi Arabia",
 			"properName": true,
+			"westAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Denmark",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Kenya",
 			"properName": true,
+			"africa": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Germany",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Canada",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the USA",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a hammock",
@@ -194,27 +232,35 @@
 		{
 			"idea": "Oklahoma",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "along the Nile",
 			"properName": true,
+			"africa": true,
 			"geographical": true,
 			"preposition": "somewhere",
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the Amazon basin",
 			"properName": true,
+			"americas": true,
 			"geographical": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Notre Dame",
 			"preposition": "at",
 			"properName": true,
-			"tinySize": true
+			"europe": true,
+			"tinySize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a brick road",
@@ -260,26 +306,34 @@
 		{
 			"idea": "New York City",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Paris",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "London",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Yellowstone National Park",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Antarctica",
@@ -291,6 +345,7 @@
 			"idea": "the TARDIS",
 			"preposition": "inside",
 			"properName": true,
+			"americas": true,
 			"modern": true,
 			"scifi": true,
 			"spacefaring": true,
@@ -307,34 +362,44 @@
 		{
 			"idea": "Mother Russia",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "South Africa",
 			"properName": true,
+			"africa": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Brazil",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Athens",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Chernobyl",
 			"preposition": "at",
 			"properName": true,
+			"europe": true,
 			"humanDistress": true,
 			"humanDeath": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a country club",
@@ -360,8 +425,10 @@
 		{
 			"idea": "China",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a country no one has heard of",
@@ -509,9 +576,11 @@
 		{
 			"idea": "Cuba",
 			"properName": true,
+			"americas": true,
 			"geographical": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the post office",
@@ -556,68 +625,90 @@
 		{
 			"idea": "Transylvania",
 			"properName": true,
+			"europe": true,
 			"fantasy": true,
 			"medievalFantasy": true,
 			"horror": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the Orient Express",
 			"preposition": "on",
 			"properName": true,
+			"europe": true,
+			"westAsia": true,
 			"historicalFiction": true,
-			"tinySize": true
+			"tinySize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the Taj Mahal",
 			"preposition": "at",
 			"properName": true,
-			"tinySize": true
+			"westAsia": true,
+			"tinySize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the Red Sea",
 			"preposition": "on",
 			"properName": true,
+			"westAsia": true,
+			"africa": true,
 			"geographical": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Pennsylvania",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Nigeria",
 			"properName": true,
+			"africa": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Mt. Everest",
 			"preposition": "at",
 			"properName": true,
+			"westAsia": true,
 			"geographical": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Thailand",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Hong Kong",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the Sydney Opera House",
 			"preposition": "at",
 			"properName": true,
-			"tinySize": true
+			"oceania": true,
+			"tinySize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the World Cup",
@@ -629,8 +720,10 @@
 		{
 			"idea": "South Korea",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a carnival",
@@ -648,26 +741,34 @@
 		{
 			"idea": "Nebraska",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Poland",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Ethiopia",
 			"properName": true,
+			"africa": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Indonesia",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the middle of nowhere",
@@ -677,38 +778,47 @@
 		{
 			"idea": "North Korea",
 			"properName": true,
+			"eastAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Europe",
 			"properName": true,
+			"europe": true,
 			"geographical": true,
-			"largeSize": true
+			"largeSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "The Vatican",
 			"preposition": "at",
 			"properName": true,
+			"europe": true,
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Rome",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"smallSize": true
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Wakanda",
 			"properName": true,
+			"africa": true,
 			"modern": true,
 			"fantasy": true,
 			"superhero": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a plateau",
@@ -735,8 +845,10 @@
 		{
 			"idea": "Florida",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a maze of corridors, all alike",
@@ -762,108 +874,144 @@
 		{
 			"idea": "Death Valley",
 			"properName": true,
+			"americas": true,
 			"humanDeath": true,
 			"humanDistress": true,
 			"geographical": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Switzerland",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Morocco",
 			"properName": true,
+			"africa": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Argentina",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Chile",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Iraq",
 			"properName": true,
+			"westAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Iran",
 			"properName": true,
+			"westAsia": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Dubai",
 			"properName": true,
+			"westAsia": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Libya",
 			"properName": true,
+			"africa": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "New Zealand",
 			"properName": true,
+			"oceania": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Alaska",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Hawaii",
 			"properName": true,
+			"americas": true,
+			"oceania": true,
 			"geographical": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Mexico",
 			"properName": true,
+			"americas": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Spain",
 			"properName": true,
+			"europe": true,
 			"political": true,
-			"mediumSize": true
+			"mediumSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Istanbul",
 			"properName": true,
+			"europe": true,
+			"westAsia": true,
 			"political": true,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the Oscars",
 			"preposition": "at",
 			"properName": true,
+			"americas": true,
 			"specific": false,
-			"smallSize": true
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the UN",
 			"preposition": "at",
 			"properName": true,
-			"smallSize": true
+			"americas": true,
+			"smallSize": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a bedroom",
@@ -897,19 +1045,25 @@
 		},
 		{
 			"idea": "Mecca",
+			"properName": true,
+			"westAsia": true,
 			"smallSize": true,
 			"political": true,
 			"mythsReligionsAndMetaphysics": true,
-			"islam": true
+			"islam": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "Camelot",
+			"properName": true,
+			"europe": true,
 			"smallSize": true,
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
 			"fantasy": true,
 			"medievalFantasy": true,
-			"historicalFiction": true
+			"historicalFiction": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "the market",
@@ -919,8 +1073,10 @@
 		},
 		{
 			"idea": "Uganda",
+			"properName": "africa",
 			"smallSize": true,
-			"political": true
+			"political": true,
+			"mod": "1.0.2"
 		},
 		{
 			"idea": "a day-care center",

@@ -117,6 +117,12 @@ export interface LocalesObject {
 	mediumSize: boolean
 	smallSize: boolean
 	tinySize: boolean
+	americas: boolean
+	europe: boolean
+	africa: boolean
+	oceania: boolean
+	westAsia: boolean
+	eastAsia: boolean
 }
 export interface GenresObject {
 	fantasy: boolean
@@ -213,8 +219,14 @@ export const blankAppState: StateObject = {
 		largeSize: false,
 		mediumSize: false,
 		smallSize: false,
-		tinySize: false
-	},
+		tinySize: false,
+		americas: false,
+		europe: false,
+		africa: false,
+		oceania: false,
+		westAsia: false,
+		eastAsia: false
+		},
 	genres: {
 		fantasy: false,
 		medievalFantasy: false,

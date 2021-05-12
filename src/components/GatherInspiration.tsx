@@ -191,6 +191,12 @@ class Locale extends BasicIdea {
 	smallSize?: boolean
 	tinySize?: boolean
 	specific?: boolean
+	americas?: boolean
+	europe?: boolean
+	africa?: boolean
+	oceania?: boolean
+	westAsia?: boolean
+	eastAsia?: boolean
 	getIdea() {
 		return (this.preposition || "in") + " " + (this.idea || "idea");
 	}
