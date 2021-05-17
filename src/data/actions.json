@@ -632,12 +632,18 @@
 			"idea": "carving a tunnel"
 		},
 		{
-			"idea": "accepting your fate",
+			"idea": "accepting [THEIR] fate",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"possessive": true,
+			"rename": "accepting your fate",
+			"mod": "1.0.4"
 		},
 		{
-			"idea": "choosing your fate"
+			"idea": "choosing [THEIR] fate",
+			"rename": "choosing your fate",
+			"possessive": true,
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "making a strong offer",
@@ -680,8 +686,11 @@
 			"idea": "painting a window"
 		},
 		{
-			"idea": "scraping your knee",
-			"humanDistress": true
+			"idea": "scraping [THEIR] knee",
+			"humanDistress": true,
+			"possessive": true,
+			"rename": "scraping your knee",
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "turning a page"

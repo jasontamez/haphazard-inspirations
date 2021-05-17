@@ -1043,6 +1043,18 @@
 			"superhero": true,
 			"scifi": true,
 			"new": "0.3.1"
+		},
+		{
+			"idea": "integrity",
+			"new": "1.0.4"
+		},
+		{
+			"idea": "empathy",
+			"new": "1.0.4"
+		},
+		{
+			"idea": "honor",
+			"new": "1.0.4"
 		}
 	]
 }

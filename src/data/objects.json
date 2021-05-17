@@ -1853,6 +1853,21 @@
 		{
 			"idea": "shrunken laundry",
 			"new": "0.3.1"
+		},
+		{
+			"idea": "ceiling fan",
+			"plural": "s",
+			"new": "1.0.4"
+		},
+		{
+			"idea": "gauzy scarves",
+			"plural": true,
+			"new": "1.0.4"
+		},
+		{
+			"idea": "a package",
+			"sexual": true,
+			"new": "1.0.4"
 		}
 	]
 }

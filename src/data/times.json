@@ -105,6 +105,20 @@
 			"scifi": true,
 			"humanDeath": true,
 			"humanMisery": true
+		},
+		{
+			"idea": "on Valentine's Day",
+			"properName": true,
+			"humanMisery": true,
+			"new": "1.0.4"
+		},
+		{
+			"idea": "on the last day of school",
+			"new": "1.0.4"
+		},
+		{
+			"idea": "on the first day of school",
+			"new": "1.0.4"
 		}
 	]
 }
