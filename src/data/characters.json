@@ -340,7 +340,9 @@
 			"mythsReligionsAndMetaphysics": true,
 			"fairyTalesAndUrbanLegends": true,
 			"plural": false,
-			"fictionalCharacter": true
+			"fictionalCharacter": true,
+			"genderPossessive": "her",
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "a basket case",
@@ -361,9 +363,10 @@
 			"fantasy": true,
 			"properName": true,
 			"plural": true,
-			"genderPossessive": "its",
+			"genderPossessive": "his",
 			"monster": true,
-			"fictionalCharacter": true
+			"fictionalCharacter": true,
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "turkey"
@@ -491,7 +494,9 @@
 			"plural": false
 		},
 		{
-			"idea": "umpire"
+			"idea": "umpire",
+			"article": "an",
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "the devil",
@@ -785,7 +790,9 @@
 			"fairyTalesAndUrbanLegends": true,
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,
-			"fictionalCharacter": true
+			"fictionalCharacter": true,
+			"genderPossessive": "his",
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "a frog that is actually royalty",
@@ -797,19 +804,25 @@
 		{
 			"idea": "the big bad wolf",
 			"plural": false,
-			"fairyTalesAndUrbanLegends": true
+			"fairyTalesAndUrbanLegends": true,
+			"genderPossessive": "his",
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "a mermaid",
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
-			"fantasy": true
+			"fantasy": true,
+			"genderPossessive": "her",
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "James Bond",
 			"plural": false,
 			"fictionalCharacter": true,
 			"scifi": true,
+			"genderPossessive": "his",
+			"mod": "1.0.4",
 			"new": "0.3.1"
 		},
 		{
@@ -818,6 +831,8 @@
 			"fictionalCharacter": true,
 			"fantasy": true,
 			"superhero": true,
+			"genderPossessive": "his",
+			"mod": "1.0.4",
 			"new": "0.3.1"
 		},
 		{
@@ -826,7 +841,34 @@
 			"fictionalCharacter": true,
 			"fantasy": true,
 			"superhero": true,
+			"genderPossessive": "his",
+			"mod": "1.0.4",
 			"new": "0.3.1"
+		},
+		{
+			"idea": "mariachi band",
+			"min": 4,
+			"max": 7,
+			"plural": ["a ", "-man mariachi band"],
+			"new": "1.0.4"
+		},
+		{
+			"idea": "an orchestra's conductor",
+			"plural": false,
+			"new": "1.0.4"
+		},
+		{
+			"idea": "a train conductor",
+			"plural": false,
+			"new": "1.0.4"
+		},
+		{
+			"idea": "mad scientist",
+			"new": "1.0.4"
+		},
+		{
+			"idea": "game show host",
+			"new": "1.0.4"
 		}
 	]
 }
