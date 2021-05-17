@@ -613,8 +613,10 @@
 		},
 		{
 			"idea": "getting [THEIR] period",
+			"possessive": true,
 			"sexual": true,
-			"humanDistress": true
+			"humanDistress": true,
+			"mod": "1.0.4"
 		},
 		{
 			"idea": "cooking with gas"
