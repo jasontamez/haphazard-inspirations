@@ -109,7 +109,7 @@ If a `plural` string or string array is found, the generator will randomly assig
 
 * `realPerson`: `boolean` - if `true`, this is a real person or persons, living or dead
 * `fictionalCharacter`: `boolean` - if `true`, this is a specific fictional entity (e.g. `true` for "Dracula", but `false` for "vampire")
-* `monster`: `boolean` - if true, this is some sort of monstrous, fictional creature
+* `monster`: `boolean` - if `true`, this is some sort of monstrous, fictional creature
 
 ## `Locale`
 
@@ -119,11 +119,11 @@ Physical locations.
 
 Unless noted otherwise, these are all `boolean`
 
-* `preposition`: a `string` such as "on" that will precede the `idea`; defaults to "in"
-* `political`: if true, indicates a country, state, city, province, etc
-* `geographical`: if true, indicates a continent, an island, a specific location ("Mt. Everest", "The Red Sea", etc), or a generic landmass ("an island", "a mountain", etc); this may include designations that coincide with a `political` identity ("Australia", "Jamaica", "Siberia", etc.)
-* `construct`: if true, indicates a physically man-made locale
-* `specific`: if true, indicates a specific, non-generic location
+* `preposition`: a `string` such as `"on"` that will precede the `idea`; defaults to `"in"`
+* `political`: if `true`, indicates a country, state, city, province, etc
+* `geographical`: if `true`, indicates a continent, an island, a specific location ("Mt. Everest", "The Red Sea", etc), or a generic landmass ("an island", "a mountain", etc); this may include designations that coincide with a `political` identity ("Australia", "Jamaica", "Siberia", etc.)
+* `construct`: if `true`, indicates a physically man-made locale
+* `specific`: if `true`, indicates a specific, non-generic location
 
 ### Size properties
 
@@ -140,8 +140,9 @@ This is for ideas that represent something physical happening that generally inv
 
 ### Optional properties
 
-* `plural`: `boolean` if true, indicates the idea is of several similar or identical events instead of just one
-* `punctual`: `boolean` if true, the event is momentary, relatively fast, generally self-contained, and/or generally takes less than an hour to complete ("a hiccup", "a brush with death", "a midnight snack", etc)
+* `plural`: `boolean` - if `true`, indicates the idea is of several similar or identical events instead of just one
+* `punctual`: `boolean` - if `true`, the event is momentary, relatively fast, generally self-contained, and/or generally takes less than an hour to complete ("a hiccup", "a brush with death", "a midnight snack", etc)
+* `preposition`: `string` - If a `Character` is chosen along with `AnEvent`, this will be used between the former and the latter to form a phrase; defaults to `"dealing with"`
 
 ### `Topic`
 
@@ -162,4 +163,4 @@ This is for phrases that indicate a singular someone is doing an action ("scream
 * `possessive`: `boolean`
   * If present and `true`, this indicates the idea needs a possessive phrase to complete it. This will be marked in the `idea` with the phrase `[THEIR]`.
   * If paired with a `Character`, this will come from that idea's `.genderPossessive` property. Otherwise, it defaults to `"one's"`.
-  * `"running [THEIR] mouth off"` could yield "running his mouth off", "running its mouth off", etc, or else "running one's mouth off".
+  * `"running [THEIR] mouth off"` could yield `"running his mouth off"`, `"running its mouth off"`, etc, or else `"running one's mouth off"`.
