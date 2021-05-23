@@ -1091,7 +1091,23 @@
 		{
 			"idea": "Wonderland",
 			"fantasy": true,
-			"fairyTalesAndUrbanLegends": true
+			"smallSize": true,
+			"fairyTalesAndUrbanLegends": true,
+			"mod": "1.1.0"
+		},
+		{
+			"idea": "a wide, empty desert",
+			"specific": false,
+			"smallSize": true,
+			"preposition": "lost in",
+			"new": "1.1.0"
+		},
+		{
+			"idea": "the second house on the right",
+			"specific": false,
+			"tinySize": true,
+			"preposition": "at",
+			"new": "1.1.0"
 		}
 	]
 }

@@ -869,6 +869,12 @@
 		{
 			"idea": "game show host",
 			"new": "1.1.0"
+		},
+		{
+			"idea": "a judge on TV",
+			"plural": false,
+			"new": "1.1.0",
+			"modern": true
 		}
 	]
 }
