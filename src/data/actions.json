@@ -616,7 +616,7 @@
 			"possessive": true,
 			"sexual": true,
 			"humanDistress": true,
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "cooking with gas"
@@ -637,13 +637,13 @@
 			"humanDeath": true,
 			"possessive": true,
 			"rename": "accepting your fate",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "choosing [THEIR] fate",
 			"rename": "choosing your fate",
 			"possessive": true,
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "making a strong offer",
@@ -690,7 +690,7 @@
 			"humanDistress": true,
 			"possessive": true,
 			"rename": "scraping your knee",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "turning a page"

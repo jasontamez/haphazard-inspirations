@@ -342,7 +342,7 @@
 			"plural": false,
 			"fictionalCharacter": true,
 			"genderPossessive": "her",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "a basket case",
@@ -366,7 +366,7 @@
 			"genderPossessive": "his",
 			"monster": true,
 			"fictionalCharacter": true,
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "turkey"
@@ -496,7 +496,7 @@
 		{
 			"idea": "umpire",
 			"article": "an",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "the devil",
@@ -792,7 +792,7 @@
 			"mythsReligionsAndMetaphysics": true,
 			"fictionalCharacter": true,
 			"genderPossessive": "his",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "a frog that is actually royalty",
@@ -806,7 +806,7 @@
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
 			"genderPossessive": "his",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "a mermaid",
@@ -814,7 +814,7 @@
 			"fairyTalesAndUrbanLegends": true,
 			"fantasy": true,
 			"genderPossessive": "her",
-			"mod": "1.0.4"
+			"mod": "1.1.0"
 		},
 		{
 			"idea": "James Bond",
@@ -822,7 +822,7 @@
 			"fictionalCharacter": true,
 			"scifi": true,
 			"genderPossessive": "his",
-			"mod": "1.0.4",
+			"mod": "1.1.0",
 			"new": "0.3.1"
 		},
 		{
@@ -832,7 +832,7 @@
 			"fantasy": true,
 			"superhero": true,
 			"genderPossessive": "his",
-			"mod": "1.0.4",
+			"mod": "1.1.0",
 			"new": "0.3.1"
 		},
 		{
@@ -842,7 +842,7 @@
 			"fantasy": true,
 			"superhero": true,
 			"genderPossessive": "his",
-			"mod": "1.0.4",
+			"mod": "1.1.0",
 			"new": "0.3.1"
 		},
 		{
@@ -850,25 +850,25 @@
 			"min": 4,
 			"max": 7,
 			"plural": ["a ", "-man mariachi band"],
-			"new": "1.0.4"
+			"new": "1.1.0"
 		},
 		{
 			"idea": "an orchestra's conductor",
 			"plural": false,
-			"new": "1.0.4"
+			"new": "1.1.0"
 		},
 		{
 			"idea": "a train conductor",
 			"plural": false,
-			"new": "1.0.4"
+			"new": "1.1.0"
 		},
 		{
 			"idea": "mad scientist",
-			"new": "1.0.4"
+			"new": "1.1.0"
 		},
 		{
 			"idea": "game show host",
-			"new": "1.0.4"
+			"new": "1.1.0"
 		}
 	]
 }
