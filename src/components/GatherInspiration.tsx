@@ -215,9 +215,10 @@ class Locale extends BasicIdea {
 	}
 }
 
-class AnEvent extends BasicIdea {
+export class AnEvent extends BasicIdea {
 	plural?: boolean
 	punctual?: boolean
+	preposition?: string
 	constructor(initializer: any) {
 		super();
 		let newObj: any = this;

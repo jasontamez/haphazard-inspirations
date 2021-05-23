@@ -23,7 +23,7 @@ import {
 	setFlushNowStatus
 } from "../components/ReduxDucks";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
-import { BasicIdea, Character, Action, getNewIdeas, initializeIdeas, pruneIdeas, loadNewAndModifiedIdeas } from '../components/GatherInspiration';
+import { BasicIdea, Character, Action, AnEvent, getNewIdeas, initializeIdeas, pruneIdeas, loadNewAndModifiedIdeas } from '../components/GatherInspiration';
 import './Home.css';
 import { starOutline, star, bulbOutline } from 'ionicons/icons';
 import fireSwal from '../components/Swal';
@@ -236,6 +236,13 @@ const Home = () => {
 			// [ANY] TIME
 			// [ANY] LOCALE
 			ideasToDisplay = [i1 + " " + i2];
+		} else if (type1 === "event" && type2 === "character") {
+			// EVENT CHARACTER
+			ideasToDisplay = [i2 + " " + ((idea1 as AnEvent).preposition || "dealing with") || " " + i1 ];
+			rawIdeas = [i2, i1];
+		} else if (type1 === "character" && type2 === "event") {
+			// CHARACTER EVENT
+			ideasToDisplay = [i1 + " " + ((idea2 as AnEvent).preposition || "dealing with") || " " + i2 ];
 		} else {
 			// ALL OTHERS
 			formatting = getFormat(doubleFormats);

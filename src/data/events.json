@@ -2,7 +2,9 @@
 	"default": {
 		"type": "event",
 		"plural": false,
-		"punctual": true
+		"punctual": true,
+		"preposition": "dealing with",
+		"mod": "1.1.0"
 	},
 	"contents": [
 		{
@@ -27,7 +29,8 @@
 			"idea": "a deadly chase",
 			"humanDistress": true,
 			"humanDeath": true,
-			"punctual": false
+			"punctual": false,
+			"preposition": "in"
 		},
 		{
 			"idea": "car crashes",
@@ -36,7 +39,8 @@
 			"plural": true
 		},
 		{
-			"idea": "a tetanus booster shot"
+			"idea": "a tetanus booster shot",
+			"preposition": "getting"
 		},
 		{
 			"idea": "an uninteresting speech"
@@ -47,7 +51,8 @@
 			"punctual": false
 		},
 		{
-			"idea": "an x-ray"
+			"idea": "an x-ray",
+			"preposition": "getting"
 		},
 		{
 			"idea": "beach volleyball"
@@ -57,7 +62,8 @@
 			"plural": true
 		},
 		{
-			"idea": "an eclipse"
+			"idea": "an eclipse",
+			"preposition": "during"
 		},
 		{
 			"idea": "a false pregnancy",
@@ -88,7 +94,8 @@
 		{
 			"idea": "a standoff, guns drawn",
 			"western": true,
-			"historicalFiction": true
+			"historicalFiction": true,
+			"preposition": "in"
 		},
 		{
 			"idea": "a writing challenge",
@@ -96,7 +103,8 @@
 		},
 		{
 			"idea": "a boxing match",
-			"humanDistress": true
+			"humanDistress": true,
+			"preposition": "in"
 		},
 		{
 			"idea": "a surprise party"
@@ -118,10 +126,12 @@
 			"idea": "a band breaking up"
 		},
 		{
-			"idea": "someone waking up in Hell",
+			"idea": "a new arrival in Hell",
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
-			"humanDistress": true
+			"humanDistress": true,
+			"preposition": "being",
+			"rename": "waking up in Hell"
 		},
 		{
 			"idea": "when a video keeps buffering and never plays",
@@ -161,21 +171,26 @@
 		},
 		{
 			"idea": "summer in the city",
-			"punctual": false
+			"punctual": false,
+			"preposition": "experiencing"
 		},
 		{
-			"idea": "a midnight snack"
+			"idea": "a midnight snack",
+			"preposition": "getting"
 		},
 		{
 			"idea": "a tournament of champions",
-			"punctual": false
+			"punctual": false,
+			"preposition": "in"
 		},
 		{
 			"idea": "a ménage à trois",
-			"sexual": true
+			"sexual": true,
+			"preposition": "having"
 		},
 		{
-			"idea": "a supernova"
+			"idea": "a supernova",
+			"preposition": "seeing"
 		},
 		{
 			"idea": "a misplaced apostrophe"
@@ -187,7 +202,8 @@
 			"idea": "a sacrifice",
 			"mythsReligionsAndMetaphysics": true,
 			"humanDeath": true,
-			"animalDeath": true
+			"animalDeath": true,
+			"preposition": "offering"
 		},
 		{
 			"idea": "a drum solo"
@@ -207,7 +223,8 @@
 		},
 		{
 			"idea": "some good-natured brawling",
-			"humanDistress": true
+			"humanDistress": true,
+			"preposition": "engaging in"
 		},
 		{
 			"idea": "a thunderstorm"
@@ -218,7 +235,8 @@
 		{
 			"idea": "a pilgrimage",
 			"mythsReligionsAndMetaphysics": true,
-			"punctual": false
+			"punctual": false,
+			"preposition": "going on"
 		},
 		{
 			"idea": "puberty",
@@ -291,7 +309,8 @@
 		},
 		{
 			"idea": "when it all comes together",
-			"punctual": false
+			"punctual": false,
+			"preposition": "experiencing"
 		},
 		{
 			"idea": "a plane crash",
@@ -314,7 +333,8 @@
 		},
 		{
 			"idea": "a single siren in the distance",
-			"humanDistress": true
+			"humanDistress": true,
+			"preposition": "hearing"
 		},
 		{
 			"idea": "a game of poker",
