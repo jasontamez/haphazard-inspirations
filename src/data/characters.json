@@ -875,6 +875,31 @@
 			"plural": false,
 			"new": "1.1.0",
 			"modern": true
+		},
+		{
+			"idea": "a bucking bronco",
+			"plural": false,
+			"animalDistress": true,
+			"new": "1.1.0"
+		},
+		{
+			"idea": "Frankenstein's monster",
+			"plural": false,
+			"fictionalCharacter": true,
+			"scifi": true,
+			"horror": true,
+			"new": "1.1.0"
+		},
+		{
+			"idea": "barber",
+			"new": "1.1.0"
+		},
+		{
+			"idea": "prisoner of war",
+			"plural": ["", "prisoners of war"],
+			"humanDistress": true,
+			"humanDeath": true,
+			"new": "1.1.0"
 		}
 	]
 }
