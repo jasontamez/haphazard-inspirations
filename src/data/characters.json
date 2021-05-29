@@ -10,7 +10,9 @@
 		"numerals": false,
 		"realPerson": false,
 		"genderPossessive": false,
-		"fictionalCharacter": false
+		"fictionalCharacter": false,
+		"joiner": "",
+		"mod": "1.1.3"
 	},
 	"contents": [
 		{

@@ -207,11 +207,11 @@ const Home = () => {
 		let rawIdeas: string[] = [i1, i2];
 		if(type1 === "character" && type2 === "action")  {
 			// CHARACTER ACTION
-			ideasToDisplay = [i1 + " " + i2];
+			ideasToDisplay = [i1 + ((idea1 as Character).joiner || " ") + i2];
 		} else if (type1 === "action" && type2 === "character") {
 			// ACTION CHARACTER
 			rawIdeas = [i2 , i1];
-			ideasToDisplay = [i2 + " " + i1];
+			ideasToDisplay = [i2 + ((idea1 as Character).joiner || " ") + i1];
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
 			// TIME TIME
 			// LOCALE LOCALE

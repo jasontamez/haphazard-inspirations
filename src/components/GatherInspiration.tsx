@@ -160,6 +160,7 @@ export class Character extends PossiblePlural {
 	monster?: boolean
 	realPerson?: boolean
 	fictionalCharacter?: boolean
+	joiner?: string
 	getIdea() {
 		if(this.realPerson) {
 			return this.idea || "idea";
@@ -306,7 +307,7 @@ const makeIdea = (idea: any) => {
 	return BasicError1;
 };
 
-const loadAndTotalInformation = () => {
+const loadAndTotalInformation = (delNew: boolean = false) => {
 	let total = 0;
 	let mtot = 0;
 	let mods: number[] = [];
@@ -320,6 +321,9 @@ const loadAndTotalInformation = () => {
 		return removeNewAndMod(o);
 	};
 	const removeNewAndMod = (base: any) => {
+		if(!delNew) {
+			return base;
+		}
 		if(base.new) {
 			delete base.new;
 		}
@@ -366,7 +370,7 @@ const maybeLog = (...args: any[]) => {
 };
 
 export const initializeIdeas = (callback: Function, status: StatusObject) => {
-	let info = loadAndTotalInformation();
+	let info = loadAndTotalInformation(true);
 	let ideas = shuffle(info.ideas);
 	let total = info.total;
 	Promise.all([

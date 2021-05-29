@@ -110,6 +110,7 @@ If a `plural` string or string array is found, the generator will randomly assig
 * `realPerson`: `boolean` - if `true`, this is a real person or persons, living or dead
 * `fictionalCharacter`: `boolean` - if `true`, this is a specific fictional entity (e.g. `true` for "Dracula", but `false` for "vampire")
 * `monster`: `boolean` - if `true`, this is some sort of monstrous, fictional creature
+* `joiner`: `string` - used to join a `Character` to an `Action` (i.e. `" that is "` for "a fish in a bucket" will yield `"a fish in a bucket that is [action]"`); defaults to `" "` (a single space)
 
 ## `Locale`
 
