@@ -211,7 +211,7 @@ const Home = () => {
 		} else if (type1 === "action" && type2 === "character") {
 			// ACTION CHARACTER
 			rawIdeas = [i2 , i1];
-			ideasToDisplay = [i2 + ((idea1 as Character).joiner || " ") + i1];
+			ideasToDisplay = [i2 + ((idea2 as Character).joiner || " ") + i1];
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
 			// TIME TIME
 			// LOCALE LOCALE
@@ -238,11 +238,11 @@ const Home = () => {
 			ideasToDisplay = [i1 + " " + i2];
 		} else if (type1 === "event" && type2 === "character") {
 			// EVENT CHARACTER
-			ideasToDisplay = [i2 + " " + ((idea1 as AnEvent).preposition || "dealing with") || " " + i1 ];
+			ideasToDisplay = [i2 + " " + ((idea1 as AnEvent).preposition || "dealing with") + " " + i1 ];
 			rawIdeas = [i2, i1];
 		} else if (type1 === "character" && type2 === "event") {
 			// CHARACTER EVENT
-			ideasToDisplay = [i1 + " " + ((idea2 as AnEvent).preposition || "dealing with") || " " + i2 ];
+			ideasToDisplay = [i1 + " " + ((idea2 as AnEvent).preposition || "dealing with") + " " + i2 ];
 		} else {
 			// ALL OTHERS
 			formatting = getFormat(doubleFormats);
