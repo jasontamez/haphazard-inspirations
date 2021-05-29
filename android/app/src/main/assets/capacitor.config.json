@@ -6,8 +6,9 @@
 	"webDir": "build",
 	"plugins": {
 		"SplashScreen": {
-			"launchShowDuration": 0
+			"launchAutoHide": false
 		}
 	},
+	"backgroundColor": "#000000",
 	"cordova": {}
 }

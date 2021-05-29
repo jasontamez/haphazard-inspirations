@@ -21,6 +21,7 @@
     "@types/react-router": "^5.1.14",
     "@types/react-router-dom": "^5.1.7",
     "array-shuffle": "^2.0.0",
+    "compare-versions": "^3.6.0",
     "ionicons": "^5.5.1",
     "localforage": "^1.9.0",
     "number-to-words": "^1.2.4",
@@ -32,6 +33,7 @@
     "react-scripts": "4.0.2",
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0",
+    "rxjs": "^6.6.7",
     "sweetalert2": "^10.16.9",
     "typescript": "^4.3.2",
     "uuid": "^8.3.2",
@@ -74,7 +76,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "2.4.7",
+    "@capacitor/cli": "^3.0.0",
     "@types/number-to-words": "^1.2.1",
     "@types/uuid": "^8.3.0"
   },

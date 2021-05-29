@@ -4,7 +4,6 @@ const config: CapacitorConfig = {
 	"appId": "net.jasontank.haphazardinspirations",
 	"appName": "Haphazard Inspirations",
 	"bundledWebRuntime": false,
-	"npmClient": "npm",
 	"webDir": "build",
 	"plugins": {
 		"SplashScreen": {
