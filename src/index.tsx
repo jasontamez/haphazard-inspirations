@@ -5,6 +5,10 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import store from "./components/ReduxStore";
 import { Provider } from "react-redux";
+import { SplashScreen } from '@capacitor/splash-screen';
+
+// Hide the splash (you should do this on app launch)
+SplashScreen.hide();
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
