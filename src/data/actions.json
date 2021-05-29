@@ -616,7 +616,7 @@
 			"possessive": true,
 			"sexual": true,
 			"humanDistress": true,
-			"mod": "1.1.0"
+			"mod": "1.1.3"
 		},
 		{
 			"idea": "cooking with gas"
@@ -637,13 +637,13 @@
 			"humanDeath": true,
 			"possessive": true,
 			"rename": "accepting your fate",
-			"mod": "1.1.0"
+			"mod": "1.1.3"
 		},
 		{
 			"idea": "choosing [THEIR] fate",
 			"rename": "choosing your fate",
 			"possessive": true,
-			"mod": "1.1.0"
+			"mod": "1.1.3"
 		},
 		{
 			"idea": "making a strong offer",
@@ -690,7 +690,7 @@
 			"humanDistress": true,
 			"possessive": true,
 			"rename": "scraping your knee",
-			"mod": "1.1.0"
+			"mod": "1.1.3"
 		},
 		{
 			"idea": "turning a page"
@@ -861,12 +861,29 @@
 			"idea": "twerking",
 			"sexual": true,
 			"modern": true,
-			"new": "0.3.1"
+			"new": "1.1.5"
 		},
 		{
 			"idea": "sorting the recyclables",
 			"modern": true,
-			"new": "0.3.1"
+			"new": "1.1.5"
+		},
+		{
+			"idea": "waiting in line",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "organizing a kindergarten schoolroom",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "counting an enormous amount of small items",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "writing [THEIR] autobiography",
+			"possessive": true,
+			"new": "1.1.3"
 		}
 	]
 }

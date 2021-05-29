@@ -70,8 +70,11 @@
 			"article": "an"
 		},
 		{
-			"idea": "fish in a bucket",
-			"plural": ""
+			"idea": "a fish in a bucket",
+			"joiner": " that is ",
+			"plural": false,
+			"mod": "1.1.5",
+			"rename": "fish in a bucket"
 		},
 		{
 			"idea": "koala"
@@ -117,6 +120,7 @@
 			"idea": "monsters under the bed",
 			"plural": true,
 			"fairyTalesAndUrbanLegends": true,
+			"joiner": " that are ",
 			"monster": true
 		},
 		{
@@ -250,16 +254,19 @@
 		},
 		{
 			"idea": "leopards that change their spots",
+			"joiner": " that are ",
 			"plural": true
 		},
 		{
 			"idea": "a turtle laying on its back",
 			"animalDistress": true,
+			"joiner": " that is also ",
 			"plural": false
 		},
 		{
 			"idea": "a captured royal",
 			"humanDistress": true,
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -267,6 +274,7 @@
 		},
 		{
 			"idea": "the last of its species",
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -306,6 +314,7 @@
 			"idea": "an old wizard",
 			"fantasy": true,
 			"medievalFantasy": true,
+			"joiner": " who is ",
 			"plural": false
 		},
 		{
@@ -317,11 +326,13 @@
 		{
 			"idea": "a fortune teller",
 			"plural": false,
+			"joiner": " who is ",
 			"metaphysics": false
 		},
 		{
 			"idea": "a lost child",
 			"humanDistress": true,
+			"joiner": " who is ",
 			"plural": false
 		},
 		{
@@ -335,6 +346,7 @@
 		{
 			"idea": "a talking fish",
 			"fantasy": true,
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -344,11 +356,12 @@
 			"plural": false,
 			"fictionalCharacter": true,
 			"genderPossessive": "her",
-			"mod": "1.1.0"
+			"mod": "1.1.5"
 		},
 		{
 			"idea": "a basket case",
 			"humanDistress": true,
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -364,17 +377,18 @@
 			"idea": "Godzilla",
 			"fantasy": true,
 			"properName": true,
-			"plural": true,
+			"plural": false,
 			"genderPossessive": "his",
 			"monster": true,
 			"fictionalCharacter": true,
-			"mod": "1.1.0"
+			"mod": "1.1.5"
 		},
 		{
 			"idea": "turkey"
 		},
 		{
 			"idea": "a flock of seagulls",
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -383,6 +397,7 @@
 		},
 		{
 			"idea": "the quiet man next door",
+			"joiner": " who is ",
 			"plural": false,
 			"genderPossessive": "his"
 		},
@@ -396,6 +411,7 @@
 			"humanDistress": true,
 			"plural": false,
 			"genderPossessive": "his",
+			"joiner": " who is also ",
 			"scifi": true
 		},
 		{
@@ -498,7 +514,7 @@
 		{
 			"idea": "umpire",
 			"article": "an",
-			"mod": "1.1.0"
+			"mod": "1.1.5"
 		},
 		{
 			"idea": "the devil",
@@ -527,6 +543,7 @@
 		},
 		{
 			"idea": "the leader of the tribe",
+			"joiner": ", who is ",
 			"plural": false
 		},
 		{
@@ -563,6 +580,7 @@
 		},
 		{
 			"idea": "a deer in the headlights",
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -571,6 +589,7 @@
 		},
 		{
 			"idea": "a treehugger in a tree",
+			"joiner": " who is ",
 			"plural": false
 		},
 		{
@@ -579,10 +598,12 @@
 			"medievalFantasy": true,
 			"mythsReligionsAndMetaphysics": true,
 			"greekRomanMyth": true,
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
 			"idea": "too many people crammed into a van",
+			"joiner": ", and they are ",
 			"plural": true
 		},
 		{
@@ -645,6 +666,7 @@
 		},
 		{
 			"idea": "a swarm of bees",
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -656,6 +678,7 @@
 		{
 			"idea": "a crowing rooster",
 			"plural": false,
+			"joiner": " that is also ",
 			"genderPossessive": "his"
 		},
 		{
@@ -738,6 +761,7 @@
 		{
 			"idea": "a ventrilloquist's dummy",
 			"horror": true,
+			"joiner": " that is ",
 			"plural": false
 		},
 		{
@@ -749,6 +773,7 @@
 			"idea": "a genie in a bottle",
 			"plural": false,
 			"mythsReligionsAndMetaphysics": true,
+			"joiner": " who is ",
 			"islam": true
 		},
 		{
@@ -794,13 +819,14 @@
 			"mythsReligionsAndMetaphysics": true,
 			"fictionalCharacter": true,
 			"genderPossessive": "his",
-			"mod": "1.1.0"
+			"mod": "1.1.5"
 		},
 		{
 			"idea": "a frog that is actually royalty",
 			"plural": false,
 			"fantasy": true,
 			"fairyTalesAndUrbanLegends": true,
+			"joiner": " and is ",
 			"medievalFantasy": true
 		},
 		{
@@ -808,7 +834,7 @@
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
 			"genderPossessive": "his",
-			"mod": "1.1.0"
+			"mod": "1.1.5"
 		},
 		{
 			"idea": "a mermaid",
@@ -816,7 +842,7 @@
 			"fairyTalesAndUrbanLegends": true,
 			"fantasy": true,
 			"genderPossessive": "her",
-			"mod": "1.1.0"
+			"mod": "1.1.5"
 		},
 		{
 			"idea": "James Bond",
@@ -824,8 +850,7 @@
 			"fictionalCharacter": true,
 			"scifi": true,
 			"genderPossessive": "his",
-			"mod": "1.1.0",
-			"new": "0.3.1"
+			"new": "1.1.5"
 		},
 		{
 			"idea": "Batman",
@@ -834,8 +859,7 @@
 			"fantasy": true,
 			"superhero": true,
 			"genderPossessive": "his",
-			"mod": "1.1.0",
-			"new": "0.3.1"
+			"new": "1.1.5"
 		},
 		{
 			"idea": "Captain America",
@@ -844,45 +868,46 @@
 			"fantasy": true,
 			"superhero": true,
 			"genderPossessive": "his",
-			"mod": "1.1.0",
-			"new": "0.3.1"
+			"new": "1.1.5"
 		},
 		{
 			"idea": "mariachi band",
 			"min": 4,
 			"max": 7,
 			"plural": ["a ", "-man mariachi band"],
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "an orchestra's conductor",
 			"plural": false,
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "a train conductor",
 			"plural": false,
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "mad scientist",
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "game show host",
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "a judge on TV",
 			"plural": false,
-			"new": "1.1.0",
+			"new": "1.1.3",
+			"joiner": " who is ",
 			"modern": true
 		},
 		{
 			"idea": "a bucking bronco",
 			"plural": false,
 			"animalDistress": true,
-			"new": "1.1.0"
+			"joiner": " that is ",
+			"new": "1.1.3"
 		},
 		{
 			"idea": "Frankenstein's monster",
@@ -890,18 +915,253 @@
 			"fictionalCharacter": true,
 			"scifi": true,
 			"horror": true,
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "barber",
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
-			"idea": "prisoner of war",
-			"plural": ["", "prisoners of war"],
+			"idea": "prisoners of war",
+			"plural": "",
 			"humanDistress": true,
 			"humanDeath": true,
-			"new": "1.1.0"
+			"min": 2,
+			"joiner": " that are ",
+			"new": "1.1.5"
+		},
+		{
+			"idea": "police officer",
+			"humanDeath": true,
+			"humanDistress": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "spy",
+			"plural": ["", "spies"],
+			"humanDeath": true,
+			"humanDistress": true,
+			"max": 3,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "a serial killer",
+			"plural": false,
+			"humanDeath": true,
+			"humanDistress": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Winston Churchill",
+			"humanDistress": true,
+			"humanDeath": true,
+			"realPerson": true,
+			"plural": false,
+			"genderPossessive": "his",
+			"properName": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Marie Curie",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Oprah",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Cher",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Mary Poppins",
+			"fictionalCharacter": true,
+			"fantasy": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Joan of Arc",
+			"realPerson": true,
+			"properName": true,
+			"humanDeath": true,
+			"plural": false,
+			"humanDistress": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Wonder Woman",
+			"fictionalCharacter": true,
+			"fantasy": true,
+			"superhero": true,
+			"properName": true,
+			"plural": false,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "barking dog",
+			"animalDistress": true,
+			"humanDistress": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "too many cooks",
+			"plural": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Julia Child",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Queen Victoria",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Cleopatra",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"humanDeath": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Eleanor Roosevelt",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Amelia Earhart",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"humanDeath": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Mata Hari",
+			"realPerson": true,
+			"properName": true,
+			"humanDeath": true,
+			"plural": false,
+			"humanDistress": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Catharine the Great",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Virginia Woolf",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"humanDistress": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Ada Lovelace",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Margaret Thatcher",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"humanDistress": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Florence Nightingale",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"humanDistress": true,
+			"humanDeath": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Jane Austen",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Josephine Baker",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Denzel Washington",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "his",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Bruce Lee",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "his",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "King Kong",
+			"fantasy": true,
+			"properName": true,
+			"plural": false,
+			"genderPossessive": "his",
+			"monster": true,
+			"fictionalCharacter": true,
+			"new": "1.1.3"
 		}
 	]
 }

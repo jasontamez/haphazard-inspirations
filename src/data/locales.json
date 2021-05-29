@@ -1073,10 +1073,11 @@
 		},
 		{
 			"idea": "Uganda",
-			"properName": "africa",
+			"properName": true,
 			"smallSize": true,
 			"political": true,
-			"mod": "1.0.2"
+			"africa": true,
+			"mod": "1.1.3"
 		},
 		{
 			"idea": "a day-care center",
@@ -1093,21 +1094,59 @@
 			"fantasy": true,
 			"smallSize": true,
 			"fairyTalesAndUrbanLegends": true,
-			"mod": "1.1.0"
+			"mod": "1.1.3"
 		},
 		{
 			"idea": "a wide, empty desert",
 			"specific": false,
 			"smallSize": true,
 			"preposition": "lost in",
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "the second house on the right",
 			"specific": false,
 			"tinySize": true,
 			"preposition": "at",
-			"new": "1.1.0"
+			"new": "1.1.3"
+		},
+		{
+			"idea": "a swamp infested with ravens",
+			"smallSize": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "the Xinjiang Uyghur Autonomous Region",
+			"humanDeath": true,
+			"humanDistress": true,
+			"mythsReligionsAndMetaphysics": true,
+			"islam": true,
+			"smallSize": true,
+			"eastAsia": true,
+			"properName": true,
+			"political": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "an extensive series of caverns",
+			"smallSize": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "the Batcave",
+			"tinySize": true,
+			"fantasy": true,
+			"superhero": true,
+			"properName": true,
+			"americas": true,
+			"new": "1.1.3"
+		},
+		{
+			"idea": "Narnia",
+			"smallSize": true,
+			"fantasy": true,
+			"properName": true,
+			"new": "1.1.3"
 		}
 	]
 }

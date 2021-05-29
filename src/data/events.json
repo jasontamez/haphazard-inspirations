@@ -4,7 +4,7 @@
 		"plural": false,
 		"punctual": true,
 		"preposition": "dealing with",
-		"mod": "1.1.0"
+		"mod": "1.1.3"
 	},
 	"contents": [
 		{
@@ -131,11 +131,14 @@
 			"christianity": true,
 			"humanDistress": true,
 			"preposition": "being",
-			"rename": "waking up in Hell"
+			"rename": "someone waking up in Hell",
+			"mod": "1.1.5"
 		},
 		{
-			"idea": "when a video keeps buffering and never plays",
-			"modern": true
+			"idea": "a streaming video that keeps buffering and never plays",
+			"modern": true,
+			"preposition": "waiting for",
+			"rename": "when a video keeps buffering and never plays"
 		},
 		{
 			"idea": "baptism",
@@ -356,6 +359,18 @@
 			"idea": "a call that is coming from inside of the house",
 			"horror": true,
 			"fairyTalesAndUrbanLegends": true
+		},
+		{
+			"idea": "an anniversary",
+			"preposition": "celebrating",
+			"new": "1.1.3"
+		},
+		{
+			"idea": "a deadly game of cat and mouse",
+			"humanDistress": true,
+			"humanDeath": true,
+			"preposition": "caught in",
+			"new": "1.1.3"
 		}
 	]
 }

@@ -110,15 +110,19 @@
 			"idea": "on Valentine's Day",
 			"properName": true,
 			"humanMisery": true,
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "on the last day of school",
-			"new": "1.1.0"
+			"new": "1.1.3"
 		},
 		{
 			"idea": "on the first day of school",
-			"new": "1.1.0"
+			"new": "1.1.3"
+		},
+		{
+			"idea": "on an average Wednesday",
+			"new": "1.1.3"
 		}
 	]
 }
