@@ -371,6 +371,29 @@
 			"humanDeath": true,
 			"preposition": "caught in",
 			"new": "1.1.3"
+		},
+		{
+			"idea": "a love triangle",
+			"humanDistress": true,
+			"preposition": "caught in",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "reaching adulthood",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a chase",
+			"preposition": "involved in",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a final countdown",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a wide-awake nightmare",
+			"new": "1.1.8"
 		}
 	]
 }

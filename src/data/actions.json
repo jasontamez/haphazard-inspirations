@@ -884,6 +884,20 @@
 			"idea": "writing [THEIR] autobiography",
 			"possessive": true,
 			"new": "1.1.3"
+		},
+		{
+			"idea": "lying about [THEIR] whereabouts",
+			"possessive": true,
+			"humanDistress": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "appearing on a quiz show",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "running up a flight of stairs",
+			"new": "1.1.8"
 		}
 	]
 }

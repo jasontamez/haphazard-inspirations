@@ -1162,6 +1162,56 @@
 			"monster": true,
 			"fictionalCharacter": true,
 			"new": "1.1.3"
+		},
+		{
+			"idea": "a non-binary person",
+			"genderPossessive": "their",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a transgendered man",
+			"genderPossessive": "his",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a transgendered woman",
+			"genderPossessive": "her",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a very sleepy person",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "car mechanic",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "airplane mechanic",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "an insurance salesman",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a server in a restaurant",
+			"joiner": " who is ",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Lady Gaga",
+			"realPerson": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.8"
 		}
 	]
 }

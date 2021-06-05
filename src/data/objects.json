@@ -1874,6 +1874,38 @@
 			"plural": ["", "stacks of books"],
 			"rateFavorsLower": false,
 			"new": "1.1.3"
+		},
+		{
+			"idea": "protein shake",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a set of pom-poms",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a Bible",
+			"mythsReligionsAndMetaphysics": true,
+			"christianity": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a copy of the Koran",
+			"mythsReligionsAndMetaphysics": true,
+			"islam": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a thimble",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a hammer",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a jackhammer",
+			"new": "1.1.8"
 		}
 	]
 }

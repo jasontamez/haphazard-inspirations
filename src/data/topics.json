@@ -990,7 +990,9 @@
 		{
 			"idea": "COVID-19",
 			"modern": true,
-			"humanDistress": true
+			"humanDistress": true,
+			"humanDeath": true,
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "cybernetic enhancements",
@@ -1060,6 +1062,24 @@
 			"idea": "constipation",
 			"humanDistress": true,
 			"new": "1.1.3"
+		},
+		{
+			"idea": "a childhood nickname",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "deep regret",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "ramen noodles",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a poltergeist",
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true,
+			"new": "1.1.8"
 		}
 	]
 }

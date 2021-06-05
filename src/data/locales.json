@@ -517,19 +517,23 @@
 			"tinySize": true
 		},
 		{
-			"idea": "within an underpass",
+			"idea": "an overpass",
+			"preposition": "beneath",
 			"specific": false,
 			"construct": true,
-			"tinySize": true
+			"tinySize": true,
+			"rename": "within an underpass",
+			"mod": "1.1.8"
 		},
 		{
-			"idea": "a 7-11",
+			"idea": "a convenience store",
 			"preposition": "at",
-			"properName": true,
 			"modern": true,
 			"specific": false,
 			"construct": true,
-			"tinySize": true
+			"tinySize": true,
+			"rename": "a 7-11",
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "a ferris wheel",
@@ -1145,8 +1149,34 @@
 			"idea": "Narnia",
 			"smallSize": true,
 			"fantasy": true,
+			"medievalFantasy": true,
 			"properName": true,
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "1.1.8"
+		},
+		{
+			"idea": "a woodland mansion",
+			"preposition": "at",
+			"specific": false,
+			"construct": true,
+			"tinySize": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a dark forest",
+			"specific": false,
+			"smallSize": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a wasteland",
+			"specific": false,
+			"smallSize": true,
+			"humanDistress": true,
+			"humanDeath": true,
+			"animalDistress": true,
+			"animalDeath": true,
+			"new": "1.1.8"
 		}
 	]
 }
