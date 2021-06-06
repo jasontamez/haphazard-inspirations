@@ -1177,6 +1177,20 @@
 			"animalDistress": true,
 			"animalDeath": true,
 			"new": "1.1.8"
+		},
+		{
+			"idea": "the moon",
+			"preposition": "on",
+			"mediumSize": true,
+			"scifi": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a duck pond",
+			"preposition": "at",
+			"specific": false,
+			"tinySize": true,
+			"new": "1.1.8"
 		}
 	]
 }

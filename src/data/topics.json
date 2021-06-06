@@ -12,7 +12,10 @@
 		{
 			"idea": "ghosts",
 			"fantasy": true,
-			"horror": true
+			"horror": true,
+			"mythsReligionsAndMetaphysics": true,
+			"metaphysics": true,
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "sex",
@@ -1079,6 +1082,20 @@
 			"idea": "a poltergeist",
 			"mythsReligionsAndMetaphysics": true,
 			"metaphysics": true,
+			"horror": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "an itch in a hard-to-reach place",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Child Protection Services",
+			"humanDistress": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a peculiar idea of fun",
 			"new": "1.1.8"
 		}
 	]

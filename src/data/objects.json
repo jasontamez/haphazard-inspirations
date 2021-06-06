@@ -76,7 +76,9 @@
 		{
 			"idea": "posters on a bedroom wall",
 			"plural": "",
-			"max": 15
+			"max": 15,
+			"min": 2,
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "a jump rope"
@@ -122,7 +124,10 @@
 		{
 			"idea": "jello shots",
 			"alcohol": true,
-			"max": 10
+			"max": 10,
+			"min": 2,
+			"plural": "",
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "parasites",
@@ -382,7 +387,9 @@
 		{
 			"idea": "jelly beans",
 			"min": 5,
-			"max": 100
+			"max": 100,
+			"plural": "",
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "a rusty nail"
@@ -1905,6 +1912,34 @@
 		},
 		{
 			"idea": "a jackhammer",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a meteorite",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "crayon",
+			"plural": "s",
+			"max": 16,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a pencil",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a pen",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "baby shoes",
+			"plural": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "hot peppers",
+			"plural": true,
 			"new": "1.1.8"
 		}
 	]

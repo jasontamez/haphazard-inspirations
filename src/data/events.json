@@ -394,6 +394,17 @@
 		{
 			"idea": "a wide-awake nightmare",
 			"new": "1.1.8"
+		},
+		{
+			"idea": "an avalanche",
+			"humanDeath": true,
+			"humanDistress": true,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a stock market crash",
+			"humanDistress": true,
+			"new": "1.1.8"
 		}
 	]
 }

@@ -1212,6 +1212,90 @@
 			"properName": true,
 			"genderPossessive": "her",
 			"new": "1.1.8"
+		},
+		{
+			"idea": "The Cat in the Hat",
+			"fictionalCharacter": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "his",
+			"joiner": ", who is ",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Goldilocks",
+			"fairyTalesAndUrbanLegends": true,
+			"fictionalCharacter": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a competitive eater",
+			"plural": false,
+			"joiner": " who is ",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "flamingo",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a wedding planner",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a millionaire",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a billionaire",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "a bankrupt person",
+			"plural": false,
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Prince Charming",
+			"fairyTalesAndUrbanLegends": true,
+			"fictionalCharacter": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "his",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Cinderella",
+			"fairyTalesAndUrbanLegends": true,
+			"fictionalCharacter": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Snow White",
+			"fairyTalesAndUrbanLegends": true,
+			"fictionalCharacter": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.8"
+		},
+		{
+			"idea": "Sleeping Beauty",
+			"fairyTalesAndUrbanLegends": true,
+			"fictionalCharacter": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "her",
+			"new": "1.1.8"
 		}
 	]
 }
