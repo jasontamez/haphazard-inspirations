@@ -1878,9 +1878,10 @@
 		},
 		{
 			"idea": "stack of books",
-			"plural": ["", "stacks of books"],
+			"plural": ["", " stacks of books"],
 			"rateFavorsLower": false,
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "1.1.8"
 		},
 		{
 			"idea": "protein shake",
