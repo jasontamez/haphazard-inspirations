@@ -6,8 +6,8 @@ android {
         applicationId "net.jasontank.haphazardinspirations"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
-        versionName "1.1.7"
+        versionCode 4
+        versionName "1.1.10"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
