@@ -117,8 +117,9 @@ const Home = () => {
 	};
 
 	// Set up variables
-	interface Format extends Array<string[]> {
-		lastFormat?: string[]
+	type SingularFormat = (string | string[])[];
+	interface Format extends Array<SingularFormat> {
+		lastFormat?: SingularFormat
 	}
 	let singleFormats: Format = [
 		["Create a story about ", "."],
@@ -159,6 +160,14 @@ const Home = () => {
 		["Set your story ", "."],
 		["Imagine what happens ", "."]
 	];
+	let doubleCharacterFormats: Format = [
+		["What happens when ", [" meet ", " meets "], "?"],
+		["Imagine a conflict between ", " and ", "."],
+		["", " and ", " walk into a bar..."],
+		["Set ", " against ", " in your story."],
+		["Write about ", " partnering with ", "."],
+		["", [" encounters ", " encounter "], " as your story begins."]
+	];
 
 	const getFormat = (format: Format) => {
 		const x = generateRandomNumber(format.length);
@@ -181,6 +190,7 @@ const Home = () => {
 	};
 
 	const receiveNewIdeas = (idea1: BasicIdea, idea2: BasicIdea, flushFlag: boolean = false) => {
+		let rawFormatting: SingularFormat = [];
 		let formatting: string[] = [];
 		let singleFormatType = singleFormats;
 		let ideasToDisplay: string[] = [];
@@ -212,11 +222,21 @@ const Home = () => {
 			// ACTION CHARACTER
 			rawIdeas = [i2 , i1];
 			ideasToDisplay = [i2 + ((idea2 as Character).joiner || " ") + i1];
+		} else if (type1 === "character" && type2 === "character") {
+			// CHARACTER CHARACTER
+			let plurality = (idea1 as Character).plurality ? 1 : 0;
+			ideasToDisplay = [i1, i2];
+			formatting = getFormat(doubleCharacterFormats).map((s: string | string[]) => {
+				if(typeof s === "string") {
+					return s;
+				}
+				return s[plurality];
+			});
 		} else if (type1 === type2 && (type1 === "time" || type1 === "locale")) {
 			// TIME TIME
 			// LOCALE LOCALE
-			formatting = getFormat(doubleLocaleFormats);
-			formatting = [formatting[0], " and ", formatting[1]];
+			rawFormatting = getFormat(doubleLocaleFormats);
+			formatting = [rawFormatting[0] as string, " and ", rawFormatting[1] as string];
 			ideasToDisplay = [i1, i2];
 		} else if (type1 === "time" && type2 === "locale") {
 			// TIME LOCALE
@@ -245,12 +265,12 @@ const Home = () => {
 			ideasToDisplay = [i1 + " " + ((idea2 as AnEvent).preposition || "dealing with") + " " + i2 ];
 		} else {
 			// ALL OTHERS
-			formatting = getFormat(doubleFormats);
+			formatting = getFormat(doubleFormats) as string[];
 			ideasToDisplay = [i1, i2];
 		}
 		// Apply the singular format
 		if(formatting.length === 0) {
-			formatting = getFormat(singleFormatType);
+			formatting = getFormat(singleFormatType) as string[];
 		}
 		let final: string[] = [formatting.shift()!];
 		while(formatting.length > 0) {

@@ -12,7 +12,7 @@
 		"genderPossessive": false,
 		"fictionalCharacter": false,
 		"joiner": "",
-		"mod": "1.1.3"
+		"mod": "1.1.8"
 	},
 	"contents": [
 		{
@@ -73,7 +73,6 @@
 			"idea": "a fish in a bucket",
 			"joiner": " that is ",
 			"plural": false,
-			"mod": "1.1.5",
 			"rename": "fish in a bucket"
 		},
 		{
@@ -355,8 +354,7 @@
 			"fairyTalesAndUrbanLegends": true,
 			"plural": false,
 			"fictionalCharacter": true,
-			"genderPossessive": "her",
-			"mod": "1.1.5"
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "a basket case",
@@ -380,8 +378,7 @@
 			"plural": false,
 			"genderPossessive": "his",
 			"monster": true,
-			"fictionalCharacter": true,
-			"mod": "1.1.5"
+			"fictionalCharacter": true
 		},
 		{
 			"idea": "turkey"
@@ -513,8 +510,7 @@
 		},
 		{
 			"idea": "umpire",
-			"article": "an",
-			"mod": "1.1.5"
+			"article": "an"
 		},
 		{
 			"idea": "the devil",
@@ -818,8 +814,7 @@
 			"horror": true,
 			"mythsReligionsAndMetaphysics": true,
 			"fictionalCharacter": true,
-			"genderPossessive": "his",
-			"mod": "1.1.5"
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a frog that is actually royalty",
@@ -833,16 +828,14 @@
 			"idea": "the big bad wolf",
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
-			"genderPossessive": "his",
-			"mod": "1.1.5"
+			"genderPossessive": "his"
 		},
 		{
 			"idea": "a mermaid",
 			"plural": false,
 			"fairyTalesAndUrbanLegends": true,
 			"fantasy": true,
-			"genderPossessive": "her",
-			"mod": "1.1.5"
+			"genderPossessive": "her"
 		},
 		{
 			"idea": "James Bond",

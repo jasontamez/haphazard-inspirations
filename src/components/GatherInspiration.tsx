@@ -81,11 +81,13 @@ class PossiblePlural extends BasicIdea {
 	article?: string
 	numerals?: boolean
 	genderPossessive?: string | false
+	plurality?: boolean
 	getIdea(Idea = this) {
 		const plural = Idea.plural;
 		const idea = Idea.idea || "blank idea";
 		if(plural === true || plural === false) {
 			// Permanently plural or singular. No further action needed.
+			Idea.plurality = plural;
 			return idea;
 		}
 		let amounts: number[] = [];
@@ -120,6 +122,11 @@ class PossiblePlural extends BasicIdea {
 			}
 		}
 		let choice = amounts[Math.floor(Math.random() * amounts.length)];
+		if(choice === 1) {
+			Idea.plurality = false;
+		} else {
+			Idea.plurality = true;
+		}
 		if(Array.isArray(plural)) {
 			// [pre number, post number]
 			if(choice === 1) {
