@@ -1934,9 +1934,9 @@
 			"new": "1.1.8"
 		},
 		{
-			"idea": "baby shoes",
-			"plural": true,
-			"new": "1.1.8"
+			"idea": "a lump of gristle",
+			"plural": false,
+			"mod": "1.1.9"
 		},
 		{
 			"idea": "hot peppers",
