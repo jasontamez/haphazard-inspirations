@@ -161,12 +161,16 @@ const Home = () => {
 		["Imagine what happens ", "."]
 	];
 	let doubleCharacterFormats: Format = [
-		["What happens when ", [" meet ", " meets "], "?"],
+		["What happens when ", [" meets ", " meet "], "?"],
 		["Imagine a conflict between ", " and ", "."],
 		["", " and ", " walk into a bar..."],
 		["Set ", " against ", " in your story."],
 		["Write about ", " partnering with ", "."],
-		["", [" encounters ", " encounter "], " as your story begins."]
+		["", [" encounters ", " encounter "], " as your story begins."],
+		["", [" is upset with ", " are upset with "], "!"],
+		["", [" is following ", " are following "], " as your story begins."],
+		["", [" is visiting ", " are visiting "], " as your story begins."],
+		["Your tale begins with ", " and ends with ", "."]
 	];
 
 	const getFormat = (format: Format) => {
