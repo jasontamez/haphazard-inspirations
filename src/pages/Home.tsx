@@ -338,7 +338,7 @@ const Home = () => {
 
 	return (
 		<IonPage>
-			<IonContent fullscreen id="homePage" className={"blown" + String(1 + Math.floor(Math.random() * 6))}>
+			<IonContent fullscreen id="homePage" className={"blown" + String(1 + generateRandomNumber(6))}>
 				<IonFab horizontal="start" vertical="top"><IonMenuButton color="primary" /></IonFab>
 				<IonFab horizontal="start" vertical="bottom">
 					<IonFabButton onClick={() => toggleFavorite()} color="secondary">

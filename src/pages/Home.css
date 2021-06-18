@@ -133,6 +133,17 @@ p strong {
 	align-content: center;
 	background-color: var(--ion-background-color);
 }
+#ideaWrap::after {
+	content: "";
+ 	background-image:
+		url('svg/blown1.svg'),
+		url('svg/blown2.svg'),
+		url('svg/blown3.svg'),
+		url('svg/blown4.svg'),
+		url('svg/blown5.svg'),
+		url('svg/blown6.svg');
+	opacity: 0;
+}
 #homePage::part(background) {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
