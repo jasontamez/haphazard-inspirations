@@ -1084,8 +1084,7 @@
 			"plural": true
 		},
 		{
-			"idea": "macaroni and cheese",
-			"plural": false
+			"idea": "macaroni and cheese"
 		},
 		{
 			"idea": "spaghetti and meatballs"
@@ -1885,7 +1884,9 @@
 		},
 		{
 			"idea": "protein shake",
-			"new": "1.1.8"
+			"new": "1.1.8",
+			"plural": "s",
+			"mod": "1.1.11"
 		},
 		{
 			"idea": "a set of pom-poms",
@@ -1935,13 +1936,25 @@
 		},
 		{
 			"idea": "a lump of gristle",
-			"plural": false,
 			"mod": "1.1.9"
 		},
 		{
 			"idea": "hot peppers",
 			"plural": true,
 			"new": "1.1.8"
+		},
+		{
+			"idea": "katana",
+			"plural": "s",
+			"max": 2,
+			"samurai": true,
+			"new": "1.1.11"
+		},
+		{
+			"idea": "cherry blossoms",
+			"plural": true,
+			"samurai": true,
+			"new": "1.1.11"
 		}
 	]
 }

@@ -405,6 +405,12 @@
 			"idea": "a stock market crash",
 			"humanDistress": true,
 			"new": "1.1.8"
+		},
+		{
+			"idea": "growing old",
+			"humanDeath": true,
+			"humanDistress": true,
+			"new": "1.1.11"
 		}
 	]
 }
