@@ -160,6 +160,8 @@ export interface EventObject {
 }
 export interface TriggersObject {
 	humanDeath: boolean
+	humanDeathViolent: boolean
+	humanDeathNatural: boolean
 	humanDistress: boolean
 	animalDeath: boolean
 	animalDistress: boolean
@@ -263,6 +265,8 @@ export const blankAppState: StateObject = {
 	},
 	triggers: {
 		humanDeath: false,
+		humanDeathViolent: false,
+		humanDeathNatural: false,
 		humanDistress: false,
 		animalDeath: false,
 		animalDistress: false	

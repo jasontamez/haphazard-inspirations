@@ -46,6 +46,11 @@ const App = () => {
 				if(storedState !== null) {
 					if(storedState && (typeof storedState) === "object") {
 						const storedVersion = storedState.currentVersion || "0.0.1";
+						if (compareVersions.compare(storedVersion, "2.0.0", "<")) {
+							// 2.0.0 includes breaking change.
+							storedState.triggers.humanDeathViolent = false;
+							storedState.triggers.humanDeathNatural = false;
+						}
 						if (compareVersions.compare(storedVersion, VERSION.current, "<")) {
 							// Do stuff to possibly bring storedState up to date
 

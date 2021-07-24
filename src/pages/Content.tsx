@@ -101,6 +101,12 @@ const ContentFilters = () => {
 	const toggleTempTrigger = (prop: keyof TriggersObject) => {
 		let value = TempTriggers[prop];
 		TempTriggers[prop] = !value;
+		$a(".disableTriggers-" + prop).forEach((tog: HTMLInputElement) => {
+			let p = tog.dataset.prop as keyof TriggersObject;
+			TempTriggers[p] = false;
+			tog.disabled = !tog.disabled;
+			tog.checked = false;
+		});
 		button.disabled = false;
 	};
 	const saveSettings = () => {
@@ -304,6 +310,14 @@ const ContentFilters = () => {
 					<IonItem>
 						<IonLabel>Human death</IonLabel>
 						<IonToggle onClick={() => toggleTempTrigger("humanDeath")} slot="end" checked={triggers.humanDeath} />
+					</IonItem>
+					<IonItem>
+						<IonLabel className="subTopic">Violent Death</IonLabel>
+						<IonToggle onClick={() => toggleTempTrigger("humanDeathViolent")} slot="end" className="disableTriggers-humanDeath" data-prop="humanDeathViolent" disabled={genres.humanDeath} checked={genres.humanDeathViolent} />
+					</IonItem>
+					<IonItem>
+						<IonLabel className="subTopic">Natural Death</IonLabel>
+						<IonToggle onClick={() => toggleTempTrigger("humanDeathNatural")} slot="end" className="disableTriggers-humanDeath" data-prop="humanDeathNatural" disabled={genres.humanDeath} checked={genres.humanDeathNatural} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Human distress</IonLabel>
