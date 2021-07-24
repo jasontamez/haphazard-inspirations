@@ -279,7 +279,7 @@ export const blankAppState: StateObject = {
 // SUB-REDUCERS
 //
 //
-const reduceAll = (state: StateObject, setPending: boolean = true) => {
+const reduceAll = (state: StateObject) => {
 	let o: StateObject = {
 		currentVersion: state.currentVersion,
 		theme: state.theme,
