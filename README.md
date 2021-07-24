@@ -45,6 +45,8 @@ All are optional and take a boolean value. Unused properties are treated as if t
 * `spacefaring`
 * `properName`
 * `humanDeath`
+* `humanDeathViolent`
+* `humanDeathNatural`
 * `humanDistress`
 * `animalDeath`
 * `animalDistress`

@@ -10,7 +10,9 @@
 		{
 			"idea": "a death in the family",
 			"humanDeath": true,
-			"punctual": false
+			"humanDeathNatural": true,
+			"punctual": false,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a new baby",
@@ -29,14 +31,18 @@
 			"idea": "a deadly chase",
 			"humanDistress": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"punctual": false,
-			"preposition": "in"
+			"preposition": "in",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "car crashes",
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"humanDistress": true,
-			"plural": true
+			"plural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a tetanus booster shot",
@@ -89,7 +95,9 @@
 			"humanDistress": true,
 			"animalDeath": true,
 			"animalDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a standoff, guns drawn",
@@ -170,7 +178,9 @@
 			"idea": "a hurricane",
 			"humanDistress": true,
 			"humanDeath": true,
-			"punctual": false
+			"humanDeathViolent": true,
+			"punctual": false,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "summer in the city",
@@ -205,8 +215,10 @@
 			"idea": "a sacrifice",
 			"mythsReligionsAndMetaphysics": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"animalDeath": true,
-			"preposition": "offering"
+			"preposition": "offering",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a drum solo"
@@ -214,7 +226,9 @@
 		{
 			"idea": "a choke hold",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a high school play",
@@ -263,7 +277,9 @@
 			"humanDistress": true,
 			"animalDistress": true,
 			"animalDeath": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "an arrest",
@@ -277,7 +293,9 @@
 		{
 			"idea": "a heart attack",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathNatural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "starting a family",
@@ -318,7 +336,9 @@
 		{
 			"idea": "a plane crash",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "something growling in the night",
@@ -369,8 +389,10 @@
 			"idea": "a deadly game of cat and mouse",
 			"humanDistress": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"preposition": "caught in",
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a love triangle",
@@ -398,8 +420,10 @@
 		{
 			"idea": "an avalanche",
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"humanDistress": true,
-			"new": "1.1.8"
+			"new": "1.1.8",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a stock market crash",
@@ -409,8 +433,10 @@
 		{
 			"idea": "growing old",
 			"humanDeath": true,
+			"humanDeathNatural": true,
 			"humanDistress": true,
-			"new": "1.1.11"
+			"new": "1.1.11",
+			"mod": "2.0.1"
 		}
 	]
 }

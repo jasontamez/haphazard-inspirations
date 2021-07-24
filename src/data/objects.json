@@ -42,7 +42,9 @@
 			"idea": "tanks",
 			"humanDistress": true,
 			"humanDeath": true,
-			"plural": true
+			"humanDeathViolent": true,
+			"plural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "very full shopping bag",
@@ -96,7 +98,9 @@
 		{
 			"idea": "cyanide",
 			"humanDeath": true,
-			"humanDistress": true
+			"humanDeathViolent": true,
+			"humanDistress": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "trees",
@@ -119,7 +123,9 @@
 			"idea": "tornadoes",
 			"humanDistress": true,
 			"humanDeath": true,
-			"plural": true
+			"humanDeathViolent": true,
+			"plural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "jello shots",
@@ -330,7 +336,9 @@
 			"idea": "a dead Jesus on a wall",
 			"mythsReligionsAndMetaphysics": true,
 			"christianity": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a bra",
@@ -727,7 +735,9 @@
 		{
 			"idea": "an atomic bomb",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a bikini",
@@ -781,7 +791,9 @@
 			"idea": "a rifle",
 			"humanDistress": true,
 			"humanDeath": true,
-			"animalDeath": true
+			"humanDeathViolent": true,
+			"animalDeath": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a car that flies",
@@ -951,7 +963,9 @@
 			"idea": "land mines",
 			"humanDistress": true,
 			"humanDeath": true,
-			"plural": true
+			"humanDeathViolent": true,
+			"plural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a violin"
@@ -1595,7 +1609,9 @@
 			"idea": "slit wrists",
 			"humanDistress": true,
 			"humanDeath": true,
-			"plural": true
+			"humanDeathViolent": true,
+			"plural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "curling toes",
@@ -1697,7 +1713,9 @@
 		{
 			"idea": "gun oil",
 			"humanDeath": true,
-			"humanDistress": true
+			"humanDeathViolent": true,
+			"humanDistress": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "the minutes of the meeting",
@@ -1771,8 +1789,10 @@
 			"idea": "an out-of-control blaze",
 			"humanDistress": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"animalDeath": true,
-			"animalDistress": true
+			"animalDistress": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "fake snow"

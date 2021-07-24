@@ -104,7 +104,9 @@
 			"idea": "in a post-apocalyptic future",
 			"scifi": true,
 			"humanDeath": true,
-			"humanMisery": true
+			"humanDeathViolent": true,
+			"humanMisery": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "on Valentine's Day",

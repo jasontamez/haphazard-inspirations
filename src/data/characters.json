@@ -572,7 +572,9 @@
 			"realPerson": true,
 			"humanDistress": true,
 			"humanDeath": true,
-			"plural": true
+			"humanDeathViolent": true,
+			"plural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a deer in the headlights",
@@ -919,40 +921,50 @@
 			"plural": "",
 			"humanDistress": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"min": 2,
 			"joiner": " that are ",
-			"new": "1.1.5"
+			"new": "1.1.5",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "police officer",
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"humanDistress": true,
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "spy",
 			"plural": ["", "spies"],
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"humanDistress": true,
 			"max": 3,
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a serial killer",
 			"plural": false,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"humanDistress": true,
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "Winston Churchill",
 			"humanDistress": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"realPerson": true,
 			"plural": false,
 			"genderPossessive": "his",
 			"properName": true,
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "Marie Curie",
@@ -992,10 +1004,12 @@
 			"realPerson": true,
 			"properName": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"plural": false,
 			"humanDistress": true,
 			"genderPossessive": "her",
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "Wonder Woman",
@@ -1040,8 +1054,10 @@
 			"plural": false,
 			"properName": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"genderPossessive": "her",
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "Eleanor Roosevelt",
@@ -1065,10 +1081,12 @@
 			"realPerson": true,
 			"properName": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"plural": false,
 			"humanDistress": true,
 			"genderPossessive": "her",
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "Catharine the Great",
@@ -1111,8 +1129,10 @@
 			"properName": true,
 			"humanDistress": true,
 			"humanDeath": true,
+			"humanDeathViolent": true,
 			"genderPossessive": "her",
-			"new": "1.1.3"
+			"new": "1.1.3",
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "Jane Austen",

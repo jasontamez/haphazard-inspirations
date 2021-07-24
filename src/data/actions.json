@@ -13,7 +13,9 @@
 			"fantasy": true,
 			"medievalFantasy": true,
 			"humanDeath": true,
-			"humanDistress": true
+			"humanDeathViolent": true,
+			"humanDistress": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "taking a pulse"
@@ -51,7 +53,9 @@
 		{
 			"idea": "killing",
 			"humanDeath": true,
-			"animalDeath": true
+			"humanDeathViolent": true,
+			"animalDeath": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "giving away clothes"
@@ -73,7 +77,9 @@
 		{
 			"idea": "jumping off a bridge",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "muttering"
@@ -125,7 +131,9 @@
 		},
 		{
 			"idea": "freezing to death",
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "wondering if cobwebs and spiderwebs are the same thing"
@@ -286,7 +294,9 @@
 		{
 			"idea": "playing Russian roulette",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "riding a dog",
@@ -340,7 +350,9 @@
 		},
 		{
 			"idea": "kicking the bucket",
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathNatural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "eating dirt"
@@ -676,7 +688,9 @@
 		{
 			"idea": "running from a killer",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "running from the police",

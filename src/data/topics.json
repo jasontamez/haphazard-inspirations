@@ -216,7 +216,9 @@
 			"idea": "racial profiling",
 			"humanDistress": true,
 			"humanDeath": true,
-			"modern": true
+			"humanDeathViolent": true,
+			"modern": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "plaid"
@@ -277,7 +279,9 @@
 			"idea": "bacterial meningitis",
 			"humanDistress": true,
 			"humanDeath": true,
-			"modern": true
+			"humanDeathNatural": true,
+			"modern": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "surprising news"
@@ -460,7 +464,9 @@
 		{
 			"idea": "trench warfare",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "a deep, dark secret",
@@ -665,7 +671,9 @@
 		{
 			"idea": "shots nearby",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathViolent": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "over the hill"
@@ -750,7 +758,9 @@
 		{
 			"idea": "mortality",
 			"humanDistress": true,
-			"humanDeath": true
+			"humanDeath": true,
+			"humanDeathNatural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "strip poker",
@@ -995,7 +1005,8 @@
 			"modern": true,
 			"humanDistress": true,
 			"humanDeath": true,
-			"mod": "1.1.8"
+			"humanDeathNatural": true,
+			"mod": "2.0.1"
 		},
 		{
 			"idea": "cybernetic enhancements",

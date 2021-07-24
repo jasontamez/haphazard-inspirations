@@ -36,6 +36,8 @@ export class BasicIdea {
 	spacefaring?: boolean
 	properName?: boolean
 	humanDeath?: boolean
+	humanDeathNatural?: boolean
+	humanDeathViolent?: boolean
 	humanDistress?: boolean
 	animalDeath?: boolean
 	animalDistress?: boolean
