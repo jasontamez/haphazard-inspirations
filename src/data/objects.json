@@ -1955,10 +1955,6 @@
 			"new": "1.1.8"
 		},
 		{
-			"idea": "a lump of gristle",
-			"mod": "1.1.9"
-		},
-		{
 			"idea": "hot peppers",
 			"plural": true,
 			"new": "1.1.8"
@@ -1974,6 +1970,10 @@
 			"idea": "cherry blossoms",
 			"plural": true,
 			"samurai": true,
+			"new": "1.1.11"
+		},
+		{
+			"idea": "a lump of gristle",
 			"new": "1.1.11"
 		}
 	]
