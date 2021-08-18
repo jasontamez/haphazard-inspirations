@@ -313,11 +313,11 @@ const ContentFilters = () => {
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Violent Death</IonLabel>
-						<IonToggle onClick={() => toggleTempTrigger("humanDeathViolent")} slot="end" className="disableTriggers-humanDeath" data-prop="humanDeathViolent" disabled={genres.humanDeath} checked={genres.humanDeathViolent} />
+						<IonToggle onClick={() => toggleTempTrigger("humanDeathViolent")} slot="end" className="disableTriggers-humanDeath" data-prop="humanDeathViolent" disabled={triggers.humanDeath} checked={triggers.humanDeathViolent} />
 					</IonItem>
 					<IonItem>
 						<IonLabel className="subTopic">Natural Death</IonLabel>
-						<IonToggle onClick={() => toggleTempTrigger("humanDeathNatural")} slot="end" className="disableTriggers-humanDeath" data-prop="humanDeathNatural" disabled={genres.humanDeath} checked={genres.humanDeathNatural} />
+						<IonToggle onClick={() => toggleTempTrigger("humanDeathNatural")} slot="end" className="disableTriggers-humanDeath" data-prop="humanDeathNatural" disabled={triggers.humanDeath} checked={triggers.humanDeathNatural} />
 					</IonItem>
 					<IonItem>
 						<IonLabel>Human distress</IonLabel>
