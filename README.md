@@ -147,17 +147,17 @@ This is for ideas that represent something physical happening that generally inv
 * `punctual`: `boolean` - if `true`, the event is momentary, relatively fast, generally self-contained, and/or generally takes less than an hour to complete ("a hiccup", "a brush with death", "a midnight snack", etc)
 * `preposition`: `string` - If a `Character` is chosen along with `AnEvent`, this will be used between the former and the latter to form a phrase; defaults to `"dealing with"`
 
-### `Topic`
+## `Topic`
 
 This is for non-physical ideas, emotions, subjects, areas of interest, etc. There are no special properties.
 
-### `ATime`
+## `ATime`
 
 This is for phrases that mark a point or era in time ("tomorrow", "in the 20th century", "in the not-too-distant future", etc.) or a cyclical event during which something may happen ("at dawn", "during Ramadan", "on Halloween", etc). In the second case, `ATime` differs from `AnEvent` in that the former is pinpointing a specific time, whereas the latter is focused on the specific event itself.
 
 There are no special properties.
 
-### `Action`
+## `Action`
 
 This is for phrases that indicate a singular someone is doing an action ("screaming", "taking a pulse", etc), or in a specific state ("being tired", "wearing a fedora", etc). It is almost always in a gerund form.
 
