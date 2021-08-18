@@ -437,6 +437,16 @@
 			"humanDistress": true,
 			"new": "1.1.11",
 			"mod": "2.0.1"
+		},
+		{
+			"idea": "a job interview",
+			"punctual": true,
+			"new": "2.0.1"
+		},
+		{
+			"idea": "a shocking revelation",
+			"humanDistress": true,
+			"new": "2.0.1"
 		}
 	]
 }

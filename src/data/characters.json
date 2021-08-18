@@ -1309,6 +1309,21 @@
 			"properName": true,
 			"genderPossessive": "her",
 			"new": "1.1.8"
+		},
+		{
+			"idea": "Marty McFly",
+			"fictionalCharacter": true,
+			"scifi": true,
+			"plural": false,
+			"properName": true,
+			"genderPossessive": "his",
+			"new": "2.0.1"
+		},
+		{
+			"idea": "a wise, older person",
+			"plural": false,
+			"joiner": " who is ",
+			"new": "2.0.1"
 		}
 	]
 }

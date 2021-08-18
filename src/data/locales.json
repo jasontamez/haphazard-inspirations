@@ -1194,6 +1194,28 @@
 			"specific": false,
 			"tinySize": true,
 			"new": "1.1.8"
+		},
+		{
+			"idea": "the rings of Saturn",
+			"preposition": "around",
+			"largeSize": true,
+			"scifi": true,
+			"spacefaring": true,
+			"new": "2.0.1"
+		},
+		{
+			"idea": "a bank",
+			"specific": false,
+			"tinySize": true,
+			"construct": true,
+			"new": "2.0.1"
+		},
+		{
+			"idea": "a stable",
+			"specific": false,
+			"tinySize": true,
+			"construct": true,
+			"new": "2.0.1"
 		}
 	]
 }

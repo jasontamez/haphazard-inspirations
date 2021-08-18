@@ -141,6 +141,18 @@
 		{
 			"idea": "on the morning before a wedding",
 			"new": "1.1.8"
+		},
+		{
+			"idea": "on the happiest day",
+			"new": "2.0.1"
+		},
+		{
+			"idea": "on the saddest day",
+			"new": "2.0.1"
+		},
+		{
+			"idea": "on a very ordinary day",
+			"new": "2.0.1"
 		}
 	]
 }

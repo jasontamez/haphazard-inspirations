@@ -928,6 +928,21 @@
 		{
 			"idea": "sewing a pair of socks",
 			"new": "1.1.8"
+		},
+		{
+			"idea": "pushing someone off a cliff",
+			"humanDeath": true,
+			"new": "2.0.1"
+		},
+		{
+			"idea": "falling off a building",
+			"humanDeath": true,
+			"humanDistress": true,
+			"new": "2.0.1"
+		},
+		{
+			"idea": "stopping to smell the roses",
+			"new": "2.0.1"
 		}
 	]
 }

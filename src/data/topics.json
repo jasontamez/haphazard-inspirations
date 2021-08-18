@@ -1108,6 +1108,21 @@
 		{
 			"idea": "a peculiar idea of fun",
 			"new": "1.1.8"
+		},
+		{
+			"idea": "the concept of infinity",
+			"new": "2.0.1"
+		},
+		{
+			"idea": "animals that can sense evil",
+			"animalDistress": true,
+			"horror": true,
+			"new": "2.0.1"
+		},
+		{
+			"idea": "pure evil",
+			"horror": true,
+			"new": "2.0.1"
 		}
 	]
 }
