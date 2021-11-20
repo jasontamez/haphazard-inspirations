@@ -34,28 +34,28 @@ Each file is an object with two properties, `default` and `content`.
 All are optional and take a boolean value. Unused properties are treated as if they are `false`.
 
 * `fantasy`
-* `medievalFantasy`
-* `superhero`
-* `fairyTalesAndUrbanLegends`
+  * `medievalFantasy`
+  * `superhero`
+  * `fairyTalesAndUrbanLegends`
 * `historicalFiction`
-* `western`
-* `samurai`
+  * `western`
+  * `samurai`
 * `horror`
 * `scifi`
-* `spacefaring`
+  * `spacefaring`
 * `properName`
 * `humanDeath`
-* `humanDeathViolent`
-* `humanDeathNatural`
+  * `humanDeathViolent`
+  * `humanDeathNatural`
 * `humanDistress`
 * `animalDeath`
 * `animalDistress`
 * `mythsReligionsAndMetaphysics`
-* `judaism`
-* `christianity`
-* `islam`
-* `greekRomanMyth`
-* `metaphysics`
+  * `judaism`
+  * `christianity`
+  * `islam`
+  * `greekRomanMyth`
+  * `metaphysics`
 * `sexual`
 * `illicitSubstances`
 * `alcohol`
