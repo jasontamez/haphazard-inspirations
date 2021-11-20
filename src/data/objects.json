@@ -1974,6 +1974,12 @@
 		{
 			"idea": "a lump of gristle",
 			"new": "1.1.11"
+		},
+		{
+			"idea": "a bottle of Hennessy",
+			"properName": true,
+			"alcohol": true,
+			"new": "2.0.4"
 		}
 	]
 }

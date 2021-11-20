@@ -943,6 +943,16 @@
 		{
 			"idea": "stopping to smell the roses",
 			"new": "2.0.1"
+		},
+		{
+			"idea": "falling down a well",
+			"humanDeath": true,
+			"humanDistress": true,
+			"new": "2.0.4"
+		},
+		{
+			"idea": "reconnecting with an old friend",
+			"new": "2.0.4"
 		}
 	]
 }

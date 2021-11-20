@@ -1123,6 +1123,15 @@
 			"idea": "pure evil",
 			"horror": true,
 			"new": "2.0.1"
+		},
+		{
+			"idea": "holiday music",
+			"new": "2.0.4"
+		},
+		{
+			"idea": "digital distortion",
+			"modern": true,
+			"new": "2.0.4"
 		}
 	]
 }

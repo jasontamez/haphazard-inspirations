@@ -1324,6 +1324,13 @@
 			"plural": false,
 			"joiner": " who is ",
 			"new": "2.0.1"
+		},
+		{
+			"idea": "stranger",
+			"max": 7,
+			"rateFavorsLower": false,
+			"rateBy": "incremental",
+			"new": "2.0.4"
 		}
 	]
 }
