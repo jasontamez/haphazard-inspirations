@@ -951,7 +951,6 @@
 		{
 			"idea": "$1",
 			"plural": ["$", ""],
-			"min": 1,
 			"max": 25000,
 			"numerals": true
 		},

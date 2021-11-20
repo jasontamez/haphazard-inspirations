@@ -257,8 +257,7 @@
 		},
 		{
 			"idea": "puberty",
-			"sexual": true,
-			"punctual": false
+			"sexual": true
 		},
 		{
 			"idea": "a mid-life crisis",
@@ -440,7 +439,6 @@
 		},
 		{
 			"idea": "a job interview",
-			"punctual": true,
 			"new": "2.0.1"
 		},
 		{
